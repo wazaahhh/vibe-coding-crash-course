@@ -146,7 +146,7 @@ Lean on it uncritically and your work drifts to the mean.
 
 ### Fork the repo → vibe-code a real analysis
 
-`github.com/<you>/vibe-coding-crash-course`  → **Fork it**
+`github.com/wazaahhh/vibe-coding-crash-course`  → **Fork it**
 
 ---
 
