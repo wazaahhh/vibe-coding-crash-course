@@ -3,9 +3,17 @@ marp: true
 theme: default
 paginate: true
 header: 'Vibe Coding for Scientists'
+footer: 'CC BY-NC 4.0 · Thomas Maillart'
 ---
 
 <!-- Render with Marp: `marp slides.md` (HTML/PDF/PPTX), or open in VS Code with the Marp extension. -->
+
+<style>
+/* Page numbering as "x / total" (Marp exposes the total via data attribute) */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+}
+</style>
 
 # Vibe Coding for Scientists
 
@@ -32,6 +40,21 @@ From *writing* code to *directing* it.
 ## You move from **author** of code to **director** of code.
 
 Your job becomes **intent · judgment · verification** — not syntax.
+
+---
+
+# The next 60 minutes
+
+| # | Section | ~min |
+|---|---|---|
+| 1 | Why it matters | 5 |
+| 2 | The mindset + the science | 15 |
+| 3 | How you actually do it (modes · prompting) | 10 |
+| 4 | **Live demo** — a real analysis | 15 |
+| 5 | Working together in a lab | 7 |
+| 6 | Safety & ethics | 5 |
+
+<!-- Speaker: don't dwell — this is a map, not content. The demo is the centre of gravity; protect its 15 min. -->
 
 ---
 
@@ -100,9 +123,12 @@ The four pillars are the disciplines that make the new loop safe.
 
 # Pillar 3 — Thinking fast / slow
 
+> "System 1 is gullible and biased to believe, System 2 is in charge of doubting and unbelieving — but System 2 is sometimes busy, and often **lazy**."
+> — *Daniel Kahneman, Thinking, Fast and Slow*
+
 - The AI is your **System 1**: fast, fluent, sometimes wrong.
 - **You** supply **System 2**: slow, deliberate, checking.
-- Failure mode: speed seduces you into skipping System 2.
+- Failure mode: speed seduces you into skipping System 2 — and System 2 is lazy by default.
 - Discipline: **fast on generation, slow on consequential checkpoints.**
 
 > The more the result matters, the more slowly you must read it.
@@ -115,6 +141,59 @@ The four pillars are the disciplines that make the new loop safe.
 - Prototype to throw away. Fork, branch, experiment, delete.
 - Failure costs **minutes, not a day** → failure becomes the **unit of search.**
 - Keep prototypes disposable and version-controlled. Git is your safety net.
+
+---
+
+# What the science says — the brain on autopilot
+
+The pillars aren't moralizing — they counter **measured** cognitive effects:
+
+- **Automation bias & complacency** — we over-trust automated output and stop checking it; errors of *omission* (missed) and *commission* (followed a wrong suggestion). *(Parasuraman & Manzey, 2010)*
+- **Cognitive offloading → less critical thinking** — the more workers trust GenAI, the less critical thinking they report. *(Lee et al., Microsoft/CMU, CHI 2025)*
+- **Illusion of explanatory depth** — fluent output makes you *feel* you understand a system you couldn't actually rebuild. *(Rozenblit & Keil, 2002)*
+
+> The danger isn't a wrong answer. It's a **confident** one that **switches your checking off.**
+
+---
+
+# What the science says — protecting your edge
+
+- **"Cognitive debt"** — heavy LLM use during writing showed reduced neural connectivity, weaker memory of one's own output, and more homogenized prose. *(Kosmyna et al., MIT Media Lab, 2025 — preprint)*
+- **Generation effect** — you understand and retain far better what *you* produce than what you merely read. Directing ≠ generating. *(Slamecka & Graf, 1978)*
+
+**The discipline:** re-derive the key step yourself · explain the code back without the model · keep enough fluency to *review*, not just accept.
+
+> Offload the typing. **Never offload the understanding** that your name depends on.
+
+---
+
+# Where it shines · where it bites
+
+Verifying *everything* is exhausting. Spend your System 2 where it fails.
+
+| ✅ Trust-but-skim | ⚠️ Slow down — it fails quietly here |
+|---|---|
+| Plotting, formatting, refactoring | **Domain correctness** — units, sign conventions, edge cases |
+| Boilerplate, glue, file I/O | **Statistics** — the wrong-but-plausible test |
+| Explaining unfamiliar code | **Novel math / your specific method** |
+| Translating between languages | **Anything needing ground truth** — data semantics, citations |
+
+> It's strongest on **syntax**, weakest on **truth.** Aim your checking accordingly.
+
+---
+
+# A 30-second horror story
+
+The failure is never a crash — it's a **green run with a wrong number.**
+
+- A **sign flip** in a loss term: the model trains, the curve looks plausible, the effect is **reversed.**
+- **`df.dropna()`** quietly deletes 40% of rows → a "significant" result from survivors only.
+- **Test data leaks** into training → 0.98 accuracy that evaporates on real data.
+- A **hallucinated citation** in the intro that no reviewer caught — until one did.
+
+Every one of these **ran perfectly.** That's the whole point.
+
+> The bug that ends a paper compiles, runs, and looks beautiful.
 
 ---
 
@@ -142,7 +221,55 @@ Lean on it uncritically and your work drifts to the mean.
 
 <!-- _class: lead -->
 
-# 3 · Demo
+# 3 · How you actually do it
+
+### Two modes — same loop underneath
+
+---
+
+# Mode A: chat · Mode B: agent in your repo
+
+| **Chat** (browser / app) | **Agent** (VS Code + GitHub) |
+|---|---|
+| ChatGPT, Claude.ai — paste code, data, error → get an answer | Claude Code, Cursor, Copilot — AI **reads your files, runs code, edits in place** |
+| **Zero setup**, works in 10 seconds | One-time setup: clone repo, open editor, connect |
+| ⚠️ **You** are the copy-paste bus — context dies each message | **Context-aware** — sees the whole project, remembers |
+| Great for a quick question or snippet | Great for a real, multi-file analysis |
+
+Most scientists start in **chat** (and that's fine). The leap in power is letting the AI **into the repo.**
+
+---
+
+# Mode B, done right: one repo for everything
+
+Put **code · data · figures · the paper · your prompts/notes** in **one repository** (a *monorepo*).
+
+- **The AI sees the whole picture** → answers grounded in *your* data and *your* draft, not a generic guess.
+- **One source of truth** → the analysis that made Figure 3 lives next to Figure 3 and the paragraph that cites it.
+- **Reproducible & shareable** → a collaborator (or reviewer, or future-you) clones *one thing* and has it all.
+- Add a **`CLAUDE.md` / `CONVENTIONS.md`** at the root → the agent (and the lab) follow the same rules.
+
+> Chat answers a question. A repo lets the AI **work on your actual project.**
+
+---
+
+# How to ask — the *intent* half of the job
+
+A vague prompt gets a generic answer. Direct it like a capable new student.
+
+- **Give context, not just the task** — the data, the goal, the constraints, what you've tried.
+- **Ask for a plan *before* code** — *"Outline your approach first; I'll approve, then you write it."*
+- **Constrain it** — language, libraries, "match the style in this file," "no new dependencies."
+- **Make it show its work** — *"explain your reasoning,"* *"flag anything you assumed."*
+- **Iterate in small steps** — one change, run, read, correct. Don't accept a 300-line dump blind.
+
+> Vague in → generic out. **Specific intent is the lever** that makes everything downstream better.
+
+---
+
+<!-- _class: lead -->
+
+# 4 · Demo
 
 ### Fork the repo → vibe-code a real analysis
 
@@ -175,7 +302,7 @@ Lean on it uncritically and your work drifts to the mean.
 
 <!-- _class: lead -->
 
-# 4 · Working together in a lab
+# 5 · Working together in a lab
 
 ### When generation is cheap, the real work is review, standards & rhythm
 
@@ -195,7 +322,7 @@ Lean on it uncritically and your work drifts to the mean.
 
 <!-- _class: lead -->
 
-# 5 · Safety & ethics
+# 6 · Safety & ethics
 
 ### Your name is on the paper
 
@@ -211,6 +338,18 @@ Lean on it uncritically and your work drifts to the mean.
 
 ---
 
+# Start Monday
+
+Don't redesign your workflow. Pick **one** low-stakes thing.
+
+1. **Today:** open a chat tool, paste a script you already trust, ask *"what would you improve, and why?"* Read the answer critically.
+2. **This week:** fork the course repo · let an agent into **one** real analysis · make it harden a notebook into a rerunnable script.
+3. **Every time:** keep the prompt, verify the number, re-derive the one step that matters.
+
+> One real task beats ten demos. Low stakes, this week.
+
+---
+
 <!-- _class: lead -->
 
 # Director, not author.
@@ -221,3 +360,18 @@ You bring the **question, the judgment, the responsibility.**
 ### That division of labor *is* the skill.
 
 Go practice it on something low-stakes this week.
+
+---
+
+# Sources
+
+- Kahneman, D. (2011). *Thinking, Fast and Slow.* Farrar, Straus & Giroux.
+- Parasuraman, R. & Manzey, D. (2010). Complacency and bias in human use of automation. *Human Factors*, 52(3).
+- Rozenblit, L. & Keil, F. (2002). The misunderstood limits of folk science: an illusion of explanatory depth. *Cognitive Science*, 26(5).
+- Slamecka, N. J. & Graf, P. (1978). The generation effect. *J. Experimental Psychology: Human Learning & Memory*, 4(6).
+- Lee, H.-P. et al. (2025). The Impact of Generative AI on Critical Thinking. *CHI 2025*, Microsoft Research / CMU.
+- Kosmyna, N. et al. (2025). Your Brain on ChatGPT: Accumulation of Cognitive Debt… *arXiv preprint* (MIT Media Lab).
+
+<!-- Speaker: the Kosmyna study is a preprint with active methodological debate — cite it as suggestive, not settled. -->
+
+
