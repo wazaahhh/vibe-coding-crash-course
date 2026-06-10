@@ -363,6 +363,20 @@ Go practice it on something low-stakes this week.
 
 ---
 
+# Further reading
+
+For when you fork the repo and want to go deeper.
+
+- **Nature (2026)** — *How to vibe code in science: early adopters share their tips.* The best survey of researchers actually doing this.
+- **Nature (2026)** — *We vibe-coded a custom AI poetry lab. Here's how you can, too.* A concrete lab case study.
+- **Scott Cunningham** — *Scott's Mixtape* / "Claude Code for Economists" — an economist documenting real agentic research workflows.
+- **arXiv 2506.23253** — *Vibe coding: programming through conversation with AI.*
+- **arXiv 2502.17348** — *How Scientists Use Large Language Models to Program.*
+
+→ Full annotated list with links in **`RESOURCES.md`** in the repo.
+
+---
+
 # Sources
 
 - Kahneman, D. (2011). *Thinking, Fast and Slow.* Farrar, Straus & Giroux.
