@@ -36,3 +36,9 @@ Scientists (grad students → PIs) who code a little (usually Python/R in notebo
 4. **Try and fail** — cheap attempts, small stakes, disposable prototypes. Failure is the unit of search.
 
 > Trust the vibe to **write** it; never trust the vibe that it's **right**.
+
+## Further reading
+See **[RESOURCES.md](RESOURCES.md)** for an annotated reading list (vibe coding in science, academic framing, best practices, and the cognitive-science references behind the slides).
+
+## License
+Course materials (slides, guides, handouts) © 2026 Thomas Maillart, licensed under **[CC BY-NC 4.0](LICENSE)** — share and adapt with attribution, non-commercial use only. See [LICENSE](LICENSE) for details.
