@@ -20,6 +20,7 @@ Scientists (grad students → PIs) who code a little (usually Python/R in notebo
 ## What's in here
 - **[facilitator-guide.md](facilitator-guide.md)** — the run-of-show: timings, talking points, the demo script, a 30-min cut. *Start here to teach.*
 - **[slides.md](slides.md)** — presentable deck (Marp markdown). Render with `marp slides.md` or the VS Code Marp extension.
+- **[install-fest.md](install-fest.md)** — a hands-on "install fest" deck: step-by-step migration from ChatGPT/Claude web + Overleaf + Zotero to Claude Code in VS Code, with a code + LaTeX monorepo (data untracked).
 - **[handout.md](handout.md)** — one-page participant cheat-sheet (print or share).
 - **[demo/](demo/)** — the forkable hands-on: a deliberately-messy dataset, a generator, and a starter notebook.
 
