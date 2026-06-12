@@ -1,168 +1,152 @@
 # Vibe Coding for Scientists — Facilitator Guide
 
-**Format:** 60 minutes, tool-agnostic, demo-heavy.
+**Format:** a course in **6 modules** — five 20-minute talk sessions + one hands-on clinic (Session 4) that takes the time it needs (~45–60 min). Tool-agnostic, demo-heavy.
 **Audience:** Working scientists (grad students → PIs) who already code a little — typically Python/R in notebooks — and treat code as a means to an end, not a craft.
-**Goal of the hour:** Shift mindset, not just show a tool. Participants leave able to *direct* an AI to write working analysis code, *and* able to catch it when it's confidently wrong.
+**Goal:** Shift mindset, not just show a tool. Participants leave able to *direct* an AI to write working analysis code, *and* able to catch it when it's confidently wrong.
 
-> **One-sentence thesis to repeat 3×:** *Vibe coding moves you from author of code to director of code — your job becomes intent, judgment, and verification, not syntax.*
+> **One-sentence thesis to repeat every session:** *Vibe coding moves you from author of code to director of code — your job becomes intent, judgment, and verification, not syntax.*
 
----
-
-## Run of show (60 min)
-
-| Time | Block | Mode |
-|------|-------|------|
-| 0:00–0:03 | Hook + what "vibe coding" actually means | Talk |
-| 0:03–0:10 | **Why it matters** (for scientists specifically) | Talk |
-| 0:10–0:30 | **The mindset** — 4 pillars + keeping your own voice | Talk + 1 quick poll |
-| 0:30–0:49 | **Demo / hands-on** — fork the repo, vibe-code an analysis | Live + follow-along |
-| 0:49–0:56 | **Working together in a lab** — peer-review, sprints, shared conventions | Talk |
-| 0:56–0:60 | **Safety / ethics** + close | Talk |
-
-Keep a clock visible. The demo will try to eat the whole hour — protect the last 11 minutes for the "working responsibly" blocks (lab + safety); they're the parts scientists most need and most skip.
+Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](COURSE.md).
 
 ---
 
-## 0:00–0:03 — Hook + definition
+## Course map
 
-**Do:** Open with a live, cold prompt. Don't pre-bake it. Ask the room for a tiny task ("plot a sine wave with noise and fit it") and let the AI produce it in ~20 seconds. Run it. It works (or it doesn't — also a teachable moment).
+| # | Session | Deck | Time | Mode |
+|---|---------|------|------|------|
+| 1 | The hook | [session-1-the-hook.md](session-1-the-hook.md) | 20 min | Talk + live demo |
+| 2 | The mindset | [session-2-the-mindset.md](session-2-the-mindset.md) | 20 min | Talk + poll |
+| 3 | How you actually do it | [session-3-how-you-do-it.md](session-3-how-you-do-it.md) | 20 min | Talk + live demo |
+| 4 | Install fest 🛠 | [session-4-install-fest.md](session-4-install-fest.md) | ~45–60 min | Hands-on clinic |
+| 5 | The recursive researcher | [session-5-recursive-researcher.md](session-5-recursive-researcher.md) | 20 min | Talk + live demo |
+| 6 | The lab & the responsibility | [session-6-the-lab.md](session-6-the-lab.md) | 20 min | Talk |
 
-**Say:**
-- "Vibe coding" (term popularized by Andrej Karpathy, 2025): you describe what you want in natural language and let the model write the code. You "give in to the vibes" and stay at the level of intent.
-- The honest version for scientists: you are still responsible for the result. The vibe is in *how you produce* code, not in *whether it's correct*.
-- Today is about the **mindset shift**, with a hands-on demo. Tool doesn't matter — Claude Code, Cursor, Copilot, or paste-into-chat all work the same way underneath.
+**Ways to run it:** Sessions 1–3 as a ~60-min seminar · Session 4 as a standalone clinic · Sessions 5–6 as a ~40-min follow-up. Or all six in sequence with breaks.
 
----
-
-## 0:03–0:11 — Why it matters
-
-**Frame:** Scientists are not professional programmers. Code is friction between a question and an answer. Vibe coding removes most of that friction — which is a bigger deal for you than for a software engineer.
-
-**Three concrete arguments (pick the ones that fit your room):**
-
-1. **The bottleneck was never the science — it was the plumbing.** Reading a CSV with weird encodings, remembering matplotlib's API, wrangling a dataframe. AI collapses hours of Stack-Overflow archaeology into minutes. You spend your scarce attention on the question, not the syntax.
-
-2. **Exploration becomes cheap.** The cost of "what if I tried it this other way?" drops to near zero. You can test five model specifications, three plots, two normalizations — in the time it used to take to do one. This changes *what experiments you even consider*.
-
-3. **It lowers the barrier for the whole lab.** The grad student who "can't code" can now produce a working pipeline. This is democratizing — and dangerous (see safety). It widens who can participate, which is exactly the collective-intelligence upside.
-
-**Honest caveat to state out loud:** It also makes it trivially easy to produce *plausible, beautiful, wrong* results. That tension is the whole reason the mindset section exists.
+**The cardinal rule:** keep a clock visible on the talk modules (they each have a live demo or poll that wants to overrun), and **don't** clock Session 4 — let installs and per-laptop snags set its pace.
 
 ---
 
-## 0:11–0:30 — The mindset (the core of the hour)
+## Session 1 — The hook (20 min)
 
-**Open with the key claim:** "You already use computers every day. So why isn't this just *faster typing*? Why is it a genuinely new skill?"
+**Objective:** make the value undeniable, and make them want Session 2. *Protect the energy here — don't front-load caveats.*
 
-**Answer:** Because it changes your *role* and your *cognitive loop*. When you write code yourself, you understand it as a byproduct of writing it. When you direct an AI, understanding is no longer automatic — you have to *choose* to engage it. That's the non-trivial adaptation. The four pillars are the disciplines that make the new loop safe and powerful.
+**0–3 — Cold-open demo.** Open with a live, un-baked prompt. Ask the room for a tiny task ("plot a sine wave with noise and fit it") and let the AI produce it in ~20 seconds. Run it. It works (or it doesn't — also teachable).
 
-### Pillar 1 — Divergence / creativity
-- Scientific training rewards *convergence*: narrow to the one right method, the one hypothesis. Vibe coding rewards *divergence first*: generate many candidate approaches fast, because generation is now nearly free.
-- **Practice:** ask the model for 3 different ways to do something before picking one. "Give me three approaches to detect the change-point in this series, with trade-offs." You become a curator of options, not a producer of one.
-- This is uncomfortable for trained scientists — it feels unrigorous. Reframe: divergence is the *search*, convergence is the *selection*. You still converge — just later, with more options on the table.
+**3–12 — Definition + why it matters.**
+- "Vibe coding" (Karpathy, 2025): you describe what you want in natural language and let the model write the code. The honest version for scientists: *the vibe is in how you produce code, not whether it's correct.*
+- Three arguments (pick what fits the room): **(1)** the bottleneck was never the science — it was the plumbing; **(2)** exploration becomes cheap — five specs, three plots, two normalizations in the time of one; **(3)** it lowers the barrier for the whole lab.
+- State the catch *once*, then move on: "It's also trivially easy to produce *plausible, beautiful, wrong*. Session 2 is how we handle that."
 
-### Pillar 2 — Critical thinking (the non-negotiable)
-- The model is a confident, fluent, occasionally-fabricating collaborator. It will invent a statistical method, misuse a test, hallucinate a function or a citation — in flawless prose.
-- **The reviewer stance:** treat every output as a pull request from a brilliant, overconfident intern. Default to skeptical. Ask "how would I know if this is wrong?" *before* you trust the pretty plot.
-- **Practical tactics:** ask the model to explain its reasoning; ask it to argue against its own answer; check the result against a back-of-envelope expectation; run on a tiny case where you know the answer.
-- Slogan: **"Trust the vibe to write it; never trust the vibe that it's right."**
-
-### Pillar 3 — Thinking fast / slow (Kahneman, weaponized)
-- The AI is your **System 1**: fast, fluent, associative, pattern-matched, sometimes wrong. *You* must supply **System 2**: slow, deliberate, checking.
-- The failure mode of vibe coding is letting the AI's speed seduce you into skipping System 2. The plot appears in 10 seconds and looks great, so you move on.
-- **The discipline:** go fast on generation, deliberately slow on *consequential* checkpoints. Where does slow matter? Anywhere a wrong answer would end up in a paper, a grant, or a decision. Speed for scaffolding; deliberation for claims.
-- Practical rule: *the more the result matters, the more slowly you must read it.*
-
-### Pillar 4 — Try and fail (cheap, fast, often)
-- Generation is now so cheap that the optimal strategy is *more attempts, smaller stakes*. Prototype to throw away. Fork, branch, experiment, delete.
-- This rewires risk: a failed attempt costs minutes, not a day. Failure stops being a setback and becomes the unit of search.
-- **Practice:** keep prototypes disposable and version-controlled. Name the throwaway as throwaway. The git repo is your safety net — you can always revert.
-
-**Quick poll (30 sec, optional):** "Which pillar is hardest for you?" Hands up per pillar. It usually surfaces #2 (critical thinking) and #3 (slowing down) — exactly the ones to emphasize before the demo, because the demo is where they'll be tempted to skip both.
-
-### Keeping your own voice (don't regress to the mean)
-- AI is trained on the average of everything, so its default output is **generic** — median variable names, median figures, median prose, median method choices. Lean on it uncritically and your work drifts toward that mean. For a scientist, your *taste* — the questions you pose, how you frame a figure, the structure of an argument — is part of what makes the work yours and good.
-- **Distinguish style from boilerplate.** Boilerplate (reading a CSV, a standard plot scaffold) — delegate freely, no one's voice lives there. Style (which question, which comparison, how the result is told) — that's yours to keep; don't outsource it.
-- **Direct the AI toward your style, don't adopt its.** Feed it examples of your code and figures: *"match the conventions in this file."* Keep a lab/personal house style (naming, plotting defaults, structure) and make the AI conform to it, not the reverse.
-- **Edit toward your voice.** Treat the first output as a draft in someone else's handwriting. Rewrite the parts that carry meaning until they sound like you. The AI gets you to a draft 10× faster; the *last mile* is where your voice goes back in.
-- **Keep your hands in.** Do some things manually to retain the taste that lets you *notice* when AI output is bland or off. You can't direct toward a standard you've lost the ability to feel.
-- One-liner: **"Let it handle the boilerplate; keep the parts that are you."**
+**12–20 — The vision + roadmap.** Walk the "what you'll be able to do by the end" slide — land the reviewer line (*"a new robustness check goes from a dreaded week to an afternoon — that's Session 5"*). Show the 6-session roadmap. Close on the hook to Session 2.
 
 ---
 
-## 0:30–0:49 — Demo / hands-on
+## Session 2 — The mindset (20 min)
 
-**Setup (have this ready before the session):**
-- The demo repo URL on screen. Tell everyone to **fork it** (or "Use this template" / clone). Forking — not just cloning — is the point: it gives them their own sandbox to break.
-- See `demo/README.md` for the full script. The dataset (`demo/data/plant_growth.csv`) is deliberately messy: missing values, a unit inconsistency (some heights in mm, most in cm), and a stray outlier.
+**Objective:** why directing an AI is not just *faster typing*. This is the conceptual core.
 
-**The arc (drive it live; narrate your thinking):**
+**Open with the key claim:** "Why isn't this just faster typing?" Answer: it changes your *role* and your *cognitive loop*. When you write code, understanding is a byproduct; when you direct, understanding is no longer automatic — you must *choose* to engage it. The four pillars are the disciplines that make the new loop safe.
 
-1. **Orient by asking, not reading.** Don't open the CSV and squint. Prompt: *"Load `data/plant_growth.csv`, summarize the columns, and tell me about data-quality problems I should worry about."* — Model the "ask the AI to brief you" move.
+**The four pillars (≈2 min each):**
+1. **Divergence / creativity** — science trains convergence; vibe coding rewards generating many options first. *"Give me three approaches, with trade-offs."* You curate, not produce.
+2. **Critical thinking (non-negotiable)** — every output is a PR from a brilliant, overconfident intern. Ask *"how would I know if this is wrong?"* before trusting the pretty plot. Slogan: *"Trust the vibe to write it; never trust the vibe that it's right."*
+3. **Thinking fast / slow** — the AI is System 1 (fast, sometimes wrong); you supply System 2 (slow, checking). The Kahneman quote lands the point: System 2 is *lazy* by default. *The more the result matters, the more slowly you read it.*
+4. **Try and fail** — generation is cheap → more attempts, smaller stakes. Failure costs minutes; it becomes the unit of search. Git is the safety net.
 
-2. **Watch it miss something.** The model will likely report the missing values but *miss the mm/cm unit mix* (or flag it as an outlier instead of a unit error). **This is the set-piece of the demo.** Stop. Point it out. "This is Pillar 2 live — it gave a confident, mostly-right answer that would have corrupted my analysis. I caught it because I know plants, not because I know pandas."
+**The science (1 slide).** The pillars counter *measured* effects — automation bias, cognitive offloading, the illusion of explanatory depth, and cognitive debt / the generation effect. The takeaway line: *offload the typing, never offload the understanding your name depends on.* (Citations are on the slide and in [RESOURCES.md](RESOURCES.md); the MIT "cognitive debt" study is a preprint — cite as suggestive.)
 
-3. **Direct the fix with domain knowledge.** Prompt the correction: *"Some heights look like they're in millimetres. Detect and convert those rows; show me which rows you changed and why."* Verify the changed rows by eye.
+**Calibration + a scare.** "Where it shines · where it bites" tells them *where to spend System 2* (truth, not syntax). The 30-second horror story makes it visceral: the failures all *ran perfectly*.
 
-4. **Diverge (Pillar 1).** *"Give me three ways to test whether fertilizer affects height, with the assumptions each one makes."* Discuss trade-offs out loud. Pick one *with the room*.
+**Quick poll (30 sec):** "Which pillar is hardest for you?" Hands up per pillar. Usually surfaces #2 and #3 — the two they'll be tempted to skip in the demo.
 
-5. **Notebooks-or-not — address it directly.** Show the same task two ways and name the trade-off:
-   - **Notebook:** great for *exploration* — see each step, plots inline, poke at intermediate state. Bad for *reproducibility* (hidden state, out-of-order cells) — exactly the trap that bites science.
-   - **Script + agent:** great for *reproducibility and reruns*; the AI can run, read errors, and fix itself end-to-end. Less immediate.
-   - **Recommendation to give them:** explore in a notebook, then have the AI "harden this into a script I can rerun from scratch." Get both.
-
-6. **Slow down at the claim (Pillar 3).** When you reach the result ("fertilizer increases height by X, p=…"), stop and read it slowly. Ask the model: *"What would make this conclusion wrong? What assumptions did you make?"* Show that the verification prompt is part of the workflow, not an afterthought.
-
-**If the demo runs long:** cut step 4 or 5, never step 2 or 6 — those carry the lesson.
-
-**If something breaks live:** good. Narrate how you'd debug it by pasting the error back. Failure recovery *is* the skill (Pillar 4).
+> Note: "Keep your own voice" now lives in **Session 6** (it fits standards/responsibility). If you'd rather teach it here, it's a clean lift.
 
 ---
 
-## 0:49–0:56 — Working together in a lab
+## Session 3 — How you actually do it (20 min)
 
-**Frame:** "Vibe coding doesn't just change how *you* work — it changes how a *lab* works. When everyone can generate code fast, the scarce resources shift to **review, shared standards, and rhythm.**"
+**Objective:** the practical loop — and a live demo where the AI is caught being confidently wrong.
 
-1. **Peer review matters *more*, not less.** When code is cheap to produce and easy to trust, the failure mode is unreviewed AI code flowing straight into results. Make it a norm: **no AI-generated analysis reaches a paper without a human besides the author reading it** — the same bar you'd hold a colleague's PR to. Review the *reasoning and the checks*, not just whether it runs.
+**0–8 — The setup.**
+- **Two modes:** chat in a browser (zero setup, you're the copy-paste bus) vs. an agent in your repo (reads files, runs code, edits in place). Most scientists start in chat; the leap is letting the AI *into the repo*.
+- **The monorepo:** code · data · figures · paper in one place, so the AI sees the whole picture. *(We build this in Session 4.)*
+- **How to ask (the *intent* half):** give context, ask for a plan before code, constrain it, make it show its work, iterate in small steps. *Vague in → generic out.*
 
-2. **Shorter sprints, visible demos.** Cheap iteration makes short cycles natural. Adopt a lightweight rhythm: week-long (or shorter) sprints ending in a **show-and-tell** where people demo what they vibe-coded and how they verified it. The demo culture spreads good verification habits faster than any guideline.
+**8–20 — Live demo.** Fork the repo (`demo/`, the deliberately-messy `plant_growth.csv` — missing values, an mm/cm unit mix, a stray outlier). See [demo/README.md](demo/README.md) for the full script. Drive it live; narrate your thinking:
 
-3. **Pair on the prompts.** Vibe coding is great for pairing: one person drives the prompts, the other plays skeptic (Pillar 2) in real time. Two people catch the confident-but-wrong output far better than one in flow.
+1. **Orient by asking, not reading** — *"summarize the columns and the data-quality problems I should worry about."*
+2. **Watch it miss the unit bug** — it flags the missing values but misses (or mislabels) the mm/cm mix. **This is the set-piece.** Stop and name it: *"Pillar 2, live — a confident, mostly-right answer that would have corrupted my analysis. I caught it because I know plants, not pandas."*
+3. **Direct the fix with domain knowledge** — *"some heights look like millimetres; detect and convert those rows, show me which and why."* Verify by eye.
+4. **Diverge** — *"three ways to test whether fertilizer affects height, with assumptions."* Pick one with the room.
+5. **Slow down at the claim** — *"what would make this conclusion wrong? what did you assume?"* Verification is part of the workflow, not an afterthought. Mention notebook → script: explore in a notebook, then *"harden this into a script I can rerun from scratch."*
 
-4. **Share conventions, not just code.** Maintain a lab "house style" and a shared prompt/context file (e.g. a `CONVENTIONS.md` or `CLAUDE.md`) so everyone's AI produces consistent, reviewable output. Shared, pinned environments so "it ran for me" means "it runs for you."
-
-5. **Onboarding gets easier — mentorship gets more important.** New members ship working pipelines on day one, but the thing that *doesn't* come from the AI — judgment about what's worth doing and whether a result is trustworthy — now has to be taught deliberately. Mentor on taste and verification, not syntax.
-
-6. **Track provenance as a team.** Whose prompt, which model, what data version. Reproducibility is a team contract: someone else must be able to rerun it next year.
-
-**One-liner:** *"When generation is cheap, the lab's real work is review, standards, and rhythm."*
+**If the demo runs long:** cut step 4, never step 2 or 5. **If something breaks live:** good — narrate debugging by pasting the error back. Failure recovery *is* the skill (Pillar 4).
 
 ---
 
-## 0:56–0:60 — Safety / ethics
+## Session 4 — Install fest 🛠 (~45–60 min, hands-on)
 
-**Frame:** "You're scientists. Your output has to be reproducible, honest, and not harmful. Vibe coding stresses all three. Five rules:"
+**Objective:** everyone leaves with a working setup — VS Code + Git + Claude Code, a code + LaTeX monorepo (data untracked), Overleaf → local LaTeX, Zotero → a live `.bib`. Follow [session-4-install-fest.md](session-4-install-fest.md) step by step.
 
-1. **Data confidentiality.** Pasting data or code into a cloud model may send it off your machine. Never paste patient data, unpublished results, human-subjects data, or anything under embargo/NDA into a tool you haven't cleared. Know your institution's policy; prefer local or approved tools for sensitive data.
+**This is a clinic, not a lecture. Don't compress it to a slot** — installs and per-laptop snags set the pace. Run it as:
+- **Pre-flight (send ahead, days before):** create GitHub + Anthropic accounts; **pre-download a LaTeX distribution** (MacTeX/MiKTeX/TeX Live, ≈4 GB).
+- **At the start:** kick off the LaTeX install immediately so it finishes by the time you reach Move 3.
+- **Pair people up** — no one debugs alone. Float and unblock.
+- **Optional break after Move 2** (the deck has a slide for it): by then everyone has an editor, an agent, and a repo on GitHub.
 
-2. **Reproducibility & provenance.** AI-written code is still a research artifact. Commit it to git, pin package versions, and keep the prompts — the prompt is part of your method. "The AI wrote it" is not a methods section.
+**Keep the troubleshooting slide up** during the hands-on stretch — most questions are the usual suspects (`claude: command not found`, LaTeX still installing, `refs.bib` not auto-updating, agent pointed at the wrong folder, data committed by accident).
 
-3. **Correctness is your name on the paper.** The model can fabricate methods, misapply statistics, and invent citations fluently. You are accountable for everything it produces. Verify anything that reaches a result, figure, or claim. (Pillar 2 + 3, restated as professional duty.)
+---
 
-4. **Disclosure & authorship.** Norms are still forming, but trending toward: disclose AI assistance, and AI is not an author. Check your journal/funder policy. Don't hide it; don't over-claim it.
+## Session 5 — The recursive researcher (20 min)
 
-5. **Skill atrophy & over-reliance.** If you can no longer evaluate the code, you can no longer trust it. Keep enough fluency to review. Use it to go faster on what you understand and to learn what you don't — not to outsource judgment.
+**Objective:** show the payoff that sells the whole approach — and frame *a paper as software*.
 
-**Close (30 sec):** Repeat the thesis. "Director, not author. The AI brings speed and breadth; you bring the question, the judgment, and the responsibility. That division of labor is the whole skill — go practice it on something low-stakes this week."
+**0–4 — The moment.** Tell it as a story (ideally your own): you re-run a regression with a fix; the coefficient moves 0.12 → 0.09; now the abstract number, a table, a figure, the interpretation, the robustness paragraph, and three SI tables are all stale. The agent re-ran the regression, updated everything, propagated into the SI, and handed back a *diff*. *"It didn't answer a question — it maintained the document like a codebase."*
+
+**4–12 — Why this is software engineering.** A paper is a *dependency graph* (data → regression → numbers → tables/figures → claims → abstract → SI). A new result is a **refactor**: propagate · diff · review · rebuild. Walk the analogy table (call graph, regression tests, `make`, PR review). Make the user's point explicitly: **LLM use was optimized for code first** — machine-checkable correctness, mature tooling (git/CI/`make`), oceans of training data — and a paper is *informal software*, so we bring that tooling to it.
+
+**12–18 — How to make it real.** The enabling condition is the monorepo (Session 4) plus making the graph explicit: **computed, not typed** numbers (`\input{coef.tex}`), generated tables/figures, a reproducible one-command build, consistency checks. The propagation prompt is a *refactor request* (show the example on the slide). 
+
+**If you can, demo it live** on a prepared repo with a tiny paper: change one input, ask the agent to propagate, and show the diff. No repo handy? Walk the prompt and the diff conceptually — it still lands.
+
+**18–20 — The discipline + payoff.** A refactor can over- or under-propagate; **you review every diff** (Pillar 2, restated). Payoff: a late data fix or a reviewer's new spec drops from a dreaded week to an afternoon. Close: *treat your paper like a codebase.*
+
+---
+
+## Session 6 — The lab & the responsibility (20 min)
+
+**Objective:** make it work for a team, safely, and close the course.
+
+**0–7 — How a lab works when generation is cheap.** The scarce resources shift to **review, standards, and rhythm.**
+1. **Peer review matters *more*** — no AI-generated analysis reaches a paper without a second human reading the *reasoning and checks*, not just that it runs.
+2. **Shorter sprints, visible demos** — show-and-tell what you vibe-coded *and how you verified it.*
+3. **Pair on the prompts** — one drives, one plays skeptic in real time.
+4. **Share conventions** — a lab `CONVENTIONS.md` / `CLAUDE.md` + pinned environments.
+5. **Mentor on judgment, not syntax** — onboarding gets easier; teaching taste and verification gets more important.
+
+**7–11 — Keep your own voice.** AI defaults to the *average of everything* → generic. Delegate boilerplate; keep what carries meaning (which question, which comparison, how it's told). Direct toward *your* style (*"match the conventions in this file"*); edit the meaningful parts until they sound like you. *"Let it handle the boilerplate; keep the parts that are you."*
+
+**11–18 — Safety & ethics (five rules).**
+1. **Data confidentiality** — never paste patient/unpublished/embargoed data into uncleared cloud tools; know your institution's policy.
+2. **Reproducibility & provenance** — commit the code, pin versions, keep the prompts. "The AI wrote it" ≠ a methods section.
+3. **Correctness is yours** — it fabricates methods, stats, citations fluently. Verify anything that reaches a result.
+4. **Disclosure & authorship** — disclose assistance; AI is not an author; check journal/funder policy.
+5. **Skill atrophy** — keep enough fluency to *review*. Don't outsource judgment.
+
+**18–20 — Close.** Repeat the thesis: *"Director, not author. The AI brings speed and breadth; you bring the question, the judgment, the responsibility. Go practice it on something low-stakes this week."* Point them to "Start Monday" and [RESOURCES.md](RESOURCES.md).
 
 ---
 
 ## Pre-session checklist
-- [ ] Demo repo pushed and public; URL on a slide.
-- [ ] Your AI tool of choice open and authenticated; test the cold-open prompt once beforehand.
-- [ ] Dataset regenerated (`python demo/generate_data.py`) and committed.
-- [ ] Backup: a screen-recording of the demo in case of network/tool failure.
-- [ ] Decide your stance on participants following along live vs. watching — both work; following along eats more time but sticks better.
+- [ ] Decks render (`marp session-N-….md`) or open in the VS Code Marp extension.
+- [ ] **Sessions 1 & 3:** your AI tool open and authenticated; test the cold-open and demo prompts once beforehand.
+- [ ] **Session 3:** demo repo pushed and public, URL on the slide; dataset regenerated (`python demo/generate_data.py`) and committed; a screen-recording as network/tool backup.
+- [ ] **Session 4:** pre-flight sent (accounts + LaTeX download); you've run the full install path on a clean machine once.
+- [ ] **Session 5:** ideally a small prepared paper-repo to propagate a change live; otherwise the prompt + diff walkthrough.
 
-## If you only have 30 minutes
-Cut "why it matters" to 3 min, do pillars 2 + 3 only, run demo steps 1–3 + 6, keep safety rules 1–3.
+## Compressed options
+- **One 60-min seminar (no install):** Sessions 1 + 2 + 3, demo steps 1–3 + 5 only. Defer 4–6 to a follow-up.
+- **One 20-min lightning talk:** Session 1 only, plus the Session 5 "moment" as the closing hook.
+- **Skip the clinic:** run 1–3 and 5–6 as talks; point people to [session-4-install-fest.md](session-4-install-fest.md) to set themselves up on their own time.

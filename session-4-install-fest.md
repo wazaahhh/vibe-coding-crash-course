@@ -2,11 +2,11 @@
 marp: true
 theme: default
 paginate: true
-header: 'Vibe Coding Install Fest'
+header: 'Vibe Coding for Scientists'
 footer: 'CC BY-NC 4.0 · Thomas Maillart'
 ---
 
-<!-- Render with Marp: `marp install-fest.md` (HTML/PDF/PPTX), or open in VS Code with the Marp extension. -->
+<!-- Render with Marp: `marp session-4-install-fest.md`. Session 4 of 6 — see COURSE.md. -->
 <!-- This is a HANDS-ON deck: people follow along on their laptops. Go slow, leave commands on screen. -->
 
 <style>
@@ -18,13 +18,16 @@ section::after {
 section pre { font-size: 0.78em; }
 </style>
 
-# Vibe Coding Install Fest
+# Session 4 · Install Fest 🛠
 
 ### One repo. One editor. The AI inside it.
 
 From **scattered tools** → a single VS Code workspace where the AI sees your **code, your paper, and your data.**
 
-<!-- Speaker: this is a clinic, not a lecture. Everyone leaves with a working setup. Pair people up: no one debugs alone. -->
+> The other modules are 20 min. **This one takes the time it needs** — budget **~45–60 min** hands-on, with an optional break after Move 2.
+
+<!-- Speaker: this is a clinic, not a lecture. Everyone leaves with a working setup. Pair people up: no one debugs alone. Don't rush it to fit a slot — installs and per-laptop snags set the pace. -->
+
 
 ---
 
@@ -223,6 +226,16 @@ EOF
 
 <!-- _class: lead -->
 
+# ☕ Optional break — halfway
+
+### You have an editor, an agent, and a repo on GitHub.
+
+Next we move your paper and references in. Stretch, then carry on.
+
+---
+
+<!-- _class: lead -->
+
 # Move 3 · The paper
 
 ### Overleaf → LaTeX in VS Code
@@ -408,3 +421,13 @@ Code, paper, references, data — **one workspace**, with the AI inside it.
 ### Old tools still there. You just don't *need* the tabs anymore.
 
 Pick one real project this week and move it in.
+
+---
+
+<!-- _class: lead -->
+
+# Next · Session 5
+
+### The recursive researcher — one change, propagated
+
+Now that everything lives in one repo, watch the agent maintain a *paper* like code.

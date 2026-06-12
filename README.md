@@ -1,26 +1,34 @@
-# Vibe Coding for Scientists — A 60-Minute Crash Course
+# Vibe Coding for Scientists — A Hands-On Course
 
-A tool-agnostic, demo-heavy crash course that teaches working scientists how to **direct** an AI to write analysis code — and how to catch it when it's confidently wrong.
+A tool-agnostic, demo-heavy course that teaches working scientists how to **direct** an AI to write analysis code — and how to catch it when it's confidently wrong. Organized as **6 × 20-minute sessions**; run them together or à la carte.
 
 > **Thesis:** Vibe coding moves you from *author* of code to *director* of code. Your job becomes intent, judgment, and verification — not syntax.
 
 ## Who it's for
 Scientists (grad students → PIs) who code a little (usually Python/R in notebooks) and treat code as a means to an answer, not a craft.
 
-## The hour at a glance
-| Time | Block |
-|------|-------|
-| 0:00–0:03 | Hook + what "vibe coding" means |
-| 0:03–0:10 | **Why it matters** (for scientists specifically) |
-| 0:10–0:30 | **The mindset** — 4 pillars (divergence · critical thinking · fast/slow · try-and-fail) + keeping your own voice |
-| 0:30–0:49 | **Demo / hands-on** — fork the repo, vibe-code a real analysis |
-| 0:49–0:56 | **Working together in a lab** — peer-review, sprints, shared conventions |
-| 0:56–0:60 | **Safety / ethics** |
+## The course at a glance
+| # | Session (20 min) | Mode |
+|---|------------------|------|
+| 1 | **The hook** — why this changes your research | talk + live demo |
+| 2 | **The mindset** — four pillars + the cognitive science | talk + poll |
+| 3 | **How you actually do it** — modes, prompting, demo | talk + demo |
+| 4 | **Install fest** — build your real setup | 🛠 hands-on clinic |
+| 5 | **The recursive researcher** — one change, propagated | talk + demo |
+| 6 | **The lab & the responsibility** — collaboration, safety | talk |
+
+→ Full syllabus with per-session objectives and prep in **[COURSE.md](COURSE.md)**.
 
 ## What's in here
-- **[facilitator-guide.md](facilitator-guide.md)** — the run-of-show: timings, talking points, the demo script, a 30-min cut. *Start here to teach.*
-- **[slides.md](slides.md)** — presentable deck (Marp markdown). Render with `marp slides.md` or the VS Code Marp extension.
-- **[install-fest.md](install-fest.md)** — a hands-on "install fest" deck: step-by-step migration from ChatGPT/Claude web + Overleaf + Zotero to Claude Code in VS Code, with a code + LaTeX monorepo (data untracked).
+- **[COURSE.md](COURSE.md)** — the syllabus: the six sessions, objectives, and how the decks fit together. *Start here to plan.*
+- **[facilitator-guide.md](facilitator-guide.md)** — per-session run-of-show: timings, talking points, the demo script, and compressed options. *Start here to teach.*
+- **One Marp deck per 20-min session** (render with `marp session-N-….md` or the VS Code Marp extension):
+  - **[session-1-the-hook.md](session-1-the-hook.md)** — why this changes your research.
+  - **[session-2-the-mindset.md](session-2-the-mindset.md)** — four pillars + the cognitive science.
+  - **[session-3-how-you-do-it.md](session-3-how-you-do-it.md)** — modes, prompting, live demo.
+  - **[session-4-install-fest.md](session-4-install-fest.md)** — hands-on migration from ChatGPT/Claude web + Overleaf + Zotero to Claude Code in VS Code, with a code + LaTeX monorepo (data untracked).
+  - **[session-5-recursive-researcher.md](session-5-recursive-researcher.md)** — change one result and propagate it through tables, figures, abstract, and Supplementary Materials — why a paper is software.
+  - **[session-6-the-lab.md](session-6-the-lab.md)** — collaboration, standards, safety, and the close.
 - **[handout.md](handout.md)** — one-page participant cheat-sheet (print or share).
 - **[demo/](demo/)** — the forkable hands-on: a deliberately-messy dataset, a generator, and a starter notebook.
 
