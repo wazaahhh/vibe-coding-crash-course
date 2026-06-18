@@ -78,6 +78,7 @@ These are the **first six modules** — more are on the way.
 | 3 | How you actually do it (modes · prompting) | 10 |
 | 4 | **Live demo** — a real analysis | 15 |
 | 🛠 | **Install fest** — set up your repo *(hands-on)* | clinic |
+| ＋ | **The recursive researcher** — a paper is software | 20 |
 | 5 | Working together in a lab | 7 |
 | 6 | Safety &amp; ethics | 5 |
 
@@ -416,6 +417,18 @@ star it, fork it, open a pull request.
 → open **`install-fest.md`** *(hands-on clinic, ~45–60 min)*
 
 Four browser tabs → **one VS Code workspace**: Claude Code in the editor, a code + LaTeX monorepo, **Overleaf and Zotero bridged in**, data kept untracked.
+
+---
+
+<!-- _class: lead -->
+
+# The Recursive Researcher
+
+### One change, propagated — *a paper is software*
+
+→ open **`recursive-research.md`**
+
+Change one result; the agent re-runs the regression and updates the tables, figures, and abstract — **and the Supplementary Materials.** The same discipline that made vibe coding work for software.
 
 ---
 

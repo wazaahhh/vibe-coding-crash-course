@@ -7,9 +7,10 @@ it — and shows how to catch the confident-but-wrong result.
 Run it however fits your group:
 - **The main hour** — [slides.md](slides.md), modules 1–6 (~60 min, demo-centric).
 - **Install clinic** — [install-fest.md](install-fest.md), a hands-on setup that
-  **takes the time it needs** (~45–60 min). Best as its own sitting.
+  **takes the time it needs** (~45–60 min). Run it right after the demo.
 - **Deep dive** — [recursive-research.md](recursive-research.md), the "a paper is
-  software" module (~20 min). A natural follow-up once people have a repo.
+  software" module (~20 min). Slot it after the install fest and before the lab
+  module, while everyone has a fresh repo open.
 
 ## Who it's for
 Scientists (grad students → PIs) who code a little (usually Python/R in notebooks)

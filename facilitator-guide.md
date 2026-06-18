@@ -19,11 +19,11 @@ The decks: **[slides.md](slides.md)** (main) · **[install-fest.md](install-fest
 | 3 | How you actually do it | slides.md | 10 | Talk |
 | 4 | Live demo | slides.md | 15 | Live |
 | 🛠 | **Install fest** | install-fest.md | 45–60 | Hands-on clinic |
+| ＋ | The recursive researcher | recursive-research.md | 20 | Talk + live demo |
 | 5 | Working together in a lab | slides.md | 7 | Talk |
 | 6 | Safety & ethics | slides.md | 5 | Talk |
-| ＋ | The recursive researcher | recursive-research.md | 20 | Talk + live demo *(add-on)* |
 
-**Ways to run it:** the main hour (modules 1–6) as a seminar · the **install fest right after the demo** as its own clinic · the **recursive researcher** as a follow-up once people have a repo.
+**Ways to run it:** the main hour (modules 1–6) as a seminar · the **install fest right after the demo** as its own clinic, then **the recursive researcher** while everyone has a fresh repo open · lab & safety to close.
 
 **The cardinal rule:** keep a clock on the talk modules (the demo and poll want to overrun), and **don't** clock the install fest — installs and per-laptop snags set its pace.
 
