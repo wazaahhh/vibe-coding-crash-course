@@ -6,7 +6,7 @@ header: 'Vibe Coding for Scientists'
 footer: 'CC BY-NC 4.0 · Thomas Maillart'
 ---
 
-<!-- Render with Marp: `marp session-5-recursive-researcher.md`. Session 5 of 6 (20 min) — see COURSE.md. -->
+<!-- Render with Marp: `marp recursive-research.md`. An add-on module — see COURSE.md. -->
 
 <style>
 section::after {
@@ -15,7 +15,7 @@ section::after {
 section pre { font-size: 0.8em; }
 </style>
 
-# Session 5 · The Recursive Researcher
+# The Recursive Researcher
 
 ### One change, propagated — *a paper is software*
 
@@ -121,11 +121,3 @@ A refactor can go wrong two ways — both **your** job to catch:
 A new result is a **refactor**: propagate · diff · review · rebuild.
 
 A late data fix or a reviewer's new spec drops from a **dreaded week** to an **afternoon** — when the paper is buildable and you review every diff.
-
----
-
-<!-- _class: lead -->
-
-# Next · Session 6
-
-### The lab & the responsibility — collaboration, standards, safety

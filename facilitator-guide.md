@@ -1,33 +1,35 @@
 # Vibe Coding for Scientists — Facilitator Guide
 
-**Format:** a course in **6 modules** — five 20-minute talk sessions + one hands-on clinic (Session 4) that takes the time it needs (~45–60 min). Tool-agnostic, demo-heavy.
+**Format:** a ~60-minute **main deck** ([slides.md](slides.md)) of six modules, plus two standalone **add-on modules** — a hands-on install fest and the recursive-researcher deep-dive. Tool-agnostic, demo-heavy.
 **Audience:** Working scientists (grad students → PIs) who already code a little — typically Python/R in notebooks — and treat code as a means to an end, not a craft.
 **Goal:** Shift mindset, not just show a tool. Participants leave able to *direct* an AI to write working analysis code, *and* able to catch it when it's confidently wrong.
 
-> **One-sentence thesis to repeat every session:** *Vibe coding moves you from author of code to director of code — your job becomes intent, judgment, and verification, not syntax.*
+> **One-sentence thesis to repeat:** *Vibe coding moves you from author of code to director of code — your job becomes intent, judgment, and verification, not syntax.*
 
-Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](COURSE.md).
-
----
-
-## Course map
-
-| # | Session | Deck | Time | Mode |
-|---|---------|------|------|------|
-| 1 | The hook | [session-1-the-hook.md](session-1-the-hook.md) | 20 min | Talk + live demo |
-| 2 | The mindset | [session-2-the-mindset.md](session-2-the-mindset.md) | 20 min | Talk + poll |
-| 3 | How you actually do it | [session-3-how-you-do-it.md](session-3-how-you-do-it.md) | 20 min | Talk + live demo |
-| 4 | Install fest 🛠 | [session-4-install-fest.md](session-4-install-fest.md) | ~45–60 min | Hands-on clinic |
-| 5 | The recursive researcher | [session-5-recursive-researcher.md](session-5-recursive-researcher.md) | 20 min | Talk + live demo |
-| 6 | The lab & the responsibility | [session-6-the-lab.md](session-6-the-lab.md) | 20 min | Talk |
-
-**Ways to run it:** Sessions 1–3 as a ~60-min seminar · Session 4 as a standalone clinic · Sessions 5–6 as a ~40-min follow-up. Or all six in sequence with breaks.
-
-**The cardinal rule:** keep a clock visible on the talk modules (they each have a live demo or poll that wants to overrun), and **don't** clock Session 4 — let installs and per-laptop snags set its pace.
+The decks: **[slides.md](slides.md)** (main) · **[install-fest.md](install-fest.md)** · **[recursive-research.md](recursive-research.md)**. Syllabus in [COURSE.md](COURSE.md).
 
 ---
 
-## Session 1 — The hook (20 min)
+## Run of show
+
+| Order | Block | Deck | ~min | Mode |
+|-------|-------|------|------|------|
+| 1 | Why it matters | slides.md | 5 | Talk + cold demo |
+| 2 | The mindset + science | slides.md | 15 | Talk + poll |
+| 3 | How you actually do it | slides.md | 10 | Talk |
+| 4 | Live demo | slides.md | 15 | Live |
+| 🛠 | **Install fest** | install-fest.md | 45–60 | Hands-on clinic |
+| 5 | Working together in a lab | slides.md | 7 | Talk |
+| 6 | Safety & ethics | slides.md | 5 | Talk |
+| ＋ | The recursive researcher | recursive-research.md | 20 | Talk + live demo *(add-on)* |
+
+**Ways to run it:** the main hour (modules 1–6) as a seminar · the **install fest right after the demo** as its own clinic · the **recursive researcher** as a follow-up once people have a repo.
+
+**The cardinal rule:** keep a clock on the talk modules (the demo and poll want to overrun), and **don't** clock the install fest — installs and per-laptop snags set its pace.
+
+---
+
+## Module 1 — Why it matters (the hook)
 
 **Objective:** make the value undeniable, and make them want Session 2. *Protect the energy here — don't front-load caveats.*
 
@@ -42,7 +44,7 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 
 ---
 
-## Session 2 — The mindset (20 min)
+## Module 2 — The mindset
 
 **Objective:** why directing an AI is not just *faster typing*. This is the conceptual core.
 
@@ -64,7 +66,7 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 
 ---
 
-## Session 3 — How you actually do it (20 min)
+## Modules 3–4 — How you do it + the live demo
 
 **Objective:** the practical loop — and a live demo where the AI is caught being confidently wrong.
 
@@ -85,9 +87,9 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 
 ---
 
-## Session 4 — Install fest 🛠 (~45–60 min, hands-on)
+## 🛠 Install fest — add-on clinic *(run it right after the demo)*
 
-**Objective:** everyone leaves with a working setup — VS Code + Git + Claude Code, a code + LaTeX monorepo (data untracked), Overleaf → local LaTeX, Zotero → a live `.bib`. Follow [session-4-install-fest.md](session-4-install-fest.md) step by step.
+**Objective:** everyone leaves with a working setup — VS Code + Git + Claude Code, a code + LaTeX monorepo (data untracked), Overleaf → local LaTeX (with **GitHub sync** so co-authors stay in Overleaf), Zotero → a live `.bib`. Follow [install-fest.md](install-fest.md) step by step.
 
 **This is a clinic, not a lecture. Don't compress it to a slot** — installs and per-laptop snags set the pace. Run it as:
 - **Pre-flight (send ahead, days before):** create GitHub + Anthropic accounts; **pre-download a LaTeX distribution** (MacTeX/MiKTeX/TeX Live, ≈4 GB).
@@ -99,7 +101,7 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 
 ---
 
-## Session 5 — The recursive researcher (20 min)
+## ＋ The recursive researcher — add-on module *(follow-up)*
 
 **Objective:** show the payoff that sells the whole approach — and frame *a paper as software*.
 
@@ -115,7 +117,7 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 
 ---
 
-## Session 6 — The lab & the responsibility (20 min)
+## Modules 5–6 — The lab & safety
 
 **Objective:** make it work for a team, safely, and close the course.
 
@@ -149,4 +151,4 @@ Each session is its own Marp deck. The syllabus and timing live in [COURSE.md](C
 ## Compressed options
 - **One 60-min seminar (no install):** Sessions 1 + 2 + 3, demo steps 1–3 + 5 only. Defer 4–6 to a follow-up.
 - **One 20-min lightning talk:** Session 1 only, plus the Session 5 "moment" as the closing hook.
-- **Skip the clinic:** run 1–3 and 5–6 as talks; point people to [session-4-install-fest.md](session-4-install-fest.md) to set themselves up on their own time.
+- **Skip the clinic:** run the main deck (modules 1–6) as talks; point people to [install-fest.md](install-fest.md) to set themselves up on their own time.

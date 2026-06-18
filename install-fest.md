@@ -6,7 +6,7 @@ header: 'Vibe Coding for Scientists'
 footer: 'CC BY-NC 4.0 · Thomas Maillart'
 ---
 
-<!-- Render with Marp: `marp session-4-install-fest.md`. Session 4 of 6 — see COURSE.md. -->
+<!-- Render with Marp: `marp install-fest.md`. An add-on hands-on module — see COURSE.md. -->
 <!-- This is a HANDS-ON deck: people follow along on their laptops. Go slow, leave commands on screen. -->
 
 <style>
@@ -18,13 +18,13 @@ section::after {
 section pre { font-size: 0.78em; }
 </style>
 
-# Session 4 · Install Fest 🛠
+# Install Fest 🛠
 
 ### One repo. One editor. The AI inside it.
 
 From **scattered tools** → a single VS Code workspace where the AI sees your **code, your paper, and your data.**
 
-> The other modules are 20 min. **This one takes the time it needs** — budget **~45–60 min** hands-on, with an optional break after Move 2.
+> A **hands-on clinic** — budget **~45–60 min**, with an optional break after Move 2. Don't rush it to fit a slot.
 
 <!-- Speaker: this is a clinic, not a lecture. Everyone leaves with a working setup. Pair people up: no one debugs alone. Don't rush it to fit a slot — installs and per-laptop snags set the pace. -->
 
@@ -258,7 +258,7 @@ Your LaTeX install from pre-flight should be done by now.
 
 # Step 7b — Bring your Overleaf project over
 
-You don't lose Overleaf — you **move the source into the repo.**
+You don't lose Overleaf — you **pull the source into the repo.**
 
 ```bash
 # Overleaf (premium): Menu → Git → copy the URL
@@ -267,10 +267,25 @@ git clone https://git.overleaf.com/<project-id> paper
 # Free plan: Menu → Download → Source (.zip), unzip into paper/
 ```
 
-- **Keep collaborating on Overleaf if you must** — its git bridge can sync both ways.
 - The win: the **AI can now read and edit your manuscript** alongside the code.
+- Working solo? You're done — edit in VS Code, compile locally.
 
-> Co-authors on Overleaf? Sync via git for now. Move them over when *they're* ready.
+> Co-authors who won't leave Overleaf? Don't fight it — **keep it synced** (next slide).
+
+---
+
+# Step 7c — Keep co-authors in Overleaf (sync via GitHub)
+
+The real-world fix for resistance: **Overleaf and your repo stay in sync.**
+
+1. In Overleaf: **Menu → GitHub → Link to GitHub** → creates/links a GitHub repo for the paper.
+2. Your monorepo's `paper/` tracks that repo (clone it there, or add it as a submodule).
+3. **The loop:** co-authors edit in Overleaf → *Sync → GitHub* (push). You **pull** in VS Code, let the agent work, **commit & push** → they *Sync* to pull your changes back.
+
+- No premium GitHub Sync? The **Git bridge** (`git.overleaf.com/<id>`) gives the same push/pull with plain `git`.
+- ⚠️ Sync is **manual on Overleaf's side** and can conflict — agree on who edits what, push often, keep the `.tex` plain.
+
+> Everyone keeps their tool. One synced manuscript the **AI can edit too.**
 
 ---
 
@@ -426,8 +441,8 @@ Pick one real project this week and move it in.
 
 <!-- _class: lead -->
 
-# Next · Session 5
+# Next → The Recursive Researcher
 
-### The recursive researcher — one change, propagated
+### One change, propagated *(see `recursive-research.md`)*
 
 Now that everything lives in one repo, watch the agent maintain a *paper* like code.
