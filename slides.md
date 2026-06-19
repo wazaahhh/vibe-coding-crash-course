@@ -67,6 +67,16 @@ Your job becomes **intent · judgment · verification** — not syntax.
 
 ---
 
+# A 1,000-year-old job description
+
+> "The duty of the man who investigates the writings of scientists … is to **make himself an enemy of all that he reads**, and … **attack it from every side.** He should also **suspect himself** as he performs his critical examination."
+>
+> — **Ibn al-Haytham (Alhazen)**, *Doubts Concerning Ptolemy*, c. 1028
+
+Swap *"the writings of scientists"* for *"the model's output."* Directing an AI demands the **exact discipline science already taught you.**
+
+---
+
 # The first six modules
 
 These are the **first six modules** — more are on the way.
@@ -196,6 +206,20 @@ The four pillars are the disciplines that make the new loop safe.
 - Prototype to throw away. Fork, branch, experiment, delete.
 - Failure costs **minutes, not a day** → failure becomes the **unit of search.**
 - Keep prototypes disposable and version-controlled. Git is your safety net.
+
+---
+
+# The loop you already know — it's *science*
+
+Divergence (Pillar 1) + try-and-fail (Pillar 4) aren't new disciplines — they're the **scientific method**, applied to code.
+
+- **Many perspectives, not one answer** — you trust a result because you've *probed the problem from several angles*, not because the first output looked clean.
+- **Validation by elimination** — confidence comes from **exhausting the null hypotheses**: the rival explanations you tried to kill and couldn't.
+- Generation is cheap → you can finally *run* that search — more probes, more refutations, in less time.
+
+> You don't validate by believing the model. You validate the way you always have — **by failing to disprove it.**
+
+<small>*Older than any of this: Ibn al-Haytham, <strong>Book of Optics</strong> (c. 1021) — doubt and experiment as the test of truth; Francis Bacon, <strong>Novum Organum</strong> (1620) — validation by eliminating rivals.*</small>
 
 ---
 
@@ -552,6 +576,9 @@ For when you fork the repo and want to go deeper.
 
 # Sources
 
+- Ibn al-Haytham (Alhazen) (c. 1021). *Book of Optics* (Kitāb al-Manāẓir). — early experimental method: systematic doubt + testing.
+- Ibn al-Haytham (Alhazen) (c. 1028). *Doubts Concerning Ptolemy* (Al-Shukūk ʿalā Baṭlamyūs). — "make himself an enemy of all that he reads … suspect himself."
+- Bacon, F. (1620). *Novum Organum.* — eliminative induction: validation by ruling out rival explanations.
 - Kahneman, D. (2011). *Thinking, Fast and Slow.* Farrar, Straus &amp; Giroux.
 - Parasuraman, R. &amp; Manzey, D. (2010). Complacency and bias in human use of automation. *Human Factors*, 52(3).
 - Rozenblit, L. &amp; Keil, F. (2002). The misunderstood limits of folk science: an illusion of explanatory depth. *Cognitive Science*, 26(5).
