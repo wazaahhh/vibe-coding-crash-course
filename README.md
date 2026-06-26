@@ -17,19 +17,19 @@ Scientists (grad students → PIs) who code a little (usually Python/R in notebo
 | 5 | **Working together in a lab** — review, standards, rhythm | 7 |
 | 6 | **Safety & ethics** | 5 |
 
-## Add-on modules (standalone decks)
-- 🛠 **[install-fest.md](install-fest.md)** — hands-on migration from ChatGPT/Claude web + Overleaf + Zotero to Claude Code in VS Code, with a code + LaTeX monorepo (data untracked). Runs as a ~45–60 min clinic.
-- **[recursive-research.md](recursive-research.md)** — change one result and propagate it through tables, figures, abstract, and Supplementary Materials — why a paper is software.
+Two hands-on **install fests** are interleaved with the talk modules: **🛠 Code** (after the demo) and **🖋 Manuscript — Overleaf → VS Code + GitHub** (the final module).
 
 → Full syllabus and prep in **[COURSE.md](COURSE.md)**.
 
 ## What's in here
 - **[COURSE.md](COURSE.md)** — the syllabus: modules, objectives, and how the decks fit together. *Start here to plan.*
 - **[facilitator-guide.md](facilitator-guide.md)** — run-of-show: timings, talking points, the demo script, and compressed options. *Start here to teach.*
-- **[slides.md](slides.md)** — the main course deck (Marp markdown). Render with `marp slides.md` or the VS Code Marp extension.
-- **Add-on decks:** **[install-fest.md](install-fest.md)** · **[recursive-research.md](recursive-research.md)**.
+- **[modules/](modules/)** — the deck **source**, one Markdown file per module. *Edit these.*
+- **[build.sh](build.sh)** — assembles the module files into **`slides.md`**. Run `./build.sh`, then `marp slides.md`.
+- **[slides.md](slides.md)** — the full deck, **generated** from `modules/` (don't hand-edit; rebuild instead).
 - **[handout.md](handout.md)** — one-page participant cheat-sheet (print or share).
 - **[demo/](demo/)** — the forkable hands-on: a deliberately-messy dataset, a generator, and a starter notebook.
+- *Legacy standalone decks (now folded into the modules):* `install-fest.md`, `recursive-research.md`.
 
 ## To run the session
 1. Read [facilitator-guide.md](facilitator-guide.md).
