@@ -1,65 +1,73 @@
 # Vibe Coding for Scientists — Course Outline
 
-A ~60-minute **main deck** of six modules, plus two deeper **add-on modules**
-(more on the way). It moves working scientists from *writing* code to *directing*
-it — and shows how to catch the confident-but-wrong result.
+A ~75-minute course: six talk modules plus two hands-on **install fests**
+(🛠 Code, 🖋 Manuscript). It moves working scientists from *writing* code to
+*directing* it — and shows how to catch the confident-but-wrong result.
+
+The deck is **assembled from per-module files**: edit [modules/](modules/), run
+`./build.sh`, then `marp slides.md`. One file = one module.
 
 Run it however fits your group:
-- **The main hour** — [slides.md](slides.md), modules 1–6 (~60 min, demo-centric).
-- **Install clinic** — [install-fest.md](install-fest.md), a hands-on setup that
-  **takes the time it needs** (~45–60 min). Run it right after the demo.
-- **Deep dive** — [recursive-research.md](recursive-research.md), the "a paper is
-  software" module (~20 min). Slot it after the install fest and before the lab
-  module, while everyone has a fresh repo open.
+- **The main hour** — modules 1–6 as a seminar (~60 min, demo-centric).
+- **Install fest · Code** — right after the live demo; a hands-on clinic that
+  **takes the time it needs** (~30–45 min). Don't rush it to a slot.
+- **Install fest · Manuscript** — the final module (~30–45 min): Overleaf → VS
+  Code + GitHub, so the paper joins the repo and the agent can help maintain it.
 
 ## Who it's for
 Scientists (grad students → PIs) who code a little (usually Python/R in notebooks)
 and treat code as a means to an answer, not a craft.
 
-## The main deck — [slides.md](slides.md)
+## Running order
 
-| # | Module | Goal | ~min |
-|---|--------|------|------|
-| 1 | Why it matters | Make the value undeniable | 5 |
-| 2 | The mindset + the science | The disciplines that keep the new loop safe | 15 |
-| 3 | How you actually do it | Modes (chat vs. agent) + how to prompt | 10 |
-| 4 | Live demo | Direct a real analysis; catch the plausible-but-wrong | 15 |
-| 5 | Working together in a lab | Review, shared standards, rhythm | 7 |
-| 6 | Safety & ethics | Confidentiality, provenance, disclosure, atrophy | 5 |
+| Order | Module | Source | ~min |
+|-------|--------|--------|------|
+| — | Intro · thesis · learning objectives | [00-intro.md](modules/00-intro.md) | 3 |
+| 1 | Why it matters | [01-why-it-matters.md](modules/01-why-it-matters.md) | 5 |
+| 2 | The mindset + the science | [02-the-mindset.md](modules/02-the-mindset.md) | 15 |
+| 3 | How you actually do it (modes · prompting) | [03-how-you-do-it.md](modules/03-how-you-do-it.md) | 10 |
+| 4 | **Live demo** — a real analysis | [04-live-demo.md](modules/04-live-demo.md) | 15 |
+| 🛠 | **Install fest · Code** — repo + agent | [05-install-fest-code.md](modules/05-install-fest-code.md) | 30–45 |
+| 5 | Working together in a lab | [06-working-in-a-lab.md](modules/06-working-in-a-lab.md) | 7 |
+| 6 | Safety & ethics | [07-safety-ethics.md](modules/07-safety-ethics.md) | 5 |
+| 🖋 | **Install fest · Manuscript** — Overleaf → VS Code/GitHub | [08-install-fest-manuscript.md](modules/08-install-fest-manuscript.md) | 30–45 |
+| — | Director, not author · further reading · sources | [09-close.md](modules/09-close.md) | 3 |
 
 **Learning objectives.** By the end, participants can: understand *why & how* to
 vibe code in science (author→director, the four pillars, the cognitive science);
 use vibe coding for a real **data-science** analysis end to end; and use it for
 **manuscript writing** while keeping their own voice and the claims their name depends on.
 
-## Add-on modules
+## The two install fests
 
-### 🛠 Install fest — [install-fest.md](install-fest.md) *(hands-on, ~45–60 min)*
-Everyone leaves with a working setup: VS Code + Git + Claude Code · a code + LaTeX
-monorepo (data untracked) · Overleaf → local LaTeX · Zotero → a live `.bib` ·
-`CLAUDE.md` · first in-repo loop · push to GitHub. Optional break after Move 2.
-**Don't compress it** — installs (LaTeX ≈ 4 GB) and per-laptop debugging set the pace.
-**Pre-flight (send ahead):** GitHub + Anthropic accounts; pre-download a LaTeX distribution.
+### 🛠 Install fest · Code *(after the demo, ~30–45 min)*
+Everyone leaves with a working analysis setup: VS Code + Git + Claude Code · a
+**code + data monorepo** (data untracked) · `CLAUDE.md` · first in-repo loop · push to GitHub.
+**Pre-flight (send ahead):** GitHub + AI-tool accounts.
 
-### The recursive researcher — [recursive-research.md](recursive-research.md) *(~20 min)*
-Change one result → the agent re-runs the regression and propagates through tables,
-figures, the abstract, and the Supplementary Materials. Why this *is* software
-engineering (a paper is a dependency graph; a new result is a refactor) · why LLM
-tooling was optimized for code first · how to make your paper "buildable" (computed
-numbers, reproducible build, consistency checks) · review every diff.
+### 🖋 Install fest · Manuscript *(the final module, ~30–45 min)*
+The paper joins the repo: **LaTeX in VS Code** · **Overleaf ↔ GitHub sync** (co-authors
+stay in Overleaf) · **Zotero → a live `.bib`** · the agent can draft, revise, and keep
+numbers consistent (a paper is software — propagate · diff · review · rebuild).
+**Pre-flight:** pre-download a LaTeX distribution (~4 GB). Don't compress it — installs set the pace.
+
+## Discussion questions
+Each module ends with an open question (collected in [notes/](notes/)) — use them as
+think-pair-share or whole-room prompts. They are the natural seeds for the next modules.
 
 ## Materials map
-- **[COURSE.md](COURSE.md)** — this outline.
-- **[slides.md](slides.md)** — the main course deck (modules 1–6).
-- **[install-fest.md](install-fest.md)** — the hands-on setup clinic.
-- **[recursive-research.md](recursive-research.md)** — the propagation deep-dive.
+- **[modules/](modules/)** — the deck source, one file per module. *Edit these.*
+- **[build.sh](build.sh)** — assembles `modules/` → `slides.md`. Run it, then `marp slides.md`.
+- **[slides.md](slides.md)** — the full deck, **generated** (don't hand-edit).
 - **[facilitator-guide.md](facilitator-guide.md)** — run-of-show, talking points, demo script.
 - **[handout.md](handout.md)** — one-page participant cheat-sheet.
 - **[RESOURCES.md](RESOURCES.md)** — annotated reading list.
+- **[notes/](notes/)** — the per-module discussion questions (free-form scratch space).
 - **[demo/](demo/)** — the forkable hands-on dataset and starter notebook.
 
 ## Facilitator notes
 - **Module 1 must excite.** Lead with a live demo and the end-state vision; keep the
   caveats for module 2. If they're not leaning forward, slow down on the demo.
-- **The install clinic will run long.** Treat it as a clinic, not a lecture. No one debugs alone.
-- **The recursive module lands hardest with a real repo.** If you can, propagate a change live.
+- **The install fests will run long.** Treat them as clinics, not lectures. No one debugs alone.
+- **The manuscript fest lands hardest with a real repo + a paper.** If you can, propagate a change live.
+- To change a slide, edit its module file and rerun `./build.sh` — never hand-edit `slides.md`.

@@ -29,7 +29,6 @@ Two hands-on **install fests** are interleaved with the talk modules: **🛠 Cod
 - **[slides.md](slides.md)** — the full deck, **generated** from `modules/` (don't hand-edit; rebuild instead).
 - **[handout.md](handout.md)** — one-page participant cheat-sheet (print or share).
 - **[demo/](demo/)** — the forkable hands-on: a deliberately-messy dataset, a generator, and a starter notebook.
-- *Legacy standalone decks (now folded into the modules):* `install-fest.md`, `recursive-research.md`.
 
 ## To run the session
 1. Read [facilitator-guide.md](facilitator-guide.md).
