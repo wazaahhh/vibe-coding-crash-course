@@ -1,6 +1,6 @@
 # Vibe Coding for Scientists — Facilitator Guide
 
-**Format:** six talk modules + two hands-on **install fests** (🛠 Code, 🖋 Manuscript). Tool-agnostic, demo-heavy.
+**Format:** eight talk modules + two hands-on **install fests** (🛠 Code, 🖋 Manuscript). Tool-agnostic, demo-heavy.
 **Audience:** Working scientists (grad students → PIs) who already code a little — typically Python/R in notebooks — and treat code as a means to an end, not a craft.
 **Goal:** Shift mindset, not just show a tool. Participants leave able to *direct* an AI to write working analysis code, *and* able to catch it when it's confidently wrong.
 
@@ -19,13 +19,15 @@ The deck is **built from per-module files**: edit [modules/](modules/), run `./b
 | 2 | The mindset + science | `02-the-mindset` | 15 | Talk + poll |
 | 3 | How you actually do it | `03-how-you-do-it` | 10 | Talk |
 | 4 | Live demo | `04-live-demo` | 15 | Live |
-| 🛠 | **Install fest · Code** | `05-install-fest-code` | 30–45 | Hands-on clinic |
-| 5 | Working together in a lab | `06-working-in-a-lab` | 7 | Talk |
-| 6 | Safety & ethics | `07-safety-ethics` | 5 | Talk |
-| 🖋 | **Install fest · Manuscript** | `08-install-fest-manuscript` | 30–45 | Hands-on clinic |
-| — | Director, not author · close | `09-close` | 3 | Talk |
+| 5 | Git & GitHub — the safety net | `05-git-github` | 8 | Talk |
+| 6 | Edit modes, models & prompting | `06-edit-modes-models` | 8 | Talk |
+| 🛠 | **Install fest · Code** | `07-install-fest-code` | 30–45 | Hands-on clinic |
+| 7 | Working together in a lab | `08-working-in-a-lab` | 7 | Talk |
+| 8 | Safety & ethics | `09-safety-ethics` | 5 | Talk |
+| 🖋 | **Install fest · Manuscript** | `10-install-fest-manuscript` | 30–45 | Hands-on clinic |
+| — | Director, not author · close | `11-close` | 3 | Talk |
 
-**Ways to run it:** the main hour (modules 1–6) as a seminar · **Install fest · Code right after the demo** · **Install fest · Manuscript as the finale** (the paper joins the repo) · or split the two clinics into their own sittings.
+**Ways to run it:** the main hour (modules 1–8) as a seminar · **Install fest · Code right after the demo** · **Install fest · Manuscript as the finale** (the paper joins the repo) · or split the two clinics into their own sittings.
 
 **The cardinal rule:** keep a clock on the talk modules (the demo and poll want to overrun), and **don't** clock the install fests — installs and per-laptop snags set the pace.
 
@@ -84,9 +86,36 @@ The deck is **built from per-module files**: edit [modules/](modules/), run `./b
 
 ---
 
+## Module 5 — Git & GitHub (the safety net)
+
+**Objective:** make version control feel like *freedom*, not bureaucracy — it's what makes cheap, fearless experimentation (Pillar 4) actually safe. Callback to the demo: *"the AI was confidently wrong 90 seconds ago — git is how you survive that."*
+
+- **Local git vs. GitHub — keep them distinct.** Local git = a time machine for one folder (offline, private, no account); GitHub = the cloud copy for **backup + sharing + review**. You can run git with no GitHub at all — you just lose backup and collaboration.
+- **The loop *is* the git loop:** prompt → `git status` / `git diff` (the review checkpoint) → `commit` if good, `git restore` if not. Hammer *"commit before a big prompt."*
+- **Branches** make the risky prompt cheap: `git switch -c try-x`, let it rip, keep it or delete it — `main` stays known-good.
+- **Private vs. public:** default **private** for live research; go **public deliberately at publication**. Public is permanent — a secret or dataset can be cloned before you delete it. (Data itself still stays out of git — that's the install fest.)
+- **Connecting the agent:** `gh auth login` once; the agent then runs `git`/`gh` for you (commit, push, open a PR) — but **you review the diff and you merge.** Never auto-push to `main`.
+
+End on the discussion question (*what's a good commit-sized change?*).
+
+---
+
+## Module 6 — Edit modes, models & steering the prompt
+
+**Objective:** the "driver's ed" module — the three dials that decide how much rope the AI gets. Tool-agnostic; Claude Code / Cursor / Copilot all have these, named differently.
+
+- **Dial 1 — edit mode:** ask/chat (touches nothing) · edit/inline (you accept each diff — the default for work that matters) · agent/auto (edits & runs across files) · plan-first. **Auto-accept is Pillar 2 switched off** — only safe on a throwaway branch, *because git makes it reversible* (explicit callback to Module 5).
+- **Dial 2 — model:** frontier/"thinking" models for hard reasoning (stats, subtle bugs, design); fast/small models for boilerplate. Escalate when it's stuck; don't pay a frontier model to rename a variable. Bigger context window = holds more of your repo at once.
+- **Dial 3 — steering:** plan before code, **interrupt the moment it drifts** (don't wait for 300 lines), correct with specifics, feed back tracebacks, manage/clear stale context, small steps. *A drifting agent rarely self-corrects — stop it and re-aim.*
+- Land the synthesis slide: **right mode, right model, hand on the wheel.**
+
+End on the discussion question (*which dial was wrong on your last task?*).
+
+---
+
 ## 🛠 Install fest · Code — clinic *(right after the demo)*
 
-**Objective:** everyone leaves with a working analysis setup — VS Code + Git + Claude Code, a **code + data monorepo** (data untracked), `CLAUDE.md`, a first in-repo loop, and a push to GitHub. Follow `modules/05-install-fest-code.md`.
+**Objective:** everyone leaves with a working analysis setup — VS Code + Git + Claude Code, a **code + data monorepo** (data untracked), `CLAUDE.md`, a first in-repo loop, and a push to GitHub. Follow `modules/07-install-fest-code.md`.
 
 **This is a clinic, not a lecture. Don't compress it to a slot.**
 - **Pre-flight (send ahead):** GitHub + AI-tool accounts.
@@ -97,7 +126,7 @@ The paper deliberately waits — `paper/` is added in the **Manuscript** install
 
 ---
 
-## Module 5 — Working together in a lab
+## Module 7 — Working together in a lab
 
 **Objective:** make it work for a team. The scarce resources shift to **review, standards, and rhythm.**
 1. **Peer review matters *more*** — no AI-generated analysis reaches a paper without a second human reading the *reasoning and checks*.
@@ -111,7 +140,7 @@ The one-liner: **peer review matters more, not less** — the failure mode is un
 
 ---
 
-## Module 6 — Safety & ethics
+## Module 8 — Safety & ethics
 
 **Objective:** the professional duties; your name is on the paper. Five rules:
 1. **Data confidentiality** — never paste patient/unpublished/embargoed data into uncleared cloud tools.
@@ -126,7 +155,7 @@ The one-liner: **peer review matters more, not less** — the failure mode is un
 
 ## 🖋 Install fest · Manuscript — clinic *(the finale)*
 
-**Objective:** the paper joins the repo, so the agent can help write and maintain it. Follow `modules/08-install-fest-manuscript.md`: add `paper/`, **LaTeX in VS Code** (LaTeX Workshop), **Overleaf ↔ GitHub sync** so co-authors stay put, **Zotero → a live `.bib`**.
+**Objective:** the paper joins the repo, so the agent can help write and maintain it. Follow `modules/10-install-fest-manuscript.md`: add `paper/`, **LaTeX in VS Code** (LaTeX Workshop), **Overleaf ↔ GitHub sync** so co-authors stay put, **Zotero → a live `.bib`**.
 
 **Pre-flight:** pre-download a LaTeX distribution (MacTeX/MiKTeX/TeX Live, ≈4 GB) — kick the install off first thing.
 
@@ -134,7 +163,7 @@ The one-liner: **peer review matters more, not less** — the failure mode is un
 
 **If you can, demo it live** on a small prepared paper-repo: change one input, ask the agent to propagate, show the diff. No repo handy? Walk the prompt and diff conceptually.
 
-**Close** (`09-close`): repeat the thesis — *"Director, not author. The AI brings speed and breadth; you bring the question, the judgment, the responsibility. Go practice it on something low-stakes this week."* Point to [RESOURCES.md](RESOURCES.md).
+**Close** (`11-close`): repeat the thesis — *"Director, not author. The AI brings speed and breadth; you bring the question, the judgment, the responsibility. Go practice it on something low-stakes this week."* Point to [RESOURCES.md](RESOURCES.md).
 
 ---
 
@@ -146,6 +175,6 @@ The one-liner: **peer review matters more, not less** — the failure mode is un
 - [ ] **Install fest · Manuscript:** LaTeX distribution pre-downloaded; ideally a small paper-repo ready to propagate a change live.
 
 ## Compressed options
-- **One 60-min seminar (no installs):** modules 1–6, demo steps 1–3 + 5 only; point people to the two install fests to set themselves up on their own time.
+- **One 60-min seminar (no installs):** modules 1–8, demo steps 1–3 + 5 only; point people to the two install fests to set themselves up on their own time.
 - **One 20-min lightning talk:** opening + module 1, plus the **manuscript "paper is software" moment** as the closing hook.
 - **Clinics as their own sittings:** run Install fest · Code and Install fest · Manuscript as standalone hands-on sessions once people have seen the talks.

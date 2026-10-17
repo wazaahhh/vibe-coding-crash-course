@@ -1,6 +1,6 @@
 <!-- _class: lead -->
 
-# 6 · Safety &amp; ethics
+# 8 · Safety &amp; ethics
 
 ### Your name is on the paper
 
@@ -15,10 +15,12 @@
 - **02 · The mindset** — four pillars; you are System 2.
 - **03 · How you actually do it** — chat vs. agent; intent is the lever.
 - **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; commit, diff, revert.
+- **06 · Edit modes &amp; models** — the controls; hand on the wheel.
 - **🛠 · Install fest · Code** — one repo, the agent inside it.
-- **05 · Working in a lab** — review, standards, rhythm.
+- **07 · Working in a lab** — review, standards, rhythm.
 
-**This module · 06 — Safety &amp; ethics**
+**This module · 08 — Safety &amp; ethics**
 - **Five non-negotiable rules** · what to **start Monday**
 
 ---
@@ -47,7 +49,7 @@ Pick **one** low-stakes thing.
 
 # End of Module 6 — recap, discussion &amp; support
 
-**Module 06 recap — Safety &amp; ethics**
+**Module 08 recap — Safety &amp; ethics**
 - **Five rules** — confidentiality, provenance, correctness, disclosure, skill.
 - **Start Monday**, low stakes.
 - Correctness is yours — **your name is on the paper**.

@@ -13,7 +13,7 @@
 # Where we've been — and what's next
 
 **Covered so far**
-- **01–06** — why, mindset, doing it, the demo, the lab, safety.
+- **01–08** — why, mindset, doing it, the demo, git, the controls, the lab, safety.
 - **🛠 · Install fest · Code** — code &amp; data in one repo.
 
 **This module · 🖋 Install fest · Manuscript**

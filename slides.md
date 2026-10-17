@@ -15,7 +15,7 @@ section pre { font-size: 0.72em; }
 
 # Vibe Coding for Scientists
 
-### A crash course · the first six modules
+### A crash course · the first eight modules
 
 From *writing* code to *directing* it.
 
@@ -25,9 +25,9 @@ From *writing* code to *directing* it.
 
 ---
 
-# The first six modules
+# The first eight modules
 
-These are the **first six modules** — more are on the way.
+These are the **first eight modules** — more are on the way.
 
 | # | Module | ~min |
 |---|---|---|
@@ -35,8 +35,10 @@ These are the **first six modules** — more are on the way.
 | 2 | The mindset + the science | 15 |
 | 3 | How you actually do it (modes · prompting) | 10 |
 | 4 | **Live demo** — a real analysis | 15 |
-| 5 | Working together in a lab | 7 |
-| 6 | Safety &amp; ethics | 5 |
+| 5 | Git &amp; GitHub — the safety net | 8 |
+| 6 | Edit modes, models &amp; prompting | 8 |
+| 7 | Working together in a lab | 7 |
+| 8 | Safety &amp; ethics | 5 |
 
 <!-- Speaker: a map, not content. The demo is the centre of gravity; protect its 15 min. Two hands-on install fests (code · manuscript) sit between and after the talk modules. -->
 
@@ -440,6 +442,275 @@ Dropping them would throw away real plants and bias the estimate. The fix is **d
 
 <!-- _class: lead -->
 
+# 5 · Git &amp; GitHub — your safety net
+
+### When the AI edits your files fast, version control is what lets you say *undo*
+
+★ Support this course → `github.com/wazaahhh/vibe-coding-crash-course`
+
+<!-- Speaker: this is the conceptual bridge into the install fest. Frame git as the thing that makes vibe coding SAFE, not as bureaucracy. The demo (04) just showed the AI being confidently wrong — git is how you survive that. -->
+
+---
+
+# Where we've been — and what's next
+
+**Covered so far**
+- **01 · Why it matters** — author → director.
+- **02 · The mindset** — four pillars; you are System 2.
+- **03 · How you actually do it** — chat vs. agent; intent is the lever.
+- **04 · Live demo** — we caught the bug the AI missed.
+
+**This module · 05 — Git &amp; GitHub**
+- **Local git** vs. **GitHub** — two different jobs
+- Why version control is **non-negotiable** when an AI edits your code
+- **Private vs. public**, and **connecting the agent to GitHub**
+
+---
+
+# The problem vibe coding creates
+
+An agent can edit **ten files in thirty seconds** — confidently, and sometimes wrong (you just watched it).
+
+- Without a safety net, a bad edit **silently overwrites** work that ran yesterday.
+- "Undo" in your editor won't save you across many files, runs, and sessions.
+- You need a **known-good state** you can always return to — and a **record** of what changed, when, and why.
+
+> Generation got cheap (**Pillar 4: try &amp; fail**). Cheap experiments are only safe if failure is **reversible.** That's git.
+
+---
+
+# Local git vs. GitHub — two different jobs
+
+| **Local git** (on your laptop) | **GitHub** (in the cloud) |
+|---|---|
+| A **time machine** for one folder | A **backup + sharing** copy of it |
+| Save points (**commits**) you can revert to | Off-machine copy — laptop dies, work survives |
+| Works fully **offline**, no account | Needs an account; you **push** / **pull** to sync |
+| *Your* history, private by default | **Collaboration** — co-authors, PRs, review |
+
+> **Local git protects you from yourself. GitHub protects you from the world** (and shares with your lab).
+
+You can use git **with no GitHub at all** — but you lose backup and collaboration.
+
+---
+
+# The one loop that makes it safe
+
+The vibe-coding loop **is** the git loop:
+
+```bash
+# 1. AI makes a change (you prompt; it edits files)
+git status                 # what did it touch?
+git diff                   # read EXACTLY what changed  ← System 2 checkpoint
+# 2. Good? snapshot it.       Bad? throw it away.
+git add -A && git commit -m "clean units, fix mm rows"
+git restore .              # <- the undo button: back to last commit
+```
+
+- `git diff` is **how you review the AI's work** — the diff is the PR from your overconfident intern.
+- Every commit is a **save point** you can return to with `git restore` / `git revert`.
+
+> **Commit early, commit often.** A commit before a big prompt = a guaranteed way back.
+
+---
+
+# Branches — try the risky thing safely
+
+Want the AI to attempt a big refactor or a second analysis path? Do it on a **branch.**
+
+```bash
+git switch -c try-mixed-model    # a parallel sandbox
+#  ... let the agent go wild; test the result ...
+git switch main                  # untouched, still works
+git merge try-mixed-model        # keep it — or just delete the branch
+```
+
+- `main` stays **known-good** while you experiment.
+- Bad experiment? **Delete the branch** — zero trace, zero regret.
+
+> Branches turn "I hope this doesn't break everything" into "let's just try it."
+
+---
+
+# Private vs. public — choose per repo
+
+GitHub repos are **private by default here — and that's the right default for research.**
+
+| **Private** | **Public** |
+|---|---|
+| Only you + invited collaborators | Anyone can read (and fork) |
+| Unpublished results, sensitive work | Published methods, open source, teaching |
+| **Start here** while the work is live | Flip to public **at publication** for reproducibility |
+
+- You can **start private and go public later** — one click. The reverse leaks.
+- ⚠️ **Public = permanent.** A secret or dataset pushed public may be **cloned/indexed before you delete it**. Assume it's out there.
+- **Data still stays out of git** (Install fest · Code) — public/private governs the *code*, not permission to upload private data.
+
+> Default **private**. Go public **deliberately**, at publication, after checking what's in the history.
+
+---
+
+# Connect the AI agent to GitHub
+
+Let the agent do the git/GitHub plumbing for you — through the **`gh` CLI** it can run:
+
+```bash
+gh auth login            # one-time: authorize gh in your browser (HTTPS + token)
+#   the agent can now run git & gh on your behalf:
+#   "commit this with a sensible message, push, and open a PR"
+```
+
+- **How it connects:** `gh auth login` stores a **token** locally; the agent calls `git`/`gh` like any command — no password typing.
+- The agent can **commit, push, open pull requests, read CI logs** — you still **review the diff** before it lands.
+- **GitHub MCP** (advanced) lets the agent read issues/PRs directly. Same rule: **grant the least it needs.**
+
+> ⚠️ Authorize on **your** machine, scope tokens tight, and **never** let auto-accept push to `main` unreviewed. The agent drafts; **you merge.**
+
+---
+
+# End of Module 5 — recap, discussion &amp; support
+
+**Module 05 recap — Git &amp; GitHub**
+- **Local git** = your time machine / undo; **GitHub** = backup, sharing, review.
+- The vibe loop *is* the git loop: **prompt → `git diff` → commit or restore.** Branches make risk cheap.
+- **Private by default**, public at publication; the agent can drive git/GitHub via `gh` — **you review, you merge.**
+
+**Open question — let's discuss:** *If every AI edit is a commit you review, what should a "good" commit-sized change look like — and how small is too small?*
+
+★ Support this course → `github.com/wazaahhh/vibe-coding-crash-course`
+
+
+---
+
+<!-- _class: lead -->
+
+# 6 · Edit modes, models &amp; steering the prompt
+
+### Same agent, very different behaviour — learn the controls
+
+★ Support this course → `github.com/wazaahhh/vibe-coding-crash-course`
+
+<!-- Speaker: this is the "driver's ed" module — the knobs that decide how much rope you give the AI. Tool-agnostic: Claude Code / Cursor / Copilot all have these three dials, named differently. Keep it concrete. -->
+
+---
+
+# Where we've been — and what's next
+
+**Covered so far**
+- **01 · Why it matters** — author → director.
+- **02 · The mindset** — four pillars; you are System 2.
+- **03 · How you actually do it** — chat vs. agent; intent is the lever.
+- **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; the agent can drive `gh`.
+
+**This module · 06 — Edit modes, models &amp; the prompt**
+- **Edit modes** — how much rope you give it
+- **Models** — pick the right brain for the job
+- **Steering** — interact with the prompt in flight
+
+---
+
+# Three dials you control
+
+Every agentic tool (Claude Code · Cursor · Copilot) gives you the **same three knobs**, named differently:
+
+1. **Edit mode** — *may it change files, and do you approve each edit?*
+2. **Model** — *how strong (and how expensive/slow) is the brain?*
+3. **The prompt loop** — *how you steer, correct, and stop it mid-task.*
+
+> The mindset (Module 2) is the *why*. These are the **controls that put it into practice.**
+
+---
+
+# Dial 1 — edit modes: how much rope
+
+| Mode | What it does | Use when |
+|---|---|---|
+| **Ask / chat** | Answers, suggests — **touches nothing** | Exploring, learning, "what would you do?" |
+| **Edit / inline** | Proposes edits, **you accept each diff** | Real work — the **default** for results that matter |
+| **Agent / auto** | Edits, runs, self-corrects across files | Scaffolding, mechanical refactors, tests |
+| **Plan first** | Writes a plan, waits for your **OK** | Anything big or unfamiliar |
+
+⚠️ **Auto-accept ("yolo") is the danger zone** — fast, but it's **Pillar 2 switched off.** Fine on a throwaway branch; never on `main`, never on the analysis behind a claim.
+
+> Match the rope to the stakes. Low stakes → agent. Your name on it → **review every diff.**
+
+---
+
+# Edit modes + git = a seatbelt
+
+The looser the edit mode, the more you lean on **Module 5:**
+
+- **Commit before** you hand over auto/agent mode → a guaranteed way back.
+- Let it run, then **`git diff`** the whole thing → your review checkpoint.
+- Hate it? `git restore .` Love it? Commit.
+
+> **Auto-accept is only safe because git makes it reversible.** The two modules are one system.
+
+---
+
+# Dial 2 — pick the right model
+
+Models trade **capability** against **speed &amp; cost**. You choose per task.
+
+| Reach for a **frontier / "thinking"** model | Reach for a **fast / small** model |
+|---|---|
+| Tricky stats, subtle bugs, study design | Boilerplate, renaming, formatting |
+| Multi-step reasoning, "why is this wrong?" | Quick edits, obvious fixes |
+| The result **matters** | You want **speed &amp; volume** |
+
+- **Reasoning / extended-thinking** modes think longer before answering — better on hard problems, slower and pricier.
+- **Bigger context window** = it can hold more of your repo at once (whole notebook + data dictionary + paper).
+
+> Don't pay a frontier model to rename a variable — and don't ask a tiny one to design your analysis. **Escalate when it's stuck.**
+
+---
+
+# Dial 3 — steer the prompt in flight
+
+You are **in the loop**, not firing one prompt and hoping.
+
+- **Plan before code** — *"outline your approach; I'll approve, then you write it."*
+- **Interrupt &amp; redirect** — stop it the moment it drifts; don't wait for 300 lines.
+- **Correct with specifics** — *"no — use the cleaned df from Step 3, and don't drop rows."*
+- **Feed back errors** — paste the traceback; let it read and self-fix.
+- **Manage context** — point to the right files; **clear/reset** a stale thread that's gone in circles.
+- **Small steps** — one change → run → read → correct. Never accept a blind dump.
+
+> A drifting agent rarely fixes itself. **Stop it, re-aim, continue** — steering beats restarting.
+
+---
+
+# Putting the three together
+
+A worked rhythm for a real task:
+
+1. **Plan mode + frontier model** → *"plan how you'd test this; don't write code yet."*
+2. Approve the plan → **commit** the clean starting point (Module 5).
+3. **Edit mode**, small steps → accept good diffs, **`git diff`** each one.
+4. Stuck or slow? **Switch model** or **interrupt and re-aim.**
+5. Mechanical follow-ups (tests, formatting) → **agent mode** on a branch.
+
+> Right **mode**, right **model**, hand on the **wheel.** That's directing.
+
+---
+
+# End of Module 6 — recap, discussion &amp; support
+
+**Module 06 recap — Edit modes, models &amp; the prompt**
+- **Edit mode** = how much rope; **auto-accept** only safe because **git** makes it reversible.
+- **Model** = capability vs. speed/cost — escalate for hard, cheap out for boilerplate.
+- **Steer in flight** — plan first, interrupt, correct with specifics, small steps.
+
+**Open question — let's discuss:** *On your last AI-assisted task, which dial was wrong — too much rope, the wrong model, or a prompt you should have interrupted sooner?*
+
+★ Support this course → `github.com/wazaahhh/vibe-coding-crash-course`
+
+
+---
+
+<!-- _class: lead -->
+
 # 🛠 Install fest · Code — your analysis workspace
 
 ### Get the agent into a real repo — code &amp; data
@@ -457,6 +728,8 @@ Dropping them would throw away real plants and bias the estimate. The fix is **d
 - **02 · The mindset** — four pillars; you are System 2.
 - **03 · How you actually do it** — chat vs. agent; intent is the lever.
 - **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; the agent can drive `gh`.
+- **06 · Edit modes &amp; models** — the controls; hand on the wheel.
 
 **This module · 🛠 Install fest · Code**
 - **Editor + agent** — VS Code, Git, your AI tool
@@ -540,7 +813,7 @@ gh repo create my-project --private --source=. --push
 
 <!-- _class: lead -->
 
-# 5 · Working together in a lab
+# 7 · Working together in a lab
 
 ### When generation is cheap, the real work is review, standards &amp; rhythm
 
@@ -555,9 +828,11 @@ gh repo create my-project --private --source=. --push
 - **02 · The mindset** — four pillars; you are System 2.
 - **03 · How you actually do it** — chat vs. agent; intent is the lever.
 - **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; commit, diff, revert.
+- **06 · Edit modes &amp; models** — the controls; hand on the wheel.
 - **🛠 · Install fest · Code** — one repo, the agent inside it.
 
-**This module · 05 — Working together in a lab**
+**This module · 07 — Working together in a lab**
 - How a **lab works** when generation is cheap
 - Why **peer review matters more**, not less
 - Shared standards, provenance, and rhythm
@@ -585,7 +860,7 @@ When code is cheap to produce and easy to trust, the failure mode is **unreviewe
 
 # End of Module 5 — recap, discussion &amp; support
 
-**Module 05 recap — Working together in a lab**
+**Module 07 recap — Working together in a lab**
 - **Peer review matters more**, not less.
 - Shorter sprints, visible demos, pair on the prompts.
 - Shared standards &amp; **provenance**.
@@ -599,7 +874,7 @@ When code is cheap to produce and easy to trust, the failure mode is **unreviewe
 
 <!-- _class: lead -->
 
-# 6 · Safety &amp; ethics
+# 8 · Safety &amp; ethics
 
 ### Your name is on the paper
 
@@ -614,10 +889,12 @@ When code is cheap to produce and easy to trust, the failure mode is **unreviewe
 - **02 · The mindset** — four pillars; you are System 2.
 - **03 · How you actually do it** — chat vs. agent; intent is the lever.
 - **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; commit, diff, revert.
+- **06 · Edit modes &amp; models** — the controls; hand on the wheel.
 - **🛠 · Install fest · Code** — one repo, the agent inside it.
-- **05 · Working in a lab** — review, standards, rhythm.
+- **07 · Working in a lab** — review, standards, rhythm.
 
-**This module · 06 — Safety &amp; ethics**
+**This module · 08 — Safety &amp; ethics**
 - **Five non-negotiable rules** · what to **start Monday**
 
 ---
@@ -646,7 +923,7 @@ Pick **one** low-stakes thing.
 
 # End of Module 6 — recap, discussion &amp; support
 
-**Module 06 recap — Safety &amp; ethics**
+**Module 08 recap — Safety &amp; ethics**
 - **Five rules** — confidentiality, provenance, correctness, disclosure, skill.
 - **Start Monday**, low stakes.
 - Correctness is yours — **your name is on the paper**.
@@ -673,7 +950,7 @@ Pick **one** low-stakes thing.
 # Where we've been — and what's next
 
 **Covered so far**
-- **01–06** — why, mindset, doing it, the demo, the lab, safety.
+- **01–08** — why, mindset, doing it, the demo, git, the controls, the lab, safety.
 - **🛠 · Install fest · Code** — code &amp; data in one repo.
 
 **This module · 🖋 Install fest · Manuscript**
@@ -800,7 +1077,7 @@ Go practice it on something low-stakes this week.
 
 <!-- _class: lead -->
 
-# The first six modules — more are on the way.
+# The first eight modules — more are on the way.
 
 **Support the development of this course:** star it, fork it, open a pull request.
 

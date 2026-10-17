@@ -37,7 +37,7 @@ Go practice it on something low-stakes this week.
 
 <!-- _class: lead -->
 
-# The first six modules — more are on the way.
+# The first eight modules — more are on the way.
 
 **Support the development of this course:** star it, fork it, open a pull request.
 

@@ -17,6 +17,8 @@
 - **02 · The mindset** — four pillars; you are System 2.
 - **03 · How you actually do it** — chat vs. agent; intent is the lever.
 - **04 · Live demo** — we caught the bug the AI missed.
+- **05 · Git &amp; GitHub** — the safety net; the agent can drive `gh`.
+- **06 · Edit modes &amp; models** — the controls; hand on the wheel.
 
 **This module · 🛠 Install fest · Code**
 - **Editor + agent** — VS Code, Git, your AI tool
