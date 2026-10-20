@@ -24,8 +24,15 @@ three objectives:
 | 18:35 | `40-hack.md` | Two paths (own tools / HPE environment), team repository rules, data rules, before 6 Nov | 3 | 05, 09 |
 | 18:50 | `50-your-place.md` | Room's poll results vs. voices from the field · back to the opening question · close | 1 | 11 |
 
-Pre-work (sent with the announcement): DePasquale, *Models at the speed of thought*,
-*The Transmitter*, 16 Jun 2026 (~17 min) + course modules 01–04 + vote on challenges.
+Pre-work (sent with the announcement), two readings + the course:
+- B. DePasquale, *Models at the speed of thought: How AI coding is reshaping theoretical
+  neuroscience*, *The Transmitter*, 16 Jun 2026 (~17 min): why it matters, and the risks.
+  https://www.thetransmitter.org/the-big-picture/models-at-the-speed-of-thought-how-ai-coding-is-reshaping-theoretical-neuroscience/
+- N. Schuck, *How, when and why to use agentic AI in our neuroscience labs*, *The Transmitter*,
+  24 Aug 2026 (~7 min): one lab's concrete AI policy (skills first, verify by falsifying, no
+  participant data, you own what you publish).
+  https://www.thetransmitter.org/artificial-intelligence/how-when-and-why-to-use-agentic-ai-in-our-neuroscience-labs/
+- Course modules 01–04, and vote on challenges.
 Install (module 07) is optional: participants without tools are covered at the hack.
 
 ## Files
@@ -53,6 +60,7 @@ banner: they show in the presenter view and PPTX notes, never on the projected s
 
 ## Sources
 
-DePasquale (2026), *The Transmitter*, doi:10.53053/FVAU9567 · METR (2025), "Measuring the impact of
-early-2025 AI on experienced open-source developer productivity" · Tao (2026), "Math 2.0",
-terrytao.wordpress.com · course modules 01–11 and their sources (`../../modules/11-close.md`).
+DePasquale (2026), *The Transmitter*, doi:10.53053/FVAU9567 · Schuck (2026), *The Transmitter*,
+doi:10.53053/NSSZ1001 · METR (2025), "Measuring the impact of
+early-2025 AI on experienced open-source developer productivity" · course modules 01–11 and
+their sources (`../../modules/11-close.md`).

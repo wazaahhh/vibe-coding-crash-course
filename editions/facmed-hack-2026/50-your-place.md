@@ -27,7 +27,7 @@ room disagrees most with the voice gets the remaining minutes.
 | 2 · Scarce skill | *poll* | LLMs are *"a flashlight as opposed to a laser pointer"* (Kim Stachenfeld, DeepMind) |
 | 3 · Depth | *poll* | *"Prolific but shallow—generating models faster than we can generate insights"* (DePasquale) |
 | 4 · Training | *poll* | Struggling to turn an idea into code is *"a form of disciplined thinking"* (DePasquale) |
-| 5 · Literature | *poll* | Beware *"excessive emphasis on automated solving of open problems by AI"* (Terence Tao) |
+| 5 · Literature | *poll* | Incentives already reward producing models over understanding them; vibe modelling could make it worse (Dan Goodman, Imperial) |
 | 6 · Reality | **D** · 19% slower | …while feeling 20% faster (METR, 2025) |
 
 ---
@@ -73,7 +73,7 @@ The agent brings **speed and breadth**. You bring **the question, the judgment a
 
 <div class="cols3" style="margin-top: 18px;">
 <div class="card"><h3>The course</h3><p>github.com/wazaahhh/vibe-coding-crash-course · fork it, star it, open a pull request</p></div>
-<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i>, The Transmitter, 2026 · Tao, <i>Math 2.0</i>, 2026</p></div>
+<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i> · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i> · both in The Transmitter, 2026</p></div>
 <div class="card"><h3>Next</h3><p>Vote on challenges · GitHub account · Crash Course #3 on Thu 29 Oct</p></div>
 </div>
 

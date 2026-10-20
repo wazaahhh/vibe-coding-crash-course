@@ -181,6 +181,9 @@ results, ask in the chat: "PhD students: does this match what you'd want? PIs:
 is this what you do?"
 DePasquale's argument: the struggle of turning an idea into equations and code
 is "a form of disciplined thinking"; skip it and you never know your own model.
+Schuck's lab policy (second pre-read) answers it in practice: trainees do by hand
+the work that builds core skills (questions, models, arguments) and hand off what
+they don't need to learn; they draft text themselves before any AI editing.
 Talmo Pereira (Salk) worries about losing the craft of scientific software.
 The counter: if directing agents is the job, learn it from day one (A).
 Comes back: hands-on (17:40), where pairs direct an agent in a challenge repo.
@@ -203,10 +206,10 @@ Comes back: hands-on (17:40), where pairs direct an agent in a challenge repo.
 Opinion. The futures question with the widest spread.
 Push: A and C are the same technology with opposite incentives. Who would pay
 for the checking? (Funders, journals, an AI reviewer, nobody?)
-Tao, on mathematics (Caltech public lecture "Math 2.0", 9 Oct 2026): the field's
-current state is shaped by "the excessive emphasis on automated solving of open
-problems by AI". The analogue here: optimising for producing results over
-understanding them.
+Voice from the pre-read: Dan Goodman (Imperial College London) argues that
+publication incentives already reward producing models over understanding them,
+and that vibe modelling could make this worse. That is C and D; A needs someone
+to reward the checking.
 Comes back: how the hack runs (18:35): every team's repository is re-runnable
 by the jury, which is A, at the scale of one weekend.
 -->

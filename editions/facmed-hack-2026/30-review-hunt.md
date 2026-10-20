@@ -88,7 +88,9 @@ Show only after reading 3–4 lists from the chat. Numbers from check_answers.py
 Ask: which of these would a second AI have caught? (Usually 1 and 3 when given
 the codebook; rarely 4 and 5.)
 Callback to quiz Q2: judging whether a result is true is the skill this block
-practises.
+practises. Schuck (second pre-read): "AI output sounds confident even when wrong,
+so know how you can falsify what a model produces": write scripts that check the
+output rather than asking the model to check itself (check_answers.py is one).
 -->
 
 <span class="kicker">The answer key</span>

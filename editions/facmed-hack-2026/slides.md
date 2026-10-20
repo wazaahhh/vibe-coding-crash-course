@@ -310,6 +310,9 @@ results, ask in the chat: "PhD students: does this match what you'd want? PIs:
 is this what you do?"
 DePasquale's argument: the struggle of turning an idea into equations and code
 is "a form of disciplined thinking"; skip it and you never know your own model.
+Schuck's lab policy (second pre-read) answers it in practice: trainees do by hand
+the work that builds core skills (questions, models, arguments) and hand off what
+they don't need to learn; they draft text themselves before any AI editing.
 Talmo Pereira (Salk) worries about losing the craft of scientific software.
 The counter: if directing agents is the job, learn it from day one (A).
 Comes back: hands-on (17:40), where pairs direct an agent in a challenge repo.
@@ -332,10 +335,10 @@ Comes back: hands-on (17:40), where pairs direct an agent in a challenge repo.
 Opinion. The futures question with the widest spread.
 Push: A and C are the same technology with opposite incentives. Who would pay
 for the checking? (Funders, journals, an AI reviewer, nobody?)
-Tao, on mathematics (Caltech public lecture "Math 2.0", 9 Oct 2026): the field's
-current state is shaped by "the excessive emphasis on automated solving of open
-problems by AI". The analogue here: optimising for producing results over
-understanding them.
+Voice from the pre-read: Dan Goodman (Imperial College London) argues that
+publication incentives already reward producing models over understanding them,
+and that vibe modelling could make this worse. That is C and D; A needs someone
+to reward the checking.
 Comes back: how the hack runs (18:35): every team's repository is re-runnable
 by the jury, which is A, at the scale of one weekend.
 -->
@@ -838,7 +841,9 @@ Show only after reading 3–4 lists from the chat. Numbers from check_answers.py
 Ask: which of these would a second AI have caught? (Usually 1 and 3 when given
 the codebook; rarely 4 and 5.)
 Callback to quiz Q2: judging whether a result is true is the skill this block
-practises.
+practises. Schuck (second pre-read): "AI output sounds confident even when wrong,
+so know how you can falsify what a model produces": write scripts that check the
+output rather than asking the model to check itself (check_answers.py is one).
 -->
 
 <span class="kicker">The answer key</span>
@@ -1007,7 +1012,7 @@ room disagrees most with the voice gets the remaining minutes.
 | 2 · Scarce skill | *poll* | LLMs are *"a flashlight as opposed to a laser pointer"* (Kim Stachenfeld, DeepMind) |
 | 3 · Depth | *poll* | *"Prolific but shallow—generating models faster than we can generate insights"* (DePasquale) |
 | 4 · Training | *poll* | Struggling to turn an idea into code is *"a form of disciplined thinking"* (DePasquale) |
-| 5 · Literature | *poll* | Beware *"excessive emphasis on automated solving of open problems by AI"* (Terence Tao) |
+| 5 · Literature | *poll* | Incentives already reward producing models over understanding them; vibe modelling could make it worse (Dan Goodman, Imperial) |
 | 6 · Reality | **D** · 19% slower | …while feeling 20% faster (METR, 2025) |
 
 ---
@@ -1053,7 +1058,7 @@ The agent brings **speed and breadth**. You bring **the question, the judgment a
 
 <div class="cols3" style="margin-top: 18px;">
 <div class="card"><h3>The course</h3><p>github.com/wazaahhh/vibe-coding-crash-course · fork it, star it, open a pull request</p></div>
-<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i>, The Transmitter, 2026 · Tao, <i>Math 2.0</i>, 2026</p></div>
+<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i> · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i> · both in The Transmitter, 2026</p></div>
 <div class="card"><h3>Next</h3><p>Vote on challenges · GitHub account · Crash Course #3 on Thu 29 Oct</p></div>
 </div>
 
