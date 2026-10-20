@@ -118,6 +118,14 @@ style: |
   pre code { background: transparent; padding: 0; }
   section.ink pre, section.ink code { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.14); color: var(--on-ink); }
   .divider h1 { font-size: 2.3em; margin-bottom: 0.3em; }
+  /* Full-slide quote: opening and closing bookends. */
+  section.quote { display: flex !important; flex-direction: column; justify-content: center; }
+  section.quote blockquote {
+    font-size: 1.75em; font-weight: 700; line-height: 1.28; letter-spacing: -0.012em;
+    padding: 0 0 0 34px; background: transparent; border-left: 6px solid #F08BB4; margin: 0 0 26px;
+  }
+  section.quote .who { font-size: 0.85em; color: var(--on-ink-muted); padding-left: 40px; }
+  section.quote .who b { color: #fff; }
   .logos {
     display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-start;
     gap: 20px; background: #fff; border-radius: 14px; padding: 14px 24px; margin-top: 18px;

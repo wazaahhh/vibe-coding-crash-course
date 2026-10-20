@@ -42,6 +42,22 @@ Tonight you open your challenge repository, put an AI agent to work in it, and l
 
 ---
 
+<!-- ====== OPENING QUOTE — Zador ======
+Read it aloud, then pause. The frame for the evening: nobody in this room, nor
+the people who build these tools, knows how this plays out for neuroscience,
+which is why tonight starts with what you imagine and ends with a discussion.
+Same quote closes the deck.
+Source: A. Zador's response to DePasquale, The Transmitter, 16 June 2026.
+-->
+<!-- _class: ink quote -->
+<!-- _paginate: false -->
+
+> "AI is obviously going to have a massive impact on how we do science, and it's hard to know what the long run looks like."
+
+<div class="who"><b>Anthony Zador</b> · Cold Spring Harbor Laboratory · <i>The Transmitter</i>, June 2026</div>
+
+---
+
 <!-- ====== SLIDE 2 — Opening question ======
 Facilitator: read the question aloud, then silence. 90 seconds for everyone to type
 one or two lines in the Zoom chat (ask them to hold Enter until you say "send", so

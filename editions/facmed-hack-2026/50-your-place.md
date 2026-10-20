@@ -78,3 +78,22 @@ The agent brings **speed and breadth**. You bring **the question, the judgment a
 </div>
 
 <span class="small">Vibe Coding for Scientists · CC BY-NC 4.0 · Thomas Maillart</span>
+
+---
+
+<!-- ====== CLOSING QUOTE — Zador ======
+The bookend: the quote that opened the evening, still true at 19:00. Leave it on
+screen while people leave the call. The point: the long run is open, so keep
+the conversation going in your lab, and bring it to the hack on 6 November.
+-->
+<!-- _class: ink quote -->
+<!-- _paginate: false -->
+<!-- _footer: "" -->
+
+<span class="kicker" style="padding-left: 40px;">Still true at 19:00</span>
+
+> "AI is obviously going to have a massive impact on how we do science, and it's hard to know what the long run looks like."
+
+<div class="who"><b>Anthony Zador</b> · Cold Spring Harbor Laboratory · <i>The Transmitter</i>, June 2026</div>
+
+<div class="who" style="margin-top: 22px;">So keep the conversation going: in your lab, and on 6 November.</div>

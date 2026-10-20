@@ -118,6 +118,14 @@ style: |
   pre code { background: transparent; padding: 0; }
   section.ink pre, section.ink code { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.14); color: var(--on-ink); }
   .divider h1 { font-size: 2.3em; margin-bottom: 0.3em; }
+  /* Full-slide quote: opening and closing bookends. */
+  section.quote { display: flex !important; flex-direction: column; justify-content: center; }
+  section.quote blockquote {
+    font-size: 1.75em; font-weight: 700; line-height: 1.28; letter-spacing: -0.012em;
+    padding: 0 0 0 34px; background: transparent; border-left: 6px solid #F08BB4; margin: 0 0 26px;
+  }
+  section.quote .who { font-size: 0.85em; color: var(--on-ink-muted); padding-left: 40px; }
+  section.quote .who b { color: #fff; }
   .logos {
     display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-start;
     gap: 20px; background: #fff; border-radius: 14px; padding: 14px 24px; margin-top: 18px;
@@ -168,6 +176,22 @@ Tonight you open your challenge repository, put an AI agent to work in it, and l
 <img src="assets/cisa.png" alt="CISA" />
 <img src="assets/sparkboard.png" alt="Sparkboard" />
 </div>
+
+---
+
+<!-- ====== OPENING QUOTE — Zador ======
+Read it aloud, then pause. The frame for the evening: nobody in this room, nor
+the people who build these tools, knows how this plays out for neuroscience,
+which is why tonight starts with what you imagine and ends with a discussion.
+Same quote closes the deck.
+Source: A. Zador's response to DePasquale, The Transmitter, 16 June 2026.
+-->
+<!-- _class: ink quote -->
+<!-- _paginate: false -->
+
+> "AI is obviously going to have a massive impact on how we do science, and it's hard to know what the long run looks like."
+
+<div class="who"><b>Anthony Zador</b> · Cold Spring Harbor Laboratory · <i>The Transmitter</i>, June 2026</div>
 
 ---
 
@@ -1063,3 +1087,22 @@ The agent brings **speed and breadth**. You bring **the question, the judgment a
 </div>
 
 <span class="small">Vibe Coding for Scientists · CC BY-NC 4.0 · Thomas Maillart</span>
+
+---
+
+<!-- ====== CLOSING QUOTE — Zador ======
+The bookend: the quote that opened the evening, still true at 19:00. Leave it on
+screen while people leave the call. The point: the long run is open, so keep
+the conversation going in your lab, and bring it to the hack on 6 November.
+-->
+<!-- _class: ink quote -->
+<!-- _paginate: false -->
+<!-- _footer: "" -->
+
+<span class="kicker" style="padding-left: 40px;">Still true at 19:00</span>
+
+> "AI is obviously going to have a massive impact on how we do science, and it's hard to know what the long run looks like."
+
+<div class="who"><b>Anthony Zador</b> · Cold Spring Harbor Laboratory · <i>The Transmitter</i>, June 2026</div>
+
+<div class="who" style="margin-top: 22px;">So keep the conversation going: in your lab, and on 6 November.</div>
