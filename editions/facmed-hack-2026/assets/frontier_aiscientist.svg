@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+  <title>The AI Scientist: an automated loop from idea, to code and experiments, to a written paper, to an automated review that feeds the next idea</title>
+  <defs><marker id="n" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#96004B"/></marker></defs>
+  <rect width="360" height="240" rx="14" fill="#F7F9FC"/>
+  <g font-size="13" fill="#11233F" text-anchor="middle">
+    <rect x="125" y="18" width="110" height="36" rx="8" fill="#ffffff" stroke="#11233F"/><text x="180" y="41">idea</text>
+    <rect x="240" y="96" width="106" height="36" rx="8" fill="#ffffff" stroke="#11233F"/><text x="293" y="119">code + run</text>
+    <rect x="125" y="176" width="110" height="36" rx="8" fill="#ffffff" stroke="#11233F"/><text x="180" y="199">write paper</text>
+    <rect x="14" y="96" width="106" height="36" rx="8" fill="#ffffff" stroke="#11233F"/><text x="67" y="119">AI review</text>
+  </g>
+  <g fill="none" stroke="#96004B" stroke-width="2">
+    <path d="M235 40 C 280 45, 300 70, 296 92" marker-end="url(#n)"/>
+    <path d="M296 132 C 300 165, 270 190, 239 193" marker-end="url(#n)"/>
+    <path d="M125 193 C 90 190, 65 165, 66 136" marker-end="url(#n)"/>
+    <path d="M66 96 C 65 65, 90 42, 121 38" marker-end="url(#n)"/>
+  </g>
+  <text x="180" y="112" text-anchor="middle" font-size="12" fill="#4D5B73">no human</text>
+  <text x="180" y="128" text-anchor="middle" font-size="12" fill="#4D5B73">in the loop</text>
+</svg>

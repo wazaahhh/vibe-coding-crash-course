@@ -6,9 +6,9 @@ facilitator/ANSWER_KEY.md (five problems). Don't hint.
 Output is verbatim from `python analysis.py` (seed 2026).
 -->
 
-<span class="clock">10 min</span>
+<span class="clock">7 min</span>
 
-<span class="kicker">18:25 · Part 5 · Review hunt · everyone, in the main room</span>
+<span class="kicker">18:24 · Part 5 · Review hunt · everyone, in the main room</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.2fr; gap: 30px; align-items: start;">
 <div>
@@ -108,14 +108,14 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 ## In 2031, the scarcest skill in a neuroscience lab will be…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Programming</div>
 <div class="opt"><b>B</b>Statistics and methods</div>
 <div class="opt"><b>C</b>Choosing the question worth asking</div>
 <div class="opt"><b>D</b>Judging whether a result is true</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
 <div class="opt"><b>E</b>Collecting good data from real people</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>

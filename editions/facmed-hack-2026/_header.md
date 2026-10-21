@@ -122,6 +122,18 @@ style: |
   section.dense { font-size: 22px; padding-top: 40px; }
   section.dense table { font-size: 0.74em; }
   section.dense th, section.dense td { padding-top: 6px; padding-bottom: 6px; }
+  /* Live quiz call-out: QR code + link, bottom right of poll slides. */
+  .quizbox { position: absolute; right: 64px; bottom: 58px; display: flex; align-items: center; gap: 14px;
+    background: #fff; border: 2px solid var(--accent); border-radius: 14px; padding: 10px 16px 10px 10px; }
+  .quizbox img { width: 112px; height: 112px; display: block; }
+  .quizbox b { display: block; color: var(--accent); font-size: 0.7em; letter-spacing: 0.08em; text-transform: uppercase; }
+  .quizbox span { font-size: 0.78em; font-weight: 700; color: var(--ink); }
+  .quizbox.big img { width: 230px; height: 230px; }
+  .quizbox.big span { font-size: 1em; }
+  /* Figures with captions. */
+  .fig { text-align: center; }
+  .fig img { max-width: 100%; display: block; margin: 0 auto; }
+  .fig .cap { font-size: 0.62em; color: var(--fg-muted); margin-top: 4px; }
   /* Full-slide quote: opening and closing bookends. */
   section.quote { display: flex !important; flex-direction: column; justify-content: center; }
   section.quote blockquote {

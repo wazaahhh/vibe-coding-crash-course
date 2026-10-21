@@ -2,15 +2,15 @@
 Facilitator: before opening the rooms, paste in the chat the link to the
 practical repository (the edition's practical/ folder, published without the
 facilitator/ folder) and the two-line setup. Breakout rooms of two (Zoom:
-assign automatically, 33 min, let participants return early off). Mix
-seniorities where you can. Broadcast at 18:06 "Switch roles: round 2", and at
-18:18 "Save your work and post your numbers in the main chat".
+assign automatically, 30 min, let participants return early off). Mix
+seniorities where you can. Broadcast at 18:05 "Switch roles: round 2", and at
+18:17 "Save your work and post your numbers in the main chat".
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">35 min</span>
+<span class="clock">37 min</span>
 
-<span class="kicker">17:45 · Part 4 · Objective 2 · Understand, by doing it</span>
+<span class="kicker">17:47 · Part 4 · Objective 2 · Understand, by doing it</span>
 
 # Practical in pairs
 
@@ -27,7 +27,7 @@ chat mode with file upload is allowed tonight (and only tonight).
 
 <span class="kicker">Module 08 · pair on the prompts</span>
 
-## Two roles, switch at 18:06
+## Two roles, switch at 18:05
 
 <div class="cols" style="margin-top: 4px;">
 <div class="card">
@@ -57,7 +57,7 @@ them gives one hour too little that night (5.9 h vs 6.9 h). Answer key:
 facilitator/ANSWER_KEY.md.
 -->
 
-<span class="kicker">Round 1 · Driver A · 17:50 → 18:06 · <code>sleep-mood/</code></span>
+<span class="kicker">Round 1 · Driver A · 17:50 → 18:05 · <code>sleep-mood/</code></span>
 
 ## How long do people sleep each night?
 
@@ -98,7 +98,7 @@ Real data, real traps (facilitator/check_eeg.py):
    with a random split vs 0.46 with time blocks; always guessing "open" = 0.55.
 -->
 
-<span class="kicker">Switch! · Round 2 · Driver B · 18:06 → 18:20 · <code>eeg-eye-state/</code></span>
+<span class="kicker">Switch! · Round 2 · Driver B · 18:05 → 18:19 · <code>eeg-eye-state/</code></span>
 
 ## Can EEG tell whether the eyes are closed, and how well, honestly?
 
@@ -189,11 +189,11 @@ themselves before any AI editing.
 
 ## A first-year PhD student can now get working analysis code from an agent in minutes. In their first year, they should…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Use agents freely: directing them is the skill that matters now</div>
 <div class="opt"><b>B</b>Write their core analyses by hand first, agents later</div>
 <div class="opt"><b>C</b>Use agents, but explain every line at lab meeting</div>
 <div class="opt"><b>D</b>Keep agents away from thesis-critical analyses</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>

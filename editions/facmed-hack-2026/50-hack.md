@@ -3,7 +3,7 @@
 
 <span class="clock">10 min</span>
 
-<span class="kicker">18:33 · Part 6 · Objective 3 · Prepare</span>
+<span class="kicker">18:31 · Part 6 · Objective 3 · Prepare</span>
 
 # The hack: where we are
 

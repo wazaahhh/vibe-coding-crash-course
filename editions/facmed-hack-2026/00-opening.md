@@ -29,15 +29,8 @@ Where AI agents come from, how they change research, and how to work with one: h
 </div>
 </div>
 
-<div class="logos">
-<img class="tall" src="assets/unige-facmed.png" alt="UNIGE Faculty of Medicine" />
-<img class="tall" src="assets/synapsy.png" alt="Synapsy" />
-<img src="assets/wyss-center.png" alt="Wyss Center for Bio and Neuroengineering" />
-<img src="assets/neuro-campusbiotech.svg" alt="Neuro @ Campus Biotech" />
-<img src="assets/hug.png" alt="HUG" />
-<img src="assets/epfl.png" alt="EPFL" />
-<img src="assets/cisa.png" alt="CISA" />
-<img src="assets/sparkboard.png" alt="Sparkboard" />
+<div class="logos" style="padding: 10px 16px;">
+<img src="assets/organizers_banner.png" alt="Organisers and partners: UNIGE Faculty of Medicine (Synapsy), Wyss Center, EPFL, Neuro@Campus Biotech, HUG, UNIGE Swiss Center for Affective Sciences, HPE, UNIGE Research and Grants Office, Sparkboard" style="height:auto; width:100%;" />
 </div>
 
 ---
@@ -118,22 +111,23 @@ environment to everyone, with or without their own setup.
 ---
 
 <!-- ====== OPENING 5 — Programme ======
-Six Zoom polls are spread through the evening, each where its topic comes up.
-Show each result right away and take one or two reactions; slide "the room's
-answers" at 18:47 recaps all six.
+Seven live-quiz questions are spread through the evening (app at {{QUIZ_URL}},
+presenter view at /present?key=…), each where its topic comes up. Show each
+result right away and take one or two reactions; "the room's answers" in Part 7
+recaps them. Zoom polls (zoom_polls.md) are the fallback.
 -->
 
 <span class="kicker">Tonight · 17:00 → 19:00</span>
 
-## Seven parts, six polls along the way
+## Seven parts, a live quiz along the way
 
 | Time | Part | Poll | Obj. |
 |---|---|---|---|
 | 17:00 | Opening: a quote, a question, three objectives | — | 1 |
-| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; uses; opportunities and pitfalls (pre-read 1) | 1 · 2 | 1 |
-| 17:25 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
-| 17:33 | **3 · Git without the jargon**: save points, and how the agent runs git for you | 3 | 2 |
-| 17:45 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
-| 18:25 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
-| 18:33 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
-| 18:43 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |
+| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; uses in science and neuroscience; opportunities and pitfalls (pre-read 1) | quiz · 1 · 2 | 1 |
+| 17:30 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
+| 17:36 | **3 · Git without the jargon**: save points, and how the agent runs git for you | 3 | 2 |
+| 17:47 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
+| 18:24 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
+| 18:31 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
+| 18:41 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |

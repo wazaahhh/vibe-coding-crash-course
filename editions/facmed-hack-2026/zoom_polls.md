@@ -1,4 +1,9 @@
-# Zoom polls for Crash Course #2
+# Zoom polls for Crash Course #2 (fallback)
+
+**Primary: the live quiz app** (`apps/live-quiz` in the corp repo, at the URL in `quiz_url.txt`,
+QR code on the slides; presenter view at `/present?key=…`). It carries the six polls below plus a
+seventh question ("What have you already used AI for in your research?", Part 1). Use these Zoom
+polls only if the app is unavailable.
 
 Six **separate** polls, spread through the evening, each where its topic comes up. Create them
 in advance on the scheduled meeting (zoom.us → Meetings → the meeting → *Polls/Quizzes*), from

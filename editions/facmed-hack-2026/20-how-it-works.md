@@ -1,9 +1,9 @@
 <!-- ====== HOW 1 — Divider ====== -->
 <!-- _class: ink divider -->
 
-<span class="clock">8 min</span>
+<span class="clock">6 min</span>
 
-<span class="kicker">17:25 · Part 2 · Objective 2 · Understand</span>
+<span class="kicker">17:30 · Part 2 · Objective 2 · Understand</span>
 
 # How vibe coding works
 

@@ -1,9 +1,9 @@
 <!-- ====== FUTURE 1 — Divider ====== -->
 <!-- _class: ink divider -->
 
-<span class="clock">17 min</span>
+<span class="clock">19 min</span>
 
-<span class="kicker">18:43 · Part 7 · Objective 1 · Imagine</span>
+<span class="kicker">18:41 · Part 7 · Objective 1 · Imagine</span>
 
 # A future worth building
 
@@ -114,14 +114,14 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ## Pre-read 1 warns that AI coding could make theoretical neuroscience *"prolific but shallow"*. For your own field, you think…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>It is already happening</div>
 <div class="opt"><b>B</b>It will happen unless incentives change</div>
 <div class="opt"><b>C</b>The opposite: faster coding frees time to think</div>
 <div class="opt"><b>D</b>Too early to say</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 

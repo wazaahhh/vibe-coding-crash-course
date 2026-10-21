@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+  <title>Multi-layer neural network: an input layer, two hidden layers and an output layer, every unit connected to the next layer</title>
+  <rect width="520" height="300" fill="#ffffff"/>
+  <g stroke="#D7E1EC" stroke-width="1.4">
+    <!-- input (x=70) to hidden1 (x=200) -->
+    <g id="l1">
+      <line x1="70" y1="75" x2="200" y2="55"/><line x1="70" y1="75" x2="200" y2="115"/><line x1="70" y1="75" x2="200" y2="175"/><line x1="70" y1="75" x2="200" y2="235"/>
+      <line x1="70" y1="150" x2="200" y2="55"/><line x1="70" y1="150" x2="200" y2="115"/><line x1="70" y1="150" x2="200" y2="175"/><line x1="70" y1="150" x2="200" y2="235"/>
+      <line x1="70" y1="225" x2="200" y2="55"/><line x1="70" y1="225" x2="200" y2="115"/><line x1="70" y1="225" x2="200" y2="175"/><line x1="70" y1="225" x2="200" y2="235"/>
+    </g>
+    <!-- hidden1 to hidden2 (x=330) -->
+    <line x1="200" y1="55" x2="330" y2="55"/><line x1="200" y1="55" x2="330" y2="115"/><line x1="200" y1="55" x2="330" y2="175"/><line x1="200" y1="55" x2="330" y2="235"/>
+    <line x1="200" y1="115" x2="330" y2="55"/><line x1="200" y1="115" x2="330" y2="115"/><line x1="200" y1="115" x2="330" y2="175"/><line x1="200" y1="115" x2="330" y2="235"/>
+    <line x1="200" y1="175" x2="330" y2="55"/><line x1="200" y1="175" x2="330" y2="115"/><line x1="200" y1="175" x2="330" y2="175"/><line x1="200" y1="175" x2="330" y2="235"/>
+    <line x1="200" y1="235" x2="330" y2="55"/><line x1="200" y1="235" x2="330" y2="115"/><line x1="200" y1="235" x2="330" y2="175"/><line x1="200" y1="235" x2="330" y2="235"/>
+    <!-- hidden2 to output (x=450) -->
+    <line x1="330" y1="55" x2="450" y2="110"/><line x1="330" y1="55" x2="450" y2="190"/>
+    <line x1="330" y1="115" x2="450" y2="110"/><line x1="330" y1="115" x2="450" y2="190"/>
+    <line x1="330" y1="175" x2="450" y2="110"/><line x1="330" y1="175" x2="450" y2="190"/>
+    <line x1="330" y1="235" x2="450" y2="110"/><line x1="330" y1="235" x2="450" y2="190"/>
+  </g>
+  <g stroke-width="2">
+    <g fill="#D9F0F4" stroke="#4FA5B8"><circle cx="70" cy="75" r="17"/><circle cx="70" cy="150" r="17"/><circle cx="70" cy="225" r="17"/></g>
+    <g fill="#ffffff" stroke="#11233F"><circle cx="200" cy="55" r="17"/><circle cx="200" cy="115" r="17"/><circle cx="200" cy="175" r="17"/><circle cx="200" cy="235" r="17"/>
+    <circle cx="330" cy="55" r="17"/><circle cx="330" cy="115" r="17"/><circle cx="330" cy="175" r="17"/><circle cx="330" cy="235" r="17"/></g>
+    <g fill="#EBCFDC" stroke="#96004B"><circle cx="450" cy="110" r="17"/><circle cx="450" cy="190" r="17"/></g>
+  </g>
+  <g font-size="14" fill="#4D5B73" text-anchor="middle">
+    <text x="70" y="285">input</text><text x="265" y="285">hidden layers</text><text x="450" y="285">output</text>
+  </g>
+</svg>

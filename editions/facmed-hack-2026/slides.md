@@ -122,6 +122,18 @@ style: |
   section.dense { font-size: 22px; padding-top: 40px; }
   section.dense table { font-size: 0.74em; }
   section.dense th, section.dense td { padding-top: 6px; padding-bottom: 6px; }
+  /* Live quiz call-out: QR code + link, bottom right of poll slides. */
+  .quizbox { position: absolute; right: 64px; bottom: 58px; display: flex; align-items: center; gap: 14px;
+    background: #fff; border: 2px solid var(--accent); border-radius: 14px; padding: 10px 16px 10px 10px; }
+  .quizbox img { width: 112px; height: 112px; display: block; }
+  .quizbox b { display: block; color: var(--accent); font-size: 0.7em; letter-spacing: 0.08em; text-transform: uppercase; }
+  .quizbox span { font-size: 0.78em; font-weight: 700; color: var(--ink); }
+  .quizbox.big img { width: 230px; height: 230px; }
+  .quizbox.big span { font-size: 1em; }
+  /* Figures with captions. */
+  .fig { text-align: center; }
+  .fig img { max-width: 100%; display: block; margin: 0 auto; }
+  .fig .cap { font-size: 0.62em; color: var(--fg-muted); margin-top: 4px; }
   /* Full-slide quote: opening and closing bookends. */
   section.quote { display: flex !important; flex-direction: column; justify-content: center; }
   section.quote blockquote {
@@ -170,15 +182,8 @@ Where AI agents come from, how they change research, and how to work with one: h
 </div>
 </div>
 
-<div class="logos">
-<img class="tall" src="assets/unige-facmed.png" alt="UNIGE Faculty of Medicine" />
-<img class="tall" src="assets/synapsy.png" alt="Synapsy" />
-<img src="assets/wyss-center.png" alt="Wyss Center for Bio and Neuroengineering" />
-<img src="assets/neuro-campusbiotech.svg" alt="Neuro @ Campus Biotech" />
-<img src="assets/hug.png" alt="HUG" />
-<img src="assets/epfl.png" alt="EPFL" />
-<img src="assets/cisa.png" alt="CISA" />
-<img src="assets/sparkboard.png" alt="Sparkboard" />
+<div class="logos" style="padding: 10px 16px;">
+<img src="assets/organizers_banner.png" alt="Organisers and partners: UNIGE Faculty of Medicine (Synapsy), Wyss Center, EPFL, Neuro@Campus Biotech, HUG, UNIGE Swiss Center for Affective Sciences, HPE, UNIGE Research and Grants Office, Sparkboard" style="height:auto; width:100%;" />
 </div>
 
 ---
@@ -259,25 +264,26 @@ environment to everyone, with or without their own setup.
 ---
 
 <!-- ====== OPENING 5 — Programme ======
-Six Zoom polls are spread through the evening, each where its topic comes up.
-Show each result right away and take one or two reactions; slide "the room's
-answers" at 18:47 recaps all six.
+Seven live-quiz questions are spread through the evening (app at facmed-quiz.pages.dev,
+presenter view at /present?key=…), each where its topic comes up. Show each
+result right away and take one or two reactions; "the room's answers" in Part 7
+recaps them. Zoom polls (zoom_polls.md) are the fallback.
 -->
 
 <span class="kicker">Tonight · 17:00 → 19:00</span>
 
-## Seven parts, six polls along the way
+## Seven parts, a live quiz along the way
 
 | Time | Part | Poll | Obj. |
 |---|---|---|---|
 | 17:00 | Opening: a quote, a question, three objectives | — | 1 |
-| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; uses; opportunities and pitfalls (pre-read 1) | 1 · 2 | 1 |
-| 17:25 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
-| 17:33 | **3 · Git without the jargon**: save points, and how the agent runs git for you | 3 | 2 |
-| 17:45 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
-| 18:25 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
-| 18:33 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
-| 18:43 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |
+| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; uses in science and neuroscience; opportunities and pitfalls (pre-read 1) | quiz · 1 · 2 | 1 |
+| 17:30 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
+| 17:36 | **3 · Git without the jargon**: save points, and how the agent runs git for you | 3 | 2 |
+| 17:47 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
+| 18:24 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
+| 18:31 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
+| 18:41 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |
 
 
 ---
@@ -285,7 +291,7 @@ answers" at 18:47 recaps all six.
 <!-- ====== CONTEXT 1 — Divider ====== -->
 <!-- _class: ink divider -->
 
-<span class="clock">20 min</span>
+<span class="clock">25 min</span>
 
 <span class="kicker">17:05 · Part 1 · Objective 1 · Imagine</span>
 
@@ -298,27 +304,63 @@ From an artificial neuron in 1943 to an agent that edits your analysis code. Wha
 <!-- ====== CONTEXT 2 — It started in your field ======
 For a neuroscience audience: the idea of artificial neural networks came from
 neuroscience. Keep it to two minutes; the point is the lineage.
+Definitions (say them only if asked):
+- Artificial neuron (McCulloch & Pitts): a unit that adds up its weighted inputs
+  and "fires" (outputs 1) when the sum passes a threshold.
+- Perceptron (Rosenblatt): one layer of such units whose weights are LEARNED from
+  labelled examples: wrong answer → nudge the weights.
+- Neural network (multi-layer): layers of units, every connection a weight; the
+  hidden layers build intermediate features the output layer combines.
+- Hopfield network: a recurrent network in which memories are stable states
+  (energy minima) the network settles into.
+- Backpropagation: computes how much each weight contributed to the error and
+  adjusts all weights, layer by layer, from the output backwards.
+- Deep learning: neural networks with many layers, trained on large data with GPUs.
 Sources: McCulloch & Pitts 1943 (Bull. Math. Biophys.); Rosenblatt 1958;
 Hopfield 1982 (PNAS); Rumelhart, Hinton & Williams 1986 (Nature);
 Krizhevsky, Sutskever & Hinton 2012 (AlexNet); Nobel Prize in Physics 2024.
+Diagrams: drawn for this deck.
 -->
 
 <span class="kicker">A short history · part 1</span>
 
 ## It started in your field
 
+<div class="cols" style="grid-template-columns: 1.25fr 1fr; gap: 26px; align-items: start;">
+<div>
+
 | Year | What happened |
 |---|---|
 | 1943 | **McCulloch &amp; Pitts** model a neuron as a logic unit: the first artificial neuron |
-| 1958 | **Rosenblatt's perceptron**: a network of artificial neurons that learns from examples |
-| 1982 | **Hopfield networks**: memories stored as stable states of a network |
-| 1986 | **Backpropagation** popularised (Rumelhart, Hinton &amp; Williams): how multi-layer networks learn |
-| 2012 | **Deep learning** wins image recognition by a wide margin (AlexNet): GPUs + big data + depth |
-| 2024 | **Nobel Prize in Physics** to John Hopfield and Geoffrey Hinton, for the foundations of machine learning with artificial neural networks |
+| 1958 | **Rosenblatt's perceptron** learns its weights from examples |
+| 1982 | **Hopfield networks**: memories as stable states of a network |
+| 1986 | **Backpropagation** (Rumelhart, Hinton &amp; Williams): how multi-layer networks learn |
+| 2012 | **Deep learning** wins image recognition (AlexNet): GPUs + data + depth |
+| 2024 | **Nobel Prize in Physics** to Hopfield and Hinton |
+
+</div>
+<div>
+
+<div class="fig"><img src="assets/perceptron.svg" alt="Perceptron diagram" style="height:190px"><div class="cap">Perceptron: weighted inputs → sum → threshold</div></div>
+<div class="fig" style="margin-top:8px"><img src="assets/neural_network.svg" alt="Multi-layer neural network diagram" style="height:190px"><div class="cap">Multi-layer network, trained by backpropagation</div></div>
+
+</div>
+</div>
 
 ---
 
 <!-- ====== CONTEXT 3 — From next word to agents ======
+Definitions:
+- Token: a piece of text, a word or part of a word ("neur" + "on").
+- Parameter (weight): a number learned in training; GPT-3 has 175 billion.
+- Transformer: the architecture behind every modern language model: a stack of
+  layers, each with self-attention and a feed-forward network; processes all
+  tokens of a text in parallel.
+- Self-attention: lets every token weigh every other token when building its
+  representation ("it" looks back at "neuron").
+- GPT: "generative pre-trained transformer".
+- Reasoning model: trained to work through intermediate steps before answering.
+- Coding agent: a language model in a loop with tools (files, terminal, tests).
 Sources: Vaswani et al. 2017 "Attention is all you need"; Brown et al. 2020
 (GPT-3, 175 billion parameters); GitHub Copilot preview June 2021; ChatGPT
 30 Nov 2022; OpenAI o1, Sept 2024; Claude Code (Feb 2025 preview) and OpenAI
@@ -329,98 +371,102 @@ Codex (2025); Karpathy coins "vibe coding", Feb 2025.
 
 ## From predicting the next word to editing your code
 
+<div class="cols" style="grid-template-columns: 1.3fr 1fr; gap: 24px; align-items: start;">
+<div>
+
 | Year | What happened |
 |---|---|
-| 2017 | **The Transformer** ("Attention is all you need"): the architecture behind every modern language model |
-| 2020 | **GPT-3**: 175 billion parameters; scale alone produces surprising abilities |
-| 2021 | **GitHub Copilot** autocompletes code inside the editor |
-| Nov 2022 | **ChatGPT**: language models reach everyone, through a chat window |
-| 2023–24 | Claude, GPT-4, open-weight models (Llama, Qwen…); **"reasoning" models** that work step by step before answering |
-| 2025 | **Coding agents** (Claude Code, OpenAI Codex, Copilot agent mode) work inside your project; Andrej Karpathy names **"vibe coding"** |
-| 2026 | Agents in research labs: model fitting, analysis pipelines, lab AI policies (this week's two pre-reads) |
+| 2017 | **The Transformer** ("Attention is all you need") |
+| 2020 | **GPT-3**: 175 billion parameters; scale brings surprising abilities |
+| 2021 | **GitHub Copilot** autocompletes code in the editor |
+| Nov 2022 | **ChatGPT**: language models reach everyone |
+| 2023–24 | Claude, GPT-4, open-weight models; **"reasoning" models** |
+| 2025 | **Coding agents** work inside your project; Karpathy names **"vibe coding"** |
+| 2026 | Agents in research labs (this week's two pre-reads) |
+
+</div>
+<div>
+
+<div class="fig"><img src="assets/transformer.svg" alt="Transformer diagram with self-attention" style="width:100%"><div class="cap">A Transformer layer: each word attends to the others, then a feed-forward step; stacked dozens of times</div></div>
+
+</div>
+</div>
 
 ---
 
-<!-- ====== CONTEXT 4 — What an LLM is ======
-Plain language. LLM = large language model. The consequences column is the
-part to land: fluent is not the same as true.
+<!-- ====== CONTEXT 4 — How an LLM works ======
+Walk through the five steps on the diagram. Then the four consequences: fluent
+is not the same as true; it only knows its training data; it only "sees" what
+fits in its context window; the same question can give different answers
+(step 4 picks among probabilities).
 -->
 
 <span class="kicker">Under the hood, in plain words</span>
 
-## What a large language model (LLM) actually is
+## How a large language model (LLM) writes, one token at a time
 
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 4px;">
-<div>
+<div class="fig"><img src="assets/llm_schematic.svg" alt="Schematic: text to tokens to transformer layers to next-token probabilities, then append and repeat" style="width:100%"></div>
 
-1. A very large **neural network** trained to **predict the next word piece** ("token") on a huge share of the written web, books and code.
-2. Then **tuned** with examples and human feedback to follow instructions and be helpful.
-3. It holds no database of facts: it generates the most **plausible continuation** of what it has been given.
-
-</div>
-<div>
-
-| So… | In practice |
-|---|---|
-| Fluent ≠ true | It can invent a method, a number or a citation, in flawless prose |
-| Training cut-off | It does not know what happened after its training data |
-| Context window | It only "sees" what fits in its working memory: files, chat, instructions |
-| Not deterministic | The same question can get different answers |
-
-</div>
+<div class="cols" style="grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 6px;">
+<div class="card"><h3>Fluent ≠ true</h3><p>It writes the most plausible continuation; it can invent a method or a citation.</p></div>
+<div class="card"><h3>Training cut-off</h3><p>It knows nothing after its training data.</p></div>
+<div class="card"><h3>Context window</h3><p>It only "sees" what fits in its working memory.</p></div>
+<div class="card"><h3>Not deterministic</h3><p>Same question, possibly a different answer.</p></div>
 </div>
 
 ---
 
-<!-- ====== CONTEXT 5 — From chatbot to agent ======
-From module 03 (chat vs agent), with the agent loop made explicit.
+<!-- ====== CONTEXT 5 — Two environments ======
+From module 03 (chat vs agent). The pictures are faithful mock-ups of the two
+typical set-ups (replace assets/env_chat.png and assets/env_agent.png with real
+screenshots if you prefer). Point out in the agent picture: the project's files
+on the left, the code in the middle, the agent on the right, and the terminal
+showing the run and the saved history (git) at the bottom.
 -->
 
-<span class="kicker">Module 03 · two modes</span>
+<span class="kicker">Module 03 · two environments</span>
 
 ## From chatbot to agent
 
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px;">
-<div>
-
-| **Chat** (browser, app) | **Agent** (editor + your project folder) |
-|---|---|
-| You paste code, data, an error; it answers | It **reads your files, runs code, edits in place** |
-| Zero setup | One-time setup |
-| **You** carry the context, message after message | It sees the whole project |
-| A quick question, a snippet | A real, multi-file analysis |
-
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 2px;">
+<div class="fig">
+<img src="assets/env_chat.png" alt="A chat assistant in the browser: the user uploads sleep.csv and gets code to copy into a notebook" style="border-radius:10px; border:1px solid var(--line)">
+<div class="cap"><b>Chat</b> (browser, app): you paste code, data and errors; it answers; <b>you</b> carry the context and copy the code back.</div>
 </div>
-<div>
-
-<div class="card">
-<h3>An agent is an LLM in a loop with tools</h3>
-<p>You give a goal → it <b>plans</b> → it <b>acts</b> (reads a file, runs a script, searches) → it <b>looks at the result</b> or the error → it adjusts → … → it reports back.</p>
-<br>
-<p><b>You</b> approve the plan, watch the steps, and decide what to keep.</p>
-</div>
-
+<div class="fig">
+<img src="assets/env_agent.png" alt="VS Code with an AI agent panel: project files, the edited script, the agent's plan, a run and saved history in the terminal" style="border-radius:10px; border:1px solid var(--line)">
+<div class="cap"><b>Agent</b> (VS Code + your project folder): it reads your files, plans, edits, runs, sees the error, and saves; <b>you</b> approve.</div>
 </div>
 </div>
+
+> An agent is an LLM **in a loop with tools**: goal → plan → act → look at the result → adjust → report.
 
 ---
 
-<!-- ====== CONTEXT 6 — Why coding first, and what vibe coding means ======
-From module 00 ("What vibe coding means"). Karpathy coined the term in a post
-in February 2025.
+<!-- ====== CONTEXT 6 — Why coding first ======
+From module 00 ("What vibe coding means"). Source for the usage figures:
+Anthropic Economic Index, launch report, 10 Feb 2025: "37.2% of queries sent to
+Claude were in this category" (computer and mathematical, largely software
+engineering); report of 24 Mar 2026: "Coding remains the most common use on our
+platforms", 35% of Claude.ai conversations, and coding tasks "continue to
+migrate ... to more automated workflows" in API traffic (incl. Claude Code).
+Caveat (Anthropic's own): Claude is marketed as a coding model, so coding may be
+over-represented.
 -->
 
 <span class="kicker">Module 00 · why coding came first</span>
 
-## Code is where agents work best, and where "vibe coding" was born
+## Software development is where agentic AI is used most
 
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 28px;">
 <div>
 
 **Why coding first**
 - Code is text, and there is a vast public corpus of it.
-- Code can be **run**: errors and tests give the agent immediate feedback.
+- Code can be **run**: errors and tests give immediate feedback.
 - The result can be **checked**, by the machine and by you.
+
+<div class="card" style="margin-top:10px"><div style="font-size:2.3em; font-weight:800; color:var(--accent); line-height:1">37%</div><p>of conversations with one major assistant were software and maths tasks, by far the first use (Anthropic Economic Index, 2025); still first in 2026, and moving from chat to <b>autonomous agent workflows</b>.</p></div>
 
 </div>
 <div>
@@ -453,20 +499,46 @@ From module 00 ("In practice"). The EEG line speaks to most of the room.
 
 ---
 
-<!-- ====== CONTEXT 8 — How scientists use it ======
-Sources: Jumper et al. 2021 (AlphaFold 2), Nobel Prize in Chemistry 2024
-(Hassabis, Jumper; with Baker); Google "AI co-scientist" (Feb 2025);
-Lu et al. 2024 "The AI Scientist" (Sakana, arXiv 2408.06292).
+<!-- ====== CONTEXT 8 — LIVE QUIZ · How do you use AI? ======
+Live quiz app, question "uses" (multi-select). Show the QR and link, give 60 s,
+then open the presenter view's live results; the next slide sets them against
+how scientists use it today.
 -->
+<!-- _class: ink -->
 
-<span class="kicker">How scientists use it today</span>
+<span class="kicker">Live quiz · on your phone or laptop</span>
 
-## Six everyday uses, and a few frontier ones
+## What have you already used AI for in your research? *Tick all that apply.*
 
-<div class="cols" style="grid-template-columns: 1.2fr 1fr; gap: 30px;">
+<div class="cols" style="grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: center; margin-top: 10px;">
 <div>
 
-| Everyday | What it does for you |
+Finding and summarising papers · analysis code · modelling · writing and editing · learning or explaining code and methods · building small tools · **nothing yet**
+
+<br>
+
+<span class="small">Anonymous. Results appear live; we look at them together on the next slide.</span>
+
+</div>
+<div>
+
+<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>facmed-quiz.pages.dev</span></div></div>
+
+</div>
+</div>
+
+---
+
+<!-- ====== CONTEXT 9 — How scientists use it today ======
+Put the room's live results (presenter view) next to this list: where is the
+room ahead, where behind?
+-->
+
+<span class="kicker">How scientists use it today · and how this room does</span>
+
+## Six everyday uses
+
+| Everyday use | What it does for you |
 |---|---|
 | **Literature** | find, summarise, compare papers |
 | **Analysis code** | cleaning, statistics, figures, pipelines |
@@ -475,77 +547,181 @@ Lu et al. 2024 "The AI Scientist" (Sakana, arXiv 2408.06292).
 | **Learning** | explaining unfamiliar code or methods |
 | **Tools** | small apps, dashboards, lab utilities |
 
+<br>
+
+> Compare with the room's answers on the quiz: which uses are we missing?
+
+---
+
+<!-- ====== CONTEXT 10 — At the frontier ======
+Diagrams drawn for this deck, describing how each system works.
+- AlphaFold 2 (Jumper et al., Nature 2021): predicts a protein's 3-D structure
+  from its amino-acid sequence, with a per-residue confidence score (pLDDT,
+  colours as in the AlphaFold database). Nobel Prize in Chemistry 2024 (Hassabis,
+  Jumper; with Baker for protein design). Not a language model, but the same
+  deep-learning family.
+- AI co-scientist (Google, Feb 2025): several agents generate, review, debate,
+  rank in a tournament and refine hypotheses for a scientist's goal.
+- The AI Scientist (Lu et al., Sakana AI, 2024, arXiv 2408.06292): automates
+  idea → code and experiments → paper → automated review, end to end. Its papers
+  were of mixed quality.
+-->
+
+<span class="kicker">At the frontier</span>
+
+## Beyond the chat window
+
+<div class="cols3" style="margin-top: 4px;">
+<div class="fig"><img src="assets/frontier_alphafold.svg" alt="AlphaFold: sequence to folded structure" style="width:100%"><div class="cap" style="font-size:0.7em"><b>AlphaFold</b> predicts protein structures from sequence · Nobel Prize in Chemistry 2024</div></div>
+<div class="fig"><img src="assets/frontier_coscientist.svg" alt="AI co-scientist: agents generating, reviewing, debating and ranking hypotheses" style="width:100%"><div class="cap" style="font-size:0.7em"><b>AI "co-scientist"</b>: agents generate, debate and rank hypotheses · Google, 2025</div></div>
+<div class="fig"><img src="assets/frontier_aiscientist.svg" alt="The AI Scientist: idea, code, paper, review loop" style="width:100%"><div class="cap" style="font-size:0.7em"><b>The AI Scientist</b> drafts whole studies end to end, with mixed quality · Sakana AI, 2024</div></div>
+</div>
+
+---
+
+<!-- ====== CONTEXT 11 — BrainBench ======
+Luo, X., …, Love, B. C. Large language models surpass human experts in
+predicting neuroscience results. Nature Human Behaviour (2024).
+doi:10.1038/s41562-024-02046-9 · arXiv 2403.03230. Numbers from arXiv v4.
+Discussion prompt: predicting which result was published is not the same as
+discovering; models learn the literature's patterns, including its biases.
+-->
+
+<span class="kicker">In neuroscience · Luo et al., <i>Nature Human Behaviour</i>, 2024</span>
+
+## Can an LLM predict a neuroscience result better than you?
+
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 26px;">
+<div>
+
+**The approach: BrainBench**
+- **200 test cases** from 2023 *Journal of Neuroscience* abstracts, across five fields.
+- For each, experts wrote a **version with altered results**, coherent but wrong; background and methods unchanged.
+- The task: **which abstract is the real one?**
+- LLMs choose the version they find less surprising (lower perplexity); **171 neuroscience experts** took the same test.
+
 </div>
 <div>
 
-<div class="card">
-<h3>At the frontier</h3>
-<p><b>AlphaFold</b> predicts protein structures (Nobel Prize in Chemistry 2024) · <b>AI "co-scientists"</b> propose hypotheses (Google, 2025) · <b>automated research pipelines</b> draft whole studies (The AI Scientist, 2024), with mixed quality</p>
+**The results**
+
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 12px;">
+<div class="card"><div style="font-size:2.2em; font-weight:800; color:var(--accent); line-height:1">81.4%</div><p>LLMs, on average</p></div>
+<div class="card"><div style="font-size:2.2em; font-weight:800; color:var(--science); line-height:1">63.4%</div><p>human experts</p></div>
 </div>
+
+- Ahead in **every subfield**; well calibrated: more confident when right.
+- **BrainGPT**, a small model further trained on neuroscience literature, did ~3 points better.
+- No sign of memorisation; they integrate background and methods.
 
 </div>
 </div>
+
+<span class="small">doi.org/10.1038/s41562-024-02046-9 · Predicting what was published is not discovering: models learn the literature's patterns, biases included.</span>
 
 ---
 
-<!-- ====== CONTEXT 9 — In neuroscience ======
-Sources: Luo et al. 2024, "Large language models surpass human experts in
-predicting neuroscience results", Nature Human Behaviour (BrainBench);
-DePasquale 2026 and Schuck 2026, The Transmitter (the two pre-reads).
+<!-- ====== CONTEXT 12 — Explore and reject fast: our example ======
+Thomas's own work (AutismBrainBehavior, detection-repetitive-behaviors-asd,
+June 2026). Unpublished: say "our work in progress"; no session IDs, no
+clinical data on screen. The figure is the method schematic on a synthetic
+signal. The point, with pre-read 1: when building and testing costs hours, you
+find out fast whether an approach can work, and stop early.
+[CONFIRM with Thomas: the slide follows what the repository shows (rebuild,
+re-run, reproducibility audit, benchmark scaffold).]
 -->
+<!-- _class: dense -->
 
-<span class="kicker">And in neuroscience</span>
+<span class="kicker">Models in an afternoon · our own example · pre-read 1: doi.org/10.53053/FVAU9567</span>
 
-## Already happening in our field
+## Explore and reject fast: detecting repetitive movements in autism
 
-<div class="cols3" style="margin-top: 6px;">
-<div class="card">
-<h3>Predicting results</h3>
-<p>On a benchmark of real neuroscience abstracts, LLMs predicted which result was the true one better than human experts (Luo et al., <i>Nature Human Behaviour</i>, 2024).</p>
+<div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 26px; align-items: start;">
+<div>
+
+**The idea**: spot hand-flapping and rocking automatically in videos of free-play sessions (Geneva Autism Cohort), with a training-free kinematic method: body keypoints → joint angles along the arm → wavelet scalogram → episodes.
+
+**With an agent, in a few working sessions**: the legacy code rebuilt as a tested package, re-run on the cohort, and a benchmark against a supervised deep-learning baseline (ASDMotion) scaffolded.
+
+**What it showed, fast**: the method did not reproduce. Re-runs found extra episodes in every session checked; the recording behind the paper's figure was the wrong one; left and right arm signals were swapped. No easy path: fix the inputs before investing in the model.
+
 </div>
-<div class="card">
-<h3>Models in an afternoon</h3>
-<p>Experimentalists without a modelling collaborator can get a fitted model, with an explanation, in an afternoon (DePasquale, pre-read 1).</p>
-</div>
-<div class="card">
-<h3>A pipeline in a day</h3>
-<p>A cognitive-neuroscience lab prototyped a complex decoding pipeline for its own data within a day, then wrote a lab AI policy (Schuck, pre-read 2).</p>
-</div>
-</div>
+<div>
 
-<br>
+<div class="fig"><img src="assets/asd_wavelet_method.png" alt="Method schematic: oscillating input signal, Morlet wavelet family, and the resulting scalogram" style="border-radius:8px; border:1px solid var(--line)"><div class="cap">The method on a synthetic signal: oscillation → wavelets → scalogram</div></div>
 
-> Which of these would change *your* week first?
+</div>
+</div>
 
 ---
 
-<!-- ====== CONTEXT 10 — POLL 1 · Where first ======
-Opinion, no right answer. Zoom: multiple choice, up to two. Show the result
-right away. Push: ask someone who picked the least-chosen option to defend it.
-Most current evidence of real change is in A (the pre-read's argument) and C;
-B is where the money is going (autonomous labs); D and E are where the policy
-fights are.
+<!-- ====== CONTEXT 13 — A pipeline in a day: our example ======
+Thomas's own work (AutismBrainBehavior, 4by4k-pipeline), Marie Schaer's group.
+Facts from the repository's benchmarks and git history: whole pipeline built
+on 18 Sep 2026 (10:46 → 18:29) with an agent; calibration solved before, in
+situ with a checkerboard (Aug–Sep 2026); validated on a real 49-min session:
+296,294 frames, 19.8 min from submission to 3-D, 99.89% agreement with the
+reference pipeline; 2-D pose at 5.5× real time; audio sync 6–14 ms RMS.
+Picture: stick figures from the room-4 reconstruction (gen_social), no video
+frames, no faces. Do not name the session.
+Governance point (bridge to pre-read 2): a guard in the code blocks the agent
+from the participant data folders.
+[CONFIRM] "hundreds of hours" (from Marie Schaer's crash course).
+-->
+<!-- _class: dense -->
+
+<span class="kicker">A pipeline in a day · our own example · pre-read 2: doi.org/10.53053/NSSZ1001</span>
+
+## Four 4K cameras, one 3-D scene, built in a day
+
+<div class="cols" style="grid-template-columns: 1fr 1.05fr; gap: 24px; align-items: start;">
+<div>
+
+**Setting**: clinical assessment rooms, four 4K corner cameras, a child with a clinician (and a parent), 20–60 min sessions (Marie Schaer's group). Cameras calibrated beforehand, in the room, with a checkerboard.
+
+**Day 1 with an agent** (18 Sep 2026): 2-D pose at 5.5× real time · audio sync across cameras (6–14 ms) · identities from geometry · metric 3-D · cluster automation · a quality-check app.
+
+**Same day, a real 49-min session**: 296,294 frames → 3-D in **19.8 min**, **99.89%** agreement with the reference. Ready for the lab's archive: hundreds of hours (see Marie Schaer's crash course).
+
+<span class="small">A guard in the code keeps the agent away from participant data.</span>
+
+</div>
+<div>
+
+<div class="fig"><img src="assets/room4_3d.png" alt="3-D reconstruction of a clinical room: child, clinician and parent as stick figures, four corner cameras" style="border-radius:10px"><div class="cap">Four calibrated corner cameras → one metric 3-D scene · child (blue), clinician (orange), parent (green)</div></div>
+
+</div>
+</div>
+
+---
+
+<!-- ====== CONTEXT 14 — Live quiz · Where first ======
+Opinion, no right answer. Live quiz app, multi-select (up to two). Show the
+results right away. Push: ask someone who picked the least-chosen option to
+defend it. Analysis and modelling is where the evidence of change is today
+(pre-read 1, the two examples you just saw); automated labs are where the
+money is going; writing and peer review are where the policy fights are.
 -->
 
 <span class="qnum">Poll 1 of 6 · Where first</span>
 
-## Where will agentic coding change research practice most in the next five years? *Pick up to two.*
+## Where has agentic coding changed, or will it change, research practice most in the next five years? *Pick up to two.*
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Analysing data and building models</div>
 <div class="opt"><b>B</b>Designing and running experiments: automated labs</div>
 <div class="opt"><b>C</b>Reading and synthesising the literature</div>
 <div class="opt"><b>D</b>Writing papers and grants</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
 <div class="opt"><b>E</b>Peer review and replication</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
-<!-- ====== CONTEXT 11 — Opportunities ======
+<!-- ====== CONTEXT 15 — Opportunities ======
 From module 01 ("Why it matters"), plus two lines for research.
 -->
 
@@ -566,7 +742,7 @@ From module 01 ("Why it matters"), plus two lines for research.
 
 ---
 
-<!-- ====== CONTEXT 11b — Pre-read 1: DePasquale, the opportunities ======
+<!-- ====== CONTEXT 16 — Pre-read 1: DePasquale, the opportunities ======
 DePasquale (Boston University), The Transmitter, 16 June 2026. Starting point:
 Larry Abbott's "Theoretical neuroscience rising" (Neuron, 2008): models can be
 explored and rejected faster than experiments. In practice the engineering
@@ -591,7 +767,7 @@ coding removes much of the bottleneck, in four directions.
 
 ---
 
-<!-- ====== CONTEXT 11c — Pre-read 1: the challenges, and seven responses ======
+<!-- ====== CONTEXT 17 — Pre-read 1: the challenges, and seven responses ======
 Verbatim quotes from the essay and its seven responses (checked on the page).
 Use this slide to open a two-minute discussion: which risk worries you most?
 -->
@@ -625,7 +801,7 @@ Use this slide to open a two-minute discussion: which risk worries you most?
 
 ---
 
-<!-- ====== CONTEXT 12 — Pitfalls ======
+<!-- ====== CONTEXT 18 — Pitfalls ======
 From module 02 ("Where it shines, where it bites" and "A 30-second horror
 story") and module 09 (safety rules).
 -->
@@ -659,7 +835,7 @@ story") and module 09 (safety rules).
 
 ---
 
-<!-- ====== CONTEXT 13 — What the science says ======
+<!-- ====== CONTEXT 19 — What the science says ======
 From module 02 ("What the science says", both slides). Kosmyna et al. is a
 preprint under active debate: cite as suggestive.
 -->
@@ -688,7 +864,7 @@ preprint under active debate: cite as suggestive.
 
 ---
 
-<!-- ====== CONTEXT 14 — POLL 2 · Reality check ======
+<!-- ====== CONTEXT 20 — POLL 2 · Reality check ======
 The one poll with an answer: D. Share the result right away, then the next
 slide.
 -->
@@ -697,18 +873,18 @@ slide.
 
 ## In a 2025 randomised trial, experienced open-source developers worked on their own projects with and without AI tools. With AI, they were…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>about 40% faster</div>
 <div class="opt"><b>B</b>about 20% faster</div>
 <div class="opt"><b>C</b>no faster and no slower</div>
 <div class="opt"><b>D</b>about 19% slower</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · the answer is on the next slide.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
-<!-- ====== CONTEXT 15 — The perception gap ======
+<!-- ====== CONTEXT 21 — The perception gap ======
 Caveat to say out loud: early-2025 tools, experts in large mature repositories
 they knew intimately. METR says the result may not hold for small new projects
 or unfamiliar code, which is closer to a 32-hour hack. The lesson is the
@@ -740,7 +916,7 @@ perception gap.
 
 ---
 
-<!-- ====== CONTEXT 16 — The thesis ======
+<!-- ====== CONTEXT 22 — The thesis ======
 From module 00 ("The thesis"). Bridge to Part 2.
 -->
 <!-- _class: ink -->
@@ -761,9 +937,9 @@ Your job becomes **intent · judgment · verification**. The syntax is the agent
 <!-- ====== HOW 1 — Divider ====== -->
 <!-- _class: ink divider -->
 
-<span class="clock">8 min</span>
+<span class="clock">6 min</span>
 
-<span class="kicker">17:25 · Part 2 · Objective 2 · Understand</span>
+<span class="kicker">17:30 · Part 2 · Objective 2 · Understand</span>
 
 # How vibe coding works
 
@@ -944,9 +1120,9 @@ what you want and the agent runs git for you.
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">12 min</span>
+<span class="clock">11 min</span>
 
-<span class="kicker">17:33 · Part 3 · Objective 2 · Understand</span>
+<span class="kicker">17:36 · Part 3 · Objective 2 · Understand</span>
 
 # Git without the jargon
 
@@ -1238,14 +1414,14 @@ reward producing models over understanding them.
 
 ## Soon an agent can re-run any published analysis from its repository in minutes. What happens to your field's literature?
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Replication becomes routine and the literature gets cleaner</div>
 <div class="opt"><b>B</b>A wave of corrections and retractions, then a cleaner literature</div>
 <div class="opt"><b>C</b>Little changes: nobody is rewarded for checking</div>
 <div class="opt"><b>D</b>AI-generated papers multiply faster than anyone can check them</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -1254,15 +1430,15 @@ reward producing models over understanding them.
 Facilitator: before opening the rooms, paste in the chat the link to the
 practical repository (the edition's practical/ folder, published without the
 facilitator/ folder) and the two-line setup. Breakout rooms of two (Zoom:
-assign automatically, 33 min, let participants return early off). Mix
-seniorities where you can. Broadcast at 18:06 "Switch roles: round 2", and at
-18:18 "Save your work and post your numbers in the main chat".
+assign automatically, 30 min, let participants return early off). Mix
+seniorities where you can. Broadcast at 18:05 "Switch roles: round 2", and at
+18:17 "Save your work and post your numbers in the main chat".
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">35 min</span>
+<span class="clock">37 min</span>
 
-<span class="kicker">17:45 · Part 4 · Objective 2 · Understand, by doing it</span>
+<span class="kicker">17:47 · Part 4 · Objective 2 · Understand, by doing it</span>
 
 # Practical in pairs
 
@@ -1279,7 +1455,7 @@ chat mode with file upload is allowed tonight (and only tonight).
 
 <span class="kicker">Module 08 · pair on the prompts</span>
 
-## Two roles, switch at 18:06
+## Two roles, switch at 18:05
 
 <div class="cols" style="margin-top: 4px;">
 <div class="card">
@@ -1309,7 +1485,7 @@ them gives one hour too little that night (5.9 h vs 6.9 h). Answer key:
 facilitator/ANSWER_KEY.md.
 -->
 
-<span class="kicker">Round 1 · Driver A · 17:50 → 18:06 · <code>sleep-mood/</code></span>
+<span class="kicker">Round 1 · Driver A · 17:50 → 18:05 · <code>sleep-mood/</code></span>
 
 ## How long do people sleep each night?
 
@@ -1350,7 +1526,7 @@ Real data, real traps (facilitator/check_eeg.py):
    with a random split vs 0.46 with time blocks; always guessing "open" = 0.55.
 -->
 
-<span class="kicker">Switch! · Round 2 · Driver B · 18:06 → 18:20 · <code>eeg-eye-state/</code></span>
+<span class="kicker">Switch! · Round 2 · Driver B · 18:05 → 18:19 · <code>eeg-eye-state/</code></span>
 
 ## Can EEG tell whether the eyes are closed, and how well, honestly?
 
@@ -1441,14 +1617,14 @@ themselves before any AI editing.
 
 ## A first-year PhD student can now get working analysis code from an agent in minutes. In their first year, they should…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Use agents freely: directing them is the skill that matters now</div>
 <div class="opt"><b>B</b>Write their core analyses by hand first, agents later</div>
 <div class="opt"><b>C</b>Use agents, but explain every line at lab meeting</div>
 <div class="opt"><b>D</b>Keep agents away from thesis-critical analyses</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -1461,9 +1637,9 @@ facilitator/ANSWER_KEY.md (five problems). Don't hint.
 Output is verbatim from `python analysis.py` (seed 2026).
 -->
 
-<span class="clock">10 min</span>
+<span class="clock">7 min</span>
 
-<span class="kicker">18:25 · Part 5 · Review hunt · everyone, in the main room</span>
+<span class="kicker">18:24 · Part 5 · Review hunt · everyone, in the main room</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.2fr; gap: 30px; align-items: start;">
 <div>
@@ -1563,17 +1739,17 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 ## In 2031, the scarcest skill in a neuroscience lab will be…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Programming</div>
 <div class="opt"><b>B</b>Statistics and methods</div>
 <div class="opt"><b>C</b>Choosing the question worth asking</div>
 <div class="opt"><b>D</b>Judging whether a result is true</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
 <div class="opt"><b>E</b>Collecting good data from real people</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -1583,7 +1759,7 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 <span class="clock">10 min</span>
 
-<span class="kicker">18:33 · Part 6 · Objective 3 · Prepare</span>
+<span class="kicker">18:31 · Part 6 · Objective 3 · Prepare</span>
 
 # The hack: where we are
 
@@ -1785,9 +1961,9 @@ application, plus an inspiring pitch.
 <!-- ====== FUTURE 1 — Divider ====== -->
 <!-- _class: ink divider -->
 
-<span class="clock">17 min</span>
+<span class="clock">19 min</span>
 
-<span class="kicker">18:43 · Part 7 · Objective 1 · Imagine</span>
+<span class="kicker">18:41 · Part 7 · Objective 1 · Imagine</span>
 
 # A future worth building
 
@@ -1898,14 +2074,14 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ## Pre-read 1 warns that AI coding could make theoretical neuroscience *"prolific but shallow"*. For your own field, you think…
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>It is already happening</div>
 <div class="opt"><b>B</b>It will happen unless incentives change</div>
 <div class="opt"><b>C</b>The opposite: faster coding frees time to think</div>
 <div class="opt"><b>D</b>Too early to say</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 

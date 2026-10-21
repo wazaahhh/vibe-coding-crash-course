@@ -5,9 +5,9 @@ what you want and the agent runs git for you.
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">12 min</span>
+<span class="clock">11 min</span>
 
-<span class="kicker">17:33 · Part 3 · Objective 2 · Understand</span>
+<span class="kicker">17:36 · Part 3 · Objective 2 · Understand</span>
 
 # Git without the jargon
 
@@ -299,11 +299,11 @@ reward producing models over understanding them.
 
 ## Soon an agent can re-run any published analysis from its repository in minutes. What happens to your field's literature?
 
-<div class="opts">
+<div class="opts" style="width: 64%;">
 <div class="opt"><b>A</b>Replication becomes routine and the literature gets cleaner</div>
 <div class="opt"><b>B</b>A wave of corrections and retractions, then a cleaner literature</div>
 <div class="opt"><b>C</b>Little changes: nobody is rewarded for checking</div>
 <div class="opt"><b>D</b>AI-generated papers multiply faster than anyone can check them</div>
 </div>
 
-<span class="small" style="display:block; margin-top: 10px;">Zoom poll now · results right after.</span>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
