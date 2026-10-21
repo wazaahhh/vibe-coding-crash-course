@@ -14,7 +14,7 @@ polling must be enabled in the account settings.
   For polls 1–5, keep results hidden until 18:50 (the "room's answers" slide), so early splits don't steer the
   evening. Poll 6: share the result straight away; it closes the quiz.
 
-The opening question (slide 2) is open-ended: it runs in the **Zoom chat**. Save the chat.
+The opening question (slide 3) is open-ended: it runs in the **Zoom chat**. Save the chat.
 
 ---
 
