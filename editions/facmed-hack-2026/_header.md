@@ -118,6 +118,10 @@ style: |
   pre code { background: transparent; padding: 0; }
   section.ink pre, section.ink code { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.14); color: var(--on-ink); }
   .divider h1 { font-size: 2.3em; margin-bottom: 0.3em; }
+  /* Dense: for the few slides that carry a long table or two full columns. */
+  section.dense { font-size: 22px; padding-top: 40px; }
+  section.dense table { font-size: 0.74em; }
+  section.dense th, section.dense td { padding-top: 6px; padding-bottom: 6px; }
   /* Full-slide quote: opening and closing bookends. */
   section.quote { display: flex !important; flex-direction: column; justify-content: center; }
   section.quote blockquote {

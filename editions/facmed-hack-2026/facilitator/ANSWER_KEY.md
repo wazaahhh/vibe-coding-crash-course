@@ -1,8 +1,9 @@
 # Answer key — facilitators only
 
-Numbers from `python check_answers.py` (seed 2026). Do not share before the debrief.
+Keep this folder (`facilitator/`) out of anything participants receive. Numbers from
+`python check_answers.py` and `python check_eeg.py` (synthetic data seed 2026).
 
-## Live build trap: daylight saving (25 October 2026)
+## Practical, round 1 · `sleep-mood/` · daylight saving (25 October 2026)
 
 Times in `sleep.csv` are Geneva wall-clock times with no offset. Clocks went back at 03:00 on
 Sun 25 Oct, so subtracting wall-clock times gives one hour too little for everyone asleep across
@@ -12,8 +13,25 @@ the change. No error is raised.
 - Time-zone-aware (localise to `Europe/Zurich`, convert to UTC, then subtract): **6.9 h**.
 - How it gets caught: plot mean sleep per night. One night drops by an hour for every participant
   at once; only the calendar explains that.
+- If the agent gets it right first time, say so in the debrief, and show the naive number.
 
-## Review hunt: `analysis.py` has five problems
+## Practical, round 2 · `eeg-eye-state/` · two real traps
+
+Roesler (2013), UCI Machine Learning Repository, CC BY 4.0: one continuous 117 s recording,
+14 channels, 14,980 samples, eyes closed in 45 % of samples, 24 open/closed periods.
+
+1. **Artifacts.** 4 samples have values more than 20 median absolute deviations from the median,
+   up to **715,897** where the median is about **4,268**. Raw plots look flat; standard deviations
+   of AF3, FC5, P7, O1, P8, F8 and AF4 are inflated by orders of magnitude.
+2. **Random split on one continuous recording.** Neighbouring samples (about 128 per second) are
+   near-copies, so a random split puts each test sample's twin in the training set.
+   - kNN (k = 5, standardised), artifacts removed: **0.96** with a random 5-fold split,
+     **0.46** with 5 consecutive time blocks.
+   - Always guessing "open": **0.55**.
+   - The honest answer: from this one recording, a simple classifier does not generalise to a
+     later part of the same session.
+
+## Review hunt · `review-hunt/analysis.py` · five problems
 
 It runs cleanly, is well commented, and handles daylight saving correctly, which is what makes
 the rest believable.
@@ -28,12 +46,4 @@ the rest believable.
 
 After fixing 1–3, the honest result is: sleep predicts next-day mood (r ≈ +0.45); steps add little
 (r ≈ +0.15); a low-mood-day classifier generalises to new people only modestly (AUC ≈ 0.69).
-The shipped headline is reversed on every point.
-
-## Debrief questions
-
-- Which problem did your pair find first, and what found it: reading the code, a plot, the
-  codebook, or a second method?
-- Which ones would a second AI reviewer have caught? (Try it: paste `analysis.py` and the
-  codebook and ask "what's wrong?")
-- Problem 4 has no bug in the code. What check would have caught it?
+The shipped headline is reversed on every point. Problem 3 is the EEG trap of round 2, again.

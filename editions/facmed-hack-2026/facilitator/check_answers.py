@@ -2,6 +2,7 @@
 
 Run:  python check_answers.py
 """
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -10,9 +11,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import GroupShuffleSplit, train_test_split
 
-import analysis
+PRACTICAL = Path(__file__).parent.parent / "practical"
+sys.path.insert(0, str(PRACTICAL / "review-hunt"))
+import analysis  # noqa: E402
 
-DATA = Path(__file__).parent / "data"
+DATA = PRACTICAL / "sleep-mood" / "data"
 
 
 def naive_sleep() -> pd.DataFrame:

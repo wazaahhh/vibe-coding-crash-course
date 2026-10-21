@@ -6,8 +6,8 @@
   data/steps.csv          participant_id, date, steps, wear_minutes
   data/ema.csv            participant_id, date, mood_1..mood_4             (1-7; see data/README.md)
 
-Everything is synthetic. The traps are deliberate (answer key in ../ANSWER_KEY.md, facilitators only).
-Deterministic: same seed, same files.  Run:  python generate_data.py
+Everything is synthetic. The traps are deliberate (answer key in ANSWER_KEY.md, facilitators only).
+Writes to ../practical/sleep-mood/data/. Deterministic: same seed, same files.  Run:  python generate_data.py
 """
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -24,7 +24,7 @@ TZ = ZoneInfo("Europe/Zurich")
 UTC = ZoneInfo("UTC")
 
 rng = np.random.default_rng(SEED)
-out = Path(__file__).parent / "data"
+out = Path(__file__).parent.parent / "practical" / "sleep-mood" / "data"
 out.mkdir(exist_ok=True)
 
 ids = [f"P{i:02d}" for i in range(1, N + 1)]
