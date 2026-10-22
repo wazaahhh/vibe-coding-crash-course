@@ -114,14 +114,14 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ## Pre-read 1 warns that AI coding could make theoretical neuroscience *"prolific but shallow"*. For your own field, you think…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>It is already happening</div>
 <div class="opt"><b>B</b>It will happen unless incentives change</div>
 <div class="opt"><b>C</b>The opposite: faster coding frees time to think</div>
 <div class="opt"><b>D</b>Too early to say</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 

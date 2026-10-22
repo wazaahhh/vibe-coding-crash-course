@@ -232,7 +232,7 @@ Finding and summarising papers · analysis code · modelling · writing and edit
 </div>
 <div>
 
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz · PIN in the Zoom chat</b><span>{{QUIZ_URL}}</span></div></div>
 
 </div>
 </div>
@@ -417,17 +417,17 @@ money is going; writing and peer review are where the policy fights are.
 
 ## Where has agentic coding changed, or will it change, research practice most in the next five years? *Pick up to two.*
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Analysing data and building models</div>
 <div class="opt"><b>B</b>Designing and running experiments: automated labs</div>
 <div class="opt"><b>C</b>Reading and synthesising the literature</div>
 <div class="opt"><b>D</b>Writing papers and grants</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 58%;">
 <div class="opt"><b>E</b>Peer review and replication</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 
@@ -583,14 +583,14 @@ slide.
 
 ## In a 2025 randomised trial, experienced open-source developers worked on their own projects with and without AI tools. With AI, they were…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>about 40% faster</div>
 <div class="opt"><b>B</b>about 20% faster</div>
 <div class="opt"><b>C</b>no faster and no slower</div>
 <div class="opt"><b>D</b>about 19% slower</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 

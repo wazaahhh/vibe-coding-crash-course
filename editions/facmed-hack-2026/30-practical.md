@@ -189,11 +189,11 @@ themselves before any AI editing.
 
 ## A first-year PhD student can now get working analysis code from an agent in minutes. In their first year, they should…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Use agents freely: directing them is the skill that matters now</div>
 <div class="opt"><b>B</b>Write their core analyses by hand first, agents later</div>
 <div class="opt"><b>C</b>Use agents, but explain every line at lab meeting</div>
 <div class="opt"><b>D</b>Keep agents away from thesis-critical analyses</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>

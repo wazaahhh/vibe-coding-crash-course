@@ -79,6 +79,9 @@ style: |
   }
   footer { color: var(--fg-faint); font-size: 0.5em; left: 64px; }
   section::after { color: var(--fg-faint); font-size: 0.55em; }
+  /* Slide numbers: n / total. Backup slides use <!-- _paginate: skip -->, which hides
+     their number and leaves them out of the count. */
+  section::after { content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total); }
 
   /* Quiz: four answer cards in a 2 × 2 grid, letter badge on the left. */
   .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; margin-top: 6px; }
@@ -522,7 +525,7 @@ Finding and summarising papers · analysis code · modelling · writing and edit
 </div>
 <div>
 
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz · PIN in the Zoom chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 </div>
 </div>
@@ -707,17 +710,17 @@ money is going; writing and peer review are where the policy fights are.
 
 ## Where has agentic coding changed, or will it change, research practice most in the next five years? *Pick up to two.*
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Analysing data and building models</div>
 <div class="opt"><b>B</b>Designing and running experiments: automated labs</div>
 <div class="opt"><b>C</b>Reading and synthesising the literature</div>
 <div class="opt"><b>D</b>Writing papers and grants</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 58%;">
 <div class="opt"><b>E</b>Peer review and replication</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
@@ -873,14 +876,14 @@ slide.
 
 ## In a 2025 randomised trial, experienced open-source developers worked on their own projects with and without AI tools. With AI, they were…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>about 40% faster</div>
 <div class="opt"><b>B</b>about 20% faster</div>
 <div class="opt"><b>C</b>no faster and no slower</div>
 <div class="opt"><b>D</b>about 19% slower</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
@@ -1414,14 +1417,14 @@ reward producing models over understanding them.
 
 ## Soon an agent can re-run any published analysis from its repository in minutes. What happens to your field's literature?
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Replication becomes routine and the literature gets cleaner</div>
 <div class="opt"><b>B</b>A wave of corrections and retractions, then a cleaner literature</div>
 <div class="opt"><b>C</b>Little changes: nobody is rewarded for checking</div>
 <div class="opt"><b>D</b>AI-generated papers multiply faster than anyone can check them</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -1617,14 +1620,14 @@ themselves before any AI editing.
 
 ## A first-year PhD student can now get working analysis code from an agent in minutes. In their first year, they should…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Use agents freely: directing them is the skill that matters now</div>
 <div class="opt"><b>B</b>Write their core analyses by hand first, agents later</div>
 <div class="opt"><b>C</b>Use agents, but explain every line at lab meeting</div>
 <div class="opt"><b>D</b>Keep agents away from thesis-critical analyses</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -1739,17 +1742,17 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 ## In 2031, the scarcest skill in a neuroscience lab will be…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Programming</div>
 <div class="opt"><b>B</b>Statistics and methods</div>
 <div class="opt"><b>C</b>Choosing the question worth asking</div>
 <div class="opt"><b>D</b>Judging whether a result is true</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 58%;">
 <div class="opt"><b>E</b>Collecting good data from real people</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 
 ---
@@ -2074,14 +2077,14 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ## Pre-read 1 warns that AI coding could make theoretical neuroscience *"prolific but shallow"*. For your own field, you think…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>It is already happening</div>
 <div class="opt"><b>B</b>It will happen unless incentives change</div>
 <div class="opt"><b>C</b>The opposite: faster coding frees time to think</div>
 <div class="opt"><b>D</b>Too early to say</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>facmed-quiz.pages.dev</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 

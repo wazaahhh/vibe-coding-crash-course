@@ -108,14 +108,14 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 ## In 2031, the scarcest skill in a neuroscience lab will be…
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Programming</div>
 <div class="opt"><b>B</b>Statistics and methods</div>
 <div class="opt"><b>C</b>Choosing the question worth asking</div>
 <div class="opt"><b>D</b>Judging whether a result is true</div>
 </div>
-<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 64%;">
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 58%;">
 <div class="opt"><b>E</b>Collecting good data from real people</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>

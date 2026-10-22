@@ -299,11 +299,11 @@ reward producing models over understanding them.
 
 ## Soon an agent can re-run any published analysis from its repository in minutes. What happens to your field's literature?
 
-<div class="opts" style="width: 64%;">
+<div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Replication becomes routine and the literature gets cleaner</div>
 <div class="opt"><b>B</b>A wave of corrections and retractions, then a cleaner literature</div>
 <div class="opt"><b>C</b>Little changes: nobody is rewarded for checking</div>
 <div class="opt"><b>D</b>AI-generated papers multiply faster than anyone can check them</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>

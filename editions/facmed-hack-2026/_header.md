@@ -79,6 +79,9 @@ style: |
   }
   footer { color: var(--fg-faint); font-size: 0.5em; left: 64px; }
   section::after { color: var(--fg-faint); font-size: 0.55em; }
+  /* Slide numbers: n / total. Backup slides use <!-- _paginate: skip -->, which hides
+     their number and leaves them out of the count. */
+  section::after { content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total); }
 
   /* Quiz: four answer cards in a 2 × 2 grid, letter badge on the left. */
   .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 22px; margin-top: 6px; }
