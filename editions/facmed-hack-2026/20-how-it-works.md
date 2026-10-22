@@ -1,4 +1,9 @@
-<!-- ====== HOW 1 — Divider ====== -->
+<!-- ====== HOW 1 — Divider ======
+The picture: on the left, the old loop, where understanding sits in the middle
+because you think, type, run and see every step. On the right, the agent does
+the middle of the loop; understanding only comes back in if you choose to read,
+question and test (the pink dashed step, the one that is easy to skip).
+-->
 <!-- _class: ink divider -->
 
 <span class="clock">6 min</span>
@@ -7,7 +12,9 @@
 
 # How vibe coding works
 
-When you write code yourself, understanding comes for free. When you direct an agent, you have to *choose* to engage it. Four disciplines make the new loop safe.
+When you write code yourself, understanding comes (almost) for free. When you direct an agent, you have to *choose* to engage it. Four disciplines make the new loop safe.
+
+<img src="assets/two_loops.svg" alt="Two loops: writing code yourself builds understanding in; directing an agent leaves understanding outside the loop unless you choose to read, question and test" style="width: 88%; display:block; margin: 14px auto 0;">
 
 ---
 
@@ -15,7 +22,7 @@ When you write code yourself, understanding comes for free. When you direct an a
 From module 02 (pillars 1 and 2), as read in the pre-work.
 -->
 
-<span class="kicker">Module 02 · the four pillars · 1–2</span>
+<span class="kicker">The four pillars · 1–2</span>
 
 ## Diverge first, then think critically
 
@@ -38,20 +45,51 @@ From module 02 (pillars 1 and 2), as read in the pre-work.
 
 <!-- ====== HOW 3 — Pillars 3 and 4 ======
 From module 02 (pillars 3 and 4). The METR poll just made pillar 3 concrete.
+Faces: Daniel Kahneman (1934–2024) and Amos Tversky (1937–1996), whose work on
+heuristics and biases from the 1970s grounds System 1 / System 2 (Kahneman,
+Thinking, Fast and Slow, 2011; Nobel Memorial Prize in Economics 2002, which
+Tversky did not live to share).
+PILLAR 4, take your time here (1–2 min). "Fail fast" sounds like a start-up
+slogan; it is far older than Silicon Valley. Science advances by proposing
+guesses and trying hard to prove them wrong (Popper, conjectures and
+refutations). Feynman, The Character of Physical Law (1965): first we guess a
+law, compute its consequences, compare with experiment; "if it disagrees with
+experiment, it is wrong". Most experiments fail; a negative result rules
+something out. What was scarce was the number of attempts: each analysis, each
+model, each pipeline cost days or weeks to build, so we tried few, and chose
+them conservatively. Agents cut that cost to minutes, so a lab can test more
+hypotheses, and more severely (the two examples in Part 1: many methods tried,
+one unstuck after years, one that failed and taught us). The scientific
+virtue that matters is unchanged: design the attempt that could prove you
+wrong, keep a record of what failed (git, NOTES.md), and don't stop at the
+first attempt that looks good.
+Kahneman photo: NRKbeta.no (Flickr 3283955327), cropped, CC BY-SA (Commons
+lists BY-SA 2.0; the photo's own notice says BY-SA 3.0 Norway).
+Tversky photo: supplied by Thomas (22 Oct); it is the non-free image from
+Wikipedia (copyrighted, author unknown, via nndb.com). Fine for a live
+lecture; replace it before the deck or its PDF is published, and note that
+the course repository is CC BY-NC.
 -->
 
-<span class="kicker">Module 02 · the four pillars · 3–4</span>
+<span class="kicker">The four pillars · 3–4</span>
 
 ## Think fast and slow; try and fail
 
 <div class="cols" style="margin-top: 6px;">
 <div class="card">
 <h3>3 · Thinking fast / slow</h3>
+<div style="display:flex; gap: 14px; align-items: center; margin: 4px 0 10px;">
+<div style="text-align:center;"><img src="assets/kahneman.jpg" alt="Daniel Kahneman" style="width:84px; height:84px; object-fit:cover; object-position: 50% 20%; border-radius:50%; display:block;"><span class="small" style="font-size:0.55em; display:block; line-height:1.15; margin-top:4px;">Daniel<br>Kahneman</span></div>
+<div style="text-align:center;"><img src="assets/tversky.jpg" alt="Amos Tversky" style="width:84px; height:84px; object-fit:cover; object-position: 50% 30%; border-radius:50%; display:block;"><span class="small" style="font-size:0.55em; display:block; line-height:1.15; margin-top:4px;">Amos<br>Tversky</span></div>
+<p style="font-size:0.72em;">Heuristics and biases, from the 1970s: the work behind <i>Thinking, Fast and Slow</i> (2011).</p>
+</div>
 <p>The AI is your <b>System 1</b>: fast, fluent, sometimes wrong. <b>You</b> supply System 2: slow, deliberate, checking. <i>"System 2 is in charge of doubting, but System 2 is often lazy"</i> (Kahneman).</p>
 </div>
 <div class="card">
 <h3>4 · Try and fail</h3>
-<p>Generation is cheap → more attempts, smaller stakes. Prototype to throw away. Failure costs <b>minutes, not a day</b>, so failure becomes the unit of search, as long as you can always go back (Part 3: git).</p>
+<p>Not a Silicon Valley motto: <b>the method of science</b>. A hypothesis is a guess you try to break; an experiment that fails tells you something.</p>
+<blockquote style="font-size:0.72em; margin: 8px 0;"><i>"The method of science is the method of bold conjectures and ingenious and severe attempts to refute them."</i><br><span class="small">Karl Popper, <i>Objective Knowledge</i>, 1972</span></blockquote>
+<p>What changes: a failed attempt now costs <b>minutes, not weeks</b>. More guesses, tested harder, as long as you can always go back (Part 3: git).</p>
 </div>
 </div>
 
@@ -59,15 +97,82 @@ From module 02 (pillars 3 and 4). The METR poll just made pillar 3 concrete.
 
 > The more the result matters, the more slowly you must read it.
 
+<span class="small" style="font-size:0.55em;">Photo of D. Kahneman: NRKbeta.no, CC BY-SA, via Wikimedia Commons (cropped).</span>
+
+---
+
+<!-- ====== HOW 3b — Descartes: dubito, ergo cogito, ergo sum ======
+Ten seconds of silence after reading it. The bridge from the previous slide:
+System 2 "is in charge of doubting"; with an agent, doubting is the part of the
+thinking that stays yours.
+Attribution: the formula "dubito, ergo cogito, ergo sum" ("I doubt, therefore I
+think, therefore I am") is a later summary of Descartes' method, usually
+credited to Antoine Léonard Thomas (Éloge de René Descartes, 1765); Descartes
+wrote "je pense, donc je suis" (Discours de la méthode, 1637) and "ego sum, ego
+existo" (Meditationes, 1641), reaching it through methodical doubt. Say
+"attributed to Descartes" if asked.
+Portrait: Frans Hals (after), c. 1649–1700, Louvre; public domain, via
+Wikimedia Commons.
+-->
+<!-- _class: ink quote -->
+<!-- _footer: "" -->
+
+<div style="display:grid; grid-template-columns: 220px 1fr; gap: 44px; align-items: center;">
+<div><img src="assets/descartes.jpg" alt="Portrait of René Descartes, after Frans Hals" style="width:220px; height:220px; object-fit:cover; object-position: 50% 22%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
+<div>
+
+> "Dubito, ergo cogito, ergo sum."
+
+<div class="who" style="padding-left:40px;">I doubt, therefore I think, therefore I am.</div>
+<div class="who" style="padding-left:40px; margin-top: 10px;"><b>René Descartes</b> · attributed, after the <i>Discourse on Method</i> (1637)</div>
+
+</div>
+</div>
+
+<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Portrait after Frans Hals, Louvre · public domain, via Wikimedia Commons</span>
+
+---
+
+<!-- ====== HOW 3c — Section break: getting concrete ======
+A breath after the principles and Descartes. From here, the practical set-up:
+the project folder and its rule file, how to ask, the three dials, a worked
+rhythm. Then git, then hands on in pairs.
+-->
+<!-- _class: ink divider -->
+
+<span class="kicker">Part 2 · from principles to practice</span>
+
+# Now, let's get concrete
+
+How to set up a vibe-coding project, how to ask, and which dials to turn: the moves you will use tonight in pairs, and at the hack.
+
+<div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 26px;">
+<div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">1</span><h3>One folder, one rule file</h3></div>
+<div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">2</span><h3>How to ask</h3></div>
+<div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">3</span><h3>1 task = 1 agent</h3></div>
+<div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">4</span><h3>Three dials</h3></div>
+<div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">5</span><h3>A worked rhythm</h3></div>
+</div>
+
 ---
 
 <!-- ====== HOW 4 — One project folder, one rule file ======
 From module 03 ("Mode B, done right") and module 07 (CLAUDE.md conventions).
 AGENTS.md is the cross-tool name (Codex, Copilot, Cline); Claude Code reads
 CLAUDE.md, which can simply import AGENTS.md.
+Patient and participant data: the rule file names the folder (participants/)
+and the file types that identify people (video, audio, raw recordings,
+consent forms, ID or contact lists) and tells the agent to stop and ask.
+Say it clearly: a rule file is an instruction the agent follows, not a lock.
+For identifiable data, add a real barrier: keep it outside the project folder
+altogether, and/or deny it in the agent's permission settings (e.g. Claude
+Code .claude/settings.json: "deny": ["Read(./participants/**)",
+"Read(**/*.edf)", "Read(**/*.mp4)"]), as in our 4-camera pipeline, where a
+guard in the code blocks the agent from participant folders. Crash Course #1
+covered the Swiss data rules.
 -->
 
-<span class="kicker">Modules 03 &amp; 07 · set the agent up</span>
+<span class="kicker">Set the agent up</span>
 
 <div class="cols" style="grid-template-columns: 1.1fr 1fr; gap: 30px; align-items: start;">
 <div>
@@ -75,7 +180,7 @@ CLAUDE.md, which can simply import AGENTS.md.
 ## One project folder, one rule file
 
 - Put **code · figures · notes · the paper** in one project folder: the agent sees the whole picture.
-- Raw or private **data stays out of what gets shared** (Part 3).
+- Raw or private **data stays out of what gets shared** (Part 3), and **identifiable participant data stays out of the agent's reach**.
 - A rule file at the top, **`AGENTS.md`** (or `CLAUDE.md` for Claude Code), tells the agent your house rules, every time.
 
 > Chat answers a question. A project folder lets the agent **work on your actual project**.
@@ -85,17 +190,24 @@ CLAUDE.md, which can simply import AGENTS.md.
 
 ```text
 my-project/
-├── AGENTS.md    ← house rules for the agent
-├── NOTES.md     ← what we verified / trusted
-├── code/        ← analysis, notebooks
-├── results/     ← figures, tables
-└── data/        ← stays local, never shared
+├── AGENTS.md      ← house rules for the agent
+├── NOTES.md       ← what we verified / trusted
+├── code/          ← analysis, notebooks
+├── results/       ← figures, tables
+├── data/          ← de-identified only; read, never modify
+└── participants/  ← identifiable: OUT OF REACH
 ```
 
 ```markdown
 # Rules
 - Python, pandas. Figures go to results/.
 - Never modify files in data/.
+- NEVER open, read, list or search participants/,
+  or any copy of it, anywhere.
+- Never open video (.mp4 .mov), audio (.wav .m4a),
+  raw recordings (.edf .bdf), consent forms (.pdf),
+  or files whose name contains "id", "name" or "contact".
+- If a task needs them: stop and ask me.
 - Plan first and wait for my OK.
 ```
 
@@ -108,7 +220,7 @@ my-project/
 From module 03 ("How to ask").
 -->
 
-<span class="kicker">Module 03 · the intent half of the job</span>
+<span class="kicker">The intent half of the job</span>
 
 ## How to ask: direct it like a capable new student
 
@@ -136,12 +248,53 @@ From module 03 ("How to ask").
 
 ---
 
+<!-- ====== HOW 5b — Modular work: 1 task = 1 agent ======
+The habit that makes agents manageable. A long session that does everything
+fills its context window (slide on the LLM: it only "sees" what fits), mixes
+goals, and makes failures hard to undo. Cut the work into tasks small enough
+to state in two sentences and to check in two minutes. Each task gets a fresh
+agent session and its own branch (Part 3), so a bad attempt is thrown away
+without touching the rest, and several tasks can run in parallel (the agent
+app on the "three environments" slide). Your job becomes the one of a PI with
+a team of capable students: split, brief, review, merge. At the hack: one task
+per person-plus-agent, merged into the team repository.
+-->
+
+<span class="kicker">Organise the work</span>
+
+## Work in modules: 1 task = 1 agent
+
+<div class="cols" style="grid-template-columns: 1.05fr 1fr; gap: 30px; align-items: center;">
+<div>
+
+- **Cut the project into small tasks**, each with a clear goal and a check: *"load and clean"*, *"sleep per night"*, *"figure 2"*.
+- **One agent per task**: a fresh session, its own branch. Small context, fewer confusions; a failed task is thrown away alone.
+- **You coordinate**, like a PI with capable students: brief, review, merge (Part 3).
+
+</div>
+<div>
+
+<div class="card" style="text-align:center; padding: 10px;"><h3 style="margin:0;">my-project</h3></div>
+<div style="text-align:center; color: var(--fg-faint); line-height: 1.1;">↓ &nbsp; ↓ &nbsp; ↓</div>
+<div class="cols3" style="gap: 10px;">
+<div class="card" style="border-top: 4px solid var(--science); padding: 10px 12px;"><span class="qnum" style="color: var(--science);">Task 1</span><p><b>agent A</b><br>load &amp; clean<br><code>branch clean</code></p></div>
+<div class="card" style="border-top: 4px solid var(--energy); padding: 10px 12px;"><span class="qnum" style="color: var(--energy);">Task 2</span><p><b>agent B</b><br>sleep per night<br><code>branch sleep</code></p></div>
+<div class="card" style="border-top: 4px solid var(--accent); padding: 10px 12px;"><span class="qnum">Task 3</span><p><b>agent C</b><br>figure 2<br><code>branch fig2</code></p></div>
+</div>
+<div style="text-align:center; color: var(--fg-faint); line-height: 1.1;">↓ &nbsp; ↓ &nbsp; ↓</div>
+<div class="card" style="text-align:center; padding: 10px; border: 2px solid var(--accent); background: var(--accent-soft);"><h3 style="margin:0;">You: review → merge</h3></div>
+
+</div>
+</div>
+
+---
+
 <!-- ====== HOW 6 — Three dials ======
 From module 06 (three dials + edit modes table). Tool-agnostic: Claude Code,
 Codex, Copilot and Cline all have these, named differently.
 -->
 
-<span class="kicker">Module 06 · the controls</span>
+<span class="kicker">The controls</span>
 
 ## Three dials, whichever agent you use
 
@@ -162,7 +315,7 @@ From module 06 ("Putting the three together"). This is the rhythm the
 practical asks for.
 -->
 
-<span class="kicker">Module 06 · a worked rhythm</span>
+<span class="kicker">A worked rhythm</span>
 
 ## Right mode, right model, hand on the wheel
 

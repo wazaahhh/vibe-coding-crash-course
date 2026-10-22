@@ -81,7 +81,7 @@ one line").
 -->
 <!-- _class: ink -->
 
-<span class="kicker">Module 08 · working together in a lab</span>
+<span class="kicker">Working together in a lab</span>
 
 ## When code is cheap, review is the work
 
@@ -118,4 +118,4 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 <div class="opt"><b>E</b>Collecting good data from real people</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>

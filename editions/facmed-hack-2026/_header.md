@@ -133,6 +133,7 @@ style: |
   .quizbox span { font-size: 0.78em; font-weight: 700; color: var(--ink); }
   .quizbox.big img { width: 230px; height: 230px; }
   .quizbox.big span { font-size: 1em; }
+  .quizbox span.pin { display: block; margin-top: 6px; font-size: 1.15em; font-weight: 800; color: var(--accent); letter-spacing: 0.04em; }
   /* Figures with captions. */
   .fig { text-align: center; }
   .fig img { max-width: 100%; display: block; margin: 0 auto; }

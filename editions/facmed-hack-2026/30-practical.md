@@ -25,7 +25,7 @@ Nobody without tools is left out: all data here is synthetic or open, so
 chat mode with file upload is allowed tonight (and only tonight).
 -->
 
-<span class="kicker">Module 08 · pair on the prompts</span>
+<span class="kicker">Pair on the prompts</span>
 
 ## Two roles, switch at 18:05
 
@@ -133,7 +133,7 @@ From module 03 and the course handout. Keep this slide shared in the main room
 while the breakouts run, and paste the five prompts in the chat.
 -->
 
-<span class="kicker">Module 03 &amp; the course handout · keep these open</span>
+<span class="kicker">From the course handout · keep these open</span>
 
 ## Five prompts worth stealing
 
@@ -196,4 +196,4 @@ themselves before any AI editing.
 <div class="opt"><b>D</b>Keep agents away from thesis-critical analyses</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>

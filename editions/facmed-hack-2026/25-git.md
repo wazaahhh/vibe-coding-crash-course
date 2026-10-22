@@ -1,5 +1,7 @@
 <!-- ====== GIT 1 — Divider ======
 Assume nobody knows git. Every word gets a plain meaning before it is used.
+The frame for the whole part: directing an agent means exploring (pillar 4,
+try and fail), and exploration needs a lab book. Git is that lab book.
 The promise to make early: you will rarely type a git command; you will say
 what you want and the agent runs git for you.
 -->
@@ -9,41 +11,61 @@ what you want and the agent runs git for you.
 
 <span class="kicker">17:36 · Part 3 · Objective 2 · Understand</span>
 
-# Git without the jargon
+# Git &amp; GitHub, without the jargon
 
-Why an agent needs a safety net, what git does in plain words, and how to hand 95% of it to the agent.
+**Git is version control**: every version of your project, dead ends included: your lab book, written by the agent. **GitHub or GitLab is where most of it happens**: online, shared with your team.
+
+<img src="assets/git_github.svg" alt="Each teammate keeps a git history on their laptop, with dead ends and merged attempts; all push to and pull from the shared history on GitHub or GitLab" style="width: 84%; display:block; margin: 6px auto 0;">
 
 ---
 
-<!-- ====== GIT 2 — The problem ======
-From module 05 ("The problem vibe coding creates").
+<!-- ====== GIT 2 — A lab book for directing ======
+Reframed (Thomas, 22 Oct): version control matters less because agents edit
+fast, and more because directing IS exploring. You try an approach, it fails,
+you try another, and at some point you want the good solution from two days
+ago back, together with the record of what did not work and why. In the lab,
+that is the lab book: dated, signed, pages never torn out. With agents, the
+number of attempts explodes, so the lab book has to be automatic: git, run by
+the agent, one entry per attempt. Bonus: the failed branches are the negative
+results you can show, and the history is what makes the work reproducible.
+Make the two words unmistakable: GIT is version control (a program, on your
+laptop, offline); GITHUB (owned by Microsoft) and GITLAB (also
+self-hosted by many universities and hospitals, useful when data rules keep
+code in-house) are websites that host git projects online, and in practice
+where most of the version-control work happens for a team: sharing, backup, review (pull requests), and at the hack,
+the team repositories. Paper lab book vs git: paper is dated and signed but
+written by hand, so few entries; git notes every save point, written by the
+agent, so every attempt is recorded. Cheap experiments (pillar 4) become
+science only if you can trace them and go back.
 -->
 
-<span class="kicker">Module 05 · the problem vibe coding creates</span>
+<span class="kicker">Why version control, when you direct an agent</span>
 
-## An agent can edit ten files in thirty seconds, confidently, and sometimes wrong
+## Git is the lab book of the agentic era
 
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
+<div class="cols" style="grid-template-columns: 1.1fr 1fr; gap: 30px; margin-top: 6px;">
 <div>
 
-- Without a safety net, a bad edit **silently overwrites** what worked yesterday.
-- "Undo" in your editor won't save you across many files, runs and days.
-- You need a **known-good state** you can always return to, and a **record** of what changed, when and why.
+- **Directing is exploring**: try an approach, let it fail, try another. Dead ends are part of the work.
+- **Every attempt is an entry**: what was tried, why, what came out, dated.
+- **Go back in one sentence**: *"the Tuesday version was better: return to it"*, without losing what you learned since.
 
 </div>
 <div>
 
-<div class="card">
-<h3>You already know the problem</h3>
-<p><code>analysis_v2_final_FINAL_really.py</code> · <code>thesis_comments_JM_v3.docx</code></p>
-<br>
-<p>Git replaces that with one folder that remembers every saved version.</p>
+<div class="card" style="border-left: 5px solid var(--accent);">
+<span class="qnum">Git = version control</span>
+<p>The software that records <b>every version</b> of your project folder, as dated save points with a note. It runs on your laptop. <b>The lab book itself.</b></p>
+</div>
+<div class="card" style="border-left: 5px solid var(--science); margin-top: 12px;">
+<span class="qnum" style="color: var(--science);">GitHub · GitLab = where most of it happens</span>
+<p>The websites that keep your project's history <b>online</b>: shared with your team, backed up, reviewed. GitLab is often the university's own server. At the hack, every team works in a GitHub repository.</p>
 </div>
 
 </div>
 </div>
 
-> Cheap experiments (pillar 4) are only safe if failure is **reversible**. That's git.
+> **Git is your lab book; GitHub or GitLab is the shelf where the team's lab books live.**
 
 ---
 
@@ -108,7 +130,7 @@ The jargon, once, in plain English. Leave it up while people read it.
 From module 05 ("Local git vs. GitHub").
 -->
 
-<span class="kicker">Module 05 · two different jobs</span>
+<span class="kicker">Two different jobs</span>
 
 ## Git lives on your laptop; GitHub is the shared copy
 
@@ -136,7 +158,7 @@ From module 05 ("The one loop that makes it safe"), with the plain-English
 request beside each command. The commands are what the agent runs.
 -->
 
-<span class="kicker">Module 05 · the loop that makes it safe</span>
+<span class="kicker">The loop that makes it safe</span>
 
 ## The vibe-coding loop *is* the git loop
 
@@ -171,7 +193,7 @@ request beside each command. The commands are what the agent runs.
 From module 05 ("Branches — try the risky thing safely").
 -->
 
-<span class="kicker">Module 05 · branches</span>
+<span class="kicker">Branches</span>
 
 ## Try the risky thing on a branch
 
@@ -206,7 +228,7 @@ then the agent drives git and GitHub. This slide is the handoff contract.
 -->
 <!-- _class: dense -->
 
-<span class="kicker">Module 05 · let the agent drive</span>
+<span class="kicker">Let the agent drive</span>
 
 ## Hand off 95% of git: say what you want, in plain words
 
@@ -306,4 +328,4 @@ reward producing models over understanding them.
 <div class="opt"><b>D</b>AI-generated papers multiply faster than anyone can check them</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>

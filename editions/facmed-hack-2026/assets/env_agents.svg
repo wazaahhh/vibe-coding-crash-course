@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<title>Mock-up: an agent app running four coding agents in parallel, one ready for review</title>
+<foreignObject x="0" y="0" width="1200" height="750">
+<div xmlns="http://www.w3.org/1999/xhtml" class="root" style="position:relative">
+<style>
+  .root{margin:0;width:1200px;height:750px;background:#E9EDF3;font-family:-apple-system,"Segoe UI",Inter,sans-serif}
+  .win{position:absolute;left:16px;top:16px;right:16px;bottom:16px;border-radius:14px;overflow:hidden;background:#1B1D22;box-shadow:0 10px 30px rgba(17,35,63,.25);display:flex;flex-direction:column;color:#E6E8EC}
+  .bar{height:34px;background:#24272E;display:flex;align-items:center;position:relative;color:#AEB4BF;font-size:13px}
+  .dots{display:flex;gap:8px;margin-left:14px}.dots i{width:12px;height:12px;border-radius:50%;display:block}
+  .bar .t{position:absolute;left:0;right:0;text-align:center}
+  .body{flex:1;display:flex;min-height:0}
+  .side{width:330px;background:#202329;border-right:1px solid #2F333B;padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+  .side h4{margin:2px 6px 6px;font-size:11px;letter-spacing:.1em;color:#8D95A3;display:flex;justify-content:space-between}
+  .side h4 span{color:#F6A9C8}
+  .ag{border-radius:10px;padding:10px 12px;background:#262A31;border:1px solid #2F333B}
+  .ag.sel{background:#2E2633;border-color:#96004B}
+  .ag .n{font-size:14px;font-weight:600;display:flex;justify-content:space-between;align-items:center}
+  .ag .m{font-size:12px;color:#8D95A3;margin-top:4px}
+  .pill{font-size:11px;font-weight:600;border-radius:999px;padding:2px 8px}
+  .run{background:#1F3B44;color:#7FD0E0}.rev{background:#3A2440;color:#F6A9C8}.ask{background:#3F3720;color:#F3D27A}.done{background:#21372A;color:#86D79D}
+  .new{margin-top:auto;border:1px dashed #3A3F48;border-radius:10px;padding:10px;text-align:center;font-size:13px;color:#8D95A3}
+  .main{flex:1;display:flex;flex-direction:column;min-width:0}
+  .hd{padding:12px 20px;border-bottom:1px solid #2F333B;display:flex;align-items:center;gap:12px;font-size:14px}
+  .hd b{font-size:15px}.hd .br{color:#8D95A3;font-family:Menlo,monospace;font-size:12px}
+  .tr{flex:1;padding:16px 22px;display:flex;flex-direction:column;gap:10px;font-size:14px;line-height:1.45;overflow:hidden}
+  .u{align-self:flex-end;background:#2F333B;border-radius:12px;padding:9px 14px;max-width:78%}
+  .tool{font-family:Menlo,monospace;font-size:12.5px;background:#23262C;border:1px solid #2F333B;border-radius:8px;padding:7px 10px;color:#AEB4BF}
+  .tool b{color:#7FD0E0;font-weight:600}.ok{color:#86D79D}
+  .plan div{margin:2px 0}.plan .x{color:#86D79D}
+  .diff{display:flex;align-items:center;gap:12px;background:#2E2633;border:1px solid #96004B;border-radius:10px;padding:10px 14px}
+  .diff .a{color:#86D79D;font-family:Menlo,monospace}.diff .d{color:#F08B8B;font-family:Menlo,monospace}
+  .btn{margin-left:auto;display:flex;gap:8px}.btn span{border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;background:#3A3F48}.btn span.p{background:#96004B}
+  .in{margin:0 20px 16px;border:1px solid #3A3F48;border-radius:10px;padding:11px 14px;color:#8D95A3;font-size:14px;display:flex;justify-content:space-between}
+</style>
+
+<div class="win">
+  <div class="bar"><div class="dots"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i></div><div class="t">Agents — sleep-mood</div></div>
+  <div class="body">
+    <div class="side">
+      <h4>AGENTS · 4 IN PARALLEL <span>2 need you</span></h4>
+      <div class="ag sel"><div class="n">Fix the DST night <span class="pill rev">ready for review</span></div><div class="m">branch fix-dst · 6 min · tests pass</div></div>
+      <div class="ag"><div class="n">EEG artifact rejection <span class="pill run">running</span></div><div class="m">branch eeg-artifacts · step 4 of 7</div></div>
+      <div class="ag"><div class="n">Figures for the poster <span class="pill ask">needs your input</span></div><div class="m">"Which colour map for mood?"</div></div>
+      <div class="ag"><div class="n">Literature: sleep &amp; mood <span class="pill done">done</span></div><div class="m">notes/lit_review.md · 14 papers</div></div>
+      <div class="new">+ New agent</div>
+    </div>
+    <div class="main">
+      <div class="hd"><b>Fix the DST night</b><span class="br">fix-dst · own copy of the project</span></div>
+      <div class="tr">
+        <div class="u">The night of 24→25 Oct is an hour short for everyone. Find out why and fix it; add a test.</div>
+        <div class="plan"><b>Plan</b>
+          <div class="x">✓ Read data/README.md and code/sleep_per_night.py</div>
+          <div class="x">✓ Clocks went back at 03:00: wall-clock times lose the repeated hour</div>
+          <div class="x">✓ Localise to Europe/Zurich, convert to UTC, then subtract</div>
+          <div class="x">✓ Add a test for the DST night</div></div>
+        <div class="tool"><b>Edit</b> code/sleep_per_night.py &#160;(+5 −2)</div>
+        <div class="tool"><b>Run</b> pytest tests/ &#160;<span class="ok">12 passed</span></div>
+        <div class="tool"><b>Git</b> save point "sleep in UTC: DST night fixed, checked by test"</div>
+        <div class="diff"><span>3 files changed</span><span class="a">+42</span><span class="d">−7</span><div class="btn"><span>Review changes</span><span class="p">Merge</span></div></div>
+      </div>
+      <div class="in"><span>Reply, or ask for changes…</span><span>Plan mode · strong model</span></div>
+    </div>
+  </div>
+</div>
+
+</div>
+</foreignObject>
+</svg>

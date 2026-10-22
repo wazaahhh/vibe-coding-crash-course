@@ -12,8 +12,9 @@ What your needs built, the challenges taking shape, what to do this week, and ho
 ---
 
 <!-- ====== HACK 2 — Needs campaign ======
-Figures from the steering-committee email of 14 Oct (181 needs, 30
-contributors; call closed 15 Oct) and participants/demographics_2026-10-09.md
+Figures: 188 needs against a goal of 100 (Thomas, 22 Oct; the
+steering-committee email of 14 Oct said 181), 30 contributors [CONFIRM, from
+the 14 Oct email; call closed 15 Oct] and participants/demographics_2026-10-09.md
 for the breakdowns (as of 9 Oct). [UPDATE before the session if a post-close
 count exists.] Needs-campaign winners stay secret until the finals.
 -->
@@ -23,7 +24,7 @@ count exists.] Needs-campaign winners stay secret until the finals.
 ## Thank you: your needs became the hackathon
 
 <div class="cols" style="grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 4px;">
-<div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--accent); line-height:1">181</div><p>needs in the library when the call closed</p></div>
+<div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--accent); line-height:1">188</div><p>needs in the library, against a goal of 100</p></div>
 <div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--science); line-height:1">30</div><p>contributors, from UNIGE, HUG, the Wyss Center, FCBG, Trieste and UNIL</p></div>
 <div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--energy); line-height:1">8</div><p>draft challenges distilled from them, aiming for 7</p></div>
 </div>
@@ -79,11 +80,11 @@ From apps/facmed-hack (origin/main): the vote-invite email "choose your
 challenges and confirm your place"; ranking 1st/2nd/3rd with a reason (100
 words max); event form with diet, special needs and "Will you sleep on site?"
 (Yes / Maybe / No; bring your own mat and sleeping bag). Answers are optional,
-seen by organisers only, deleted after the event. [CONFIRM the ranking
-deadline before the session.]
+seen by organisers only, deleted after the event. Voting runs Fri 23 →
+Wed 28 Oct.
 -->
 
-<span class="kicker">This week · two clicks that decide your weekend</span>
+<span class="kicker">Challenge voting · Fri 23 → Wed 28 October · two clicks that decide your weekend</span>
 
 ## Choose your challenges, then confirm your place
 
@@ -171,7 +172,7 @@ Also where GitHub usernames are collected.
 
 | | What | When |
 |---|---|---|
-| 1 | **Rank your challenges and confirm your place**, with your needs (diet, access, sleeping on site) | This week |
+| 1 | **Rank your challenges and confirm your place**, with your needs (diet, access, sleeping on site) | 23 → 28 Oct |
 | 2 | A **GitHub account** with two-factor authentication | This week |
 | 3 | *Optional:* VS Code + one agent; redo tonight's practical on your own | Before 6 Nov |
 | 4 | **Crash Course #3**: grant writing for pop-up projects, with the UNIGE Research &amp; Grants Office | Thu 29 Oct, 17:00 |

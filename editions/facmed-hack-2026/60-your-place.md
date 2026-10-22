@@ -121,7 +121,7 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 <div class="opt"><b>D</b>Too early to say</div>
 </div>
 
-<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the chat</b><span>{{QUIZ_URL}}</span></div></div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 
@@ -147,8 +147,9 @@ voice gets the remaining minutes.
 ---
 
 <!-- ====== FUTURE 7 — Back to the opening question ======
-Facilitator: paste back 6–8 answers from the 17:00 chat and sort them live
-into the two columns, asking the room. Then the last prompt, in the chat.
+Facilitator: put 6–8 answers to the opening quiz question ("opening", presenter
+view or the export) back on screen and sort them live into the two columns,
+asking the room. Then the last prompt, in the chat.
 Save the chat: it is the record for objective 1.
 -->
 
@@ -196,14 +197,16 @@ The agent brings **speed and breadth**. You bring **the question, the judgment a
 ---
 
 <!-- ====== FUTURE 9 — Closing quote ======
-The bookend: the quote that opened the evening, still true at 19:00. Leave it
-on screen while people leave the call.
+The last word: nobody in this room, nor the people who build these tools, knows
+how this plays out for neuroscience, which is why tonight started with what you
+imagine and ends with a discussion. Leave it on screen while people leave the
+call. Source: A. Zador's response to DePasquale, The Transmitter, 16 June 2026.
 -->
 <!-- _class: ink quote -->
 <!-- _paginate: false -->
 <!-- _footer: "" -->
 
-<span class="kicker" style="padding-left: 40px;">Still true at 19:00</span>
+<span class="kicker" style="padding-left: 40px;">A last word</span>
 
 > "AI is obviously going to have a massive impact on how we do science, and it's hard to know what the long run looks like."
 

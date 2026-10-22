@@ -24,11 +24,20 @@ done
 echo "Built $out from $(ls [0-9][0-9]-*.md | wc -l | tr -d ' ') module files."
 
 # Live quiz: the URL in quiz_url.txt goes into every {{QUIZ_URL}}, and its QR code into
-# assets/quiz_qr.svg (needs the Python package segno).
+# assets/quiz_qr.svg (needs the Python package segno). The PIN is set on the quiz's admin
+# page and never committed: pass it at build time (QUIZ_PIN=1234 ./build.sh --pdf) and the
+# slides show it and the QR code carries it; without it they say it is in the Zoom chat.
 quiz_url="$(tr -d '[:space:]' < quiz_url.txt)"
-python3 -c "import segno, sys; segno.make(sys.argv[1], error='m').save('assets/quiz_qr.svg', scale=8, border=2, dark='#11233F')" "$quiz_url"
-sed -i '' "s#{{QUIZ_URL}}#${quiz_url#https://}#g" "$out"
-echo "Quiz: $quiz_url"
+quiz_qr="$quiz_url"
+if [ -n "${QUIZ_PIN:-}" ]; then
+  quiz_qr="${quiz_url%/}/?pin=${QUIZ_PIN}"
+  pin_label="PIN ${QUIZ_PIN}"
+else
+  pin_label="PIN in the Zoom chat"
+fi
+python3 -c "import segno, sys; segno.make(sys.argv[1], error='m').save('assets/quiz_qr.svg', scale=8, border=2, dark='#11233F')" "$quiz_qr"
+sed -i '' -e "s#{{QUIZ_URL}}#${quiz_url#https://}#g" -e "s#{{QUIZ_PIN_LABEL}}#${pin_label}#g" "$out"
+echo "Quiz: $quiz_qr"
 
 if [ "${1:-}" = "--html" ] || [ "${1:-}" = "--pdf" ]; then
   npx -y @marp-team/marp-cli@4.1.2 "$out" --html --allow-local-files -o slides.html
