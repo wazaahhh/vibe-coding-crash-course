@@ -1,9 +1,9 @@
 <!-- ====== SPOT 1 — Divider ======
 Replaces the practical in pairs (Thomas, 22 Oct): small quizzes on the live
 quiz app, each followed by a short discussion. Both traps come from the
-practical's data (sleep-mood/, eeg-eye-state/; numbers from
-facilitator/check_answers.py and check_eeg.py). The course folder stays
-available for anyone who wants to redo them hands on.
+phone study of the exercise in Part 1 (phone-study/; numbers from
+facilitator/check_answers.py). The course folder stays available for anyone
+who wants to redo them hands on.
 -->
 <!-- _class: ink divider -->
 
@@ -20,11 +20,13 @@ Two analyses an agent ran cleanly: no error, a plausible number. Vote on what we
 <!-- ====== SPOT 2 — QUIZ · The sleep trap ======
 Live quiz question "dst" (single choice, correct = C). 45 seconds, then show
 the result. Don't comment before the reveal.
+[CONFIRM] In the live-quiz app, the "dst" question text should say "150
+students" (it said "40 people" when the data was sleep-mood/).
 -->
 
 <span class="qnum">Spot the trap · 1 of 2 · sleep</span>
 
-## An agent computes hours slept per night for 40 people from bedtime and wake-up times (Geneva clock). Everyone seems to sleep about **1 hour less** on the night of 24 → 25 October. Most likely?
+## An agent computes hours slept per night for 150 students from bedtime and wake-up times (Geneva clock). Everyone seems to sleep about **1 hour less** on the night of 24 → 25 October. Most likely?
 
 <div class="opts" style="width: 58%;">
 <div class="opt"><b>A</b>Exam stress that week</div>
@@ -50,7 +52,7 @@ participants travelling, time zones in multi-site data.
 <div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
 <div>
 
-- Mean sleep **5.9 h** that night with clock times, against **6.9 h** in UTC, as on every other night.
+- Mean sleep **6.9 h** that night with clock times, against **7.9 h** in UTC, in line with the other Saturday nights (**7.7 h**).
 - Caught by **a plot per night** and **the calendar**: domain knowledge, not code.
 - Ask the agent: *"convert to UTC before subtracting, then plot one value per night."*
 
@@ -67,51 +69,54 @@ participants travelling, time zones in multi-site data.
 
 ---
 
-<!-- ====== SPOT 4 — QUIZ · The EEG trap ======
-Live quiz question "leakage" (single choice, correct = C). 45 seconds.
-Data: Roesler (2013), EEG Eye State, UCI, CC BY 4.0: one continuous
-117-second recording, 14 channels.
+<!-- ====== SPOT 4 — QUIZ · The missing-answers trap ======
+Live quiz question "missing" (single choice, correct = C). 45 seconds.
+[CONFIRM] Replace the old "leakage" question in the live-quiz app (/admin)
+with this one before 17:00. Data: phone-study/ (facilitator/check_answers.py).
+D is the cautious answer: take it seriously, then show that the data are not
+silent about who goes missing (next slide).
 -->
 
-<span class="qnum">Spot the trap · 2 of 2 · EEG</span>
+<span class="qnum">Spot the trap · 2 of 2 · missing answers</span>
 
-## An agent trains a classifier on one continuous 2-minute EEG recording to tell eyes open from closed. Random train/test split: **96% accuracy**. Tested on the **last part** of the recording instead, accuracy is about…
+## An agent averages every evening mood answer in the phone study: **4.6 out of 7**, "students coped well with the term". But **37%** of the prompts went unanswered. The true average is most likely…
 
 <div class="opts" style="width: 58%;">
-<div class="opt"><b>A</b>95%: the model is solid</div>
-<div class="opt"><b>B</b>80%: a bit worse, as expected</div>
-<div class="opt"><b>C</b>46%: below the 55% of always guessing "open"</div>
-<div class="opt"><b>D</b>100%: more data, better model</div>
+<div class="opt"><b>A</b>About the same: missing answers are random</div>
+<div class="opt"><b>B</b>Higher: happy, busy students skip the prompt</div>
+<div class="opt"><b>C</b>Lower: students skip it on bad days, and go silent when struggling</div>
+<div class="opt"><b>D</b>Impossible to say anything</div>
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 
-<!-- ====== SPOT 5 — Reveal and discuss: leakage ======
-2–3 minutes of discussion. Typical answers: the same patient in train and
-test, the same session or day, repeated measures, augmented copies, features
-computed on the whole dataset before the split. Bridge to the hack: several
-challenges use continuous signals (wearables, EEG, video).
+<!-- ====== SPOT 5 — Reveal and discuss: missing data ======
+2–3 minutes of discussion. Typical answers: patients who miss visits when
+sicker, trial dropouts, wearables taken off on bad days, scans excluded for
+head movement, surveys answered by the motivated. Bridge to the hack: in
+digital phenotyping, who stops sending data is itself a signal.
 -->
 
 <span class="kicker">Spot the trap · 2 of 2 · the answer</span>
 
-## C: neighbouring samples are near-copies
+## C: the missing answers are not missing at random
 
 <div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
 <div>
 
-- A random split puts each test sample next to its **twin in training**: the model recognises, it does not predict.
-- On a later part of the recording: **46%**, worse than always guessing "open" (**55%**).
-- Ask the agent: *"would it still work on data recorded later, or on another person? Test exactly that."*
+- The evening before a skipped prompt, mood was **4.3**; before an answered one, **4.8**.
+- The quarter who answer least start the term with PHQ-9 **10.7**, the others **6.9**.
+- 32 students go silent before the last two weeks: early mood **4.2**, against **5.0**.
+- Ask the agent: *"who is missing, and are they different? Compare what we know about them."*
 
 </div>
 <div>
 
 <div class="card" style="border-left: 5px solid var(--accent);">
 <h3>Discuss · 2 minutes</h3>
-<p>Where could <b>leakage</b> hide in your field? The same patient in train and test, the same session, repeated measures, features computed before the split… Unmute, or write it in the chat.</p>
+<p>Where does <b>missing data</b> hide in your field? Patients who miss visits when sicker, trial dropouts, wearables taken off on bad days, scans excluded for movement… Unmute, or write it in the chat.</p>
 </div>
 
 </div>

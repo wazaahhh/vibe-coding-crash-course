@@ -183,8 +183,9 @@ sorting them out loud into families:
 - ethics and privacy (should we be collecting GPS at all?)
 Things built into the data that good questions find: exam weeks (7, 12) with
 shorter sleep, more screen time, less roaming and lower mood; weekends; mood
-answers thinning out over the term and on bad days; ~12% dropouts; the clock
-change on 25 Oct (an extra hour in bed); PHQ-9 rising by week 12, most in
+answers thinning out over the term and on bad days, low-mood students going
+silent (Spot the trap 2); dropouts; phones left lying on bad days (steps = 0); the clock
+change on 25 Oct (bedtimes are clock times: Spot the trap 1); PHQ-9 rising by week 12, most in
 Medicine and Law.
 Point: one dataset, a room of different questions. Each question leads to a
 different analysis, with different blind spots. That diversity is the strength:

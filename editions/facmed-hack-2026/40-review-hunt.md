@@ -12,11 +12,11 @@ An agent wrote an analysis that runs cleanly. Would you sign it? Find what is wr
 ---
 
 <!-- ====== REVIEW HUNT 1 — Task, with the output ======
-Plenary: everyone has review-hunt/analysis.py and sleep-mood/data/README.md
+Plenary: everyone has review-hunt/analysis.py and phone-study/data/README.md
 from the course folder (link in the chat), or reads the output on the slide. 5 minutes to read and
 post in the chat everything they would not sign; then reveal. Answer key:
 facilitator/ANSWER_KEY.md (five problems). Don't hint.
-Output is verbatim from `python analysis.py` (seed 2026).
+Output is verbatim from `python analysis.py` (phone-study data, seed 1938).
 -->
 
 <span class="kicker">Review hunt · everyone together</span>
@@ -26,7 +26,7 @@ Output is verbatim from `python analysis.py` (seed 2026).
 
 ## An agent wrote this. Would you sign it?
 
-1. Open `review-hunt/analysis.py` and the codebook `sleep-mood/data/README.md`.
+1. Open `review-hunt/analysis.py` and the codebook `phone-study/data/README.md`.
 2. Read the output on the right (or run it).
 3. Hunt: the code, the data, the method, the summary.
 4. In the chat: every problem, and **what tipped you off**.
@@ -37,21 +37,23 @@ Output is verbatim from `python analysis.py` (seed 2026).
 <div>
 
 ```text
-Analysed 743 participant-days from 40 participants.
+Analysed 7314 participant-days from 150 participants.
 
 1. Associations with next-day mood (Pearson r)
-   sleep duration : r = +0.39
-   daily steps    : r = +0.25
+   sleep duration : r = +0.10
+   daily steps    : r = +0.14
 
 2. Low-mood day classifier (random forest,
    30% held-out test set)
-   AUC = 0.77
+   AUC = 0.73
 
 Summary
    Physical activity is the stronger correlate
-   of mood (r = +0.25 vs +0.39 for sleep).
-   Wearable data flag low-mood days with high
-   accuracy (AUC = 0.77), supporting passive
+   of mood (r = +0.14 vs +0.10 for sleep):
+   students who walk 10,000 steps a day have
+   half as many low-mood days.
+   Phone data flag low-mood days with high
+   accuracy (AUC = 0.73), supporting passive
    sensing as an early-warning signal for
    depressive episodes.
 ```
@@ -63,8 +65,10 @@ Summary
 
 <!-- ====== REVIEW HUNT 2 — Reveal ======
 Show after reading 3–4 chat lists. Numbers from facilitator/check_answers.py.
-Ask: which of these would a second AI have caught? (Usually 1 and 3 when given
-the codebook; rarely 4 and 5.) Schuck (pre-read 2): "AI output sounds
+Problem 4: no line computes the 10,000-steps claim; the data say about a third
+fewer low-mood days on 10,000-step days (11% vs 17%), confounded by weekends
+and exams. Ask: which of these would a second AI have caught? (Usually 1 and 3
+when given the codebook; rarely 4 and 5.) Schuck (pre-read 2): "AI output sounds
 confident even when wrong, so know how you can falsify what a model produces":
 write scripts that check the output rather than asking the model to check
 itself.
@@ -76,13 +80,13 @@ itself.
 
 | # | Problem | Effect | What catches it |
 |---|---|---|---|
-| 1 | `mood_3` reverse-keyed, averaged as is | mood spread halves; r(sleep) +0.45 → +0.39 | the codebook |
-| 2 | Non-wear days kept as 0 steps | fake steps–mood link: r +0.15 → +0.28 | a histogram: spike at 0 |
-| 3 | Same participants in train and test | AUC 0.89 → **0.69** on new people | "would it work on a new patient?" |
-| 4 | Summary contradicts its numbers | "activity is stronger": 0.25 < 0.39 | numbers before prose |
-| 5 | Overclaim | a low-mood *day* is no depressive *episode* | what does the outcome measure? |
+| 1 | Each night paired with the **next** evening's mood | r(sleep, mood) +0.35 → +0.10 | the codebook: the night ends on the row's morning |
+| 2 | Phone left lying kept as 0 steps | zeros fake a steps–mood link: r +0.09 → +0.15 | a histogram: spike at 0 |
+| 3 | Same students in train and test | AUC 0.81 → **0.63** on new students | "would it work on a new patient?" |
+| 4 | A number no line computed | "10,000 steps, half as many low-mood days" | trace every number to the output |
+| 5 | Overclaim | a low-mood *day* is no depressive *episode*; PHQ-9 sits unused | what does the outcome measure? |
 
-<span class="small">Fixed: sleep predicts next-day mood (r ≈ +0.45), steps add little (r ≈ +0.15), the classifier generalises modestly (AUC ≈ 0.69). Problem 3 is round 2's EEG trap, again.</span>
+<span class="small">Fixed: sleep goes with mood (r ≈ +0.35), steps add little (r ≈ +0.09), the classifier generalises modestly to new students (AUC ≈ 0.63). Same phone study as the exercise and both traps: one codebook, many ways to go wrong.</span>
 
 ---
 

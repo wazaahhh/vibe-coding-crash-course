@@ -1,19 +1,26 @@
-"""Generate the fictional "phone study" dataset for the "Same data, your question" exercise.
+"""Generate the fictional "phone study" dataset used for the whole crash course.
 
 150 students, 12 weeks (Mon 14 Sep -> Sun 6 Dec 2026), one phone app:
   data/participants.csv   participant_id, age, gender, faculty
-  data/daily.csv          participant_id, date, week, weekday, exam_week, steps, gps_radius_km,
-                          screen_minutes, sleep_hours, calls, messages, mood
+  data/daily.csv          participant_id, date, week, weekday, exam_week, bedtime, wake_time,
+                          carried_minutes, steps, gps_radius_km, screen_minutes, calls, messages, mood
   data/phq9.csv           participant_id, week, phq9          (weeks 0, 6, 12)
 
-Everything is synthetic: no real person is in these files. The structure is built to reward
-different questions (exam weeks, weekends, who stops answering, the clock change on 25 Oct,
-dropouts, between- vs. within-person links), not to hide one trap.
+Everything is synthetic: no real person is in these files. The structure rewards different
+questions (exam weeks, weekends, who stops answering, the clock change on 25 Oct, dropouts,
+between- vs. within-person links), and carries the traps used later in the session:
+  - bedtime / wake_time are Geneva wall-clock times with no offset: subtracting them loses an
+    hour on the night of 24 -> 25 Oct (Spot the trap 1);
+  - students answer the mood prompt less on bad days and late in term, and low-mood students
+    drop out more: the mean of answered moods hides the decline (Spot the trap 2);
+  - on days the phone is left lying (carried_minutes = 0) the app writes steps = 0 and
+    gps_radius_km = 0, and this happens more on low-mood days (review hunt, problem 2).
 Writes to ../practical/phone-study/data/. Deterministic: same seed, same files.
 Run:  python generate_phone_study.py
 """
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
@@ -23,7 +30,8 @@ N = 150
 START = date(2026, 9, 14)  # Monday of week 1
 N_DAYS = 84
 EXAM_WEEKS = {7, 12}  # mid-terms, then the end-of-term exams
-DST_DAY = date(2026, 10, 25)
+GENEVA = ZoneInfo("Europe/Zurich")
+UTC = ZoneInfo("UTC")
 
 rng = np.random.default_rng(SEED)
 out = Path(__file__).parent.parent / "practical" / "phone-study" / "data"
@@ -40,17 +48,28 @@ participants = pd.DataFrame({
 
 # Stable traits
 mood_trait = rng.normal(0, 1, N)                      # higher = better mood
-activity = rng.normal(0, 1, N) + 0.35 * mood_trait     # active people feel a bit better
+activity = rng.normal(0, 1, N) + 0.10 * mood_trait     # active people feel a little better
 sociability = rng.normal(0, 1, N)
 screen_trait = rng.normal(0, 1, N) - 0.3 * mood_trait
 sleep_trait = rng.normal(0, 0.5, N)
+chrono = rng.normal(0, 0.6, N)                         # late sleepers go to bed later (hours)
 answer_rate = np.clip(rng.beta(8, 2, N), 0.3, 0.99)   # how reliably they answer the mood prompt
-# Some drop out: stop sending data after a given day
-dropout_day = np.where(rng.random(N) < 0.12, rng.integers(28, 70, N), N_DAYS)
+# Some drop out (stop sending data after a given day); low-mood students more often
+p_drop = np.clip(0.06 + 0.12 * (mood_trait < -0.5) + 0.08 * (mood_trait < -1.2), 0, 1)
+dropout_day = np.where(rng.random(N) < p_drop, rng.integers(28, 70, N), N_DAYS)
+# Others stay in but go silent: the phone keeps sending data, the mood prompt goes unanswered
+p_silent = np.clip(0.04 + 0.30 * (mood_trait < -0.3), 0, 1)
+silent_day = np.where(rng.random(N) < p_silent, rng.integers(21, 63, N), N_DAYS)
 # Faculty effect on exam stress (Medicine and Law feel it most)
 exam_stress = participants["faculty"].map(
     {"Medicine": 1.3, "Law": 1.2, "Science": 1.0, "Economics": 0.9, "Psychology": 0.8, "Humanities": 0.6}
 ).to_numpy()
+
+
+def wall_clock(t: datetime) -> str:
+    """Geneva wall-clock time as the phone shows it, without the UTC offset."""
+    return t.astimezone(GENEVA).strftime("%Y-%m-%d %H:%M")
+
 
 rows = []
 mood_state = np.zeros(N)  # slow, autocorrelated mood drift
@@ -66,39 +85,47 @@ for d in range(N_DAYS):
         if d >= dropout_day[i]:
             continue
         stress = exam_stress[i] * exam
-        sleep = 7.2 + sleep_trait[i] + 0.6 * weekend - 0.7 * stress + rng.normal(0, 0.9)
-        if day == DST_DAY:
-            sleep += 1.0  # clocks went back: the phone records an extra hour in bed
+        sleep = float(np.clip(7.2 + sleep_trait[i] + 0.6 * weekend - 0.7 * stress + rng.normal(0, 0.9), 4, 12))
+        # The night ending this morning: bedtime the evening before, between 21:30 and 01:45
+        bed_h = float(np.clip(23.75 + chrono[i] + 0.6 * weekend + 0.3 * stress + rng.normal(0, 0.6), 21.5, 25.75))
+        # (aware arithmetic in one zone is wall-clock arithmetic; the offset follows the wall time)
+        bed_local = datetime(day.year, day.month, day.day, tzinfo=GENEVA) - timedelta(days=1) + timedelta(hours=bed_h)
+        wake = bed_local.astimezone(UTC) + timedelta(hours=sleep)  # real elapsed time, in UTC
         steps = np.exp(8.7 + 0.35 * activity[i] + 0.15 * weekend - 0.25 * stress + rng.normal(0, 0.35))
         gps = np.exp(1.0 + 0.3 * sociability[i] + 0.6 * weekend - 0.35 * stress
                      + 0.15 * mood_trait[i] + rng.normal(0, 0.5))
         screen = np.exp(5.2 + 0.25 * screen_trait[i] + 0.2 * stress + 0.1 * weekend + rng.normal(0, 0.3))
         calls = rng.poisson(np.exp(0.3 + 0.4 * sociability[i] - 0.3 * stress))
         messages = rng.poisson(np.exp(3.0 + 0.5 * sociability[i] + 0.2 * weekend))
-        mood_latent = (4.6 + 0.8 * mood_trait[i] + mood_state[i] + 0.25 * (sleep - 7)
-                       + 0.15 * np.log(steps / 6000) - 0.6 * stress - 0.5 * term_fatigue)
+        mood_latent = (4.6 + 0.8 * mood_trait[i] + mood_state[i] + 0.45 * (sleep - 7)
+                       + 0.03 * np.log(steps / 6000) - 0.6 * stress - 0.8 * term_fatigue)
         mood = int(np.clip(np.round(mood_latent + rng.normal(0, 0.6)), 1, 7))
-        # Who answers the evening prompt: less often late in term, and less often on bad days
-        p_answer = answer_rate[i] - 0.15 * term_fatigue - 0.06 * max(0, 4 - mood)
-        mood_val = mood if rng.random() < p_answer else np.nan
-        phone_off = rng.random() < 0.03  # no passive data at all that day
+        # Phone left lying all day (at home, charging): more likely on bad days
+        left = rng.random() < 0.02 + 0.10 * max(0.0, 4.5 - mood_latent)
+        carried = 0 if left else int(np.clip(rng.normal(620, 140), 150, 960))
+        # Who answers the evening prompt: less often late in term, much less often on bad days
+        p_answer = answer_rate[i] - 0.10 * term_fatigue - 0.15 * max(0, 4.5 - mood)
+        mood_val = mood if rng.random() < p_answer and d < silent_day[i] else np.nan
+        phone_off = rng.random() < 0.02  # no passive data at all that day
         rows.append({
             "participant_id": pid,
             "date": day.isoformat(),
             "week": week,
             "weekday": day.strftime("%a"),
             "exam_week": int(exam),
-            "steps": np.nan if phone_off else int(round(steps)),
-            "gps_radius_km": np.nan if phone_off else round(float(gps), 2),
+            "bedtime": None if phone_off else wall_clock(bed_local),
+            "wake_time": None if phone_off else wall_clock(wake),
+            "carried_minutes": np.nan if phone_off else carried,
+            "steps": np.nan if phone_off else (0 if left else int(round(steps))),
+            "gps_radius_km": np.nan if phone_off else (0.0 if left else round(float(gps), 2)),
             "screen_minutes": np.nan if phone_off else int(round(min(screen, 900))),
-            "sleep_hours": np.nan if phone_off else round(float(np.clip(sleep, 2.5, 13)), 1),
             "calls": np.nan if phone_off else int(calls),
             "messages": np.nan if phone_off else int(messages),
             "mood": mood_val,
         })
 
 daily = pd.DataFrame(rows)
-for c in ["steps", "screen_minutes", "calls", "messages", "mood"]:
+for c in ["carried_minutes", "steps", "screen_minutes", "calls", "messages", "mood"]:
     daily[c] = daily[c].astype("Int64")
 
 # PHQ-9 at weeks 0, 6 and 12 (missing after dropout, and ~5% skipped)
