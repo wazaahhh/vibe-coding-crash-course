@@ -7,9 +7,9 @@ what you want and the agent runs git for you.
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">11 min</span>
+<span class="clock">10 min</span>
 
-<span class="kicker">17:36 · Part 3 · Objective 2 · Understand</span>
+<span class="kicker">17:50 · Part 3 of 7 · Objective 2 · Understand</span>
 
 # Git &amp; GitHub, without the jargon
 
@@ -272,7 +272,7 @@ Excerpt of practical/AGENTS.md, the file participants get tonight. Their agent
 reads it at the start of every session.
 -->
 
-<span class="kicker">One file makes it work · <code>AGENTS.md</code> in tonight's practical</span>
+<span class="kicker">One file makes it work · <code>AGENTS.md</code> in every hack repository</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.25fr; gap: 30px; align-items: start;">
 <div>

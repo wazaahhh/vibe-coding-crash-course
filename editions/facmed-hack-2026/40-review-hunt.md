@@ -1,14 +1,25 @@
+<!-- ====== REVIEW HUNT 0 — Divider ====== -->
+<!-- _class: ink divider -->
+
+<span class="clock">8 min</span>
+
+<span class="kicker">18:20 · Part 5 of 7 · Objective 2 · Understand</span>
+
+# Review hunt
+
+An agent wrote an analysis that runs cleanly. Would you sign it? Find what is wrong, together.
+
+---
+
 <!-- ====== REVIEW HUNT 1 — Task, with the output ======
-Plenary, in the main room (no breakout): everyone has review-hunt/analysis.py
-and sleep-mood/data/README.md from the practical folder. 5 minutes to read and
+Plenary: everyone has review-hunt/analysis.py and sleep-mood/data/README.md
+from the course folder (link in the chat), or reads the output on the slide. 5 minutes to read and
 post in the chat everything they would not sign; then reveal. Answer key:
 facilitator/ANSWER_KEY.md (five problems). Don't hint.
 Output is verbatim from `python analysis.py` (seed 2026).
 -->
 
-<span class="clock">7 min</span>
-
-<span class="kicker">18:24 · Part 5 · Review hunt · everyone, in the main room</span>
+<span class="kicker">Review hunt · everyone together</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.2fr; gap: 30px; align-items: start;">
 <div>

@@ -167,7 +167,7 @@ footer: "FacMed Hack #1 · Digital Phenotyping of Mental Health · Crash Course 
 # Vibe coding &amp; AI-assisted development
 ## Direct the agent. Check the result.
 
-Where AI agents come from, how they change research, and how to work with one: hands on, in pairs, on real data.
+Where AI agents come from, how they change research, and how to work with one: quizzes and discussion, on real data.
 
 <span class="small">FacMed Hack #1 · Digital Phenotyping of Mental Health · Fri 6 – Sat 7 November 2026 · Campus Biotech · in English</span>
 
@@ -202,7 +202,7 @@ mental health analysis 28; thin: research participation 7, data pipelines 3). Th
 <div style="height: 18px; width: 53%; background: rgba(255,255,255,0.22); border-radius: 6px; margin: 18px 0 8px;"></div>
 <div style="height: 18px; width: 100%; background: linear-gradient(90deg, #F08BB4, #6E7CF6); border-radius: 6px; margin: 0 0 16px;"></div>
 
-**Almost twice the goal.** Every challenge at the hack starts from one of your needs.
+**Almost twice the goal**, from **30 contributors** at UNIGE, HUG, the Wyss Center, FCBG, Trieste and UNIL. Prizes for the best needs are announced at the finals.
 
 </div>
 <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
@@ -214,6 +214,29 @@ mental health analysis 28; thin: research participation 7, data pipelines 3). Th
 
 ---
 
+<!-- ====== HOUSEKEEPING 1 — The road to 6 November ======
+30 seconds. Where tonight sits: the second of three crash courses before the
+hack. The picture: Campus Biotech at dusk, from the hackathon's own campaign
+illustrations (communication/visual/illustrations/04, corp repo). Challenge voting runs 23 → 28 Oct (final list online on the 23rd):
+say it aloud; it is on the tile and in Part 6.
+-->
+
+<span class="kicker">Housekeeping · the calendar</span>
+
+## The road to 6 November
+
+<div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 14px; font-size: 0.92em;">
+<div class="card"><span class="qnum" style="color: var(--fg-faint);">Thu 8 Oct</span><h3>Crash Course #1</h3><p>Digital phenotyping &amp; the Swiss data rules</p></div>
+<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Today</span><h3>Crash Course #2</h3><p>Vibe coding &amp; AI-assisted development</p></div>
+<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">23 → 28 Oct</span><h3>Challenge voting</h3><p>Rank your three favourite challenges and confirm your place</p></div>
+<div class="card"><span class="qnum" style="color: var(--science);">Thu 29 Oct</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
+<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">6 – 7 Nov</span><h3>The hackathon</h3><p>32 hours at Campus Biotech, in English</p></div>
+</div>
+
+<img src="assets/campus_biotech_dusk.jpg" alt="Illustration: Campus Biotech at dusk, participants arriving with laptops" style="width:100%; height: 205px; object-fit: cover; object-position: 50% 0%; border-radius: 12px; display:block; margin-top: 16px;">
+
+---
+
 <!-- ====== OPENING 1c — From needs to challenges ======
 40 seconds. How the needs become the hackathon's challenges (source: corp repo,
 docs/pipeline/FacMed/.../challenges/README.md and method/). Clustering groups
@@ -222,6 +245,16 @@ contributors and institutions. The steering committee of 14 Oct kept 8
 candidates, aiming for about 7. Each challenge gets a sheet, a postdoc challenge
 runner, stand-in data, and its equipment, compute and privacy route. Then you
 vote (23 → 28 Oct) and teams are formed from your rankings. Details in Part 6.
+The eight challenges (draft of 14 Oct, aiming for about 7; possible merge of
+5 + 6): 1 between-visit deterioration (change from a person's own baseline,
+without alert fatigue); 2 physiology you can trust (wearables: quality,
+stress vs exercise or coffee, biofeedback); 3 behaviour annotation from video
+(validated against human coders); 4 clinical speech and language (who spoke
+when, French transcription, markers of memory and mood); 5 markerless
+movement, gaze and pupil (vs motion capture); 6 digital markers and the brain
+(EEG synchronised with gaze, speech, movement); 7 cross-species behaviour and
+touch (mice and humans); 8 interactive interventions (XR, games, toys).
+[UPDATE] if the final list of 23 Oct differs.
 -->
 
 <span class="kicker">From here to 6 November</span>
@@ -236,58 +269,47 @@ vote (23 → 28 Oct) and teams are formed from your rankings. Details in Part 6.
 <div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">5 · You</span><h3>Vote and teams</h3><p>23 → 28 Oct: rank three challenges; teams are formed from your rankings.</p></div>
 </div>
 
-<br>
-
-> Every challenge at the hack can be traced back to **needs you wrote**.
-
----
-
-<!-- ====== HOUSEKEEPING 1 — The road to 6 November ======
-30 seconds. Where tonight sits: the second of three crash courses before the
-hack. The two actions for this week come back in detail in Part 6.
--->
-
-<span class="kicker">Housekeeping · 1 of 2</span>
-
-## The road to 6 November
-
-<div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 14px; font-size: 0.92em;">
-<div class="card"><span class="qnum" style="color: var(--fg-faint);">Thu 8 Oct</span><h3>Crash Course #1</h3><p>Digital phenotyping &amp; the Swiss data rules</p></div>
-<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Today</span><h3>Crash Course #2</h3><p>Vibe coding &amp; AI-assisted development</p></div>
-<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">23 → 28 Oct</span><h3>Challenge voting</h3><p>Rank your three favourite challenges and confirm your place</p></div>
-<div class="card"><span class="qnum" style="color: var(--science);">Thu 29 Oct</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
-<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">6 – 7 Nov</span><h3>The hackathon</h3><p>32 hours at Campus Biotech, in English</p></div>
+<div style="margin-top: 14px; font-size: 0.62em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--fg-faint);">Eight challenges taking shape · draft of 14 October · final list online on 23 October</div>
+<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 8px 12px; margin-top: 6px; font-size: 0.72em;">
+<div class="card" style="padding: 8px 12px;"><b>1</b> · Between-visit deterioration</div>
+<div class="card" style="padding: 8px 12px;"><b>2</b> · Physiology you can trust</div>
+<div class="card" style="padding: 8px 12px;"><b>3</b> · Behaviour annotation from video</div>
+<div class="card" style="padding: 8px 12px;"><b>4</b> · Clinical speech and language</div>
+<div class="card" style="padding: 8px 12px;"><b>5</b> · Markerless movement, gaze, pupil</div>
+<div class="card" style="padding: 8px 12px;"><b>6</b> · Digital markers ↔ the brain</div>
+<div class="card" style="padding: 8px 12px;"><b>7</b> · Cross-species behaviour and touch</div>
+<div class="card" style="padding: 8px 12px;"><b>8</b> · Interactive interventions</div>
 </div>
-
-<br>
-
-> **Challenge voting, 23 → 28 October:** the final list goes online on the 23rd; rank three challenges and confirm your place, from the email.
 
 ---
 
 <!-- ====== HOUSEKEEPING 2 — Tonight on Zoom ======
-30 seconds. [CONFIRM] whether tonight is recorded; if so, say it here, before
+30 seconds. The picture: a Zoom gallery view supplied by Thomas (22 Oct), a web
+image thumbnail (Bing "OIP" file, low resolution); likely Zoom marketing or stock,
+rights unknown: fine for the live session, replace before publishing the deck. Invite cameras on: it makes the discussions work.
+[CONFIRM] whether tonight is recorded; if so, say it here, before
 anyone speaks (and that the recording goes to registered participants only).
-Paste in the chat now: the quiz PIN. At 17:45: the practical folder link.
+Paste in the chat now: the quiz PIN, and the link to the course folder (data and the review-hunt file used at 18:20).
 -->
 
-<span class="kicker">Housekeeping · 2 of 2</span>
+<span class="kicker">Housekeeping · tonight</span>
 
 ## Tonight on Zoom
 
-<div class="cols" style="gap: 28px; margin-top: 6px;">
+<div class="cols" style="grid-template-columns: 1fr 1.05fr; gap: 26px; margin-top: 4px; align-items: center; font-size: 0.9em;">
 <div>
 
-- **Microphone off**, unless you speak; camera on if you can.
-- **Questions in the chat**, any time: we pick them up between parts.
-- **Live quiz** on your phone or laptop: it starts on the next slide.
+- **Camera on** if you can; **microphone off** unless you speak.
+- **Questions in the chat**, any time.
+- **Live quiz** on your phone or laptop: next slide.
+- **Quizzes and discussion** all evening: unmute and argue.
+- **Course folder and slides**: link in the chat.
+- **We end at 19:00** sharp.
 
 </div>
 <div>
 
-- **17:47, breakout rooms of two**: a laptop with a browser is enough; your own agent if you have one.
-- **The practical folder** and the slides: link in the chat.
-- **We end at 19:00** sharp.
+<img src="assets/zoom_gallery.jpg" alt="A Zoom call in gallery view, dozens of participants with cameras on" style="width:100%; display:block; border-radius: 12px;">
 
 </div>
 </div>
@@ -301,28 +323,24 @@ those on the same device as Zoom. Question "uses" (multi-select). Give 60 s,
 then open the presenter view's live results and read them aloud in one
 sentence; we come back to them in Part 1 ("Six everyday uses").
 -->
-<!-- _class: ink -->
 
-<span class="kicker">Live quiz · on your phone or laptop</span>
+<span class="qnum">Live quiz · first question · join now</span>
 
 ## What have you already used AI for in your research? *Tick all that apply.*
 
-<div class="cols" style="grid-template-columns: 1fr 1.25fr; gap: 30px; align-items: center; margin-top: 10px;">
-<div>
-
-Finding and summarising papers · analysis code · modelling · writing and editing · learning or explaining code and methods · building small tools · **nothing yet**
-
-<br>
-
-<span class="small">Anonymous. Results appear live; we come back to them in Part 1.</span>
-
+<div class="opts" style="width: 58%;">
+<div class="opt"><b>A</b>Finding and summarising papers</div>
+<div class="opt"><b>B</b>Analysis code</div>
+<div class="opt"><b>C</b>Modelling</div>
+<div class="opt"><b>D</b>Writing and editing</div>
+<div class="opt"><b>E</b>Learning or explaining code and methods</div>
+<div class="opt"><b>F</b>Building small tools</div>
 </div>
-<div>
-
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz, PIN included"><div><b>Live quiz · scan, or open</b><span>facmed-quiz.pages.dev</span><span class="pin">PIN in the Zoom chat</span></div></div>
-
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 28%;">
+<div class="opt"><b>G</b>Nothing yet</div>
 </div>
-</div>
+
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the Zoom chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
@@ -336,8 +354,6 @@ Export them: at 18:47 we sort them into what the session showed agents change
 today vs. what is still imagination (Part 7, "the opening question, revisited").
 -->
 <!-- _class: ink -->
-
-<span class="clock">3 min</span>
 
 > *"What would you do if you had all the models of the brain you wanted?"*
 > <span class="small">Grace Lindsay, NYU, responding to this week's pre-read (DePasquale, <i>The Transmitter</i>, June 2026)</span>
@@ -365,6 +381,10 @@ Name **one place, and what changes there**. Your own field or any other: a metho
 Objective 3 matters most for anyone who arrived without tools installed: say
 explicitly that this is fine, and that the hack offers the HPE / NVIDIA
 environment to everyone, with or without their own setup.
+Live quiz (moved from the dropped programme slide): Ten live-quiz questions are spread through the evening (the second, "opening", is free text; "dst" and "leakage" in Part 4 have a correct answer; app at facmed-quiz.pages.dev,
+presenter view at /present?key=…), each where its topic comes up. Show each
+result right away and take one or two reactions; "the room's answers" in Part 7
+recaps them. Zoom polls (zoom_polls.md) are the fallback.
 -->
 
 <span class="kicker">Tonight · three objectives</span>
@@ -393,30 +413,6 @@ environment to everyone, with or without their own setup.
 
 <span class="small">Built on the course <i>Vibe Coding for Scientists</i> (github.com/wazaahhh/vibe-coding-crash-course, CC BY-NC 4.0). Pre-reads: DePasquale (2026) and Schuck (2026), both in <i>The Transmitter</i>.</span>
 
----
-
-<!-- ====== OPENING 5 — Programme ======
-Eight live-quiz questions are spread through the evening (the second, "opening", is free text; app at facmed-quiz.pages.dev,
-presenter view at /present?key=…), each where its topic comes up. Show each
-result right away and take one or two reactions; "the room's answers" in Part 7
-recaps them. Zoom polls (zoom_polls.md) are the fallback.
--->
-
-<span class="kicker">Tonight · 17:00 → 19:00</span>
-
-## Seven parts, a live quiz along the way
-
-| Time | Part | Poll | Obj. |
-|---|---|---|---|
-| 17:00 | Opening: housekeeping, a question and a first poll in the live quiz, three objectives | quiz | 1 |
-| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; how an LLM works; what it means for hackathons; opportunities and pitfalls (pre-read 1) | 1 · 2 | 1 |
-| 17:30 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
-| 17:36 | **3 · Git &amp; GitHub, without the jargon**: version control as a lab book, and how the agent runs it for you | 3 | 2 |
-| 17:47 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
-| 18:24 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
-| 18:31 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
-| 18:41 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |
-
 
 ---
 
@@ -425,7 +421,7 @@ recaps them. Zoom polls (zoom_polls.md) are the fallback.
 
 <span class="clock">25 min</span>
 
-<span class="kicker">17:05 · Part 1 · Objective 1 · Imagine</span>
+<span class="kicker">17:10 · Part 1 of 7 · Objective 1 · Imagine</span>
 
 # Where this comes from
 
@@ -560,49 +556,72 @@ model's attention. Bridge to the next slide: same data, different questions.
 
 ---
 
+<!-- ====== CONTEXT 3a — Einstein & Infeld: new questions ======
+Read it, pause, then go to the exercise. Full passage: A. Einstein & L. Infeld,
+The Evolution of Physics (Simon & Schuster, 1938), p. 92: "The formulation of a
+problem is often more essential than its solution, which may be merely a matter
+of mathematical or experimental skill. To raise new questions, new
+possibilities, to regard old problems from a new angle, requires creative
+imagination and marks real advance in science."
+Companion, on confronting results: J. S. Mill, On Liberty (1859), ch. 2: "He who
+knows only his own side of the case, knows little of that."
+Portrait: Oren Jack Turner, 1947; public domain (US), via Wikimedia Commons.
+-->
+<!-- _class: ink quote -->
+<!-- _footer: "" -->
+
+<div style="display:grid; grid-template-columns: 220px 1fr; gap: 44px; align-items: center;">
+<div><img src="assets/einstein.jpg" alt="Portrait of Albert Einstein, 1947" style="width:220px; height:220px; object-fit:cover; object-position: 50% 30%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
+<div>
+
+> "To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science."
+
+<div class="who" style="padding-left:40px;"><b>Albert Einstein</b> &amp; Leopold Infeld · <i>The Evolution of Physics</i>, 1938</div>
+
+</div>
+</div>
+
+<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Portrait: Oren Jack Turner, 1947 · public domain, via Wikimedia Commons</span>
+
+---
+
 <!-- ====== CONTEXT 3b — EXERCISE · Same data, your question ======
-3 minutes. The dataset is fictional, written for this exercise; it looks like
-the hack's digital-phenotyping data on purpose.
-Facilitator: read the description, then 60 seconds of silence. Everyone types
-the FIRST question they would ask an agent about this dataset in the Zoom chat,
-holding Enter until you say "send" (so early answers don't anchor the rest).
-Then read 6–8 aloud, chosen far apart, and sort them out loud into families:
+3 minutes. The dataset is fictional but real files: practical/phone-study/data/
+(generated by facilitator/generate_phone_study.py; codebook in the folder's
+README.md). It looks like the hack's digital-phenotyping data on purpose.
+Live quiz question "explore" (free text, short), shown as a word cloud. 60
+seconds; keep results hidden until time is up so early answers don't anchor
+the rest. Then show the cloud and read 6–8 answers aloud, chosen far apart,
+sorting them out loud into families:
 - describe (how much do they sleep? how does mood vary over the term?)
 - predict (can phone data predict a PHQ-9 rise?)
 - explain / cause (does less roaming come before low mood, or after?)
-- data quality (who stops answering, and when? is phone-estimated sleep valid?)
-- subgroups and fairness (does it work the same across faculties, genders?)
+- data quality (who stops answering, and when? who drops out?)
+- subgroups and fairness (faculties, genders?)
 - ethics and privacy (should we be collecting GPS at all?)
-Point: one dataset, a room of different questions. Each question points the
-agent's attention somewhere else and gets a different analysis, with different
-blind spots. That diversity is the strength: science advances by looking at a
-problem from several angles and confronting the results; an agent multiplies
-how many angles a team can afford to try in a weekend.
-Optional (if time): paste two contrasting questions into an agent live and
-compare the two analyses side by side.
-Quote: A. Einstein & L. Infeld, The Evolution of Physics (Simon & Schuster,
-1938), p. 92: "The formulation of a problem is often more essential than its
-solution, which may be merely a matter of mathematical or experimental skill.
-To raise new questions, new possibilities, to regard old problems from a new
-angle, requires creative imagination and marks real advance in science."
-Companion, on confronting results: J. S. Mill, On Liberty (1859), ch. 2: "He who
-knows only his own side of the case, knows little of that."
-Save the chat: the families come back at the hack (challenge shaping, team
+Things built into the data that good questions find: exam weeks (7, 12) with
+shorter sleep, more screen time, less roaming and lower mood; weekends; mood
+answers thinning out over the term and on bad days; ~12% dropouts; the clock
+change on 25 Oct (an extra hour in bed); PHQ-9 rising by week 12, most in
+Medicine and Law.
+Point: one dataset, a room of different questions. Each question leads to a
+different analysis, with different blind spots. That diversity is the strength:
+science advances by looking at a problem from several angles and confronting
+the results (previous slide).
+Save the export: the families come back at the hack (challenge shaping, team
 formation).
 -->
 <!-- _class: ink -->
 
-<span class="clock">3 min</span>
-
-<span class="kicker">Exercise · 60 seconds · one question in the Zoom chat</span>
+<span class="kicker">Exercise · 3 minutes · live quiz</span>
 
 ## Same data, your question
 
-<div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 28px; align-items: start;">
+<div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 28px; align-items: center;">
 <div>
 
 <div class="card">
-<h3>The dataset (fictional, for this exercise)</h3>
+<h3>The phone study (fictional data, real files)</h3>
 <p><b>150 students, 12 weeks</b>, one phone app, consent on file.<br>
 <b>Every day, passively:</b> steps · how far they roam (GPS radius) · screen-on minutes · phone-estimated sleep · number of calls and messages (counts only, no content).<br>
 <b>Every evening:</b> one-tap mood, 1 to 7.<br>
@@ -612,15 +631,14 @@ formation).
 
 <br>
 
-**What is the first question you would ask an agent about this data?** Type it, wait for "send".
+**What would you find worth exploring in this data?** A few words, in the live quiz.
 
 </div>
 <div>
 
-> *"To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advance in science."*
-> <span class="small">Albert Einstein &amp; Leopold Infeld, <i>The Evolution of Physics</i>, 1938</span>
+<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>facmed-quiz.pages.dev</span><span class="pin">PIN in the Zoom chat</span></div></div>
 
-<span class="small">Then we read them together: how many different questions did one dataset raise? Each one points the model's attention somewhere else.</span>
+<span class="small" style="display:block; margin-top: 12px;">Then we look at the word cloud: how many different questions did one dataset raise? The files are in the course folder, <code>phone-study/</code>.</span>
 
 </div>
 </div>
@@ -628,6 +646,9 @@ formation).
 ---
 
 <!-- ====== CONTEXT 4 — How an LLM works ======
+Key reference: T. Brown et al., "Language models are few-shot learners",
+NeurIPS 2020, arXiv:2005.14165 (GPT-3: next-token prediction at scale, 175
+billion parameters, tasks learned from a few examples in the prompt).
 Walk through the five steps on the diagram. Then the five consequences: fluent
 is not the same as true; it only knows its training data; it only "sees" what
 fits in its context window; the same question can give different answers
@@ -642,7 +663,7 @@ fixed for you; to diverge, ask instead for "five different ways to analyse
 this" (pillar 1, Divergence, in Part 2).
 -->
 
-<span class="kicker">Under the hood, in plain words</span>
+<span class="kicker">Under the hood, in plain words · Brown et al., "Language models are few-shot learners", <i>NeurIPS</i> 2020</span>
 
 ## How a large language model (LLM) writes, one token at a time
 
@@ -659,6 +680,9 @@ this" (pillar 1, Divergence, in Part 2).
 ---
 
 <!-- ====== CONTEXT 4b — VLM in a nutshell ======
+Key reference: H. Liu, C. Li, Q. Wu & Y. J. Lee, "Visual instruction tuning",
+NeurIPS 2023, arXiv:2304.08485 (LLaVA: a vision encoder whose outputs are
+projected into an LLM's token space, exactly the diagram).
 1 minute. Vision-language model (VLM): an LLM that also takes images. The
 image is cut into patches (e.g. 14 × 14 or 16 × 16 pixels); a vision encoder
 (a transformer for images, ViT: Dosovitskiy et al., "An image is worth 16x16
@@ -674,14 +698,14 @@ describe plausibly what they expect to see. And an image of a participant is
 personal data (Crash Course #1, the Swiss data rules).
 -->
 
-<span class="kicker">Under the hood · when the model can see</span>
+<span class="kicker">Under the hood · when the model can see · Liu et al., "Visual instruction tuning", <i>NeurIPS</i> 2023</span>
 
 ## Vision-language models (VLM) in a nutshell
 
 <div class="fig"><img src="assets/vlm_schematic.svg" alt="Schematic: image to patches to vision encoder to image tokens joining text tokens in the same LLM, which writes text" style="width:100%"></div>
 
 <div class="cols3" style="gap: 14px; margin-top: 4px;">
-<div class="card"><h3>What it adds</h3><p>Reads plots, scans, slides, whiteboards and screenshots of errors, next to your text.</p></div>
+<div class="card"><h3>What it adds</h3><p>Reads EEG traces, brain scans, histology, figures and screenshots of errors, next to your text.</p></div>
 <div class="card"><h3>Why agents use it</h3><p>An agent can <b>look at the figure it just made</b> and fix the axis, the colours, the missing panel.</p></div>
 <div class="card"><h3>Where it fails</h3><p>Counting, exact values, small print: it describes what it <i>expects</i> to see. And a face is personal data.</p></div>
 </div>
@@ -839,7 +863,7 @@ Image: from the same talk (illustration).
 
 <span class="kicker">Why this matters for the hack · 2 of 2</span>
 
-## Vibe coding changed the weekend. It did not replace the team.
+## Vibe coding changed hackathons. It did not replace the team.
 
 <div class="cols" style="grid-template-columns: 1fr 1.05fr; gap: 26px; align-items: start;">
 <div>
@@ -852,34 +876,17 @@ Image: from the same talk (illustration).
 <div>
 
 **What changed, sharply**
-- Generative AI in **53%** of projects, up ~3 points a quarter since 2023.
-- Solo vs team of four: **2.4 technologies** apart before AI, **0.07** with agents.
+- Generative AI in **53%** of projects, and growing by about **3 points every quarter**.
+- Solo vs team of four: before AI, the team built with almost **twice as many technologies** (5.3 vs 2.9); with agentic AI, **the same** (7.4 vs 7.3).
 
 **What did not**
-- Going solo still costs **22 points** of win probability, as before AI.
+- Going solo still lowers your **chance of winning by 22 points**, exactly as before AI.
 - Teammates build something new together **62×**, and team up again **134×** more often than same-event strangers.
 
 > AI made each person broader. **The team still wins, and the team outlasts the project.**
 
 </div>
 </div>
-
----
-
-<!-- ====== CONTEXT 7 — One sentence in ======
-From module 00 ("In practice"). The EEG line speaks to most of the room.
--->
-
-<span class="kicker">In practice</span>
-
-## One sentence in, a working analysis out
-
-- **Neuro / EEG**: *"Load this `.edf`, band-pass 8–12 Hz, plot alpha power per channel as a topomap."* → it wires up MNE, filters, renders the scalp map.
-- **Genomics**: *"Here's my RNA-seq counts table: give me a volcano plot, label the top 10 genes by adjusted p-value."* → it reads the file, runs the statistics, returns a labelled figure **and** the code.
-- **Climate / field data**: *"30 years of daily rainfall: fit a trend, test it, plot it with a 12-month rolling mean."*
-- **Imaging**: *"Count the nuclei in every image in `data/dapi/`, one CSV row per file."* → it plans, writes, runs on 200 images. **You** notice the dense clusters look undercounted, ask for three overlays: touching nuclei had merged.
-
-> The question stays yours. The **plumbing** stops being the bottleneck. Looking, doubting, correcting: that last step is the whole job.
 
 ---
 
@@ -1004,7 +1011,7 @@ agreement, 0 swaps, child coverage 0.68 → 0.89, ~2 cm error.
 
 <span class="kicker">Our own example · fast prototyping</span>
 
-## Four 4K cameras: unstuck after years
+## 3D autism diagnosis scene reconstruction: unstuck after years
 
 <div class="cols" style="grid-template-columns: 1fr 1.05fr; gap: 26px; align-items: center;">
 <div>
@@ -1051,9 +1058,9 @@ satisfactory); the repository itself documents the audit and one baseline.
 <div class="cols" style="grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: center;">
 <div>
 
-- **Goal**: detect hand-flapping automatically in videos of autistic children.
+- **Goal**: detect hand-flapping automatically in pose estimation of autistic children.
 - **With an agent**: our approach rebuilt fast, then many others tested, ours and published ones.
-- **Outcome**: no satisfactory result yet. **There is a lot of learning in failing.**
+- **Outcome**: no satisfactory result yet, but new research directions in sight. **There is a lot of learning in failing.**
 
 </div>
 <div>
@@ -1122,7 +1129,7 @@ coding removes much of the bottleneck, in four directions.
 
 <span class="kicker">Pre-read 1 · DePasquale, <i>Models at the speed of thought</i> · the opportunities</span>
 
-## "Models at the speed of thought": four directions
+## *Models at the speed of thought*: four directions
 
 <div class="cols" style="grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 6px;">
 <div class="card"><h3>1 · Experimentalists model</h3><p>Fit a model to your own data without waiting months for a modelling collaborator.</p></div>
@@ -1296,9 +1303,9 @@ question and test (the pink dashed step, the one that is easy to skip).
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">6 min</span>
+<span class="clock">15 min</span>
 
-<span class="kicker">17:30 · Part 2 · Objective 2 · Understand</span>
+<span class="kicker">17:35 · Part 2 of 7 · Objective 2 · Understand</span>
 
 # How vibe coding works
 
@@ -1377,9 +1384,8 @@ the course repository is CC BY-NC.
 </div>
 <div class="card">
 <h3>4 · Try and fail</h3>
-<p>Not a Silicon Valley motto: <b>the method of science</b>. A hypothesis is a guess you try to break; an experiment that fails tells you something.</p>
-<blockquote style="font-size:0.72em; margin: 8px 0;"><i>"The method of science is the method of bold conjectures and ingenious and severe attempts to refute them."</i><br><span class="small">Karl Popper, <i>Objective Knowledge</i>, 1972</span></blockquote>
-<p>What changes: a failed attempt now costs <b>minutes, not weeks</b>. More guesses, tested harder, as long as you can always go back (Part 3: git).</p>
+<p>Not a Silicon Valley motto: <b>the method of science</b>. A hypothesis is a guess you try to break; an experiment that fails tells you something (Popper, next slide).</p>
+<p style="margin-top: 10px;">What changes: a failed attempt now costs <b>minutes, not weeks</b>. More guesses, tested harder, as long as you can always go back (Part 3: git).</p>
 </div>
 </div>
 
@@ -1391,50 +1397,46 @@ the course repository is CC BY-NC.
 
 ---
 
-<!-- ====== HOW 3b — Descartes: dubito, ergo cogito, ergo sum ======
-Ten seconds of silence after reading it. The bridge from the previous slide:
-System 2 "is in charge of doubting"; with an agent, doubting is the part of the
-thinking that stays yours.
-Attribution: the formula "dubito, ergo cogito, ergo sum" ("I doubt, therefore I
-think, therefore I am") is a later summary of Descartes' method, usually
-credited to Antoine Léonard Thomas (Éloge de René Descartes, 1765); Descartes
-wrote "je pense, donc je suis" (Discours de la méthode, 1637) and "ego sum, ego
-existo" (Meditationes, 1641), reaching it through methodical doubt. Say
-"attributed to Descartes" if asked.
-Portrait: Frans Hals (after), c. 1649–1700, Louvre; public domain, via
-Wikimedia Commons.
+<!-- ====== HOW 3b — Popper: conjectures and refutations ======
+Replaces the Descartes slide (Thomas, 22 Oct). Ten seconds of silence after
+reading it. The bridge from pillar 4: try and fail is not a start-up motto,
+it is how science works; agents make attempts cheap, so we can make more of
+them, and test them harder.
+Quote: K. R. Popper, Objective Knowledge: An Evolutionary Approach (Oxford,
+Clarendon Press, 1972), p. 81.
+Portrait: "Photo of Karl Popper" (1987), Wikimedia Commons, CC BY-SA 4.0
+(cropped).
 -->
 <!-- _class: ink quote -->
 <!-- _footer: "" -->
 
 <div style="display:grid; grid-template-columns: 220px 1fr; gap: 44px; align-items: center;">
-<div><img src="assets/descartes.jpg" alt="Portrait of René Descartes, after Frans Hals" style="width:220px; height:220px; object-fit:cover; object-position: 50% 22%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
+<div><img src="assets/popper.jpg" alt="Portrait of Karl Popper, 1987" style="width:220px; height:220px; object-fit:cover; object-position: 50% 25%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
 <div>
 
-> "Dubito, ergo cogito, ergo sum."
+> "The method of science is the method of bold conjectures and ingenious and severe attempts to refute them."
 
-<div class="who" style="padding-left:40px;">I doubt, therefore I think, therefore I am.</div>
-<div class="who" style="padding-left:40px; margin-top: 10px;"><b>René Descartes</b> · attributed, after the <i>Discourse on Method</i> (1637)</div>
+<div class="who" style="padding-left:40px;"><b>Karl Popper</b> · <i>Objective Knowledge</i>, 1972</div>
 
 </div>
 </div>
 
-<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Portrait after Frans Hals, Louvre · public domain, via Wikimedia Commons</span>
+<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Photo of Karl Popper, 1987 · CC BY-SA 4.0, via Wikimedia Commons (cropped)</span>
 
 ---
 
 <!-- ====== HOW 3c — Section break: getting concrete ======
-A breath after the principles and Descartes. From here, the practical set-up:
+A breath after the principles and Popper. From here, the practical set-up:
 the project folder and its rule file, how to ask, the three dials, a worked
-rhythm. Then git, then hands on in pairs.
+rhythm. Then git, then spotting traps together.
 -->
 <!-- _class: ink divider -->
 
-<span class="kicker">Part 2 · from principles to practice</span>
+<span class="kicker">Part 2 of 7 · from principles to practice</span>
 
 # Now, let's get concrete
 
-How to set up a vibe-coding project, how to ask, and which dials to turn: the moves you will use tonight in pairs, and at the hack.
+How to set up a vibe-coding project, how to ask, and which dials to turn: the moves you will use at the hack, and in your lab.
 
 <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 26px;">
 <div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">1</span><h3>One folder, one rule file</h3></div>
@@ -1602,7 +1604,7 @@ Codex, Copilot and Cline all have these, named differently.
 
 <!-- ====== HOW 7 — Putting it together ======
 From module 06 ("Putting the three together"). This is the rhythm the
-practical asks for.
+hack asks for.
 -->
 
 <span class="kicker">A worked rhythm</span>
@@ -1629,9 +1631,9 @@ what you want and the agent runs git for you.
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">11 min</span>
+<span class="clock">10 min</span>
 
-<span class="kicker">17:36 · Part 3 · Objective 2 · Understand</span>
+<span class="kicker">17:50 · Part 3 of 7 · Objective 2 · Understand</span>
 
 # Git &amp; GitHub, without the jargon
 
@@ -1894,7 +1896,7 @@ Excerpt of practical/AGENTS.md, the file participants get tonight. Their agent
 reads it at the start of every session.
 -->
 
-<span class="kicker">One file makes it work · <code>AGENTS.md</code> in tonight's practical</span>
+<span class="kicker">One file makes it work · <code>AGENTS.md</code> in every hack repository</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.25fr; gap: 30px; align-items: start;">
 <div>
@@ -1955,90 +1957,68 @@ reward producing models over understanding them.
 
 ---
 
-<!-- ====== PRACTICAL 1 — Divider ======
-Facilitator: before opening the rooms, paste in the chat the link to the
-practical repository (the edition's practical/ folder, published without the
-facilitator/ folder) and the two-line setup. Breakout rooms of two (Zoom:
-assign automatically, 30 min, let participants return early off). Mix
-seniorities where you can. Broadcast at 18:05 "Switch roles: round 2", and at
-18:17 "Save your work and post your numbers in the main chat".
+<!-- ====== SPOT 1 — Divider ======
+Replaces the practical in pairs (Thomas, 22 Oct): small quizzes on the live
+quiz app, each followed by a short discussion. Both traps come from the
+practical's data (sleep-mood/, eeg-eye-state/; numbers from
+facilitator/check_answers.py and check_eeg.py). The course folder stays
+available for anyone who wants to redo them hands on.
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">37 min</span>
+<span class="clock">20 min</span>
 
-<span class="kicker">17:47 · Part 4 · Objective 2 · Understand, by doing it</span>
+<span class="kicker">18:00 · Part 4 of 7 · Objective 2 · Understand</span>
 
-# Practical in pairs
+# Spot the trap
 
-Zoom breakout rooms of two. Round 1 on synthetic sleep data, round 2 on a real, open EEG recording. One driver, one skeptic, and the agent runs git for you.
+Two analyses an agent ran cleanly: no error, a plausible number. Vote on what went wrong, then talk: where would the same trap hide in your data?
 
 ---
 
-<!-- ====== PRACTICAL 2 — Roles and setup ======
-From module 08 (working in a lab): pair on the prompts, one drives, one plays
-skeptic. Insist on the skeptic role; it is the one people skip.
-Nobody without tools is left out: all data here is synthetic or open, so
-chat mode with file upload is allowed tonight (and only tonight).
+<!-- ====== SPOT 2 — QUIZ · The sleep trap ======
+Live quiz question "dst" (single choice, correct = C). 45 seconds, then show
+the result. Don't comment before the reveal.
 -->
 
-<span class="kicker">Pair on the prompts</span>
+<span class="qnum">Spot the trap · 1 of 2 · sleep</span>
 
-## Two roles, switch at 18:05
+## An agent computes hours slept per night for 40 people from bedtime and wake-up times (Geneva clock). Everyone seems to sleep about **1 hour less** on the night of 24 → 25 October. Most likely?
 
-<div class="cols" style="margin-top: 4px;">
-<div class="card">
-<h3>Driver</h3>
-<p>Shares their screen and talks to the agent. Says out loud what they are about to ask, and why.</p>
-</div>
-<div class="card">
-<h3>Skeptic</h3>
-<p>Never touches the keyboard. After every answer: <i>how would we know if this is wrong?</i> Decides when to slow down.</p>
-</div>
+<div class="opts" style="width: 58%;">
+<div class="opt"><b>A</b>Exam stress that week</div>
+<div class="opt"><b>B</b>The sleep app crashed that night</div>
+<div class="opt"><b>C</b>The clocks went back at 03:00: subtracting clock times loses an hour</div>
+<div class="opt"><b>D</b>Random noise</div>
 </div>
 
-<br>
-
-| You have… | Setup (2 min) |
-|---|---|
-| VS Code with an agent (Claude Code, Codex, GitHub Copilot, Cline) | Download the practical folder from the link in the chat (or ask your agent to clone it), open it in VS Code, open the agent. It reads `AGENTS.md` and runs git for you |
-| Only a chat AI (ChatGPT, Claude, Gemini…) | Upload the CSV files and READMEs to the chat: tonight's data is synthetic or open, so this is allowed. Skip the git steps |
-| Nothing working yet | Be the skeptic first; in round 2, drive from your partner's machine (Zoom remote control) or in chat mode |
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the Zoom chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
-<!-- ====== PRACTICAL 3 — Round 1 ======
-The former live demo, now done by the pairs. The trap: sleep times are Geneva
-wall-clock times; clocks went back at 03:00 on Sun 25 Oct, so subtracting
-them gives one hour too little that night (5.9 h vs 6.9 h). Answer key:
-facilitator/ANSWER_KEY.md.
+<!-- ====== SPOT 3 — Reveal and discuss: time ======
+2–3 minutes of discussion: ask two or three people to unmute. Typical answers:
+device clocks drifting, sampling rates, recordings that cross midnight,
+participants travelling, time zones in multi-site data.
 -->
 
-<span class="kicker">Round 1 · Driver A · 17:50 → 18:05 · <code>sleep-mood/</code></span>
+<span class="kicker">Spot the trap · 1 of 2 · the answer</span>
 
-## How long do people sleep each night?
+## C: no error, no warning, one hour lost
 
-<div class="cols" style="grid-template-columns: 1.35fr 1fr; gap: 30px;">
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
 <div>
 
-1. *"Brief me on `sleep-mood/` and its codebook. Don't change anything."*
-2. *"Start a new branch for this task."* (It explains what a branch is in one sentence.)
-3. *"Plan how you'd compute sleep duration per night and plot the average per night. Wait for my OK."*
-4. Approve, let it run, **look at the plot together**. Skeptic: is anything strange?
-5. If something is: find out **why**, and fix it with a precise instruction.
-6. *"Save my work with a clear message, and add a line to NOTES.md."*
+- Mean sleep **5.9 h** that night with clock times, against **6.9 h** in UTC, as on every other night.
+- Caught by **a plot per night** and **the calendar**: domain knowledge, not code.
+- Ask the agent: *"convert to UTC before subtracting, then plot one value per night."*
 
 </div>
 <div>
 
-<div class="card">
-<h3>The data</h3>
-<p>Synthetic smartphone and wearable data: 40 participants, 21 nights from 12 October, a four-item mood questionnaire each evening. Codebook: <code>sleep-mood/data/README.md</code>.</p>
-</div>
-<br>
-<div class="card">
-<h3>Pillars to watch</h3>
-<p>Fast (orient, run) · Diverge (plan) · <b>Slow</b> (the plot) · Critical (the fix) · Try and fail (save, or undo)</p>
+<div class="card" style="border-left: 5px solid var(--accent);">
+<h3>Discuss · 2 minutes</h3>
+<p>Where does <b>time</b> hide in your data? Device clocks, sampling rates, recordings across midnight, time zones in multi-site studies… Unmute, or write it in the chat.</p>
 </div>
 
 </div>
@@ -2046,46 +2026,61 @@ facilitator/ANSWER_KEY.md.
 
 ---
 
-<!-- ====== PRACTICAL 4 — Round 2 ======
-Real data, real traps (facilitator/check_eeg.py):
-1. Four samples with values up to 715,897 (median ~4,300): the raw plot looks
-   flat until they are removed.
-2. One continuous recording, 24 open/closed periods: a random train/test split
-   puts near-identical neighbouring samples on both sides. kNN accuracy 0.96
-   with a random split vs 0.46 with time blocks; always guessing "open" = 0.55.
+<!-- ====== SPOT 4 — QUIZ · The EEG trap ======
+Live quiz question "leakage" (single choice, correct = C). 45 seconds.
+Data: Roesler (2013), EEG Eye State, UCI, CC BY 4.0: one continuous
+117-second recording, 14 channels.
 -->
 
-<span class="kicker">Switch! · Round 2 · Driver B · 18:05 → 18:19 · <code>eeg-eye-state/</code></span>
+<span class="qnum">Spot the trap · 2 of 2 · EEG</span>
 
-## Can EEG tell whether the eyes are closed, and how well, honestly?
+## An agent trains a classifier on one continuous 2-minute EEG recording to tell eyes open from closed. Random train/test split: **96% accuracy**. Tested on the **last part** of the recording instead, accuracy is about…
 
-<div class="cols" style="grid-template-columns: 1.35fr 1fr; gap: 30px;">
-<div>
-
-1. *"Load `eeg-eye-state/data/eeg_eye_state.csv`, describe it, and plot the 14 channels over time."* Skeptic: does that look like EEG?
-2. *"Train a simple classifier to predict `eye_closed` and report its accuracy."*
-3. Skeptic: *"Would it still work on the last part of the recording if we trained on the first part?"* Ask the agent to test exactly that, and compare.
-4. *"Save my work, send it to GitHub and open a pull request saying what we verified and what we trusted."* (No GitHub account yet? Just save.)
-
-</div>
-<div>
-
-<div class="card">
-<h3>The data · real and open</h3>
-<p>One continuous 117-second recording, Emotiv headset, 14 channels, eyes open or closed from video. Roesler (2013), UCI Machine Learning Repository, CC BY 4.0.</p>
-</div>
-<br>
-<div class="card">
-<h3>Bring back to the main room</h3>
-<p>In the chat: (1) the strange thing from round 1 · (2) your two accuracy numbers from round 2.</p>
+<div class="opts" style="width: 58%;">
+<div class="opt"><b>A</b>95%: the model is solid</div>
+<div class="opt"><b>B</b>80%: a bit worse, as expected</div>
+<div class="opt"><b>C</b>46%: below the 55% of always guessing "open"</div>
+<div class="opt"><b>D</b>100%: more data, better model</div>
 </div>
 
-</div>
-</div>
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · PIN in the Zoom chat</b><span>facmed-quiz.pages.dev</span></div></div>
 
 ---
 
-<!-- ====== PRACTICAL 5 — Prompts worth stealing ======
+<!-- ====== SPOT 5 — Reveal and discuss: leakage ======
+2–3 minutes of discussion. Typical answers: the same patient in train and
+test, the same session or day, repeated measures, augmented copies, features
+computed on the whole dataset before the split. Bridge to the hack: several
+challenges use continuous signals (wearables, EEG, video).
+-->
+
+<span class="kicker">Spot the trap · 2 of 2 · the answer</span>
+
+## C: neighbouring samples are near-copies
+
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
+<div>
+
+- A random split puts each test sample next to its **twin in training**: the model recognises, it does not predict.
+- On a later part of the recording: **46%**, worse than always guessing "open" (**55%**).
+- Ask the agent: *"would it still work on data recorded later, or on another person? Test exactly that."*
+
+</div>
+<div>
+
+<div class="card" style="border-left: 5px solid var(--accent);">
+<h3>Discuss · 2 minutes</h3>
+<p>Where could <b>leakage</b> hide in your field? The same patient in train and test, the same session, repeated measures, features computed before the split… Unmute, or write it in the chat.</p>
+</div>
+
+</div>
+</div>
+
+> Both agents were **mostly right**: the dangerous kind of wrong. What catches them is a skeptic asking one more question.
+
+---
+
+<!-- ====== SPOT 6 — Prompts worth stealing ======
 From module 03 and the course handout. Keep this slide shared in the main room
 while the breakouts run, and paste the five prompts in the chat.
 -->
@@ -2106,35 +2101,9 @@ while the breakouts run, and paste the five prompts in the chat.
 
 ---
 
-<!-- ====== PRACTICAL 6 — Debrief ======
-Back at ~18:20. Read 3–4 chat posts first, then reveal. Numbers from
-facilitator/check_answers.py and facilitator/check_eeg.py.
--->
-
-<span class="kicker">Debrief · what the pairs found</span>
-
-## Two clean runs, two wrong numbers
-
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px;">
-<div class="card">
-<h3>Round 1 · the night of 24 → 25 October</h3>
-<p>Mean sleep <b>5.9 h</b> subtracting clock times, against <b>6.9 h</b> in UTC and on every other night. Clocks went back at 03:00 on Sunday: no error, no warning. Caught by a <b>plot</b> and the <b>calendar</b>: domain knowledge.</p>
-</div>
-<div class="card">
-<h3>Round 2 · eyes closed from EEG</h3>
-<p>Four artifact samples (up to 715,897 against ~4,300) flatten every plot. Then: <b>96%</b> accuracy with a random split, <b>46%</b> when tested on a later part of the recording, below the <b>55%</b> of always guessing "open". Neighbouring samples are near-copies.</p>
-</div>
-</div>
-
-<br>
-
-> Both agents were **mostly right**: the dangerous kind of wrong. What caught them was a skeptic asking one more question.
-
----
-
-<!-- ====== PRACTICAL 7 — POLL 4 · Training ======
+<!-- ====== SPOT 7 — POLL 4 · Training ======
 Opinion, and the one where PhD students and PIs tend to split. They have just
-directed an agent: ask it now. Show the result, then ask in the chat: "PhD
+seen two agents go quietly wrong: ask it now. Show the result, then ask in the chat: "PhD
 students: does this match what you'd want? PIs: is this what you do?"
 DePasquale: the struggle of turning an idea into code is "a form of
 disciplined thinking". Schuck's lab policy: trainees do by hand the work that
@@ -2158,17 +2127,28 @@ themselves before any AI editing.
 
 ---
 
+<!-- ====== REVIEW HUNT 0 — Divider ====== -->
+<!-- _class: ink divider -->
+
+<span class="clock">8 min</span>
+
+<span class="kicker">18:20 · Part 5 of 7 · Objective 2 · Understand</span>
+
+# Review hunt
+
+An agent wrote an analysis that runs cleanly. Would you sign it? Find what is wrong, together.
+
+---
+
 <!-- ====== REVIEW HUNT 1 — Task, with the output ======
-Plenary, in the main room (no breakout): everyone has review-hunt/analysis.py
-and sleep-mood/data/README.md from the practical folder. 5 minutes to read and
+Plenary: everyone has review-hunt/analysis.py and sleep-mood/data/README.md
+from the course folder (link in the chat), or reads the output on the slide. 5 minutes to read and
 post in the chat everything they would not sign; then reveal. Answer key:
 facilitator/ANSWER_KEY.md (five problems). Don't hint.
 Output is verbatim from `python analysis.py` (seed 2026).
 -->
 
-<span class="clock">7 min</span>
-
-<span class="kicker">18:24 · Part 5 · Review hunt · everyone, in the main room</span>
+<span class="kicker">Review hunt · everyone together</span>
 
 <div class="cols" style="grid-template-columns: 1fr 1.2fr; gap: 30px; align-items: start;">
 <div>
@@ -2288,314 +2268,177 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 
 <span class="clock">10 min</span>
 
-<span class="kicker">18:31 · Part 6 · Objective 3 · Prepare</span>
+<span class="kicker">18:28 · Part 6 of 7 · Objective 3 · Prepare</span>
 
-# The hack: where we are
+# The hack, concretely
 
-What your needs built, the challenges taking shape, what to do this week, and how it runs on 6–7 November, with or without your own tools.
+How the 32 hours run, how your team works, and what you leave with.
 
 ---
 
-<!-- ====== HACK 2 — Needs campaign ======
-Figures: 188 needs against a goal of 100 (Thomas, 22 Oct; the
-steering-committee email of 14 Oct said 181), 30 contributors [CONFIRM, from
-the 14 Oct email; call closed 15 Oct] and participants/demographics_2026-10-09.md
-for the breakdowns (as of 9 Oct). [UPDATE before the session if a post-close
-count exists.] Needs-campaign winners stay secret until the finals.
+<!-- ====== HACK 2 — Hour by hour ======
+Source: steering committee of 14 Oct (minutes, corp repo): Friday opening moved
+to 12:30 (coffee, no lunch); challenge presentations 13:00–13:15; teams formed
+beforehand from the votes, the session only kicks them off; a cross-pitch
+before each dinner; proposed 1:1 peer review on Saturday ≈ 11:30; public finals
+Sat 17:00–18:30 at the CMU. Venue: Campus Biotech, auditorium and H8 floor.
+[CONFIRM] against the run of show updated on 24 Oct.
 -->
 
-<span class="kicker">The needs campaign · closed 15 October</span>
+<span class="kicker">Friday 6 → Saturday 7 November · Campus Biotech</span>
 
-## Thank you: your needs became the hackathon
+## 32 hours, hour by hour
 
-<div class="cols" style="grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 4px;">
-<div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--accent); line-height:1">188</div><p>needs in the library, against a goal of 100</p></div>
-<div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--science); line-height:1">30</div><p>contributors, from UNIGE, HUG, the Wyss Center, FCBG, Trieste and UNIL</p></div>
-<div class="card"><div style="font-size:2.8em; font-weight:800; color:var(--energy); line-height:1">8</div><p>draft challenges distilled from them, aiming for 7</p></div>
+<div style="display:grid; grid-template-columns: repeat(6, 1fr); gap: 10px; margin-top: 10px; font-size: 0.86em;">
+<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">Fri 12:30</span><h3>Opening</h3><p>Coffee, no lunch. Challenges presented at 13:00; your team is already formed.</p></div>
+<div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Fri afternoon</span><h3>Build</h3><p>Explore, try, fail, keep what works: tonight's method.</p></div>
+<div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Before dinner</span><h3>Cross-pitch</h3><p>Each team shows its progress to the others; steal good ideas.</p></div>
+<div class="card" style="border-top: 5px solid var(--fg-faint);"><span class="qnum" style="color: var(--fg-faint);">Night</span><h3>Optional</h3><p>Sleep on site if you said yes: bring a mat and a sleeping bag.</p></div>
+<div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Sat ≈ 11:30</span><h3>Peer review</h3><p>Teams review each other in rotation, then tag the <code>demo</code>.</p></div>
+<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Sat 17:00</span><h3>Public finals</h3><p>At the CMU, 17:00 → 18:30: your pitch and your demo.</p></div>
 </div>
 
 <br>
 
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 26px;">
-<div>
-
-**What you asked for most**
-- Domains: **mental health** (60 needs), **neurology** (30)
-- Methods: **AI modelling** (54), **data platforms** (46), **smartphone sensing** (37)
-
-</div>
-<div>
-
-**Prizes for the best needs**: a CHF 500 Synapsy voucher, and a CHF 500 Fondation Pôle Autisme voucher for child and adolescent development. Winners are announced at the finals.
-
-</div>
-</div>
+> **Before 6 November**: vote and confirm your place (23 → 28 Oct) · a GitHub account with two-factor authentication · Crash Course #3 on grant writing, Thu 29 Oct.
 
 ---
 
-<!-- ====== HACK 3 — Challenge preview ======
-Draft list of 14 Oct (steering committee): 8 candidates, aiming for 7
-(possible merge of 5 + 6). Final challenges go online by 23 Oct on
-facmed-hack.sparkboard.com/challenges. Leads and runners are not shown here
-on purpose: not final. [UPDATE if the list has changed.]
--->
-<!-- _class: dense -->
-
-<span class="kicker">A preview · draft of 14 October · final list online by 23 October</span>
-
-## Eight challenges taking shape
-
-| # | Challenge | In one line |
-|---|---|---|
-| 1 | **Between-visit deterioration** | Spot meaningful change from a person's own baseline, without alert fatigue |
-| 2 | **Physiology you can trust** | Wearable signals usable day to day: quality, stress vs. exercise or coffee, biofeedback |
-| 3 | **Behaviour annotation from video** | Validated behaviour labels from naturalistic video, models checked against human coders |
-| 4 | **Clinical speech and language** | Who spoke when, French transcription, speech markers of memory and mood, anonymised voices |
-| 5 | **Markerless movement, gaze and pupil** | Lab-grade measures from ordinary cameras and phones, checked against motion capture |
-| 6 | **Linking digital markers to the brain** | EEG synchronised with gaze, speech and movement |
-| 7 | **Cross-species behaviour and touch** | Mice and humans: pain and pleasure readouts, social scoring |
-| 8 | **Interactive interventions** | XR, games and toys that engage and measure at the same time |
-
-<span class="small">Notice tonight's datasets: sleep, wearables, mood questionnaires, EEG. You have just practised on the kind of data these challenges use.</span>
-
----
-
-<!-- ====== HACK 4 — Sign up and confirm ======
-From apps/facmed-hack (origin/main): the vote-invite email "choose your
-challenges and confirm your place"; ranking 1st/2nd/3rd with a reason (100
-words max); event form with diet, special needs and "Will you sleep on site?"
-(Yes / Maybe / No; bring your own mat and sleeping bag). Answers are optional,
-seen by organisers only, deleted after the event. Voting runs Fri 23 →
-Wed 28 Oct.
--->
-
-<span class="kicker">Challenge voting · Fri 23 → Wed 28 October · two clicks that decide your weekend</span>
-
-## Choose your challenges, then confirm your place
-
-<div class="cols3" style="margin-top: 6px;">
-<div class="card">
-<h3>1 · Rank three challenges</h3>
-<p>From the email <i>"choose your challenges and confirm your place"</i>, or at <b>facmed-hack.sparkboard.com/challenges</b>: your 1st, 2nd and 3rd choice, each with a short reason (100 words at most).</p>
-</div>
-<div class="card">
-<h3>2 · Confirm and tell us your needs</h3>
-<p>Diet · accessibility and any special considerations · <b>Will you sleep on site on Friday night?</b> Yes, maybe or no: you may spend the night in the building, so bring a sleeping mat and a sleeping bag.</p>
-</div>
-<div class="card">
-<h3>3 · Teams</h3>
-<p>The organisers assign teams from your rankings and your research; you may decline. Ranking guarantees neither a challenge nor a seat, so do it now.</p>
-</div>
-</div>
-
-<br>
-
-<span class="small">Your answers are optional, seen by the organisers only, and deleted after the event. Places are limited to about 50–60 people including support staff.</span>
-
----
-
-<!-- ====== HACK 5 — Two paths ======
-The message to land: arriving without tools is fine. Both paths reach the same
-team repository, and both can run work on the HPE / NVIDIA environment.
-Source: vibe_coding_environment/implementation_plan.md (corp repo). HPE lends
-at least 8 GPUs with served models, and sends three engineers.
+<!-- ====== HACK 3 — How your team works ======
+Each challenge has a lead (PI level) and a runner (PhD or postdoc inside the
+team), per the 14 Oct steering committee. Tools: vibe_coding_environment/
+implementation_plan.md (corp repo): HPE lends at least 8 GPUs with served
+models and sends three engineers. For credit candidates, the contribution
+history is the assessment (LNDS syllabus, A2).
 -->
 
 <span class="kicker">With or without your own tools</span>
 
-## Two ways in, one team repository
+## How your team works
 
-<div class="cols" style="margin-top: 6px;">
-<div class="card">
-<h3>You already have the tools</h3>
-<p>VS Code on your laptop with your own agent: Claude Code or Codex on your own plan, GitHub Copilot, or Cline. Get your team's repository and work as tonight.</p>
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
+<div>
+
+- **A team per challenge**, with a lead (PI) and a runner (PhD or postdoc) who knows the data.
+- **Your laptop and your agent**, or a ready-made VS Code in the browser on the **HPE / NVIDIA environment**, with an agent and GPUs: nothing to install.
+- **One GitHub repository per team**, one branch per task (1 task = 1 agent), changes merged through pull requests.
+
 </div>
-<div class="card">
-<h3>You don't, or you'd rather not install</h3>
-<p>A ready-made VS Code in the browser on the HPE / NVIDIA environment: nothing to install, an agent already set up on open models served there, your team's repository already in place.</p>
+<div>
+
+<div class="card" style="border-left: 5px solid var(--accent);">
+<h3>Data stays where it belongs</h3>
+<p>Real data never goes into git: it stays on the HPE / NVIDIA environment. Laptops get small synthetic samples. Each repository comes with an <code>AGENTS.md</code> that already knows these rules.</p>
 </div>
+<div class="card" style="margin-top: 12px;">
+<h3>Help on site</h3>
+<p>Your runner, the organisers, and HPE engineers for compute.</p>
 </div>
 
-<br>
-
-> **Either way, every team can build and test on the HPE / NVIDIA environment**: GPUs for heavy jobs, the challenge datasets (which stay there), and HPE engineers on site.
+</div>
+</div>
 
 ---
 
-<!-- ====== HACK 6 — How a team works ======
-The rules of the team repository, in the words of Part 3. For credit
-candidates, the contribution history is the assessment (LNDS syllabus, A2;
-learning-track grade = GitHub history + a 5-minute pitch).
--->
-
-<span class="kicker">The workflow you rehearsed tonight</span>
-
-## How your team works together
-
-| What happens | In plain words |
-|---|---|
-| One **repository** per team, in the hack's GitHub organisation | One shared project folder, with its history |
-| Your own **branch** per task: `firstname/topic` | Your own line of work; the version that works stays safe |
-| **Save small and often**, under your own name | For credit candidates, that history is the evidence |
-| Changes reach main through a **pull request**, with `NOTES.md` updated | A teammate sees what changed, what was verified, what was trusted |
-| Tag `demo` before the finals | The jury looks at exactly what you showed |
-| **Data never goes into git**; real data stays on the HPE / NVIDIA environment | Laptops get small synthetic samples; agents see structure, never records |
-
-<span class="small">Each team repository comes with an <code>AGENTS.md</code> like tonight's: your agent already knows these rules.</span>
-
----
-
-<!-- ====== HACK 7 — Before 6 November ======
-[CONFIRM before the session] the Friday start time: the 14 Oct steering
-committee moved the opening to 12:30; the public programme still says 11:00.
-Also where GitHub usernames are collected.
--->
-
-<span class="kicker">Final preparation</span>
-
-## Before 6 November
-
-| | What | When |
-|---|---|---|
-| 1 | **Rank your challenges and confirm your place**, with your needs (diet, access, sleeping on site) | 23 → 28 Oct |
-| 2 | A **GitHub account** with two-factor authentication | This week |
-| 3 | *Optional:* VS Code + one agent; redo tonight's practical on your own | Before 6 Nov |
-| 4 | **Crash Course #3**: grant writing for pop-up projects, with the UNIGE Research &amp; Grants Office | Thu 29 Oct, 17:00 |
-| 5 | Bring one idea for your challenge, a sleeping mat if you stay, and your curiosity | Fri 6 Nov, Campus Biotech |
-
----
-
-<!-- ====== HACK 8 — What's at stake ======
-Finals: Sat 7 Nov 17:00–18:30 at the CMU, part of the Faculty of Medicine's
-150th anniversary, with philanthropic funders. Team prizes: research-aligned
-(compute credits, equipment, resources); winners first in line for support
-after the weekend. Expected outcome (steering committee): a proof of concept
-or preliminary results that can seed a research project and a grant
-application, plus an inspiring pitch.
+<!-- ====== HACK 4 — What you leave with ======
+Expected outcome (steering committee): a proof of concept or preliminary
+results that can seed a research project and a grant application, plus an
+inspiring pitch. Finals within the Faculty of Medicine's 150th anniversary,
+with philanthropic funders. Team prizes research-aligned (compute credits,
+equipment, resources); winners first in line for support after the weekend.
+Prizes for the best needs announced at the finals.
 -->
 <!-- _class: ink -->
 
-<span class="kicker">Saturday 7 November · 17:00 → 18:30 · public finals</span>
+<span class="kicker">Saturday 7 November · 17:00 → 18:30 · public finals at the CMU</span>
 
-## 32 hours to seed a research project
+## What you leave with
 
 <div class="cols3" style="margin-top: 8px;">
-<div class="card"><h3>The goal</h3><p>A proof of concept or preliminary results that can seed a research project and a grant application, and an inspiring pitch. A working prototype is a bonus.</p></div>
-<div class="card"><h3>The audience</h3><p>Public finals at the CMU, part of the Faculty of Medicine's 150th anniversary, in front of researchers, clinicians and philanthropic funders.</p></div>
-<div class="card"><h3>The prizes</h3><p>Research-aligned: compute credits, equipment and resources. Winning teams are first in line for support after the weekend.</p></div>
+<div class="card"><h3>A seed</h3><p>A proof of concept or preliminary results that can seed a research project and a grant application. A working prototype is a bonus.</p></div>
+<div class="card"><h3>An audience</h3><p>Researchers, clinicians and philanthropic funders, at the Faculty of Medicine's 150th anniversary.</p></div>
+<div class="card"><h3>A team</h3><p>Research-aligned prizes, support after the weekend, and the people you built it with: teams outlast projects.</p></div>
 </div>
 
 
 ---
 
-<!-- ====== FUTURE 1 — Divider ====== -->
+<!-- ====== GOV 1 — Divider ======
+The point of the part (Thomas, 22 Oct): nobody has settled the rules for AI
+in science; labs are writing them, fields argue about them. Tonight opens the
+conversation; it continues at the hack and in your lab.
+-->
 <!-- _class: ink divider -->
 
-<span class="clock">19 min</span>
+<span class="clock">22 min</span>
 
-<span class="kicker">18:41 · Part 7 · Objective 1 · Imagine</span>
+<span class="kicker">18:38 · Part 7 of 7 · Objective 1 · Imagine</span>
 
-# A future worth building
+# AI governance in science: let's keep talking
 
-How a lab, and a field, can govern agentic AI. What becomes possible if we do. And your place in it.
+Nobody has settled the rules yet. Labs are writing them, fields are arguing about them, and you are part of it.
 
 ---
 
-<!-- ====== FUTURE 2 — Pre-read 2: Schuck, a lab policy ======
+<!-- ====== GOV 2 — Governance starts in the lab ======
 Schuck (University of Hamburg), The Transmitter, 24 August 2026. After a
 Claude Code demo and a lab retreat where the team prototyped a decoding
-pipeline in a day, he wrote a lab AI policy. Quotes verbatim from the page.
-His lab's policy is public: schucklab.gitlab.io/ai-policy.html
+pipeline in a day, he wrote a lab AI policy, public at
+schucklab.gitlab.io/ai-policy.html. Quotes verbatim from the page. Cut from
+the slide: "learn the tools" (output quality depends on scoping and
+prompting) and "you own it" (AI is never a co-author; "the model said so" is
+no defence).
 -->
 
 <span class="kicker">Pre-read 2 · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i></span>
 
-## Governance starts in the lab: one lab's AI policy
+## Governance starts in the lab
 
-<div class="cols3" style="margin-top: 4px;">
-<div class="card"><h3>Learning first</h3><p>Do by hand the work that builds core skills: questions, models, arguments. Hand off what you don't need to learn.</p></div>
+<div class="cols" style="grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 6px;">
+<div class="card"><h3>Learning first</h3><p>Do by hand what builds your core skills; hand off what you don't need to learn.</p></div>
 <div class="card"><h3>Draft before AI</h3><p><i>"You must always draft a text yourself before handing it to AI."</i></p></div>
-<div class="card"><h3>Verify by falsifying</h3><p><i>"AI output sounds confident even when wrong, so know how you can falsify what a model produces."</i> Scripts that check, rather than asking the model.</p></div>
-<div class="card"><h3>Limit the risks</h3><p><i>"Participant data should not be shared with AI tools, and agents only get access to the folders they need."</i></p></div>
-<div class="card"><h3>Learn the tools</h3><p>Output quality depends on how well you scope and prompt: invest the time.</p></div>
-<div class="card"><h3>You own it</h3><p>AI is a tool, never a co-author. "The model said so" is no defence: you own everything you make public.</p></div>
+<div class="card"><h3>Verify by falsifying</h3><p><i>"Know how you can falsify what a model produces."</i></p></div>
+<div class="card"><h3>Limit the risks</h3><p><i>"Participant data should not be shared with AI tools."</i></p></div>
 </div>
+
+<br>
+
+> *"Our lab policy's biggest effect wasn't any single rule, but rather creating a culture in which we discuss AI use rather than hide it."* <span class="small">Nicolas Schuck</span>
 
 ---
 
-<!-- ====== FUTURE 3 — From the lab to the field ======
+<!-- ====== GOV 3 — From the lab to the field ======
 Schuck's field-level call, and module 09's five rules as the individual
-minimum. Quotes verbatim from the Schuck piece.
+minimum. Ask: which of the five does your lab already practise? Which would
+your field need to agree on?
 -->
 
-<span class="kicker">Pre-read 2 · from the lab to the field · and module 09</span>
+<span class="kicker">From the lab to the field</span>
+
+## Five rules for each of us, norms for all of us
 
 <div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px;">
 <div>
 
-## Talk about it openly, then set norms together
+1. **Confidentiality**: no patient or unpublished data in uncleared tools.
+2. **Provenance**: commit the code, keep the prompts.
+3. **Correctness is yours**: verify anything that reaches a result.
+4. **Disclosure**: say how AI was used; it is never an author.
+5. **Keep your skills**: enough to review what it writes.
 
-> *"Our lab policy's biggest effect wasn't any single rule, but rather creating a culture in which we discuss AI use rather than hide it."*
+</div>
+<div>
 
 > *"We should not only have lab policies but decide as a field where we stand on the shifts in money, priorities and agenda that come with AI."*
-
-<span class="small">Nicolas Schuck, University of Hamburg</span>
-
-</div>
-<div>
-
-**Five rules for each of us** (module 09: your name is on the paper)
-1. **Confidentiality**: no patient, unpublished or embargoed data in uncleared tools.
-2. **Provenance**: commit the code, pin versions, keep the prompts.
-3. **Correctness is yours**: verify anything that reaches a result.
-4. **Disclosure**: say how AI was used; AI is no author; check the journal's and funder's policy.
-5. **Keep your skills**: enough fluency to review what it writes.
+> <span class="small">Nicolas Schuck</span>
 
 </div>
 </div>
 
 ---
 
-<!-- ====== FUTURE 4 — A bright, sustainable, safe future ======
-Make room for optimism here: ask people to add their own line in the chat.
-The "what it takes" column keeps it honest. Energy is real: right-size
-models (dial 2) and don't burn compute on throwaway runs.
--->
-<!-- _class: ink dense -->
-
-<span class="kicker">What becomes possible · and what it takes</span>
-
-## A bright, sustainable, safe future with AI in science
-
-<div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 30px; margin-top: 4px;">
-<div>
-
-**What becomes possible**
-- **More time for the questions**, and for patients: the plumbing shrinks.
-- **Science for more people**: clinicians build their own tools, small labs model like big ones, students contribute from week one.
-- **A cleaner literature**: every analysis in a repository, re-runnable by anyone.
-- **Open by default**: open models, open data (tonight's EEG), shared code.
-- **Faster from need to answer**: a clinical need on Monday, a working prototype by Friday.
-
-</div>
-<div>
-
-**What it takes**
-- **Judgment kept sharp**: you stay the System 2.
-- **Norms**, set openly, in labs and as a field.
-- **Safe infrastructure**: sensitive data stays where it belongs; the hack's HPE / NVIDIA environment is one example.
-- **Sustainable use**: the right-sized model for the task, no compute wasted on throwaway runs.
-- **Communities that practise together**: like the one meeting on 6 November.
-
-</div>
-</div>
-
-<span class="small">In the chat: one thing you would build, or fix, in your field if the plumbing were free.</span>
-
----
-
-<!-- ====== FUTURE 5 — POLL 6 · Depth ======
-Opinion, and the last poll: after the "future worth building" slide, so the
+<!-- ====== GOV 4 — POLL 6 · Depth ======
+Opinion, and the last poll: after the two governance slides, so the
 room weighs hope against DePasquale's warning. Show the result right away.
 B is Dan Goodman's point (incentives); C is the hopeful reading.
 -->
@@ -2615,78 +2458,33 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ---
 
-<!-- ====== FUTURE 6 — The room vs. the field ======
-Recap of the six polls (results were shown as the evening went). Put the
-room's majority in each row; the row where the room most disagrees with the
-voice gets the remaining minutes.
--->
-
-<span class="kicker">The room's answers · all six polls</span>
-
-## What you imagined, and voices to argue with
-
-| Poll | The room | A voice from the field |
-|---|---|---|
-| 1 · Where first | *majority* | Agentic coding is already removing the engineering bottleneck in modelling (DePasquale) |
-| 2 · Reality check | **D** · 19% slower | …while feeling 20% faster (METR, 2025) |
-| 3 · Literature | *majority* | Incentives already reward producing models over understanding them (Dan Goodman, Imperial) |
-| 4 · Training | *majority* | Trainees do by hand the work that builds core skills (Schuck's lab policy) |
-| 5 · Scarce skill | *majority* | LLMs are *"a flashlight as opposed to a laser pointer"* (Kim Stachenfeld, DeepMind) |
-| 6 · Depth | *majority* | *"Prolific but shallow—generating models faster than we can generate insights"* (DePasquale) |
-
----
-
-<!-- ====== FUTURE 7 — Back to the opening question ======
-Facilitator: put 6–8 answers to the opening quiz question ("opening", presenter
-view or the export) back on screen and sort them live into the two columns,
-asking the room. Then the last prompt, in the chat.
-Save the chat: it is the record for objective 1.
--->
-
-<span class="kicker">The opening question, revisited</span>
-
-## Where will agentic coding change science?
-
-<div class="cols" style="margin-top: 6px;">
-<div class="card">
-<h3>What we saw tonight</h3>
-<p>Analysis in minutes · a plan before the code · git run by the agent · two clean runs with wrong numbers, caught by a skeptic · review as the real work</p>
-</div>
-<div class="card">
-<h3>Still imagination</h3>
-<p>Your answers from 17:00 that nothing tonight showed yet: where your own research, career or field could go</p>
-</div>
-</div>
-
-<br>
-
-> **Last line in the chat:** *"When agents write the code, the part of my research that stays mine is …"*
-
----
-
-<!-- ====== FUTURE 8 — Close ======
-From module 11 (close) and module 09 ("Start Monday"). End on time.
+<!-- ====== GOV 5 — Let's keep talking ======
+Merges the old "bright future", "room's answers", "opening question
+revisited" and "director, not author" slides. Facilitator: put 4–6 answers to
+the opening quiz question back on screen (presenter view) and ask which ones
+tonight made more real, and which still need norms to be safe. Then the last
+line in the chat. End on time.
 -->
 <!-- _class: ink -->
 <!-- _footer: "" -->
 
-<span class="kicker">See you on 6 November</span>
+<span class="kicker">Director, not author</span>
 
-# Director, not author.
+## Let's keep talking
 
-The agent brings **speed and breadth**. You bring **the question, the judgment and the responsibility**. That division of labour is the skill.
-
-<div class="cols3" style="margin-top: 16px;">
-<div class="card"><h3>Start this week</h3><p>One low-stakes task: let an agent into one real analysis; keep the prompt, verify the number (module 09).</p></div>
-<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i> · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i> · <i>The Transmitter</i>, 2026</p></div>
-<div class="card"><h3>The course</h3><p>github.com/wazaahhh/vibe-coding-crash-course · fork it, star it, open a pull request</p></div>
+<div class="cols3" style="margin-top: 6px;">
+<div class="card"><h3>What becomes possible</h3><p>More time for the questions and for patients. Science for more people. A literature anyone can re-run.</p></div>
+<div class="card"><h3>What it takes</h3><p>Judgment kept sharp. Norms set openly, in labs and as a field. Sensitive data kept where it belongs.</p></div>
+<div class="card"><h3>Where we continue</h3><p>At the hack, 6–7 November. In your lab: write your AI policy together. The course: github.com/wazaahhh/vibe-coding-crash-course</p></div>
 </div>
 
-<span class="small">Vibe Coding for Scientists · CC BY-NC 4.0 · Thomas Maillart</span>
+<br>
+
+> **Back to your opening answers**: which did tonight make more real? And in the chat, one last line: *"When agents write the code, the part of my research that stays mine is …"*
 
 ---
 
-<!-- ====== FUTURE 9 — Closing quote ======
+<!-- ====== GOV 6 — Closing quote ======
 The last word: nobody in this room, nor the people who build these tools, knows
 how this plays out for neuroscience, which is why tonight started with what you
 imagine and ends with a discussion. Leave it on screen while people leave the

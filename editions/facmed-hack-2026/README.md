@@ -15,23 +15,23 @@ Three objectives:
 3. **Prepare**: the hack's status, and how it runs with or without your own tools; the HPE /
    NVIDIA environment is open to every team.
 
-## Running order (69 slides)
+## Running order (76 slides)
 
 | Time | File | Part | Polls | Draws on course module |
 |---|---|---|---|---|
 | 17:00 | `00-opening.md` | Title · thank you: 188 needs vs a goal of 100 · housekeeping (the road to 6 November; tonight on Zoom) · first live-quiz poll (uses of AI; everyone joins with the PIN) · opening question, after Grace Lindsay's, **in the live quiz** (free text) · objectives · programme | quiz | — |
-| 17:05 | `10-context.md` | **1 · Where this comes from**: history (1943 → 2026) with attention (Vaswani et al. 2017), **exercise: same data, your question** (Zoom chat), what an LLM is (temperature), VLMs in a nutshell, chatbot → code completion → agents, why coding first, **why it matters for hackathons** (2 slides from the Hack the Hackathon 6 talk), uses in science and neuroscience, opportunities, **pre-read 1 (DePasquale)**: four directions and the field's worries, pitfalls, what the science says | 1 · 2 | 00, 01, 02, 03, 09 |
-| 17:25 | `20-how-it-works.md` | **2 · How vibe coding works**: four pillars, one folder + one rule file, how to ask, three dials, a worked rhythm | — | 02, 03, 06, 07 |
-| 17:33 | `25-git.md` | **3 · Git &amp; GitHub/GitLab, without the jargon**: git as version control and lab book, GitHub/GitLab where most of it happens, save points (diagram), a ten-word dictionary, laptop vs. GitHub, the loop, branches, **hand off 95% of git to the agent**, the 5% that stays yours, `AGENTS.md` | 3 | 05, 07, 09 |
-| 17:45 | `30-practical.md` | **4 · Practical in pairs** (breakout rooms, driver + skeptic, switch at 18:06): round 1 synthetic sleep data (daylight-saving trap), round 2 a real open EEG recording (artifacts, temporal leakage); debrief | 4 | 03, 08 |
-| 18:25 | `40-review-hunt.md` | **5 · Review hunt** (plenary): five problems in an agent-written analysis; peer review | 5 | 02, 08 |
-| 18:33 | `50-hack.md` | **6 · The hack**: needs campaign (188 needs vs a goal of 100, 30 contributors), eight draft challenges, rank + confirm (diet, access, sleeping on site), two paths, team workflow, final steps, what's at stake | — | 05 |
-| 18:43 | `60-your-place.md` | **7 · A future worth building**: **pre-read 2 (Schuck)**: lab AI policy and field norms, five rules; a bright, sustainable, safe future; poll recap; opening question revisited (the quiz answers); close; Zador quote | 6 | 09, 11 |
+| 17:10 | `10-context.md` | **1 · Where this comes from**: history (1943 → 2026) with attention (Vaswani et al. 2017), **exercise: same data, your question** (live quiz, word cloud), what an LLM is (temperature), VLMs in a nutshell, chatbot → code completion → agents, why coding first, **why it matters for hackathons** (2 slides from the Hack the Hackathon 6 talk), uses in science and neuroscience, opportunities, **pre-read 1 (DePasquale)**: four directions and the field's worries, pitfalls, what the science says | 1 · 2 | 00, 01, 02, 03, 09 |
+| 17:35 | `20-how-it-works.md` | **2 · How vibe coding works**: four pillars, one folder + one rule file, how to ask, three dials, a worked rhythm | — | 02, 03, 06, 07 |
+| 17:50 | `25-git.md` | **3 · Git &amp; GitHub/GitLab, without the jargon**: git as version control and lab book, GitHub/GitLab where most of it happens, save points (diagram), a ten-word dictionary, laptop vs. GitHub, the loop, branches, **hand off 95% of git to the agent**, the 5% that stays yours, `AGENTS.md` | 3 | 05, 07, 09 |
+| 18:00 | `30-practical.md` | **4 · Spot the trap** (replaces the practical in pairs): two live-quiz questions on analyses an agent got quietly wrong (daylight-saving night in sleep data; temporal leakage in EEG), each with a reveal and a 2-minute discussion; five prompts worth stealing | 4 · quiz | 03, 08 |
+| 18:20 | `40-review-hunt.md` | **5 · Review hunt** (plenary): five problems in an agent-written analysis; peer review | 5 | 02, 08 |
+| 18:28 | `50-hack.md` | **6 · The hack, concretely**: hour by hour (Fri 12:30 opening → Sat 17:00 public finals), how your team works (tools, repository, data rules), what you leave with. Needs and challenge previews moved to the opening | — | 05 |
+| 18:38 | `60-your-place.md` | **7 · AI governance in science: let's keep talking**: lab policy (pre-read 2, Schuck), five rules and field norms, poll 6, "let's keep talking" (opening answers revisited); closing Zador quote | 6 | 09, 11 |
 
 Pre-work: DePasquale (2026) and Schuck (2026), both in *The Transmitter* (links below), and course
 modules 01–04.
 
-**Live quiz.** Eight questions (the second, "opening", free text) run on a small app of our own (`apps/live-quiz` in the corp repo,
+**Live quiz.** Ten questions (the second, "opening", free text; "dst" and "leakage" with a correct answer) run on a small app of our own (`apps/live-quiz` in the corp repo,
 Cloudflare Pages + D1, live at https://facmed-quiz.pages.dev): participants vote anonymously
 with a PIN given in the Zoom chat (QR code + link on the slides, generated by `build.sh` from
 `quiz_url.txt` into `assets/quiz_qr.svg`). Run it from `/admin` (admin token) and share the
@@ -58,8 +58,8 @@ unpublished, keep the branch private until checked.
 | `_header.md` · `[0-9][0-9]-*.md` | Design system and modules. **Edit these** | Facilitator |
 | `build.sh` | `./build.sh --pdf` → `slides.md` (generated), `slides.html`, `slides.pdf` | Facilitator |
 | `zoom_polls.md` | The six polls, where they go, settings | Facilitator |
-| `practical/` | **What participants get**: `README.md` (steps), `AGENTS.md` + `CLAUDE.md` (git handed to the agent), `NOTES.md`, `sleep-mood/` (synthetic data + codebook), `eeg-eye-state/` (real open EEG, CC BY 4.0), `review-hunt/analysis.py` | Participants |
-| `facilitator/` | `ANSWER_KEY.md`, `check_answers.py`, `check_eeg.py`, `generate_data.py`. **Never share** | Facilitator |
+| `practical/` | **What participants get**: `README.md` (steps), `AGENTS.md` + `CLAUDE.md` (git handed to the agent), `NOTES.md`, `phone-study/` (fictional 150-student phone study for the "same data, your question" exercise; codebook in its README), `sleep-mood/` (synthetic data + codebook), `eeg-eye-state/` (real open EEG, CC BY 4.0), `review-hunt/analysis.py` | Participants |
+| `facilitator/` | `ANSWER_KEY.md`, `check_answers.py`, `check_eeg.py`, `generate_data.py`, `generate_phone_study.py`. **Never share** | Facilitator |
 | `assets/` | Partner logos | — |
 
 Slide numbers read `n / total`. **Backup slides** take `<!-- _paginate: skip -->`: no number, and
@@ -71,9 +71,9 @@ each slide banner: they show in the presenter view and PPTX notes, never on the 
 ## Before the session
 
 - **Publish the participant folder**: `practical/` only (never `facilitator/`), e.g. as its own
-  public repository or a zip; put the link in the Zoom chat at 17:45.
-- Create the six Zoom polls (`zoom_polls.md`); enable breakout rooms; dry-run both practical rounds
-  with the agent you will use.
+  public repository or a zip; put the link in the Zoom chat at the start (the review hunt at
+  18:20 uses `review-hunt/analysis.py`; the sleep and EEG folders let anyone redo the two traps).
+- Create the six Zoom polls (`zoom_polls.md`) as the quiz fallback; no breakout rooms are needed.
 - **[CONFIRM]** Friday start time (14 Oct steering committee: 12:30; public programme: 11:00);
   where GitHub usernames are collected; private or public team repositories;
   any update to the challenge list or needs count after 15 Oct.

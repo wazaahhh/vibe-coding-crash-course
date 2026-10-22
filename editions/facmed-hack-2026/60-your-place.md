@@ -1,111 +1,79 @@
-<!-- ====== FUTURE 1 — Divider ====== -->
+<!-- ====== GOV 1 — Divider ======
+The point of the part (Thomas, 22 Oct): nobody has settled the rules for AI
+in science; labs are writing them, fields argue about them. Tonight opens the
+conversation; it continues at the hack and in your lab.
+-->
 <!-- _class: ink divider -->
 
-<span class="clock">19 min</span>
+<span class="clock">22 min</span>
 
-<span class="kicker">18:41 · Part 7 · Objective 1 · Imagine</span>
+<span class="kicker">18:38 · Part 7 of 7 · Objective 1 · Imagine</span>
 
-# A future worth building
+# AI governance in science: let's keep talking
 
-How a lab, and a field, can govern agentic AI. What becomes possible if we do. And your place in it.
+Nobody has settled the rules yet. Labs are writing them, fields are arguing about them, and you are part of it.
 
 ---
 
-<!-- ====== FUTURE 2 — Pre-read 2: Schuck, a lab policy ======
+<!-- ====== GOV 2 — Governance starts in the lab ======
 Schuck (University of Hamburg), The Transmitter, 24 August 2026. After a
 Claude Code demo and a lab retreat where the team prototyped a decoding
-pipeline in a day, he wrote a lab AI policy. Quotes verbatim from the page.
-His lab's policy is public: schucklab.gitlab.io/ai-policy.html
+pipeline in a day, he wrote a lab AI policy, public at
+schucklab.gitlab.io/ai-policy.html. Quotes verbatim from the page. Cut from
+the slide: "learn the tools" (output quality depends on scoping and
+prompting) and "you own it" (AI is never a co-author; "the model said so" is
+no defence).
 -->
 
 <span class="kicker">Pre-read 2 · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i></span>
 
-## Governance starts in the lab: one lab's AI policy
+## Governance starts in the lab
 
-<div class="cols3" style="margin-top: 4px;">
-<div class="card"><h3>Learning first</h3><p>Do by hand the work that builds core skills: questions, models, arguments. Hand off what you don't need to learn.</p></div>
+<div class="cols" style="grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 6px;">
+<div class="card"><h3>Learning first</h3><p>Do by hand what builds your core skills; hand off what you don't need to learn.</p></div>
 <div class="card"><h3>Draft before AI</h3><p><i>"You must always draft a text yourself before handing it to AI."</i></p></div>
-<div class="card"><h3>Verify by falsifying</h3><p><i>"AI output sounds confident even when wrong, so know how you can falsify what a model produces."</i> Scripts that check, rather than asking the model.</p></div>
-<div class="card"><h3>Limit the risks</h3><p><i>"Participant data should not be shared with AI tools, and agents only get access to the folders they need."</i></p></div>
-<div class="card"><h3>Learn the tools</h3><p>Output quality depends on how well you scope and prompt: invest the time.</p></div>
-<div class="card"><h3>You own it</h3><p>AI is a tool, never a co-author. "The model said so" is no defence: you own everything you make public.</p></div>
+<div class="card"><h3>Verify by falsifying</h3><p><i>"Know how you can falsify what a model produces."</i></p></div>
+<div class="card"><h3>Limit the risks</h3><p><i>"Participant data should not be shared with AI tools."</i></p></div>
 </div>
+
+<br>
+
+> *"Our lab policy's biggest effect wasn't any single rule, but rather creating a culture in which we discuss AI use rather than hide it."* <span class="small">Nicolas Schuck</span>
 
 ---
 
-<!-- ====== FUTURE 3 — From the lab to the field ======
+<!-- ====== GOV 3 — From the lab to the field ======
 Schuck's field-level call, and module 09's five rules as the individual
-minimum. Quotes verbatim from the Schuck piece.
+minimum. Ask: which of the five does your lab already practise? Which would
+your field need to agree on?
 -->
 
-<span class="kicker">Pre-read 2 · from the lab to the field · and module 09</span>
+<span class="kicker">From the lab to the field</span>
+
+## Five rules for each of us, norms for all of us
 
 <div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px;">
 <div>
 
-## Talk about it openly, then set norms together
+1. **Confidentiality**: no patient or unpublished data in uncleared tools.
+2. **Provenance**: commit the code, keep the prompts.
+3. **Correctness is yours**: verify anything that reaches a result.
+4. **Disclosure**: say how AI was used; it is never an author.
+5. **Keep your skills**: enough to review what it writes.
 
-> *"Our lab policy's biggest effect wasn't any single rule, but rather creating a culture in which we discuss AI use rather than hide it."*
+</div>
+<div>
 
 > *"We should not only have lab policies but decide as a field where we stand on the shifts in money, priorities and agenda that come with AI."*
-
-<span class="small">Nicolas Schuck, University of Hamburg</span>
-
-</div>
-<div>
-
-**Five rules for each of us** (module 09: your name is on the paper)
-1. **Confidentiality**: no patient, unpublished or embargoed data in uncleared tools.
-2. **Provenance**: commit the code, pin versions, keep the prompts.
-3. **Correctness is yours**: verify anything that reaches a result.
-4. **Disclosure**: say how AI was used; AI is no author; check the journal's and funder's policy.
-5. **Keep your skills**: enough fluency to review what it writes.
+> <span class="small">Nicolas Schuck</span>
 
 </div>
 </div>
 
 ---
 
-<!-- ====== FUTURE 4 — A bright, sustainable, safe future ======
-Make room for optimism here: ask people to add their own line in the chat.
-The "what it takes" column keeps it honest. Energy is real: right-size
-models (dial 2) and don't burn compute on throwaway runs.
--->
-<!-- _class: ink dense -->
-
-<span class="kicker">What becomes possible · and what it takes</span>
-
-## A bright, sustainable, safe future with AI in science
-
-<div class="cols" style="grid-template-columns: 1.15fr 1fr; gap: 30px; margin-top: 4px;">
-<div>
-
-**What becomes possible**
-- **More time for the questions**, and for patients: the plumbing shrinks.
-- **Science for more people**: clinicians build their own tools, small labs model like big ones, students contribute from week one.
-- **A cleaner literature**: every analysis in a repository, re-runnable by anyone.
-- **Open by default**: open models, open data (tonight's EEG), shared code.
-- **Faster from need to answer**: a clinical need on Monday, a working prototype by Friday.
-
-</div>
-<div>
-
-**What it takes**
-- **Judgment kept sharp**: you stay the System 2.
-- **Norms**, set openly, in labs and as a field.
-- **Safe infrastructure**: sensitive data stays where it belongs; the hack's HPE / NVIDIA environment is one example.
-- **Sustainable use**: the right-sized model for the task, no compute wasted on throwaway runs.
-- **Communities that practise together**: like the one meeting on 6 November.
-
-</div>
-</div>
-
-<span class="small">In the chat: one thing you would build, or fix, in your field if the plumbing were free.</span>
-
----
-
-<!-- ====== FUTURE 5 — POLL 6 · Depth ======
-Opinion, and the last poll: after the "future worth building" slide, so the
+<!-- ====== GOV 4 — POLL 6 · Depth ======
+Opinion, and the last poll: after the two governance slides, so the
 room weighs hope against DePasquale's warning. Show the result right away.
 B is Dan Goodman's point (incentives); C is the hopeful reading.
 -->
@@ -125,78 +93,33 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 
 ---
 
-<!-- ====== FUTURE 6 — The room vs. the field ======
-Recap of the six polls (results were shown as the evening went). Put the
-room's majority in each row; the row where the room most disagrees with the
-voice gets the remaining minutes.
--->
-
-<span class="kicker">The room's answers · all six polls</span>
-
-## What you imagined, and voices to argue with
-
-| Poll | The room | A voice from the field |
-|---|---|---|
-| 1 · Where first | *majority* | Agentic coding is already removing the engineering bottleneck in modelling (DePasquale) |
-| 2 · Reality check | **D** · 19% slower | …while feeling 20% faster (METR, 2025) |
-| 3 · Literature | *majority* | Incentives already reward producing models over understanding them (Dan Goodman, Imperial) |
-| 4 · Training | *majority* | Trainees do by hand the work that builds core skills (Schuck's lab policy) |
-| 5 · Scarce skill | *majority* | LLMs are *"a flashlight as opposed to a laser pointer"* (Kim Stachenfeld, DeepMind) |
-| 6 · Depth | *majority* | *"Prolific but shallow—generating models faster than we can generate insights"* (DePasquale) |
-
----
-
-<!-- ====== FUTURE 7 — Back to the opening question ======
-Facilitator: put 6–8 answers to the opening quiz question ("opening", presenter
-view or the export) back on screen and sort them live into the two columns,
-asking the room. Then the last prompt, in the chat.
-Save the chat: it is the record for objective 1.
--->
-
-<span class="kicker">The opening question, revisited</span>
-
-## Where will agentic coding change science?
-
-<div class="cols" style="margin-top: 6px;">
-<div class="card">
-<h3>What we saw tonight</h3>
-<p>Analysis in minutes · a plan before the code · git run by the agent · two clean runs with wrong numbers, caught by a skeptic · review as the real work</p>
-</div>
-<div class="card">
-<h3>Still imagination</h3>
-<p>Your answers from 17:00 that nothing tonight showed yet: where your own research, career or field could go</p>
-</div>
-</div>
-
-<br>
-
-> **Last line in the chat:** *"When agents write the code, the part of my research that stays mine is …"*
-
----
-
-<!-- ====== FUTURE 8 — Close ======
-From module 11 (close) and module 09 ("Start Monday"). End on time.
+<!-- ====== GOV 5 — Let's keep talking ======
+Merges the old "bright future", "room's answers", "opening question
+revisited" and "director, not author" slides. Facilitator: put 4–6 answers to
+the opening quiz question back on screen (presenter view) and ask which ones
+tonight made more real, and which still need norms to be safe. Then the last
+line in the chat. End on time.
 -->
 <!-- _class: ink -->
 <!-- _footer: "" -->
 
-<span class="kicker">See you on 6 November</span>
+<span class="kicker">Director, not author</span>
 
-# Director, not author.
+## Let's keep talking
 
-The agent brings **speed and breadth**. You bring **the question, the judgment and the responsibility**. That division of labour is the skill.
-
-<div class="cols3" style="margin-top: 16px;">
-<div class="card"><h3>Start this week</h3><p>One low-stakes task: let an agent into one real analysis; keep the prompt, verify the number (module 09).</p></div>
-<div class="card"><h3>Read</h3><p>DePasquale, <i>Models at the speed of thought</i> · Schuck, <i>How, when and why to use agentic AI in our neuroscience labs</i> · <i>The Transmitter</i>, 2026</p></div>
-<div class="card"><h3>The course</h3><p>github.com/wazaahhh/vibe-coding-crash-course · fork it, star it, open a pull request</p></div>
+<div class="cols3" style="margin-top: 6px;">
+<div class="card"><h3>What becomes possible</h3><p>More time for the questions and for patients. Science for more people. A literature anyone can re-run.</p></div>
+<div class="card"><h3>What it takes</h3><p>Judgment kept sharp. Norms set openly, in labs and as a field. Sensitive data kept where it belongs.</p></div>
+<div class="card"><h3>Where we continue</h3><p>At the hack, 6–7 November. In your lab: write your AI policy together. The course: github.com/wazaahhh/vibe-coding-crash-course</p></div>
 </div>
 
-<span class="small">Vibe Coding for Scientists · CC BY-NC 4.0 · Thomas Maillart</span>
+<br>
+
+> **Back to your opening answers**: which did tonight make more real? And in the chat, one last line: *"When agents write the code, the part of my research that stays mine is …"*
 
 ---
 
-<!-- ====== FUTURE 9 — Closing quote ======
+<!-- ====== GOV 6 — Closing quote ======
 The last word: nobody in this room, nor the people who build these tools, knows
 how this plays out for neuroscience, which is why tonight started with what you
 imagine and ends with a discussion. Leave it on screen while people leave the

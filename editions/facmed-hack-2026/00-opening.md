@@ -10,7 +10,7 @@
 # Vibe coding &amp; AI-assisted development
 ## Direct the agent. Check the result.
 
-Where AI agents come from, how they change research, and how to work with one: hands on, in pairs, on real data.
+Where AI agents come from, how they change research, and how to work with one: quizzes and discussion, on real data.
 
 <span class="small">FacMed Hack #1 · Digital Phenotyping of Mental Health · Fri 6 – Sat 7 November 2026 · Campus Biotech · in English</span>
 
@@ -45,7 +45,7 @@ mental health analysis 28; thin: research participation 7, data pipelines 3). Th
 <div style="height: 18px; width: 53%; background: rgba(255,255,255,0.22); border-radius: 6px; margin: 18px 0 8px;"></div>
 <div style="height: 18px; width: 100%; background: linear-gradient(90deg, #F08BB4, #6E7CF6); border-radius: 6px; margin: 0 0 16px;"></div>
 
-**Almost twice the goal.** Every challenge at the hack starts from one of your needs.
+**Almost twice the goal**, from **30 contributors** at UNIGE, HUG, the Wyss Center, FCBG, Trieste and UNIL. Prizes for the best needs are announced at the finals.
 
 </div>
 <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 12px;">
@@ -57,6 +57,29 @@ mental health analysis 28; thin: research participation 7, data pipelines 3). Th
 
 ---
 
+<!-- ====== HOUSEKEEPING 1 — The road to 6 November ======
+30 seconds. Where tonight sits: the second of three crash courses before the
+hack. The picture: Campus Biotech at dusk, from the hackathon's own campaign
+illustrations (communication/visual/illustrations/04, corp repo). Challenge voting runs 23 → 28 Oct (final list online on the 23rd):
+say it aloud; it is on the tile and in Part 6.
+-->
+
+<span class="kicker">Housekeeping · the calendar</span>
+
+## The road to 6 November
+
+<div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 14px; font-size: 0.92em;">
+<div class="card"><span class="qnum" style="color: var(--fg-faint);">Thu 8 Oct</span><h3>Crash Course #1</h3><p>Digital phenotyping &amp; the Swiss data rules</p></div>
+<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Today</span><h3>Crash Course #2</h3><p>Vibe coding &amp; AI-assisted development</p></div>
+<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">23 → 28 Oct</span><h3>Challenge voting</h3><p>Rank your three favourite challenges and confirm your place</p></div>
+<div class="card"><span class="qnum" style="color: var(--science);">Thu 29 Oct</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
+<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">6 – 7 Nov</span><h3>The hackathon</h3><p>32 hours at Campus Biotech, in English</p></div>
+</div>
+
+<img src="assets/campus_biotech_dusk.jpg" alt="Illustration: Campus Biotech at dusk, participants arriving with laptops" style="width:100%; height: 205px; object-fit: cover; object-position: 50% 0%; border-radius: 12px; display:block; margin-top: 16px;">
+
+---
+
 <!-- ====== OPENING 1c — From needs to challenges ======
 40 seconds. How the needs become the hackathon's challenges (source: corp repo,
 docs/pipeline/FacMed/.../challenges/README.md and method/). Clustering groups
@@ -65,6 +88,16 @@ contributors and institutions. The steering committee of 14 Oct kept 8
 candidates, aiming for about 7. Each challenge gets a sheet, a postdoc challenge
 runner, stand-in data, and its equipment, compute and privacy route. Then you
 vote (23 → 28 Oct) and teams are formed from your rankings. Details in Part 6.
+The eight challenges (draft of 14 Oct, aiming for about 7; possible merge of
+5 + 6): 1 between-visit deterioration (change from a person's own baseline,
+without alert fatigue); 2 physiology you can trust (wearables: quality,
+stress vs exercise or coffee, biofeedback); 3 behaviour annotation from video
+(validated against human coders); 4 clinical speech and language (who spoke
+when, French transcription, markers of memory and mood); 5 markerless
+movement, gaze and pupil (vs motion capture); 6 digital markers and the brain
+(EEG synchronised with gaze, speech, movement); 7 cross-species behaviour and
+touch (mice and humans); 8 interactive interventions (XR, games, toys).
+[UPDATE] if the final list of 23 Oct differs.
 -->
 
 <span class="kicker">From here to 6 November</span>
@@ -79,58 +112,47 @@ vote (23 → 28 Oct) and teams are formed from your rankings. Details in Part 6.
 <div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">5 · You</span><h3>Vote and teams</h3><p>23 → 28 Oct: rank three challenges; teams are formed from your rankings.</p></div>
 </div>
 
-<br>
-
-> Every challenge at the hack can be traced back to **needs you wrote**.
-
----
-
-<!-- ====== HOUSEKEEPING 1 — The road to 6 November ======
-30 seconds. Where tonight sits: the second of three crash courses before the
-hack. The two actions for this week come back in detail in Part 6.
--->
-
-<span class="kicker">Housekeeping · 1 of 2</span>
-
-## The road to 6 November
-
-<div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 14px; font-size: 0.92em;">
-<div class="card"><span class="qnum" style="color: var(--fg-faint);">Thu 8 Oct</span><h3>Crash Course #1</h3><p>Digital phenotyping &amp; the Swiss data rules</p></div>
-<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Today</span><h3>Crash Course #2</h3><p>Vibe coding &amp; AI-assisted development</p></div>
-<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">23 → 28 Oct</span><h3>Challenge voting</h3><p>Rank your three favourite challenges and confirm your place</p></div>
-<div class="card"><span class="qnum" style="color: var(--science);">Thu 29 Oct</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
-<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">6 – 7 Nov</span><h3>The hackathon</h3><p>32 hours at Campus Biotech, in English</p></div>
+<div style="margin-top: 14px; font-size: 0.62em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; color: var(--fg-faint);">Eight challenges taking shape · draft of 14 October · final list online on 23 October</div>
+<div style="display:grid; grid-template-columns: repeat(4, 1fr); gap: 8px 12px; margin-top: 6px; font-size: 0.72em;">
+<div class="card" style="padding: 8px 12px;"><b>1</b> · Between-visit deterioration</div>
+<div class="card" style="padding: 8px 12px;"><b>2</b> · Physiology you can trust</div>
+<div class="card" style="padding: 8px 12px;"><b>3</b> · Behaviour annotation from video</div>
+<div class="card" style="padding: 8px 12px;"><b>4</b> · Clinical speech and language</div>
+<div class="card" style="padding: 8px 12px;"><b>5</b> · Markerless movement, gaze, pupil</div>
+<div class="card" style="padding: 8px 12px;"><b>6</b> · Digital markers ↔ the brain</div>
+<div class="card" style="padding: 8px 12px;"><b>7</b> · Cross-species behaviour and touch</div>
+<div class="card" style="padding: 8px 12px;"><b>8</b> · Interactive interventions</div>
 </div>
-
-<br>
-
-> **Challenge voting, 23 → 28 October:** the final list goes online on the 23rd; rank three challenges and confirm your place, from the email.
 
 ---
 
 <!-- ====== HOUSEKEEPING 2 — Tonight on Zoom ======
-30 seconds. [CONFIRM] whether tonight is recorded; if so, say it here, before
+30 seconds. The picture: a Zoom gallery view supplied by Thomas (22 Oct), a web
+image thumbnail (Bing "OIP" file, low resolution); likely Zoom marketing or stock,
+rights unknown: fine for the live session, replace before publishing the deck. Invite cameras on: it makes the discussions work.
+[CONFIRM] whether tonight is recorded; if so, say it here, before
 anyone speaks (and that the recording goes to registered participants only).
-Paste in the chat now: the quiz PIN. At 17:45: the practical folder link.
+Paste in the chat now: the quiz PIN, and the link to the course folder (data and the review-hunt file used at 18:20).
 -->
 
-<span class="kicker">Housekeeping · 2 of 2</span>
+<span class="kicker">Housekeeping · tonight</span>
 
 ## Tonight on Zoom
 
-<div class="cols" style="gap: 28px; margin-top: 6px;">
+<div class="cols" style="grid-template-columns: 1fr 1.05fr; gap: 26px; margin-top: 4px; align-items: center; font-size: 0.9em;">
 <div>
 
-- **Microphone off**, unless you speak; camera on if you can.
-- **Questions in the chat**, any time: we pick them up between parts.
-- **Live quiz** on your phone or laptop: it starts on the next slide.
+- **Camera on** if you can; **microphone off** unless you speak.
+- **Questions in the chat**, any time.
+- **Live quiz** on your phone or laptop: next slide.
+- **Quizzes and discussion** all evening: unmute and argue.
+- **Course folder and slides**: link in the chat.
+- **We end at 19:00** sharp.
 
 </div>
 <div>
 
-- **17:47, breakout rooms of two**: a laptop with a browser is enough; your own agent if you have one.
-- **The practical folder** and the slides: link in the chat.
-- **We end at 19:00** sharp.
+<img src="assets/zoom_gallery.jpg" alt="A Zoom call in gallery view, dozens of participants with cameras on" style="width:100%; display:block; border-radius: 12px;">
 
 </div>
 </div>
@@ -144,28 +166,24 @@ those on the same device as Zoom. Question "uses" (multi-select). Give 60 s,
 then open the presenter view's live results and read them aloud in one
 sentence; we come back to them in Part 1 ("Six everyday uses").
 -->
-<!-- _class: ink -->
 
-<span class="kicker">Live quiz · on your phone or laptop</span>
+<span class="qnum">Live quiz · first question · join now</span>
 
 ## What have you already used AI for in your research? *Tick all that apply.*
 
-<div class="cols" style="grid-template-columns: 1fr 1.25fr; gap: 30px; align-items: center; margin-top: 10px;">
-<div>
-
-Finding and summarising papers · analysis code · modelling · writing and editing · learning or explaining code and methods · building small tools · **nothing yet**
-
-<br>
-
-<span class="small">Anonymous. Results appear live; we come back to them in Part 1.</span>
-
+<div class="opts" style="width: 58%;">
+<div class="opt"><b>A</b>Finding and summarising papers</div>
+<div class="opt"><b>B</b>Analysis code</div>
+<div class="opt"><b>C</b>Modelling</div>
+<div class="opt"><b>D</b>Writing and editing</div>
+<div class="opt"><b>E</b>Learning or explaining code and methods</div>
+<div class="opt"><b>F</b>Building small tools</div>
 </div>
-<div>
-
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz, PIN included"><div><b>Live quiz · scan, or open</b><span>{{QUIZ_URL}}</span><span class="pin">{{QUIZ_PIN_LABEL}}</span></div></div>
-
+<div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 28%;">
+<div class="opt"><b>G</b>Nothing yet</div>
 </div>
-</div>
+
+<div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
 
 ---
 
@@ -179,8 +197,6 @@ Export them: at 18:47 we sort them into what the session showed agents change
 today vs. what is still imagination (Part 7, "the opening question, revisited").
 -->
 <!-- _class: ink -->
-
-<span class="clock">3 min</span>
 
 > *"What would you do if you had all the models of the brain you wanted?"*
 > <span class="small">Grace Lindsay, NYU, responding to this week's pre-read (DePasquale, <i>The Transmitter</i>, June 2026)</span>
@@ -208,6 +224,10 @@ Name **one place, and what changes there**. Your own field or any other: a metho
 Objective 3 matters most for anyone who arrived without tools installed: say
 explicitly that this is fine, and that the hack offers the HPE / NVIDIA
 environment to everyone, with or without their own setup.
+Live quiz (moved from the dropped programme slide): Ten live-quiz questions are spread through the evening (the second, "opening", is free text; "dst" and "leakage" in Part 4 have a correct answer; app at {{QUIZ_URL}},
+presenter view at /present?key=…), each where its topic comes up. Show each
+result right away and take one or two reactions; "the room's answers" in Part 7
+recaps them. Zoom polls (zoom_polls.md) are the fallback.
 -->
 
 <span class="kicker">Tonight · three objectives</span>
@@ -235,27 +255,3 @@ environment to everyone, with or without their own setup.
 <br>
 
 <span class="small">Built on the course <i>Vibe Coding for Scientists</i> (github.com/wazaahhh/vibe-coding-crash-course, CC BY-NC 4.0). Pre-reads: DePasquale (2026) and Schuck (2026), both in <i>The Transmitter</i>.</span>
-
----
-
-<!-- ====== OPENING 5 — Programme ======
-Eight live-quiz questions are spread through the evening (the second, "opening", is free text; app at {{QUIZ_URL}},
-presenter view at /present?key=…), each where its topic comes up. Show each
-result right away and take one or two reactions; "the room's answers" in Part 7
-recaps them. Zoom polls (zoom_polls.md) are the fallback.
--->
-
-<span class="kicker">Tonight · 17:00 → 19:00</span>
-
-## Seven parts, a live quiz along the way
-
-| Time | Part | Poll | Obj. |
-|---|---|---|---|
-| 17:00 | Opening: housekeeping, a question and a first poll in the live quiz, three objectives | quiz | 1 |
-| 17:05 | **1 · Where this comes from**: from artificial neurons to coding agents; how an LLM works; what it means for hackathons; opportunities and pitfalls (pre-read 1) | 1 · 2 | 1 |
-| 17:30 | **2 · How vibe coding works**: four disciplines, how to ask, three dials | — | 2 |
-| 17:36 | **3 · Git &amp; GitHub, without the jargon**: version control as a lab book, and how the agent runs it for you | 3 | 2 |
-| 17:47 | **4 · Practical in pairs** (breakout rooms): synthetic sleep data, then a real EEG recording | 4 | 2 |
-| 18:24 | **5 · Review hunt**: would you sign this AI-written analysis? | 5 | 2 |
-| 18:31 | **6 · The hack**: where we are, how it runs, with or without your own tools | — | 3 |
-| 18:41 | **7 · A future worth building**: AI governance in science (pre-read 2), your place | 6 | 1 |

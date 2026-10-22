@@ -6,9 +6,9 @@ question and test (the pink dashed step, the one that is easy to skip).
 -->
 <!-- _class: ink divider -->
 
-<span class="clock">6 min</span>
+<span class="clock">15 min</span>
 
-<span class="kicker">17:30 · Part 2 · Objective 2 · Understand</span>
+<span class="kicker">17:35 · Part 2 of 7 · Objective 2 · Understand</span>
 
 # How vibe coding works
 
@@ -87,9 +87,8 @@ the course repository is CC BY-NC.
 </div>
 <div class="card">
 <h3>4 · Try and fail</h3>
-<p>Not a Silicon Valley motto: <b>the method of science</b>. A hypothesis is a guess you try to break; an experiment that fails tells you something.</p>
-<blockquote style="font-size:0.72em; margin: 8px 0;"><i>"The method of science is the method of bold conjectures and ingenious and severe attempts to refute them."</i><br><span class="small">Karl Popper, <i>Objective Knowledge</i>, 1972</span></blockquote>
-<p>What changes: a failed attempt now costs <b>minutes, not weeks</b>. More guesses, tested harder, as long as you can always go back (Part 3: git).</p>
+<p>Not a Silicon Valley motto: <b>the method of science</b>. A hypothesis is a guess you try to break; an experiment that fails tells you something (Popper, next slide).</p>
+<p style="margin-top: 10px;">What changes: a failed attempt now costs <b>minutes, not weeks</b>. More guesses, tested harder, as long as you can always go back (Part 3: git).</p>
 </div>
 </div>
 
@@ -101,50 +100,46 @@ the course repository is CC BY-NC.
 
 ---
 
-<!-- ====== HOW 3b — Descartes: dubito, ergo cogito, ergo sum ======
-Ten seconds of silence after reading it. The bridge from the previous slide:
-System 2 "is in charge of doubting"; with an agent, doubting is the part of the
-thinking that stays yours.
-Attribution: the formula "dubito, ergo cogito, ergo sum" ("I doubt, therefore I
-think, therefore I am") is a later summary of Descartes' method, usually
-credited to Antoine Léonard Thomas (Éloge de René Descartes, 1765); Descartes
-wrote "je pense, donc je suis" (Discours de la méthode, 1637) and "ego sum, ego
-existo" (Meditationes, 1641), reaching it through methodical doubt. Say
-"attributed to Descartes" if asked.
-Portrait: Frans Hals (after), c. 1649–1700, Louvre; public domain, via
-Wikimedia Commons.
+<!-- ====== HOW 3b — Popper: conjectures and refutations ======
+Replaces the Descartes slide (Thomas, 22 Oct). Ten seconds of silence after
+reading it. The bridge from pillar 4: try and fail is not a start-up motto,
+it is how science works; agents make attempts cheap, so we can make more of
+them, and test them harder.
+Quote: K. R. Popper, Objective Knowledge: An Evolutionary Approach (Oxford,
+Clarendon Press, 1972), p. 81.
+Portrait: "Photo of Karl Popper" (1987), Wikimedia Commons, CC BY-SA 4.0
+(cropped).
 -->
 <!-- _class: ink quote -->
 <!-- _footer: "" -->
 
 <div style="display:grid; grid-template-columns: 220px 1fr; gap: 44px; align-items: center;">
-<div><img src="assets/descartes.jpg" alt="Portrait of René Descartes, after Frans Hals" style="width:220px; height:220px; object-fit:cover; object-position: 50% 22%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
+<div><img src="assets/popper.jpg" alt="Portrait of Karl Popper, 1987" style="width:220px; height:220px; object-fit:cover; object-position: 50% 25%; border-radius:50%; border: 4px solid #F08BB4; display:block;"></div>
 <div>
 
-> "Dubito, ergo cogito, ergo sum."
+> "The method of science is the method of bold conjectures and ingenious and severe attempts to refute them."
 
-<div class="who" style="padding-left:40px;">I doubt, therefore I think, therefore I am.</div>
-<div class="who" style="padding-left:40px; margin-top: 10px;"><b>René Descartes</b> · attributed, after the <i>Discourse on Method</i> (1637)</div>
+<div class="who" style="padding-left:40px;"><b>Karl Popper</b> · <i>Objective Knowledge</i>, 1972</div>
 
 </div>
 </div>
 
-<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Portrait after Frans Hals, Louvre · public domain, via Wikimedia Commons</span>
+<span class="small" style="position:absolute; bottom: 30px; left: 64px; font-size:0.5em;">Photo of Karl Popper, 1987 · CC BY-SA 4.0, via Wikimedia Commons (cropped)</span>
 
 ---
 
 <!-- ====== HOW 3c — Section break: getting concrete ======
-A breath after the principles and Descartes. From here, the practical set-up:
+A breath after the principles and Popper. From here, the practical set-up:
 the project folder and its rule file, how to ask, the three dials, a worked
-rhythm. Then git, then hands on in pairs.
+rhythm. Then git, then spotting traps together.
 -->
 <!-- _class: ink divider -->
 
-<span class="kicker">Part 2 · from principles to practice</span>
+<span class="kicker">Part 2 of 7 · from principles to practice</span>
 
 # Now, let's get concrete
 
-How to set up a vibe-coding project, how to ask, and which dials to turn: the moves you will use tonight in pairs, and at the hack.
+How to set up a vibe-coding project, how to ask, and which dials to turn: the moves you will use at the hack, and in your lab.
 
 <div style="display:grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 26px;">
 <div class="card"><span class="qnum" style="color:#F6A9C8; font-size:0.9em;">1</span><h3>One folder, one rule file</h3></div>
@@ -312,7 +307,7 @@ Codex, Copilot and Cline all have these, named differently.
 
 <!-- ====== HOW 7 — Putting it together ======
 From module 06 ("Putting the three together"). This is the rhythm the
-practical asks for.
+hack asks for.
 -->
 
 <span class="kicker">A worked rhythm</span>
