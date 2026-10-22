@@ -1,31 +1,27 @@
 # Course folder
 
-Crash Course #2 · FacMed Hack #1 · *Vibe Coding for Scientists*. The data and files used tonight,
-in the order they come up. All data here is synthetic or open, so you may upload it to a chat AI.
+Crash Course #2 · FacMed Hack #1 · *Vibe Coding for Scientists*. One dataset all evening: a
+fictional phone study, synthetic, so you may upload it to a chat AI.
 
-| When | Part | Folder | What you do |
-|---|---|---|---|
-| 17:10 | Same data, your question | `phone-study/` | Read the codebook; answer in the live quiz: *what would you find worth exploring?* |
-| 18:00 | Spot the trap | `sleep-mood/`, `eeg-eye-state/` | Vote in the live quiz; the files are here to redo both analyses yourself afterwards |
-| 18:20 | Review hunt | `review-hunt/`, `sleep-mood/` | Read an analysis an agent wrote; post in the chat everything you would not sign |
+| When | Part | What you do |
+|---|---|---|
+| 17:10 | Same data, your question | Read the codebook; answer in the live quiz: *what would you find worth exploring?* |
+| 18:00 | Spot the trap | Vote in the live quiz on two analyses of this data; redo them yourself afterwards |
+| 18:20 | Review hunt | Read an analysis an agent wrote on this data; post in the chat everything you would not sign |
 
-## The datasets
+## The phone study · `phone-study/`
 
-- **`phone-study/`**: fictional phone study, 150 students over 12 weeks: daily steps, GPS radius,
-  screen time, sleep, calls and messages, an evening mood rating, and PHQ-9 at weeks 0, 6 and 12.
-  Codebook: `phone-study/data/README.md`.
-- **`sleep-mood/`**: synthetic smartphone + wearable data, 40 participants, 21 nights: bedtimes,
-  steps, mood questionnaires. Codebook: `sleep-mood/data/README.md`.
-- **`eeg-eye-state/`**: a real, open EEG recording (14 channels, 117 seconds, eyes open or closed;
-  CC BY 4.0). See `eeg-eye-state/README.md`.
+150 students over 12 weeks: bedtime and wake-up, steps, GPS radius, screen time, calls and
+messages, an evening mood rating, and PHQ-9 at weeks 0, 6 and 12. Codebook:
+`phone-study/data/README.md`.
 
 ## Review hunt · `review-hunt/analysis.py`
 
 An agent wrote `analysis.py` from the prompt at the top of the file. Read it with the codebook
-`sleep-mood/data/README.md` and **list everything you would not put your name on**, and what
-tipped you off. Allowed: plots, the codebook, a second AI, your judgment.
+and **list everything you would not put your name on**, and what tipped you off. Allowed: plots,
+the codebook, a second AI, your judgment.
 
-To run it: `python review-hunt/analysis.py` (needs `pandas`, `numpy` and `scikit-learn`).
+To run it: `python review-hunt/analysis.py` (needs `pandas` and `scikit-learn`).
 
 ## Redo it with an agent (after the session, or at the hack)
 
@@ -34,11 +30,8 @@ agent to clone it. The agent reads `AGENTS.md` (Claude Code reads it through `CL
 **git** for you, explains each step, and waits for your OK. `NOTES.md` is where it records what was
 verified and what was trusted.
 
-- **Sleep:** *"Compute hours slept per night from `sleep-mood/` and plot the average per night."*
-  Is any night strange? Why?
-- **EEG:** *"Train a simple classifier to predict `eye_closed` and report its accuracy."* Then:
-  *"Would it still work on the last part of the recording if we trained on the first part? Test
-  exactly that."*
+- *"Compute hours slept per night and plot the average per night."* Is any night strange? Why?
+- *"Plot the average evening mood per week. Who answers, and who doesn't?"*
 
 Five prompts worth stealing:
 
