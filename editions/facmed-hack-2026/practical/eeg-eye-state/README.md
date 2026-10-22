@@ -19,5 +19,5 @@ chronological order, first measurement at the top.
 14,980 rows. The repository page does not state units, reference or filtering; 14,980 samples
 over 117 s suggests about 128 samples per second.
 
-**The question for round 2:** can these 14 channels tell whether the eyes are open or closed,
+**The question:** can these 14 channels tell whether the eyes are open or closed,
 and how well, *honestly*?

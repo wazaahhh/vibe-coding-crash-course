@@ -1,53 +1,52 @@
-# Practical: direct an AI agent on real analyses
+# Course folder
 
-Crash Course #2 · FacMed Hack #1 · *Vibe Coding for Scientists*. Work in **pairs**, in a Zoom
-breakout room, with two roles:
+Crash Course #2 · FacMed Hack #1 · *Vibe Coding for Scientists*. The data and files used tonight,
+in the order they come up. All data here is synthetic or open, so you may upload it to a chat AI.
 
-- **Driver**: shares their screen and talks to the agent, saying out loud what they ask and why.
-- **Skeptic**: never touches the keyboard. After every answer: *how would we know if this is wrong?*
+| When | Part | Folder | What you do |
+|---|---|---|---|
+| 17:10 | Same data, your question | `phone-study/` | Read the codebook; answer in the live quiz: *what would you find worth exploring?* |
+| 18:00 | Spot the trap | `sleep-mood/`, `eeg-eye-state/` | Vote in the live quiz; the files are here to redo both analyses yourself afterwards |
+| 18:20 | Review hunt | `review-hunt/`, `sleep-mood/` | Read an analysis an agent wrote; post in the chat everything you would not sign |
 
-**Switch roles halfway** (the host will broadcast it).
+## The datasets
 
-## Setup (2 minutes)
+- **`phone-study/`**: fictional phone study, 150 students over 12 weeks: daily steps, GPS radius,
+  screen time, sleep, calls and messages, an evening mood rating, and PHQ-9 at weeks 0, 6 and 12.
+  Codebook: `phone-study/data/README.md`.
+- **`sleep-mood/`**: synthetic smartphone + wearable data, 40 participants, 21 nights: bedtimes,
+  steps, mood questionnaires. Codebook: `sleep-mood/data/README.md`.
+- **`eeg-eye-state/`**: a real, open EEG recording (14 channels, 117 seconds, eyes open or closed;
+  CC BY 4.0). See `eeg-eye-state/README.md`.
 
-| You have… | Do this |
-|---|---|
-| VS Code with an agent (Claude Code, Codex, GitHub Copilot, Cline) | Download this folder (or ask your agent to clone it), open it in VS Code, open the agent |
-| Only a chat AI (ChatGPT, Claude, Gemini…) | Upload the CSV files and the README of each round to the chat; all the data here is synthetic or open, so this is allowed. Skip the git steps |
-| Nothing working | Be the skeptic first; drive in round 2 from your partner's machine via Zoom remote control, or in chat mode |
+## Review hunt · `review-hunt/analysis.py`
 
-The agent reads `AGENTS.md` (Claude Code reads it through `CLAUDE.md`): it runs **git** for you
-and explains each step. You only ask in plain English.
+An agent wrote `analysis.py` from the prompt at the top of the file. Read it with the codebook
+`sleep-mood/data/README.md` and **list everything you would not put your name on**, and what
+tipped you off. Allowed: plots, the codebook, a second AI, your judgment.
 
-## Round 1 · Driver A · ~15 min · `sleep-mood/`
+To run it: `python review-hunt/analysis.py` (needs `pandas`, `numpy` and `scikit-learn`).
 
-Synthetic smartphone + wearable data: 40 participants, 21 nights. Codebook: `sleep-mood/data/README.md`.
-**Question: how long do people sleep each night?**
+## Redo it with an agent (after the session, or at the hack)
 
-1. *"Brief me on `sleep-mood/` and its codebook. Don't change anything."*
-2. *"Start a new branch for this task."* (The agent explains what a branch is in one sentence.)
-3. *"Plan how you'd compute sleep duration per night and plot the average per night. Wait for my OK."*
-4. Approve, let it run, **look at the plot together**. Skeptic: is anything strange?
-5. If something is: find out why, and fix it with a precise instruction.
-6. *"Save my work with a clear message, and add a line to NOTES.md."*
+Open this folder in VS Code with an agent (Claude Code, Codex, GitHub Copilot, Cline), or ask your
+agent to clone it. The agent reads `AGENTS.md` (Claude Code reads it through `CLAUDE.md`): it runs
+**git** for you, explains each step, and waits for your OK. `NOTES.md` is where it records what was
+verified and what was trusted.
 
-## Round 2 · Driver B · ~15 min · `eeg-eye-state/`
+- **Sleep:** *"Compute hours slept per night from `sleep-mood/` and plot the average per night."*
+  Is any night strange? Why?
+- **EEG:** *"Train a simple classifier to predict `eye_closed` and report its accuracy."* Then:
+  *"Would it still work on the last part of the recording if we trained on the first part? Test
+  exactly that."*
 
-A **real, open** EEG recording: 14 channels, 117 seconds, eyes open or closed. See `eeg-eye-state/README.md`.
-**Question: can these channels tell whether the eyes are closed, and how well, honestly?**
+Five prompts worth stealing:
 
-1. *"Load `eeg-eye-state/data/eeg_eye_state.csv`, describe it, and plot the 14 channels over time."*
-   Skeptic: does the plot look like EEG?
-2. *"Train a simple classifier to predict `eye_closed` and report its accuracy."*
-3. Skeptic: *"Would this still work on the last part of the recording if we trained on the first part?"*
-   Ask the agent to test exactly that, and compare.
-4. *"Save my work, send it to GitHub and open a pull request saying what we verified and what we
-   trusted."* (No GitHub account yet? Just save.)
+1. *"Explain what this code does before you change anything."*
+2. *"Outline your plan, then wait for my OK."*
+3. *"Write a test that would fail if this result were wrong."*
+4. *"What could make this conclusion wrong? Argue against yourself."*
+5. *"Summarise in plain language what you changed and what you assumed."*
 
-**Back in the main room:** post in the chat (1) the strange thing you found in round 1, and
-(2) your two accuracy numbers from round 2.
-
-## Review hunt · `review-hunt/`
-
-`analysis.py` was written by an agent from the prompt at the top of the file. Run it, read it,
-read the codebook. **List everything you would not put your name on.**
+For git, just say it: *"start a branch"* · *"save my work"* · *"what changed?"* · *"undo that"* ·
+*"send it to GitHub"*.
