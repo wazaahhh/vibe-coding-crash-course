@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+  <title>Perceptron: inputs multiplied by weights, summed, passed through a threshold to give an output</title>
+  <rect width="520" height="300" fill="#ffffff"/>
+  <g font-size="17" fill="#11233F">
+    <circle cx="60" cy="70" r="24" fill="#D9F0F4" stroke="#4FA5B8" stroke-width="2"/><text x="60" y="76" text-anchor="middle">x₁</text>
+    <circle cx="60" cy="150" r="24" fill="#D9F0F4" stroke="#4FA5B8" stroke-width="2"/><text x="60" y="156" text-anchor="middle">x₂</text>
+    <circle cx="60" cy="230" r="24" fill="#D9F0F4" stroke="#4FA5B8" stroke-width="2"/><text x="60" y="236" text-anchor="middle">x₃</text>
+  </g>
+  <g stroke="#11233F" stroke-width="2.5">
+    <line x1="84" y1="74" x2="236" y2="140"/><line x1="84" y1="150" x2="234" y2="150"/><line x1="84" y1="226" x2="236" y2="160"/>
+  </g>
+  <g font-size="16" fill="#96004B" font-style="italic">
+    <text x="150" y="92">w₁</text><text x="150" y="142">w₂</text><text x="150" y="214">w₃</text>
+  </g>
+  <circle cx="270" cy="150" r="36" fill="#EBCFDC" stroke="#96004B" stroke-width="2.5"/>
+  <text x="270" y="160" text-anchor="middle" font-size="30" fill="#96004B">Σ</text>
+  <line x1="306" y1="150" x2="350" y2="150" stroke="#11233F" stroke-width="2.5"/>
+  <rect x="350" y="118" width="70" height="64" rx="10" fill="#F7F9FC" stroke="#11233F" stroke-width="2"/>
+  <polyline points="360,168 384,168 384,132 410,132" fill="none" stroke="#11233F" stroke-width="2.5"/>
+  <line x1="420" y1="150" x2="466" y2="150" stroke="#11233F" stroke-width="2.5" marker-end="url(#a)"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#11233F"/></marker></defs>
+  <text x="490" y="157" text-anchor="middle" font-size="18" fill="#11233F">y</text>
+  <g font-size="14" fill="#4D5B73" text-anchor="middle">
+    <text x="60" y="285">inputs</text><text x="270" y="215">weighted sum</text><text x="385" y="215">threshold</text><text x="485" y="185">output</text>
+  </g>
+</svg>

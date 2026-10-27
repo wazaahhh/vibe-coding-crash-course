@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -44 1100 430" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+<title>Two loops. Writing code yourself: think, type, run, see, with understanding built into the centre. Directing an agent: ask, the agent writes, runs and reports; understanding only enters if you choose to read, question and test, a step you can skip</title>
+<defs>
+<marker id="a" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#A9B8CE"/></marker>
+<marker id="p" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#F08BB4"/></marker>
+</defs>
+<text x="250" y="-18" text-anchor="middle" font-size="17" font-weight="700" fill="#A9B8CE" letter-spacing="2">YOU WRITE THE CODE</text>
+<path d="M 250 40 A 150 150 0 0 1 400 190" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 400 190 A 150 150 0 0 1 250 340" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 250 340 A 150 150 0 0 1 100 190" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 100 190 A 150 150 0 0 1 250 40" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="208.5" y="23" width="83" height="34" rx="17" fill="#1d3354" stroke="#A9B8CE"/><text x="250" y="46" text-anchor="middle" font-size="17" fill="#F2F6FB">think</text>
+<rect x="360.0" y="173" width="80" height="34" rx="17" fill="#1d3354" stroke="#A9B8CE"/><text x="400" y="196" text-anchor="middle" font-size="17" fill="#F2F6FB">type</text>
+<rect x="210.0" y="323" width="80" height="34" rx="17" fill="#1d3354" stroke="#A9B8CE"/><text x="250" y="346" text-anchor="middle" font-size="17" fill="#F2F6FB">run</text>
+<rect x="60.0" y="173" width="80" height="34" rx="17" fill="#1d3354" stroke="#A9B8CE"/><text x="100" y="196" text-anchor="middle" font-size="17" fill="#F2F6FB">see</text>
+<circle cx="250" cy="190" r="60" fill="#4FA5B8"/>
+<text x="250" y="186" text-anchor="middle" font-size="16" font-weight="700" fill="#11233F">understanding</text>
+<text x="250" y="207" text-anchor="middle" font-size="15" fill="#11233F">built in</text>
+<text x="550" y="202" text-anchor="middle" font-size="42" fill="#A9B8CE">→</text>
+<text x="850" y="-18" text-anchor="middle" font-size="17" font-weight="700" fill="#F6A9C8" letter-spacing="2">YOU DIRECT AN AGENT</text>
+<path d="M 850 40 A 150 150 0 0 1 1000 190" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 1000 190 A 150 150 0 0 1 850 340" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 850 340 A 150 150 0 0 1 700 190" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M 700 190 A 150 150 0 0 1 850 40" fill="none" stroke="#A9B8CE" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="810.0" y="23" width="80" height="34" rx="17" fill="#1d3354" stroke="#A9B8CE"/><text x="850" y="46" text-anchor="middle" font-size="17" fill="#F2F6FB">ask</text>
+<rect x="920.0" y="173" width="160" height="34" rx="17" fill="#2b2f6b" stroke="#6E7CF6"/><text x="1000" y="196" text-anchor="middle" font-size="17" fill="#F2F6FB">agent writes</text>
+<rect x="781.0" y="323" width="138" height="34" rx="17" fill="#2b2f6b" stroke="#6E7CF6"/><text x="850" y="346" text-anchor="middle" font-size="17" fill="#F2F6FB">agent runs</text>
+<rect x="631.0" y="173" width="138" height="34" rx="17" fill="#2b2f6b" stroke="#6E7CF6"/><text x="700" y="196" text-anchor="middle" font-size="17" fill="#F2F6FB">it reports</text>
+<circle cx="850" cy="190" r="60" fill="none" stroke="#F08BB4" stroke-width="2.5" stroke-dasharray="7 6"/>
+<text x="850" y="186" text-anchor="middle" font-size="16" font-weight="700" fill="#F6A9C8">understanding</text>
+<text x="850" y="207" text-anchor="middle" font-size="15" fill="#F6A9C8">only if you check</text>
+<path d="M 745 220 C 755 285, 780 280, 800 238" fill="none" stroke="#F08BB4" stroke-width="2.5" stroke-dasharray="5 5" marker-end="url(#p)"/>
+<text x="675" y="280" text-anchor="end" font-size="16" font-weight="700" fill="#F08BB4">read · question · test</text>
+<text x="675" y="301" text-anchor="end" font-size="15" fill="#A9B8CE">a step you can skip</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+  <title>Transformer: each word attends to the other words in the sentence (self-attention), then a feed-forward layer; the block is stacked many times</title>
+  <rect width="560" height="330" fill="#ffffff"/>
+  <!-- words -->
+  <g font-size="16" fill="#11233F" text-anchor="middle">
+    <rect x="22" y="268" width="92" height="36" rx="8" fill="#D9F0F4" stroke="#4FA5B8"/><text x="68" y="292">The</text>
+    <rect x="124" y="268" width="92" height="36" rx="8" fill="#D9F0F4" stroke="#4FA5B8"/><text x="170" y="292">neuron</text>
+    <rect x="226" y="268" width="92" height="36" rx="8" fill="#D9F0F4" stroke="#4FA5B8"/><text x="272" y="292">fired</text>
+    <rect x="328" y="268" width="92" height="36" rx="8" fill="#D9F0F4" stroke="#4FA5B8"/><text x="374" y="292">because</text>
+    <rect x="430" y="268" width="92" height="36" rx="8" fill="#F7F9FC" stroke="#96004B" stroke-dasharray="5 4"/><text x="476" y="292" fill="#96004B">it …</text>
+  </g>
+  <!-- attention arcs from "it" -->
+  <g fill="none" stroke="#96004B">
+    <path d="M476 266 C 440 200, 220 200, 170 266" stroke-width="4.5" opacity="0.9"/>
+    <path d="M476 266 C 450 225, 300 225, 272 266" stroke-width="2" opacity="0.6"/>
+    <path d="M476 266 C 455 240, 400 240, 374 266" stroke-width="1.2" opacity="0.5"/>
+    <path d="M476 266 C 430 180, 110 180, 68 266" stroke-width="1" opacity="0.4"/>
+  </g>
+  <text x="300" y="196" text-anchor="middle" font-size="14" fill="#96004B">self-attention: "it" looks back at "neuron"</text>
+  <!-- stacked block -->
+  <g>
+    <rect x="150" y="22" width="260" height="140" rx="14" fill="#F7F9FC" stroke="#11233F" stroke-width="2"/>
+    <rect x="172" y="104" width="216" height="40" rx="8" fill="#EBCFDC" stroke="#96004B"/>
+    <text x="280" y="129" text-anchor="middle" font-size="15" fill="#96004B">self-attention</text>
+    <rect x="172" y="46" width="216" height="40" rx="8" fill="#ffffff" stroke="#11233F"/>
+    <text x="280" y="71" text-anchor="middle" font-size="15" fill="#11233F">feed-forward network</text>
+    <text x="428" y="96" font-size="18" font-weight="700" fill="#11233F">× N</text>
+    <text x="428" y="118" font-size="12" fill="#4D5B73">(dozens of</text>
+    <text x="428" y="133" font-size="12" fill="#4D5B73">layers)</text>
+  </g>
+  <line x1="280" y1="176" x2="280" y2="166" stroke="#11233F" stroke-width="2"/>
+  <text x="40" y="96" font-size="13" fill="#4D5B73">Vaswani et al.,</text>
+  <text x="40" y="113" font-size="13" fill="#4D5B73">2017</text>
+</svg>

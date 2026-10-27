@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+<title>Mock-up: VS Code suggesting the next lines of code in grey, accepted with Tab</title>
+<foreignObject x="0" y="0" width="1200" height="750">
+<div xmlns="http://www.w3.org/1999/xhtml" class="root" style="position:relative">
+<style>
+  .root{margin:0;width:1200px;height:750px;background:#E9EDF3;font-family:-apple-system,"Segoe UI",Inter,sans-serif}
+  .win{position:absolute;left:16px;top:16px;right:16px;bottom:16px;border-radius:14px;overflow:hidden;background:#1E1E1E;box-shadow:0 10px 30px rgba(17,35,63,.25);display:flex;flex-direction:column}
+  .bar{height:34px;background:#2A2A2A;display:flex;align-items:center;position:relative;color:#BDBDBD;font-size:13px}
+  .dots{display:flex;gap:8px;margin-left:14px}.dots i{width:12px;height:12px;border-radius:50%;display:block}
+  .bar .t{position:absolute;left:0;right:0;text-align:center}
+  .body{flex:1;display:flex;min-height:0}
+  .act{width:44px;background:#2C2C2C}
+  .side{width:200px;background:#252526;color:#CCC;font-size:14px;padding:14px 0}
+  .side h4{margin:0 14px 10px;font-size:11px;letter-spacing:.08em;color:#BBB}
+  .side div{padding:4px 14px}.side .sub{padding-left:30px}.side .sel{background:#37373D}
+  .ed{flex:1;display:flex;flex-direction:column;min-width:0}
+  .tabs{height:36px;background:#252526;display:flex}.tab{background:#1E1E1E;color:#fff;font-size:14px;padding:9px 16px;border-top:2px solid #96004B}
+  pre{margin:0;padding:14px 0;font:15px/24px Menlo,monospace;color:#D4D4D4;flex:1}
+  .ln{display:inline-block;width:44px;text-align:right;color:#6E7681;margin-right:18px}
+  .k{color:#C586C0}.s{color:#CE9178}.f{color:#DCDCAA}.c{color:#6A9955}.n{color:#B5CEA8}
+  .ghost{color:#7A7A7A;font-style:italic}
+  .cur{display:inline-block;width:2px;height:18px;background:#fff;vertical-align:-3px}
+  .hint{position:absolute;left:420px;top:330px;background:#252526;border:1px solid #454545;border-radius:6px;color:#CCC;font-size:13px;padding:6px 10px;box-shadow:0 4px 12px rgba(0,0,0,.4)}
+  .hint b{color:#fff;background:#3C3C3C;border-radius:4px;padding:1px 6px;font-weight:600}
+  .status{height:24px;background:#96004B;color:#fff;font-size:12px;display:flex;align-items:center;gap:18px;padding:0 12px}
+</style>
+
+<div class="win">
+  <div class="bar"><div class="dots"><i style="background:#FF5F57"></i><i style="background:#FEBC2E"></i><i style="background:#28C840"></i></div><div class="t">sleep-mood — Visual Studio Code</div></div>
+  <div class="body">
+    <div class="act"></div>
+    <div class="side"><h4>EXPLORER · SLEEP-MOOD</h4>
+      <div>▾ data</div><div class="sub">sleep.csv</div><div class="sub">README.md</div>
+      <div>▾ code</div><div class="sub sel">mood_by_sleep.py</div><div>▸ results</div></div>
+    <div class="ed">
+      <div class="tabs"><div class="tab">mood_by_sleep.py</div></div>
+<pre><span class="ln">1</span><span class="k">import</span> pandas <span class="k">as</span> pd
+<span class="ln">2</span><span class="k">import</span> matplotlib.pyplot <span class="k">as</span> plt
+<span class="ln">3</span>
+<span class="ln">4</span>df = pd.<span class="f">read_csv</span>(<span class="s">"data/sleep.csv"</span>)
+<span class="ln">5</span>
+<span class="ln">6</span><span class="c"># mean evening mood for short (&lt; 6 h) vs normal nights</span>
+<span class="ln">7</span><span class="k">def</span> <span class="f">mood_by_sleep</span>(df, cutoff=<span class="n">6</span>):<span class="cur"></span><span class="ghost">
+<span class="ln">8</span>    short = df[df.hours &lt; cutoff].mood.mean()
+<span class="ln">9</span>    normal = df[df.hours &gt;= cutoff].mood.mean()
+<span class="ln">10</span>    return short, normal</span>
+<span class="ln"> </span>
+<span class="ln"> </span>
+</pre>
+      <div class="hint"><b>Tab</b> accept &#160;·&#160; <b>Esc</b> dismiss &#160;·&#160; suggestion 1 of 3</div>
+    </div>
+  </div>
+  <div class="status"><span>main</span><span>Python 3.12</span><span style="margin-left:auto">✦ Completions on</span></div>
+</div>
+
+</div>
+</foreignObject>
+</svg>

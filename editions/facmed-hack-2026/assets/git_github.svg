@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 385" font-family="Inter, -apple-system, Segoe UI, sans-serif">
+<title>Git and GitHub/GitLab: three team members each keep a git history on their laptop, with save points, a dead-end branch kept on record and a successful branch merged back; they push to and pull from a shared copy of the history on GitHub or GitLab</title>
+<defs>
+<marker id="up" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#4FA5B8"/></marker>
+<marker id="dn" markerWidth="10" markerHeight="10" refX="7" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#A9B8CE"/></marker>
+</defs>
+<rect x="330" y="18" width="440" height="104" rx="18" fill="#22406b" stroke="#4FA5B8" stroke-width="2.5"/>
+<text x="550" y="50" text-anchor="middle" font-size="19" font-weight="800" fill="#FFFFFF" letter-spacing="1">GitHub · GitLab</text>
+<text x="550" y="72" text-anchor="middle" font-size="14" fill="#A9B8CE">the team's shared history, online</text>
+<line x1="380" y1="98" x2="720" y2="98" stroke="#F2F6FB" stroke-width="3"/><circle cx="380.0" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="428.5" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="477.0" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="525.5" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="574.0" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="622.5" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="671.0" cy="98" r="6.5" fill="#F2F6FB"/><circle cx="719.5" cy="98" r="6.5" fill="#F2F6FB"/>
+<path d="M 200 196 L 421.0 128" stroke="#4FA5B8" stroke-width="2.5" marker-end="url(#up)"/><path d="M 441.0 128 L 220 196" stroke="#A9B8CE" stroke-width="2.5" stroke-dasharray="4 4" marker-end="url(#dn)"/><path d="M 540 196 L 540.0 128" stroke="#4FA5B8" stroke-width="2.5" marker-end="url(#up)"/><path d="M 560.0 128 L 560 196" stroke="#A9B8CE" stroke-width="2.5" stroke-dasharray="4 4" marker-end="url(#dn)"/><path d="M 880 196 L 659.0 128" stroke="#4FA5B8" stroke-width="2.5" marker-end="url(#up)"/><path d="M 679.0 128 L 900 196" stroke="#A9B8CE" stroke-width="2.5" stroke-dasharray="4 4" marker-end="url(#dn)"/>
+<rect x="90" y="200" width="240" height="128" rx="10" fill="#1d3354" stroke="#A9B8CE" stroke-width="2"/>
+<path d="M 72 330 L 348 330 L 330 344 L 90 344 Z" fill="#A9B8CE" opacity="0.55"/>
+<line x1="112" y1="245" x2="308" y2="245" stroke="#F2F6FB" stroke-width="3"/>
+<circle cx="112" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="160" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="208" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="256" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="304" cy="245" r="7" fill="#F2F6FB"/>
+<path d="M 160 245 C 174 245, 174 283, 194 283 L 224 283" fill="none" stroke="#F08BB4" stroke-width="3" stroke-dasharray="5 4"/>
+<circle cx="200" cy="283" r="6" fill="#F08BB4"/><text x="236" y="290" font-size="20" font-weight="800" fill="#F08BB4">✕</text>
+<path d="M 208 245 C 220 245, 220 307, 238 307 L 268 307 C 288 307, 292 245, 304 245" fill="none" stroke="#4FA5B8" stroke-width="3"/>
+<circle cx="252" cy="307" r="6" fill="#4FA5B8"/>
+<text x="210" y="370" text-anchor="middle" font-size="16" fill="#A9B8CE">your laptop · git</text><rect x="430" y="200" width="240" height="128" rx="10" fill="#1d3354" stroke="#A9B8CE" stroke-width="2"/>
+<path d="M 412 330 L 688 330 L 670 344 L 430 344 Z" fill="#A9B8CE" opacity="0.55"/>
+<line x1="452" y1="245" x2="648" y2="245" stroke="#F2F6FB" stroke-width="3"/>
+<circle cx="452" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="500" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="548" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="596" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="644" cy="245" r="7" fill="#F2F6FB"/>
+<path d="M 500 245 C 514 245, 514 283, 534 283 L 564 283" fill="none" stroke="#F08BB4" stroke-width="3" stroke-dasharray="5 4"/>
+<circle cx="540" cy="283" r="6" fill="#F08BB4"/><text x="576" y="290" font-size="20" font-weight="800" fill="#F08BB4">✕</text>
+<path d="M 548 245 C 560 245, 560 307, 578 307 L 608 307 C 628 307, 632 245, 644 245" fill="none" stroke="#6E7CF6" stroke-width="3"/>
+<circle cx="592" cy="307" r="6" fill="#6E7CF6"/>
+<text x="550" y="370" text-anchor="middle" font-size="16" fill="#A9B8CE">a teammate · git</text><rect x="770" y="200" width="240" height="128" rx="10" fill="#1d3354" stroke="#A9B8CE" stroke-width="2"/>
+<path d="M 752 330 L 1028 330 L 1010 344 L 770 344 Z" fill="#A9B8CE" opacity="0.55"/>
+<line x1="792" y1="245" x2="988" y2="245" stroke="#F2F6FB" stroke-width="3"/>
+<circle cx="792" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="840" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="888" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="936" cy="245" r="7" fill="#F2F6FB"/>
+<circle cx="984" cy="245" r="7" fill="#F2F6FB"/>
+<path d="M 840 245 C 854 245, 854 283, 874 283 L 904 283" fill="none" stroke="#F08BB4" stroke-width="3" stroke-dasharray="5 4"/>
+<circle cx="880" cy="283" r="6" fill="#F08BB4"/><text x="916" y="290" font-size="20" font-weight="800" fill="#F08BB4">✕</text>
+<path d="M 888 245 C 900 245, 900 307, 918 307 L 948 307 C 968 307, 972 245, 984 245" fill="none" stroke="#F6A9C8" stroke-width="3"/>
+<circle cx="932" cy="307" r="6" fill="#F6A9C8"/>
+<text x="890" y="370" text-anchor="middle" font-size="16" fill="#A9B8CE">another teammate · git</text>
+<g font-size="14" fill="#A9B8CE">
+<text x="40" y="60">push ↑ · pull ↓</text>
+<text x="40" y="80">your save points travel</text>
+<text x="40" y="100">to the shared copy</text>
+<circle cx="890" cy="54" r="6" fill="#F2F6FB"/><text x="904" y="59">save point (commit)</text>
+<line x1="880" y1="80" x2="900" y2="80" stroke="#F08BB4" stroke-width="3" stroke-dasharray="5 4"/><text x="904" y="85">dead end, kept on record ✕</text>
+<line x1="880" y1="106" x2="900" y2="106" stroke="#4FA5B8" stroke-width="3"/><text x="904" y="111">attempt that worked, merged</text>
+</g>
+</svg>
