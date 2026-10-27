@@ -3,6 +3,8 @@
 Crash Course #2 · FacMed Hack #1 · *Vibe Coding for Scientists*. One dataset all evening: a
 fictional phone study, synthetic, so you may upload it to a chat AI.
 
+**Slides:** [`slides.pdf`](../slides.pdf) (Crash Course #2, 22 October 2026).
+
 | When | Part | What you do |
 |---|---|---|
 | 17:10 | Same data, your question | Read the codebook; answer in the live quiz: *what would you find worth exploring?* |
