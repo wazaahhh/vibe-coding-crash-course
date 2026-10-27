@@ -37,10 +37,19 @@ else
 fi
 python3 -c "import segno, sys; segno.make(sys.argv[1], error='m').save('assets/quiz_qr.svg', scale=8, border=2, dark='#11233F')" "$quiz_qr"
 sed -i '' -e "s#{{QUIZ_URL}}#${quiz_url#https://}#g" -e "s#{{QUIZ_PIN_LABEL}}#${pin_label}#g" "$out"
+# Live results panels on poll slides (HTML only): the quiz's /embed page for each question.
+# The admin token is never written to tracked files: slides.md/slides.html carry a placeholder
+# (read-only panels); QUIZ_ADMIN_KEY=… ./build.sh --html also writes slides-live.html (gitignored)
+# with presenter controls (Open · timer · Show results · Close) in each panel.
+sed -i '' -e "s#{{QUIZ_EMBED}}#${quiz_url%/}/embed?pin=${QUIZ_PIN:-}\&key=__QUIZ_KEY__\&q=#g" "$out"
 echo "Quiz: $quiz_qr"
 
 if [ "${1:-}" = "--html" ] || [ "${1:-}" = "--pdf" ]; then
   npx -y @marp-team/marp-cli@4.1.2 "$out" --html --allow-local-files -o slides.html
+  if [ -n "${QUIZ_ADMIN_KEY:-}" ]; then
+    sed "s#__QUIZ_KEY__#${QUIZ_ADMIN_KEY}#g" slides.html > slides-live.html
+    echo "Wrote slides-live.html (live quiz controls; contains the admin token: do not share or commit)"
+  fi
 fi
 if [ "${1:-}" = "--pdf" ]; then
   # Marp's own --pdf can hang on puppeteer; Chrome prints the HTML cleanly.

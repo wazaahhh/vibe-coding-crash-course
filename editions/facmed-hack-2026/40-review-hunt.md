@@ -134,3 +134,4 @@ pointer") for C; Gjorgjieva (recognising invented concepts) for D.
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}scarce" title="Live results: scarce"></iframe>

@@ -329,3 +329,4 @@ reward producing models over understanding them.
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}literature" title="Live results: literature"></iframe>

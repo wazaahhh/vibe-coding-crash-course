@@ -72,7 +72,7 @@ say it aloud; it is on the tile and in Part 6.
 <div class="card"><span class="qnum" style="color: var(--fg-faint);">Thu 8 Oct</span><h3>Crash Course #1</h3><p>Digital phenotyping &amp; the Swiss data rules</p></div>
 <div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Today</span><h3>Crash Course #2</h3><p>Vibe coding &amp; AI-assisted development</p></div>
 <div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">23 → 28 Oct</span><h3>Challenge voting</h3><p>Rank your three favourite challenges and confirm your place</p></div>
-<div class="card"><span class="qnum" style="color: var(--science);">Thu 29 Oct</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
+<div class="card"><span class="qnum" style="color: var(--science);">Tue 3 Nov · 17:00</span><h3>Crash Course #3</h3><p>Grant writing for pop-up projects, with the Research and Grants Office (RGO)</p></div>
 <div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">6 – 7 Nov</span><h3>The hackathon</h3><p>32 hours at Campus Biotech, in English</p></div>
 </div>
 
@@ -145,7 +145,7 @@ Paste in the chat now: the quiz PIN, and the link to the course folder (data and
 - **Camera on** if you can; **microphone off** unless you speak.
 - **Questions in the chat**, any time.
 - **Live quiz** on your phone or laptop: next slide.
-- **Quizzes and discussion** all evening: unmute and argue.
+- **Quizzes, discussion**, and **breakout rooms** at 18:43: unmute and argue.
 - **Course folder and slides**: link in the chat.
 - **We end at 19:00** sharp.
 
@@ -184,39 +184,27 @@ sentence; we come back to them in Part 1 ("Six everyday uses").
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}uses" title="Live results: uses"></iframe>
 
 ---
 
-<!-- ====== OPENING 3 — Opening question (live quiz, free text) ======
-Read Grace Lindsay's question first, then the opening question. Second question
-on the quiz app; everyone is already in. Live quiz question "opening" (free
-text, one or two lines). 90 seconds; keep the results hidden until time is up, so early answers
-don't anchor the rest. Then show the answers on the presenter view and read 4–5
-aloud, picking ones far apart (clinic vs. theory vs. lab bench vs. publishing).
-Export them: at 18:47 we sort them into what the session showed agents change
-today vs. what is still imagination (Part 7, "the opening question, revisited").
+<!-- ====== OPENING 3 — Opening question (no quiz) ======
+Read Grace Lindsay's question first, then the opening question. No live quiz
+here (dropped 22 Oct): leave it as a question to carry through the evening, and
+ask two or three people to say their answer aloud, far apart if possible
+(clinic vs. theory vs. lab bench vs. publishing). We come back to it at the end
+(Part 7, "Let's keep talking").
 -->
 <!-- _class: ink -->
 
 > *"What would you do if you had all the models of the brain you wanted?"*
 > <span class="small">Grace Lindsay, NYU, responding to this week's pre-read (DePasquale, <i>The Transmitter</i>, June 2026)</span>
 
-<span class="kicker">Live quiz · 90 seconds · one or two lines</span>
-
-<div class="cols" style="grid-template-columns: 1.35fr 1fr; gap: 30px; align-items: center;">
-<div>
+<span class="kicker">Opening question · keep it in mind: we come back to it at 18:53</span>
 
 ## Where do you imagine vibe coding and agentic coding will change science?
 
 Name **one place, and what changes there**. Your own field or any other: a method, an instrument, a job in the lab, a stage of publishing. Be specific.
-
-</div>
-<div>
-
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz, PIN included"><div><b>Live quiz · scan, or open</b><span>{{QUIZ_URL}}</span><span class="pin">{{QUIZ_PIN_LABEL}}</span></div></div>
-
-</div>
-</div>
 
 ---
 
@@ -224,7 +212,7 @@ Name **one place, and what changes there**. Your own field or any other: a metho
 Objective 3 matters most for anyone who arrived without tools installed: say
 explicitly that this is fine, and that the hack offers the HPE / NVIDIA
 environment to everyone, with or without their own setup.
-Live quiz (moved from the dropped programme slide): Ten live-quiz questions are spread through the evening (the second, "opening", is free text; "dst" and "leakage" in Part 4 have a correct answer; app at {{QUIZ_URL}},
+Live quiz (moved from the dropped programme slide): live-quiz questions are spread through the evening ("explore" in Part 1 is free text, shown as a word cloud; the two "Spot the trap" questions in Part 4 have a correct answer; app at {{QUIZ_URL}},
 presenter view at /present?key=…), each where its topic comes up. Show each
 result right away and take one or two reactions; "the room's answers" in Part 7
 recaps them. Zoom polls (zoom_polls.md) are the fallback.

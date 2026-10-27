@@ -36,6 +36,7 @@ students" (it said "40 people" when the data was sleep-mood/).
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}dst" title="Live results: dst"></iframe>
 
 ---
 
@@ -89,6 +90,7 @@ silent about who goes missing (next slide).
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}missing" title="Live results: missing"></iframe>
 
 ---
 
@@ -169,3 +171,4 @@ themselves before any AI editing.
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}training" title="Live results: training"></iframe>

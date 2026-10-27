@@ -23,7 +23,7 @@ The opening question (slide 3) is open-ended: it runs in the **Zoom chat**. Save
 
 | Poll | When | Part |
 |---|---|---|
-| 1 · Where first | ~17:18 | 1 · Where this comes from, after "Already happening in our field" |
+| 1 · What holds you back | ~17:18 | 1 · Where this comes from, after "Already happening in our field" |
 | 2 · Reality check | ~17:23 | 1 · after "What the science says"; the answer slide follows |
 | 3 · The literature | ~17:44 | 3 · end of Git without the jargon |
 | 4 · Training | ~18:24 | 4 · after the practical's debrief |
@@ -32,13 +32,13 @@ The opening question (slide 3) is open-ended: it runs in the **Zoom chat**. Save
 
 ---
 
-**Poll 1: Where first** *(multiple choice, up to two)*
-Where will agentic coding change research practice most in the next five years? Pick up to two.
-- A. Analysing data and building models
-- B. Designing and running experiments: automated labs
-- C. Reading and synthesising the literature
-- D. Writing papers and grants
-- E. Peer review and replication
+**Poll 1: What holds you back** *(multiple choice, up to two)*
+What holds you back most from using coding agents in your research? Pick up to two.
+- A. Not sure I can trust the results
+- B. Patient data and confidentiality rules
+- C. No time to learn a new way of working
+- D. Access, cost or institutional rules
+- E. Nothing: I already use them freely
 
 **Poll 2: A reality check** *(one correct answer: D)*
 In a 2025 randomised trial, experienced open-source developers worked on their own projects with and without AI tools. With AI, they were…

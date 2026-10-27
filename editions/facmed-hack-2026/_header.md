@@ -134,6 +134,10 @@ style: |
   .quizbox.big img { width: 230px; height: 230px; }
   .quizbox.big span { font-size: 1em; }
   .quizbox span.pin { display: block; margin-top: 6px; font-size: 1.15em; font-weight: 800; color: var(--accent); letter-spacing: 0.04em; }
+  /* Live results panel (the quiz app's /embed page) on poll slides; HTML deck only. */
+  .livequiz { position: absolute; right: 64px; top: 328px; width: 33%; height: 198px;
+    border: 2px solid var(--accent); border-radius: 14px; background: #fff; }
+  .livequiz.inline { position: static; width: 100%; height: 300px; display: block; }
   /* Figures with captions. */
   .fig { text-align: center; }
   .fig img { max-width: 100%; display: block; margin: 0 auto; }

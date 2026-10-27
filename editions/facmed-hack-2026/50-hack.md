@@ -7,7 +7,7 @@
 
 # The hack, concretely
 
-How the 32 hours run, how your team works, and what you leave with.
+How the 32 hours run, how each challenge is set up, and what our compute partner brings.
 
 ---
 
@@ -16,7 +16,8 @@ Source: steering committee of 14 Oct (minutes, corp repo): Friday opening moved
 to 12:30 (coffee, no lunch); challenge presentations 13:00–13:15; teams formed
 beforehand from the votes, the session only kicks them off; a cross-pitch
 before each dinner; proposed 1:1 peer review on Saturday ≈ 11:30; public finals
-Sat 17:00–18:30 at the CMU. Venue: Campus Biotech, auditorium and H8 floor.
+Sat 17:00–18:30 at Campus Biotech, in the presence of the Dean (moved from the
+CMU, Thomas 22 Oct). Venue: Campus Biotech, auditorium and H8 floor.
 [CONFIRM] against the run of show updated on 24 Oct.
 -->
 
@@ -30,67 +31,113 @@ Sat 17:00–18:30 at the CMU. Venue: Campus Biotech, auditorium and H8 floor.
 <div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Before dinner</span><h3>Cross-pitch</h3><p>Each team shows its progress to the others; steal good ideas.</p></div>
 <div class="card" style="border-top: 5px solid var(--fg-faint);"><span class="qnum" style="color: var(--fg-faint);">Night</span><h3>Optional</h3><p>Sleep on site if you said yes: bring a mat and a sleeping bag.</p></div>
 <div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Sat ≈ 11:30</span><h3>Peer review</h3><p>Teams review each other in rotation, then tag the <code>demo</code>.</p></div>
-<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Sat 17:00</span><h3>Public finals</h3><p>At the CMU, 17:00 → 18:30: your pitch and your demo.</p></div>
+<div class="card" style="border: 2px solid var(--accent); background: var(--accent-soft);"><span class="qnum">Sat 17:00</span><h3>Public finals</h3><p>At Campus Biotech, 17:00 → 18:30, with the Dean: your pitch and your demo.</p></div>
 </div>
 
 <br>
 
-> **Before 6 November**: vote and confirm your place (23 → 28 Oct) · a GitHub account with two-factor authentication · Crash Course #3 on grant writing, Thu 29 Oct.
+> **Before 6 November**: vote and confirm your place (23 → 28 Oct) · a GitHub account with two-factor authentication · Crash Course #3 on grant writing, Tue 3 Nov, 17:00 → 19:00.
 
 ---
 
-<!-- ====== HACK 3 — How your team works ======
+<!-- ====== HACK 3 — One repository per challenge ======
+Replaces "How your team works" and "What you leave with" (Thomas, 22 Oct).
 Each challenge has a lead (PI level) and a runner (PhD or postdoc inside the
-team), per the 14 Oct steering committee. Tools: vibe_coding_environment/
-implementation_plan.md (corp repo): HPE lends at least 8 GPUs with served
-models and sends three engineers. For credit candidates, the contribution
-history is the assessment (LNDS syllabus, A2).
+team), per the 14 Oct steering committee. Say "we do our best": data and
+starter material depend on each runner. Data rule (resources report, 6 Oct):
+only public, synthetic or anonymised data on the HPE environment during the
+hack; nothing sensitive in git.
 -->
 
-<span class="kicker">With or without your own tools</span>
+<span class="kicker">How it works</span>
 
-## How your team works
-
-<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 6px;">
-<div>
-
-- **A team per challenge**, with a lead (PI) and a runner (PhD or postdoc) who knows the data.
-- **Your laptop and your agent**, or a ready-made VS Code in the browser on the **HPE / NVIDIA environment**, with an agent and GPUs: nothing to install.
-- **One GitHub repository per team**, one branch per task (1 task = 1 agent), changes merged through pull requests.
-
-</div>
-<div>
-
-<div class="card" style="border-left: 5px solid var(--accent);">
-<h3>Data stays where it belongs</h3>
-<p>Real data never goes into git: it stays on the HPE / NVIDIA environment. Laptops get small synthetic samples. Each repository comes with an <code>AGENTS.md</code> that already knows these rules.</p>
-</div>
-<div class="card" style="margin-top: 12px;">
-<h3>Help on site</h3>
-<p>Your runner, the organisers, and HPE engineers for compute.</p>
-</div>
-
-</div>
-</div>
-
----
-
-<!-- ====== HACK 4 — What you leave with ======
-Expected outcome (steering committee): a proof of concept or preliminary
-results that can seed a research project and a grant application, plus an
-inspiring pitch. Finals within the Faculty of Medicine's 150th anniversary,
-with philanthropic funders. Team prizes research-aligned (compute credits,
-equipment, resources); winners first in line for support after the weekend.
-Prizes for the best needs announced at the finals.
--->
-<!-- _class: ink -->
-
-<span class="kicker">Saturday 7 November · 17:00 → 18:30 · public finals at the CMU</span>
-
-## What you leave with
+## One GitHub repository per challenge
 
 <div class="cols3" style="margin-top: 8px;">
-<div class="card"><h3>A seed</h3><p>A proof of concept or preliminary results that can seed a research project and a grant application. A working prototype is a bonus.</p></div>
-<div class="card"><h3>An audience</h3><p>Researchers, clinicians and philanthropic funders, at the Faculty of Medicine's 150th anniversary.</p></div>
-<div class="card"><h3>A team</h3><p>Research-aligned prizes, support after the weekend, and the people you built it with: teams outlast projects.</p></div>
+<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">Ready before you arrive</span><h3>Data and methods</h3><p>We do our best to prepare each challenge in advance, with its runner: the dataset (or a synthetic stand-in), the methods to start from, and the questions worth asking.</p></div>
+<div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Everything documented</span><h3>In the repo, or online</h3><p>The challenge repository holds the README, the data description and an <code>AGENTS.md</code> your agent reads. The rest is on <b>facmed-hack.sparkboard.com</b>.</p></div>
+<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">How the team works in it</span><h3>Branches and pull requests</h3><p>One branch per task (1 task = 1 agent), merged through pull requests, as in Part 3. Real data never goes into git.</p></div>
 </div>
+
+<br>
+
+> Each challenge has a **lead** (a PI) and a **runner** (a PhD student or postdoc) who knows the data and the repository.
+
+---
+
+<!-- ====== HACK 4 — What HPE brings ======
+Sources (corp repo, hackathon folder): steering committee 14 Oct (HPE lends
+compute during and after the hack, sends three engineers, brings privacy
+layers);
+vibe_coding_environment/implementation_plan.md (8 GPUs; open-weight models
+served through NVIDIA NIM: a coding model and nemotron-3-nano-omni for audio
+and video, English only, clips <= 2 min; browser VS Code with Cline on those
+models; GPU jobs via Slurm or Ray; datasets mounted read-only); technical
+resources report 6 Oct (only public, synthetic or anonymised data on HPE
+during the hack; Protopia Stained Glass for sensitive text; for winners, an
+HPE Private Cloud AI Developer System, 2x RTX PRO 6000 Blackwell: [CONFIRM]
+before promising it). Also: UNIGE HPC (Baobab) grants weekend access to UNIGE
+participants (minutes 14 Oct).
+-->
+
+<span class="kicker">Our compute partner · Hewlett Packard Enterprise (HPE)</span>
+
+## What HPE brings to the hack
+
+<div class="cols" style="grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 6px;">
+<div>
+
+**Resources**
+- **8 NVIDIA GPUs** for the weekend, and compute after it for the projects that continue.
+- **Open AI models served on them**: a coding model for your agent, and a model for audio and video.
+- **A ready-made VS Code in the browser**, with an agent already set up: nothing to install.
+- **Your challenge's data**, stored there and read-only; heavy analyses run as jobs on the GPUs.
+
+</div>
+<div>
+
+**Expertise**
+- **Three HPE engineers on site**, all weekend: compute, models, getting your job to run.
+- **Privacy layers** for sensitive inputs, and advice on keeping data where it belongs.
+
+<div class="card" style="margin-top: 10px;"><p>Only public, synthetic or anonymised data on the HPE environment during the hack. UNIGE participants also get weekend access to the university's HPC cluster.</p></div>
+
+</div>
+</div>
+
+---
+
+<!-- ====== HACK 5 — Tip: record the brainstorm ======
+Added 22 Oct (Thomas). A habit for the first hour of the hack, when each team
+shapes its challenge. Record on a phone (the voice memo app is enough), with
+everyone's agreement; transcribe with AI (the phone's own transcription, or an
+AI tool: the HPE audio model takes English clips of up to 2 minutes, so a long
+recording is easier with another tool); then ask an agent for decisions, tasks
+with owners, and open questions. The goal sentence is what keeps it useful:
+say it at the start of the recording and give it to the AI with the
+transcript, so it can flag what drifted. Same rule as the data: no patient
+information in a recording that goes to a cloud AI.
+-->
+
+<span class="kicker">Tip · while you brainstorm your challenge</span>
+
+## Record the brainstorm; let AI write the next steps
+
+<div class="cols" style="grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: center; margin-top: 6px;">
+<div>
+
+1. **Record** the conversation on your phone, with everyone's OK.
+2. **Transcribe** it with AI.
+3. **Synthesise**: ask an agent for the decisions, the tasks (who, by when) and the open questions.
+
+> **Stay pointed at your final goal.** Say it out loud when you start recording; give it to the AI with the transcript and ask what drifted away from it.
+
+</div>
+<div>
+
+<div class="fig"><img src="assets/brainstorm_record.svg" alt="Record on a phone, transcribe with AI, synthesise decisions and next steps, all pointed at the challenge's final goal"></div>
+
+</div>
+</div>
+
+<span class="small">No patient information in a recording that goes to a cloud AI: same rule as the data.</span>

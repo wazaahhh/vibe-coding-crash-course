@@ -219,7 +219,8 @@ formation).
 </div>
 <div>
 
-<div class="quizbox big" style="position:static; display:inline-flex;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>{{QUIZ_URL}}</span><span class="pin">{{QUIZ_PIN_LABEL}}</span></div></div>
+<iframe class="livequiz inline" src="{{QUIZ_EMBED}}explore" title="Live results: explore"></iframe>
+<div class="quizbox" style="position:static; display:inline-flex; margin-top:10px;"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Live quiz</b><span>{{QUIZ_URL}}</span><span class="pin">{{QUIZ_PIN_LABEL}}</span></div></div>
 
 <span class="small" style="display:block; margin-top: 12px;">Then we look at the word cloud: how many different questions did one dataset raise? The files are in the course folder, <code>phone-study/</code>.</span>
 
@@ -655,29 +656,32 @@ satisfactory); the repository itself documents the audit and one baseline.
 
 ---
 
-<!-- ====== CONTEXT 14 — Live quiz · Where first ======
-Opinion, no right answer. Live quiz app, multi-select (up to two). Show the
-results right away. Push: ask someone who picked the least-chosen option to
-defend it. Analysis and modelling is where the evidence of change is today
-(pre-read 1, the two examples you just saw); automated labs are where the
-money is going; writing and peer review are where the policy fights are.
+<!-- ====== CONTEXT 14 — Live quiz · What holds you back ======
+Opinion, no right answer. Live quiz question "barriers", multi-select (up to
+two; E rules out the others). Replaces "Where first" (22 Oct), which repeated
+the opening poll on uses. Show the results right away and say where tonight
+answers each one: A → the pitfalls, next slides, and Spot the trap (Part 4);
+B → Part 7, room 3 (patients' data); C → Part 2, how vibe coding works; D → the
+HPE environment at the hack (Part 6). Ask someone who picked E what they would
+tell a colleague who picked A.
 -->
 
-<span class="qnum">Poll 1 of 6 · Where first</span>
+<span class="qnum">Poll 1 of 6 · What holds you back</span>
 
-## Where has agentic coding changed, or will it change, research practice most in the next five years? *Pick up to two.*
+## What holds you back most from using coding agents in your research? *Pick up to two.*
 
 <div class="opts" style="width: 58%;">
-<div class="opt"><b>A</b>Analysing data and building models</div>
-<div class="opt"><b>B</b>Designing and running experiments: automated labs</div>
-<div class="opt"><b>C</b>Reading and synthesising the literature</div>
-<div class="opt"><b>D</b>Writing papers and grants</div>
+<div class="opt"><b>A</b>Not sure I can trust the results</div>
+<div class="opt"><b>B</b>Patient data and confidentiality rules</div>
+<div class="opt"><b>C</b>No time to learn a new way of working</div>
+<div class="opt"><b>D</b>Access, cost or institutional rules</div>
 </div>
 <div class="opts" style="grid-template-columns: 1fr; margin-top: 14px; width: 58%;">
-<div class="opt"><b>E</b>Peer review and replication</div>
+<div class="opt"><b>E</b>Nothing: I already use them freely</div>
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}barriers" title="Live results: barriers"></iframe>
 
 ---
 
@@ -825,6 +829,7 @@ slide.
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}reality" title="Live results: reality"></iframe>
 
 ---
 

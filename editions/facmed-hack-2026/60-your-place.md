@@ -11,7 +11,7 @@ conversation; it continues at the hack and in your lab.
 
 # AI governance in science: let's keep talking
 
-Nobody has settled the rules yet. Labs are writing them, fields are arguing about them, and you are part of it.
+Nobody has settled the rules yet. Labs are writing them, fields are arguing about them. Tonight, three breakout rooms write some of them.
 
 ---
 
@@ -90,15 +90,51 @@ B is Dan Goodman's point (incentives); C is the hopeful reading.
 </div>
 
 <div class="quizbox"><img src="assets/quiz_qr.svg" alt="QR code to the live quiz"><div><b>Vote live · {{QUIZ_PIN_LABEL}}</b><span>{{QUIZ_URL}}</span></div></div>
+<iframe class="livequiz" src="{{QUIZ_EMBED}}depth" title="Live results: depth"></iframe>
+
+---
+
+<!-- ====== GOV 4b — Breakout rooms: three questions ======
+10 minutes, 18:43 → 18:53. Zoom breakout rooms, three of them, participants
+choose their room (Zoom: "let participants choose room"; name the rooms
+"1 · Lab", "2 · Field", "3 · Data"); if a room is empty or crowded, move
+people across. Broadcast a 2-minute warning at 18:51.
+Each room: pick a rapporteur in the first minute; end with TWO concrete
+proposals, written in the Zoom chat of the main room on return (or said aloud).
+Prompts if a room stalls:
+- Lab: what do trainees do by hand? when must a draft exist before AI? who
+  checks agent-written code before it reaches a result?
+- Field: should journals require an "AI use" statement? who gets credit when
+  an agent wrote most of the code? should reviewers re-run the repository?
+- Data: which data may never go into a cloud tool? who decides, the PI, the
+  ethics committee, the hospital? what do participants consent to, and does
+  an agent reading the folder count?
+Report-back (next slide but one): 1–2 minutes per room.
+-->
+
+<span class="kicker">Breakout · 10 minutes · three rooms, your choice</span>
+
+## Three rooms, three questions
+
+<div class="cols3" style="margin-top: 8px;">
+<div class="card" style="border-top: 5px solid var(--science);"><span class="qnum" style="color: var(--science);">Room 1 · In the lab</span><h3>Write your lab's AI policy</h3><p>What do trainees still do by hand? What must be checked, and by whom, before an agent's result counts?</p></div>
+<div class="card" style="border-top: 5px solid var(--energy);"><span class="qnum" style="color: var(--energy);">Room 2 · In the field</span><h3>Set the norms</h3><p>What should journals, funders and reviewers ask for: disclosure, credit, re-running the code?</p></div>
+<div class="card" style="border-top: 5px solid var(--accent);"><span class="qnum">Room 3 · With patients' data</span><h3>Draw the lines</h3><p>Which data may never meet an AI tool? Who decides, and what do participants consent to?</p></div>
+</div>
+
+<br>
+
+> **Pick a rapporteur** in the first minute. Come back with **two concrete proposals**, for the main-room chat.
 
 ---
 
 <!-- ====== GOV 5 — Let's keep talking ======
 Merges the old "bright future", "room's answers", "opening question
-revisited" and "director, not author" slides. Facilitator: put 4–6 answers to
-the opening quiz question back on screen (presenter view) and ask which ones
-tonight made more real, and which still need norms to be safe. Then the last
-line in the chat. End on time.
+revisited" and "director, not author" slides. 18:53 → 19:00.
+First, report-back from the breakout rooms: each rapporteur, 1–2 minutes, two
+proposals (they are also in the chat; save it). Then, if time allows, come back
+to the opening question ("where will agentic coding change science?"): ask two or
+three people whether tonight changed their answer. End on time.
 -->
 <!-- _class: ink -->
 <!-- _footer: "" -->
@@ -115,7 +151,7 @@ line in the chat. End on time.
 
 <br>
 
-> **Back to your opening answers**: which did tonight make more real? And in the chat, one last line: *"When agents write the code, the part of my research that stays mine is …"*
+> **Report back**: two proposals per room, from lab, field and data. Then, in the chat, one last line: *"When agents write the code, the part of my research that stays mine is …"*
 
 ---
 

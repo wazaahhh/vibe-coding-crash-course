@@ -46,6 +46,11 @@ Two hands-on **install fests** are interleaved with the talk modules: **🛠 Cod
 
 > Trust the vibe to **write** it; never trust the vibe that it's **right**.
 
+## Editions
+Versions of the course re-cut for a specific event live in **[editions/](editions/)**, each with its own deck source and build script.
+
+- **[FacMed Hack #1 — Crash Course #2](editions/facmed-hack-2026/)** (UNIGE Faculty of Medicine, 22 October 2026, on Zoom): the course re-cut for *Digital Phenotyping of Mental Health*, with one dataset (a synthetic phone study) for the whole session. Participants' materials, slides (PDF) included, are on the [`facmed-2026-participants`](https://github.com/wazaahhh/vibe-coding-crash-course/tree/facmed-2026-participants/editions/facmed-hack-2026) branch.
+
 ## Further reading
 See **[RESOURCES.md](RESOURCES.md)** for an annotated reading list (vibe coding in science, academic framing, best practices, and the cognitive-science references behind the slides).
 
