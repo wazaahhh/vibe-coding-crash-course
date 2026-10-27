@@ -1,6 +1,6 @@
 # Vibe Coding for Scientists — A Hands-On Course
 
-A tool-agnostic, demo-heavy course that teaches working scientists how to **direct** an AI to write analysis code — and how to catch it when it's confidently wrong. A ~60-minute main deck of **six modules**, plus two deeper **add-on modules** (more on the way).
+A tool-agnostic, demo-heavy course that teaches working scientists how to **direct** an AI to write analysis code — and how to catch it when it's confidently wrong. A ~75-minute main deck of **eight modules**, plus two deeper **add-on modules** (more on the way).
 
 > **Thesis:** Vibe coding moves you from *author* of code to *director* of code. Your job becomes intent, judgment, and verification — not syntax.
 
@@ -14,8 +14,10 @@ Scientists (grad students → PIs) who code a little (usually Python/R in notebo
 | 2 | **The mindset** — four pillars + the cognitive science | 15 |
 | 3 | **How you actually do it** — modes, prompting | 10 |
 | 4 | **Live demo** — direct a real analysis | 15 |
-| 5 | **Working together in a lab** — review, standards, rhythm | 7 |
-| 6 | **Safety & ethics** | 5 |
+| 5 | **Git & GitHub** — the safety net (local vs. GitHub, private vs. public) | 8 |
+| 6 | **Edit modes, models & prompting** — the controls | 8 |
+| 7 | **Working together in a lab** — review, standards, rhythm | 7 |
+| 8 | **Safety & ethics** | 5 |
 
 Two hands-on **install fests** are interleaved with the talk modules: **🛠 Code** (after the demo) and **🖋 Manuscript — Overleaf → VS Code + GitHub** (the final module).
 

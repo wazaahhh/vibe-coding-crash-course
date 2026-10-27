@@ -1,6 +1,6 @@
 # Vibe Coding for Scientists
 
-### A crash course · the first six modules
+### A crash course · the first eight modules
 
 From *writing* code to *directing* it.
 
@@ -10,9 +10,9 @@ From *writing* code to *directing* it.
 
 ---
 
-# The first six modules
+# The first eight modules
 
-These are the **first six modules** — more are on the way.
+These are the **first eight modules** — more are on the way.
 
 | # | Module | ~min |
 |---|---|---|
@@ -20,8 +20,10 @@ These are the **first six modules** — more are on the way.
 | 2 | The mindset + the science | 15 |
 | 3 | How you actually do it (modes · prompting) | 10 |
 | 4 | **Live demo** — a real analysis | 15 |
-| 5 | Working together in a lab | 7 |
-| 6 | Safety &amp; ethics | 5 |
+| 5 | Git &amp; GitHub — the safety net | 8 |
+| 6 | Edit modes, models &amp; prompting | 8 |
+| 7 | Working together in a lab | 7 |
+| 8 | Safety &amp; ethics | 5 |
 
 <!-- Speaker: a map, not content. The demo is the centre of gravity; protect its 15 min. Two hands-on install fests (code · manuscript) sit between and after the talk modules. -->
 

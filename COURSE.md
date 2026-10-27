@@ -1,6 +1,6 @@
 # Vibe Coding for Scientists — Course Outline
 
-A ~75-minute course: six talk modules plus two hands-on **install fests**
+A ~90-minute course: eight talk modules plus two hands-on **install fests**
 (🛠 Code, 🖋 Manuscript). It moves working scientists from *writing* code to
 *directing* it — and shows how to catch the confident-but-wrong result.
 
@@ -8,7 +8,7 @@ The deck is **assembled from per-module files**: edit [modules/](modules/), run
 `./build.sh`, then `marp slides.md`. One file = one module.
 
 Run it however fits your group:
-- **The main hour** — modules 1–6 as a seminar (~60 min, demo-centric).
+- **The main hour** — modules 1–8 as a seminar (~75 min, demo-centric).
 - **Install fest · Code** — right after the live demo; a hands-on clinic that
   **takes the time it needs** (~30–45 min). Don't rush it to a slot.
 - **Install fest · Manuscript** — the final module (~30–45 min): Overleaf → VS
@@ -27,11 +27,13 @@ and treat code as a means to an answer, not a craft.
 | 2 | The mindset + the science | [02-the-mindset.md](modules/02-the-mindset.md) | 15 |
 | 3 | How you actually do it (modes · prompting) | [03-how-you-do-it.md](modules/03-how-you-do-it.md) | 10 |
 | 4 | **Live demo** — a real analysis | [04-live-demo.md](modules/04-live-demo.md) | 15 |
-| 🛠 | **Install fest · Code** — repo + agent | [05-install-fest-code.md](modules/05-install-fest-code.md) | 30–45 |
-| 5 | Working together in a lab | [06-working-in-a-lab.md](modules/06-working-in-a-lab.md) | 7 |
-| 6 | Safety & ethics | [07-safety-ethics.md](modules/07-safety-ethics.md) | 5 |
-| 🖋 | **Install fest · Manuscript** — Overleaf → VS Code/GitHub | [08-install-fest-manuscript.md](modules/08-install-fest-manuscript.md) | 30–45 |
-| — | Director, not author · further reading · sources | [09-close.md](modules/09-close.md) | 3 |
+| 5 | Git & GitHub — the safety net | [05-git-github.md](modules/05-git-github.md) | 8 |
+| 6 | Edit modes, models & prompting | [06-edit-modes-models.md](modules/06-edit-modes-models.md) | 8 |
+| 🛠 | **Install fest · Code** — repo + agent | [07-install-fest-code.md](modules/07-install-fest-code.md) | 30–45 |
+| 7 | Working together in a lab | [08-working-in-a-lab.md](modules/08-working-in-a-lab.md) | 7 |
+| 8 | Safety & ethics | [09-safety-ethics.md](modules/09-safety-ethics.md) | 5 |
+| 🖋 | **Install fest · Manuscript** — Overleaf → VS Code/GitHub | [10-install-fest-manuscript.md](modules/10-install-fest-manuscript.md) | 30–45 |
+| — | Director, not author · further reading · sources | [11-close.md](modules/11-close.md) | 3 |
 
 **Learning objectives.** By the end, participants can: understand *why & how* to
 vibe code in science (author→director, the four pillars, the cognitive science);
